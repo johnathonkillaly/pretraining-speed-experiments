@@ -1,0 +1,10 @@
+{
+  "after_pilot": true,
+  "files": {
+    "scripts/custom_vjp_probe.py": "91841f4422e8b20f73168647f930eb18f1bb70266e52688c9c609045dfd704ba",
+    "scripts/analyze.py": "2fb340b72bdf617343902b13552f60bf9e241d7e4317cc9536e422b53236ccc2",
+    "scripts/reproduce.py": "b85abc02650928c342a0a1787bdacca4d3b91f3651e795eb37ebf00a1dc4f594",
+    "RESEARCH_NOTES.md": "d1e20ab455dd68ed91b7f70270fd17d00822f4648ba776e0b42e8b7a3935689a"
+  },
+  "base_training_source_commit": "2f4fe220fa4f824957edc6ec5cdcee5408987316"
+}

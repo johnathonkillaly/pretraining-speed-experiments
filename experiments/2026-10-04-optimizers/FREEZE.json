@@ -1,0 +1,10 @@
+{
+  "source_commit": "b6f851721db298068d94d6eda9ba0d123d20179a",
+  "sha256": {
+    "/RESEARCH_ROOT/experiments/2026-10-04-optimizers/CONTRACT.md": "8c9cbfedbb064402aa708cbb1d5e107dc9d38a1fe23d7b9a6ed8a548bdcb6626",
+    "/RESEARCH_ROOT/experiments/2026-10-04-optimizers/run_optimizer_probe.py": "e11ef16461923f02ebbc19069098fcf786a07ed21f7d388d79ab55c1c72dfc11",
+    "/RESEARCH_ROOT/experiments/2026-10-04/scripts/moe.py": "224ee25363955534f8204dd682e8a45d8507c76cdcaccd7a85693a89e894f568",
+    "/RESEARCH_ROOT/experiments/2026-10-04/scripts/custom_vjp_probe.py": "91841f4422e8b20f73168647f930eb18f1bb70266e52688c9c609045dfd704ba",
+    "/RESEARCH_ROOT/.venv/lib/python3.11/site-packages/mlx/optimizers/optimizers.py": "57501691b4cf5e16cc4edd738f2dd358305e6c54bcd4bb93c7d10144d09e2c3a"
+  }
+}

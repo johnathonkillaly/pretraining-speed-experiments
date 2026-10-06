@@ -1,0 +1,2226 @@
+{
+  "publication_date": "2026-10-06",
+  "source_commit": "ea968505e3105664d78b055efc8e62658e0fe1ff",
+  "policy": "Selected evidence and historical sources; paths and process metadata sanitized. No datasets, tensor payloads, credentials, OS inventories or private Git history.",
+  "files": [
+    {
+      "path": "experiments/2026-10-04/AMENDMENT_01.md",
+      "source_path": "research/moe-night/results/2026-10-04/AMENDMENT_01.md",
+      "original_sha256": "37e56b02b5932514f3e30f116b5d58b9b7b2457fa274d58be4b4074063945247",
+      "published_sha256": "90358c2be188497fcf69145df55247373013079ba91e20273041d9a978e84956",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/AMENDMENT_02.md",
+      "source_path": "research/moe-night/results/2026-10-04/AMENDMENT_02.md",
+      "original_sha256": "a215d9409bcabc6ecbad467faa2e2eef3eb96ad8cb00c96fadab22dfdbf4ff64",
+      "published_sha256": "a11c5208e43d3e6050314ccb34f59d1a0f16bc73d1a1e6b27c0aae9dd51c6c76",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/CONTRACT.md",
+      "source_path": "research/moe-night/results/2026-10-04/CONTRACT.md",
+      "original_sha256": "2bf263344bd7faf214af018811682f6f72fa8cff0499664228c142e6e63b1729",
+      "published_sha256": "deaf76e1999a94f081f53854f3c621b7759fc083979b8da05f7b3bf587d0c1cd",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/EXPLORATORY_FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-04/EXPLORATORY_FREEZE.json",
+      "original_sha256": "c367a2d366989720dd19622707e378692360c3885761e7428cc790420795764b",
+      "published_sha256": "0234ad058728ead8b97d667b9b9296adf3e00f733798049be6476a9d07e72f49",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-04/FREEZE.json",
+      "original_sha256": "457cc26fe8cb7f27983915800530f1fc9cb5a7704fdf7597b7dec1d69b44bef7",
+      "published_sha256": "a7b11a78f94ee5aafb7e966227aacfdf783b8188cf76f1b60d754895f6a87f3c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/REPORT.md",
+      "source_path": "research/moe-night/results/2026-10-04/REPORT.md",
+      "original_sha256": "46f6c9d3488635d9c5b9c72d53fc68e1037b5a78627c3d35398d582e9dc5f064",
+      "published_sha256": "ce792fba08e4f7c67adae2514ed1c2a94e69a135d9e3ca5717f04d527b1f66b3",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/RESEARCH_NOTES.md",
+      "source_path": "research/moe-night/results/2026-10-04/RESEARCH_NOTES.md",
+      "original_sha256": "d1e20ab455dd68ed91b7f70270fd17d00822f4648ba776e0b42e8b7a3935689a",
+      "published_sha256": "a9cd59b3c77df0ddd8fb7027889e71c12b433e961c73f19debf3e4d0e10aa98c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/data.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/data.json",
+      "original_sha256": "09685a4f2418de8c4d31cfd21929b0a53afcec4ced04bf647d7d223ada8ffa8d",
+      "published_sha256": "47336f129244f5ff35b88b495bc1670b5dc0b2fb3aaf91ea0a3efcc9cc47710c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/dense_s42.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/dense_s42.json",
+      "original_sha256": "57523c0e8a1164d8ff5f0dbd8d0d740b1319f2e41c505c7ed052db4c696bb02a",
+      "published_sha256": "31bcf68b2b16cb3669231bc7d5fd2e6a0e239cd3a11df1a5dc8daeaa0628d9a5",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/dense_s42_smoke.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/dense_s42_smoke.json",
+      "original_sha256": "82e3b9084e99dfc256afa82ea01572dc0ed65b40a76518d9af5ee1c3a205ef5d",
+      "published_sha256": "01b4e023f58ff302dae5bb3ab12d08d1f692a95c8eb51c20da308a0e7f987e64",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/dense_s43.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/dense_s43.json",
+      "original_sha256": "de8e058e8a28a9db7c7a6cfab93d23c968b322540d0698c7666600cabfd5051a",
+      "published_sha256": "a0d886f749c17d4a4c9262077be4169e8f2683d6b817e8d35bf666ae364382bd",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/dense_s44.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/dense_s44.json",
+      "original_sha256": "ca1cb63881c3747450e3a2184d9842699ae14de3fa61a507ed6e7708d6c85b81",
+      "published_sha256": "0493e6b65f73eff5f602249c5623571be80b07075bc3c58f7a2fc5d9e82579d0",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/requirements.lock",
+      "source_path": "research/moe-night/results/2026-10-04/configs/requirements.lock",
+      "original_sha256": "d44a958649b9e10ec233f6977be7873c6367aac8245215bcd54c81e7cdd9fe69",
+      "published_sha256": "d44a958649b9e10ec233f6977be7873c6367aac8245215bcd54c81e7cdd9fe69",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/configs/run_matrix.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/run_matrix.json",
+      "original_sha256": "2b0be0b04545da8bb0b0af3e121e0be4867548a756f23c8b30ee8d2c130f1cf4",
+      "published_sha256": "1eddc5d03e01c61ad5c06b2d61616b6d23cb657df4fa83f976bc21a973872f74",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top1_s42.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top1_s42.json",
+      "original_sha256": "1b20acad822db333795e94c36562d84dc5a4d7a2e3b976b8dada20ec25595337",
+      "published_sha256": "c151c3d53dd08800c6520327070ba3e3779ef5324f5235f4eb0fee0726b9003e",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top1_s42_smoke.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top1_s42_smoke.json",
+      "original_sha256": "0eabb57e3193c4af109709b729e9d1900c001d42fb6b726431d7dffb049d1315",
+      "published_sha256": "afbd599ffcc57db9e37b0b7116d52189b944b38facfd5ea00ab4de754f29d1b5",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top1_s43.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top1_s43.json",
+      "original_sha256": "128b847daa0d40b4834271489c115122af25ce409876bdd802092cc915fa3247",
+      "published_sha256": "5e57c51c2dbbba6b08ea2d77eab270aafa47333bcf382b0d202378c13eab5be3",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top1_s43_smoke.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top1_s43_smoke.json",
+      "original_sha256": "9e17422c517b95417508535c61517c6ecb0fb5b52b24516d9d252bb220fe85d2",
+      "published_sha256": "00b4dd97d04db80db04e1f89b3fa3b73a8b5f5640155f367e3c6bd910e5d4706",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top1_s44.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top1_s44.json",
+      "original_sha256": "ca5259af3bfd051bd1491bee0ea4ef74934e76614bb6da0c2a65d87ee8b9dce9",
+      "published_sha256": "78be254c7fd5f99c49cc14e67bca1034bad2a9dd95c86214b6224f068d66cf45",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top2_s42.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top2_s42.json",
+      "original_sha256": "c50e2875fb97befaa62c3f467bbf42dae2b065c864c74fbf0a0e4c4a1eb475b2",
+      "published_sha256": "18f6c41f24f64293b85dc44438e35420b961d013b1032992edbe8d2d40a48600",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top2_s42_smoke.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top2_s42_smoke.json",
+      "original_sha256": "33d6a2aa4dcd53820b5f1c45667853c07c9c559a7a441322e84fa990da8064a5",
+      "published_sha256": "f6d9545eb8fb013133c01f3e31d37367b74fd58110c6d5ac4a93a29f8b45ca5b",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top2_s43.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top2_s43.json",
+      "original_sha256": "4f872852e22393270b37ad67174ef0a8177cfd3c3e9d7dfbdc192b42f64cd838",
+      "published_sha256": "85986daca419d24ace7efe2517415c8c9867af8dbf118449392b93a82db17f0f",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/configs/top2_s44.json",
+      "source_path": "research/moe-night/results/2026-10-04/configs/top2_s44.json",
+      "original_sha256": "d86069067d7b83fd88f7b3ea63492bc62b9a80ad60a04e2d171440d60fa32c0a",
+      "published_sha256": "4729633d2f4c628b5b3901e999273105659245683687c137b9577aa040695f43",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/SUITE_COMPLETE.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/SUITE_COMPLETE.json",
+      "original_sha256": "a1bd3d40fc1ff858812d6ea2c5a7e65c4307c2a5e484729a08517c92ed9590bc",
+      "published_sha256": "32a13218c75de692602199267da4420a9400e42493209b7fa92c924e9a0c4a7e",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/benchmark_primary.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/benchmark_primary.jsonl",
+      "original_sha256": "ca40fcb1e5432f34ad95da027ea94187b26cf4444d6a0d5944d91c684fc1d67f",
+      "published_sha256": "ca40fcb1e5432f34ad95da027ea94187b26cf4444d6a0d5944d91c684fc1d67f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/benchmark_primary_v2.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/benchmark_primary_v2.jsonl",
+      "original_sha256": "eb8d5407bfa95c60c92346a0b9d6f6d4c578693e7cd63d63dca4c8ca3b75d3e4",
+      "published_sha256": "eb8d5407bfa95c60c92346a0b9d6f6d4c578693e7cd63d63dca4c8ca3b75d3e4",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/benchmark_summary.csv",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/benchmark_summary.csv",
+      "original_sha256": "0659ff187bb636eea7ba36bf0d9aebb62f27c100a5b9e90b9cdc5d58fd48b171",
+      "published_sha256": "30683a02fba5e64950a855e0053e6e108ccd66c4ed36c494117ce0bfed6e5175",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/benchmark_sweep.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/benchmark_sweep.jsonl",
+      "original_sha256": "23b387f8924ef5395cf567baa6c5e9b950debefdf5a305419454cc39a62113d1",
+      "published_sha256": "23b387f8924ef5395cf567baa6c5e9b950debefdf5a305419454cc39a62113d1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/checkpoint_validation.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/checkpoint_validation.json",
+      "original_sha256": "b005a0e0c55d3d28bb99c7807c98e3a32219bf5aa2008ce343531799b8ac5ba7",
+      "published_sha256": "eda1bea4af7d07c3eb03d8af7482e01c278d9de6b69f2e306a76c0c4ec680883",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/comparison.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/comparison.json",
+      "original_sha256": "962f3b2b9dc54d8c4d22fe141c6be37693c24a793a505167c9996cfaf9120c9a",
+      "published_sha256": "b6acbd09007bd222280c771efa96bd8758790a3afff66d20ba849f760779c6b2",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/compile_router.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/compile_router.json",
+      "original_sha256": "0c93c535ad8a9d4fb81adc29e2316dfceae07e6be502388acb66c72ae4741796",
+      "published_sha256": "54beda13a53a311c1af7cc3e0862c271be9a1d87d416a6f6d43871c40156fb28",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/custom_vjp_probe.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/custom_vjp_probe.json",
+      "original_sha256": "df3f2670b01d1a83c304c2a11d736228d595b2272243f42c4bc36655675c5908",
+      "published_sha256": "9d344576602a4cc9e72b5256052c368ad3c3c6de3c66dee8c7b5362e464ef705",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/custom_vjp_swiglu.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/custom_vjp_swiglu.json",
+      "original_sha256": "c3121253d3d4accdf114e22a530bfa8391d1a5bbfc944ecf3bc41ee6ac63f041",
+      "published_sha256": "291570cdef620fc0897670b0c23ae2f54c327f594395273f40c6612f607f59e2",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/custom_vjp_validation.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/custom_vjp_validation.json",
+      "original_sha256": "750e9e2a7616074fc743d0677b8ee7ee8659e9b78a64d30611bcbcd8107ec840",
+      "published_sha256": "1ecf2b41d00e5a21f7e0ec86b37461f864b2afc06b82ecc1c7c28d11dc81488f",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/dense_s42.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/dense_s42.jsonl",
+      "original_sha256": "0eaacf646a92c5b7de3f494bb48b5815ac339ec0dc4f0c26ecba570d0d186f5c",
+      "published_sha256": "0eaacf646a92c5b7de3f494bb48b5815ac339ec0dc4f0c26ecba570d0d186f5c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/dense_s42_smoke.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/dense_s42_smoke.jsonl",
+      "original_sha256": "2254e09fb61d6e64507176a462350f2e329ad361a8c141ddf2cff4b43659b142",
+      "published_sha256": "2254e09fb61d6e64507176a462350f2e329ad361a8c141ddf2cff4b43659b142",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/dense_s42_smoke_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/dense_s42_smoke_summary.json",
+      "original_sha256": "26c1bb75bd539288b8f4d82f7b07d12bc17c429304f88d982a72decd9a594362",
+      "published_sha256": "83435dc6f1d51f2160a350f3117e223d8fd9a859f0b6ec5a1e8c57bdb3519f6d",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/dense_s42_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/dense_s42_summary.json",
+      "original_sha256": "04b5b418d53f4e5809602cc55474736b71a03138e9c8ff763d93bde04dc8fb37",
+      "published_sha256": "1d570923d0d117f3e4a34c5711f6a9bf6c071b4708a44fb3c90f79c11c03c901",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/dense_s43.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/dense_s43.jsonl",
+      "original_sha256": "be776c32e050ce13c8ca22779db470f7fc1d32e208cc93641814b3bf8749489d",
+      "published_sha256": "be776c32e050ce13c8ca22779db470f7fc1d32e208cc93641814b3bf8749489d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/dense_s43_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/dense_s43_summary.json",
+      "original_sha256": "eee5f0f9b2b226f099d58e5d7619f15794458f25b35f6da5fe632ee10d6174d4",
+      "published_sha256": "c89df5c03bd99ab0ff4a1c00f1d05911c3c07c5c86c3fde0cfe9c968f8a79331",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/dense_s44.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/dense_s44.jsonl",
+      "original_sha256": "6d7269b408276c228911a8f05508b033ecc88e789b95bbb8f2daa05b3c252685",
+      "published_sha256": "6d7269b408276c228911a8f05508b033ecc88e789b95bbb8f2daa05b3c252685",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/dense_s44_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/dense_s44_summary.json",
+      "original_sha256": "a0ab34b6c73e9868ada2e48d8c5753454e1d27eeef9709f90176521443f7bb0a",
+      "published_sha256": "44d382a4bb06372fa7a6335e8b3ece9fd25afd867faeef51b430bba67bd2a4fa",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/final_verification.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/final_verification.json",
+      "original_sha256": "f0cf56a41ff4ca3b578fb0b28e6ef2ccce7da73dede0e2e34182799dd6cd52d4",
+      "published_sha256": "9276c20740ea1654e6ee1f66ec4779c041b7ce0aa6a1473759ae2f5bb6ab2c58",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/router_history.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/router_history.jsonl",
+      "original_sha256": "5af1d64d35530730d8d500b559668d7d9d6b020ac619f2cc4b25fbb0becf84a2",
+      "published_sha256": "5af1d64d35530730d8d500b559668d7d9d6b020ac619f2cc4b25fbb0becf84a2",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/suite_events.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/suite_events.jsonl",
+      "original_sha256": "9cf0871f5b3fd36004803af7a626b176b73e929ab81fbca419655bcdfdedc969",
+      "published_sha256": "4e621f12e294286f2cdf7bf415f9f0650b66a467656fa52e4229d4d564baa961",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s42.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s42.jsonl",
+      "original_sha256": "888f2b7458eb4f5e2234accd2aeb8f929040b957890f535adb0a157d08a4ecf6",
+      "published_sha256": "888f2b7458eb4f5e2234accd2aeb8f929040b957890f535adb0a157d08a4ecf6",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s42_smoke.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s42_smoke.jsonl",
+      "original_sha256": "96220279e0db921bfbddd77815c082fb85199047569d3f27258c0ef39f930c54",
+      "published_sha256": "96220279e0db921bfbddd77815c082fb85199047569d3f27258c0ef39f930c54",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s42_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s42_summary.json",
+      "original_sha256": "e2a3b694a119944c14e9e75e2d25241a33937331145b8dfc837ebc6f27fca6b2",
+      "published_sha256": "87a60215eddc8b5331552d9a0b5dce1f603f0effec421247931dc11b662b0950",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s43.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s43.jsonl",
+      "original_sha256": "732bcda2efdb77a0e9b4b7afce75c2aad55f6a8ac29167fba0a4338aacdcfe34",
+      "published_sha256": "732bcda2efdb77a0e9b4b7afce75c2aad55f6a8ac29167fba0a4338aacdcfe34",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s43_smoke.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s43_smoke.jsonl",
+      "original_sha256": "f39d745ca16147a3eb800e221cdacc2faee1d46d5e0708c0293d5cd447d09b0d",
+      "published_sha256": "f39d745ca16147a3eb800e221cdacc2faee1d46d5e0708c0293d5cd447d09b0d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s43_smoke_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s43_smoke_summary.json",
+      "original_sha256": "82efce331fd9616565d44a4823f9b27029b37c927cd1009efe6e80cc3ca1fc54",
+      "published_sha256": "849640a4df25c24f20e50b6ab3112a247873f03b765d7d6c1e9c71e79224b29d",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s43_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s43_summary.json",
+      "original_sha256": "6b3e842a61987e1c8da2e6c08740b675eda659ba0877f27ea54c060b49caf4d8",
+      "published_sha256": "cbb0f9e627ddcc7f2e5bec2bfba0b86480680f3b59d0b6336b90d7415041dbb3",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s44.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s44.jsonl",
+      "original_sha256": "79e925aaf2a5a505677318796aa708b8b99d9e65c1bfcd598349e58307b6909c",
+      "published_sha256": "79e925aaf2a5a505677318796aa708b8b99d9e65c1bfcd598349e58307b6909c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top1_s44_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top1_s44_summary.json",
+      "original_sha256": "690930513748013b1557270f3821b1b66e8950f4a4bf06660f4f550790f4d889",
+      "published_sha256": "253973d0c4903888371038381df253eaaf3f365f86c691fc7844f28eabf4b84f",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top2_s42.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top2_s42.jsonl",
+      "original_sha256": "86f544824e43348afb7b8fa9649fb970652862ebbe3b5f482c535baea0cb373f",
+      "published_sha256": "86f544824e43348afb7b8fa9649fb970652862ebbe3b5f482c535baea0cb373f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top2_s42_smoke.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top2_s42_smoke.jsonl",
+      "original_sha256": "23410d6cf138e1211b56cf5b730d17709d1ae06753d99910c2a1b0870780484e",
+      "published_sha256": "23410d6cf138e1211b56cf5b730d17709d1ae06753d99910c2a1b0870780484e",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top2_s42_smoke_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top2_s42_smoke_summary.json",
+      "original_sha256": "c4339faee5f2c0f942479adf63aad66af554ddacbc68c5ce5243eacd03d87096",
+      "published_sha256": "1254ed03f1b69b70eab5f8f458b03243d69b04480b8e0e28dbe61fcbeb52981c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top2_s42_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top2_s42_summary.json",
+      "original_sha256": "ff10082fc4e59d121699bfaf69912cf4b14b771dc724a3ca97a6b4974b6274d6",
+      "published_sha256": "5111209a305d8f19bcf01632eaced785c5a49d17659349e56001e77633ad28b8",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top2_s43.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top2_s43.jsonl",
+      "original_sha256": "8a87ac1a7ce2dc044f0c68d95b61f5ac55cdaf06f5a969a4c4b68f3f4da75d24",
+      "published_sha256": "8a87ac1a7ce2dc044f0c68d95b61f5ac55cdaf06f5a969a4c4b68f3f4da75d24",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top2_s43_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top2_s43_summary.json",
+      "original_sha256": "983d7e59a136d0ea0a32f16da45bdef6ff9ea8cb9ee7c1b395c108e177e85473",
+      "published_sha256": "4048b98b749c1fd9600a112ecbc32b14d060a2c28a2d39ba9c5372d292915f03",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top2_s44.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top2_s44.jsonl",
+      "original_sha256": "a2bf76699b7b97760ab1c57025fe0f25e5d3b33bba7a42ff18aeeed20ee66024",
+      "published_sha256": "a2bf76699b7b97760ab1c57025fe0f25e5d3b33bba7a42ff18aeeed20ee66024",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/top2_s44_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/top2_s44_summary.json",
+      "original_sha256": "8941e86b7470a84b67ba128337f7c105ec0903fed756aa274b576392372b1714",
+      "published_sha256": "9fd62357d0ee02ab44fda213afdd41eee9d73af086386f345cd35e04f5803900",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/training_summary.csv",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/training_summary.csv",
+      "original_sha256": "fda5648871f6e1a181730f48fe1e732d8d82893347c0444638937101c69c1b71",
+      "published_sha256": "cd2e102681a6f5bead65a8e74f5f7eedcb362b31ebeee4fd752ade94f3f4500a",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/training_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/training_summary.json",
+      "original_sha256": "31f44e33ae0dbb60dbf5a79639d12d2a0f874be4b8cf3096c6c64c91adf91973",
+      "published_sha256": "431fecb7778e07e50957e3d8894de084878400abae8823206a0a73f10e0e4d59",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/metrics/verification.json",
+      "source_path": "research/moe-night/results/2026-10-04/metrics/verification.json",
+      "original_sha256": "ae0551e3e77e624317e2b55c5ba6ef7ee99cbcd023b92cb62836cc2903e3b771",
+      "published_sha256": "da786e50ed8111b8f75409a77b3b6a266b3fc45ab71225c3901b7467a24e67ae",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/plots/expert_sweep.png",
+      "source_path": "research/moe-night/results/2026-10-04/plots/expert_sweep.png",
+      "original_sha256": "010768f83c192077a57bdf8940273e7279cd1d7f2b8a8e04a069c17c417d2e9b",
+      "published_sha256": "010768f83c192077a57bdf8940273e7279cd1d7f2b8a8e04a069c17c417d2e9b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/plots/router_health.png",
+      "source_path": "research/moe-night/results/2026-10-04/plots/router_health.png",
+      "original_sha256": "4f272fdf3462645a9f53089478d36bef8ddaa603c30266a42c294264193af652",
+      "published_sha256": "4f272fdf3462645a9f53089478d36bef8ddaa603c30266a42c294264193af652",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/plots/sparse_backward.png",
+      "source_path": "research/moe-night/results/2026-10-04/plots/sparse_backward.png",
+      "original_sha256": "52b8add2ac0bc378928ef4fcd988809a2fc9e8780bf208eb31ca51d95c234ffe",
+      "published_sha256": "52b8add2ac0bc378928ef4fcd988809a2fc9e8780bf208eb31ca51d95c234ffe",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/plots/training_curves.png",
+      "source_path": "research/moe-night/results/2026-10-04/plots/training_curves.png",
+      "original_sha256": "56b6b6e0c2cef3e4931b00c9cc9aabd6c704f0c869c07e518b62be0b6484a9b4",
+      "published_sha256": "56b6b6e0c2cef3e4931b00c9cc9aabd6c704f0c869c07e518b62be0b6484a9b4",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/analyze.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/analyze.py",
+      "original_sha256": "2fb340b72bdf617343902b13552f60bf9e241d7e4317cc9536e422b53236ccc2",
+      "published_sha256": "2ebd2412596bc0291f236a96d95d65abf64ddce43153b8a7f258e800faf13dc7",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/arch/__init__.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/arch/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/arch/llama.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/arch/llama.py",
+      "original_sha256": "0316c27256356a689c9efca413bebbc769de0a571f363ea6ec2f722d90c52be1",
+      "published_sha256": "0316c27256356a689c9efca413bebbc769de0a571f363ea6ec2f722d90c52be1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/arch/rope_utils.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/arch/rope_utils.py",
+      "original_sha256": "ac7d1be7d2bb1df9c697d5979f94b0bda3cd414a3d3ff930bb1e5df0d284d66b",
+      "published_sha256": "ac7d1be7d2bb1df9c697d5979f94b0bda3cd414a3d3ff930bb1e5df0d284d66b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/benchmark.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/benchmark.py",
+      "original_sha256": "7310fc19f0d03d631db659328a484b0ac07bb005a6fe81f2784bda743b90a56e",
+      "published_sha256": "7310fc19f0d03d631db659328a484b0ac07bb005a6fe81f2784bda743b90a56e",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/custom_vjp_probe.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/custom_vjp_probe.py",
+      "original_sha256": "91841f4422e8b20f73168647f930eb18f1bb70266e52688c9c609045dfd704ba",
+      "published_sha256": "91841f4422e8b20f73168647f930eb18f1bb70266e52688c9c609045dfd704ba",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/moe.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/moe.py",
+      "original_sha256": "224ee25363955534f8204dd682e8a45d8507c76cdcaccd7a85693a89e894f568",
+      "published_sha256": "224ee25363955534f8204dd682e8a45d8507c76cdcaccd7a85693a89e894f568",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/prepare_data.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/prepare_data.py",
+      "original_sha256": "5462d0fea5a07a1cba944a0ebdc9bdb59672008714aae96c2d36c66876425f74",
+      "published_sha256": "4dc0d110201a153cdcd5463042ee28f8b8de998616e3e45c46864e94a36e439e",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/reproduce.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/reproduce.py",
+      "original_sha256": "b85abc02650928c342a0a1787bdacca4d3b91f3651e795eb37ebf00a1dc4f594",
+      "published_sha256": "b85abc02650928c342a0a1787bdacca4d3b91f3651e795eb37ebf00a1dc4f594",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/run_suite.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/run_suite.py",
+      "original_sha256": "df0eb974028b70ad1ad5db293301e65f492981785d78b95d5060d7d948902375",
+      "published_sha256": "df0eb974028b70ad1ad5db293301e65f492981785d78b95d5060d7d948902375",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/train.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/train.py",
+      "original_sha256": "e608c7df246fc7009b32433a5ffc65ee7e3f0827372d5c97879b77df2407766c",
+      "published_sha256": "e608c7df246fc7009b32433a5ffc65ee7e3f0827372d5c97879b77df2407766c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04/scripts/verify.py",
+      "source_path": "research/moe-night/results/2026-10-04/scripts/verify.py",
+      "original_sha256": "fe385a0f8837e7a2ba3c4ae5e1ff48d6322ae30f89b84d1103096451e55148c7",
+      "published_sha256": "fe385a0f8837e7a2ba3c4ae5e1ff48d6322ae30f89b84d1103096451e55148c7",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/AMENDMENT_STATELESS_SGD.md",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/AMENDMENT_STATELESS_SGD.md",
+      "original_sha256": "30329d5dfa3039a835c559043018110fb24b24b27f5f0401c67216f05c9c9b66",
+      "published_sha256": "ad7970b29ff2a7eee50551a4c2ec5d6bf592d8345d093d9f124932d9285685de",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/CONTRACT.md",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/CONTRACT.md",
+      "original_sha256": "8c9cbfedbb064402aa708cbb1d5e107dc9d38a1fe23d7b9a6ed8a548bdcb6626",
+      "published_sha256": "c840731a0505ffe002f69e9177f7923b61452ab6ab12f623f7a40e669ae69638",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/FREEZE.json",
+      "original_sha256": "232fbc492085717729a4970545d9d1f57fae88565d1bff9215b6e4dad557bde2",
+      "published_sha256": "f8cef1a2d0743decf53071a372dc3de4a79eeb8f0cffaf668f652dd010e2a98c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/REPORT.md",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/REPORT.md",
+      "original_sha256": "909086940987e7e28022aaf8c123b18f5924bb6a1ff884e6d7bd70cfa20d0392",
+      "published_sha256": "f83d95bdba045ffc1988cc06cdf54422d3284e7a1ee171e2af05298eed5ae21d",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/STATELESS_FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/STATELESS_FREEZE.json",
+      "original_sha256": "9bf32deaac1b4e3f42aedf625e566086bd96bddd236d832a08e8b93a2ba677a7",
+      "published_sha256": "7db094d4b7fa0dc6b646be20e0c833649bf83a491a282eea41943ab0f3243a98",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/VERIFICATION.json",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/VERIFICATION.json",
+      "original_sha256": "3156e269a60d8e41d63a5a207be53ce1ff42dc157e7d6cb8dc2fa1ebd0325d88",
+      "published_sha256": "3156e269a60d8e41d63a5a207be53ce1ff42dc157e7d6cb8dc2fa1ebd0325d88",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/make_report.py",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/make_report.py",
+      "original_sha256": "d0abe1a9b8309f20979c7f69cbf5b912fa3849a9877312316ddbe5510c2e9a92",
+      "published_sha256": "c9dafc48fba211f29ab4d2c64259221f87503c62416b5364e621e36d636d96a2",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/metrics.json",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/metrics.json",
+      "original_sha256": "761e348aea1b5448c894ec10e6663c37c0ddba832767c8293743f1538aa351b6",
+      "published_sha256": "243bfafa2f34d921cc69dc94c4d34908f0d930f6b36fbdcd604cf355b6d1190a",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/optimizer_comparison.png",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/optimizer_comparison.png",
+      "original_sha256": "da2764e291cf76b21c3c0a1af5db5499046a0548f50a935c7dd88f130255d4ed",
+      "published_sha256": "da2764e291cf76b21c3c0a1af5db5499046a0548f50a935c7dd88f130255d4ed",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/run_optimizer_probe.py",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/run_optimizer_probe.py",
+      "original_sha256": "e11ef16461923f02ebbc19069098fcf786a07ed21f7d388d79ab55c1c72dfc11",
+      "published_sha256": "e11ef16461923f02ebbc19069098fcf786a07ed21f7d388d79ab55c1c72dfc11",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/stateless_sgd_metrics.json",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/stateless_sgd_metrics.json",
+      "original_sha256": "5e82f97f290ec8e91a9e37c5bda30060e387dc779189f2d7324e333538bc849a",
+      "published_sha256": "5e82f97f290ec8e91a9e37c5bda30060e387dc779189f2d7324e333538bc849a",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-optimizers/stateless_sgd_probe.py",
+      "source_path": "research/moe-night/results/2026-10-04-optimizers/stateless_sgd_probe.py",
+      "original_sha256": "5327d1d7815d42c9396d76fe7d8ffd98b1855a713e5bfc5d081d61dd683e0723",
+      "published_sha256": "5327d1d7815d42c9396d76fe7d8ffd98b1855a713e5bfc5d081d61dd683e0723",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/AMENDMENT_H1_CAPTURE.md",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/AMENDMENT_H1_CAPTURE.md",
+      "original_sha256": "c9342b1c0b79ec970c3ac3d6026b069dda10ce9adf1cb9e267baf8e05e3aade3",
+      "published_sha256": "deb53cdf362fc79d92eeaaa2721343931be9e68c592c3927c9d0d5501a2ad5f5",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/AMENDMENT_LAUNCH_PRIORITY.md",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/AMENDMENT_LAUNCH_PRIORITY.md",
+      "original_sha256": "a6790828046b477b44b1a7fcf7c5abe1cb32c30c25708f2ebbf5b4457a9349ae",
+      "published_sha256": "815964dcaa3b9eeef090e035eea5674377dbaa8a0f1754ace1e4f16f289a0676",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/CONTRACT.md",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/CONTRACT.md",
+      "original_sha256": "1352ee09d6acc68d4aaaaed16e236a7748e634bb5ba9e0f35b09f6a9028a1385",
+      "published_sha256": "c6a015c1e3bb066bed8486587fa521e824515a5fb434f272a313c47c25cb8def",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/FREEZE.json",
+      "original_sha256": "16c5bb0053c002bcd3346fe1a7458e72c25ee8bc2d131caab392599092934291",
+      "published_sha256": "33396001f335fbcf4e9d6af1335d549cdf33aaee8f062cb0880f7feeac9d28c3",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/H1_V2_FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/H1_V2_FREEZE.json",
+      "original_sha256": "da4a2892480e42549dfb2ea64cdb164a8ce513b647665e62c5b502fed58a7bf5",
+      "published_sha256": "5e4d1707d5cdaa1e0f475a2a428e8324a5c49b09ee443dbb0b4f5f00140888c3",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/HARDWARE_CONTEXT.md",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/HARDWARE_CONTEXT.md",
+      "original_sha256": "65108390f6ad94326bef8592c7b5fcd7cccc635f30d00e30998918be9ff805de",
+      "published_sha256": "20aed820a93c3b96c95d8ea4feb05e9b08c45bd7a3cf025e56b394f2b5e93fb1",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/INTERPRETATION.md",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/INTERPRETATION.md",
+      "original_sha256": "6e6312945fc2ea1e92e2f1218deb4eff5e0ff1e27ed81108f2ef3e3f289ba387",
+      "published_sha256": "b8393daeb666149d6f7a07a688ef73f013ae33dc084004904d618953142801db",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/PRIORITY_FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/PRIORITY_FREEZE.json",
+      "original_sha256": "40e59d57f081a8af6279fdc4ebe50cc36643f8bb228f8d7629b8b1ae72eff7e1",
+      "published_sha256": "d44bb9d17f96ffc826d0c9b4096401cdccb02ae7325d163f6a2c21e906996d71",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/REPORT.md",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/REPORT.md",
+      "original_sha256": "75f587a76a4b398a3c50412a5e4386ede627a36e1ae3dde1376d29f2c866a0a9",
+      "published_sha256": "b5112234a7cc07ffca5770f3174c84f5a5d8194bd515ef0a112f90de2d1a2270",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/configs/data.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/configs/data.json",
+      "original_sha256": "04b52d8b94db8537b4c6c0d628bae0e0c0d0a9f003a490efb2bb59399445d748",
+      "published_sha256": "e911e6b7aaa074828eb2896fdb4543443f93ccf65fe90aff48ddab5864feab14",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/configs/environment.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/configs/environment.json",
+      "original_sha256": "1c6b6a04a3642edb9dfcd248d9610245e9259eb982afa6b528cf93ed21f75c77",
+      "published_sha256": "0185ad2c3f19a3a3983de15f2db3fee5826497a510d5525a3444a69983b6991b",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/configs/requirements.txt",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/configs/requirements.txt",
+      "original_sha256": "7b5db3024d662d8636f75dc89c766e9c93937ed7decd22f196c01eefe829ab4f",
+      "published_sha256": "7b5db3024d662d8636f75dc89c766e9c93937ed7decd22f196c01eefe829ab4f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/configs/runtime_kernel_audit.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/configs/runtime_kernel_audit.json",
+      "original_sha256": "3bcb0182a7a38a5635e0db492c2cdda3550725775c4d9a71379f6306f6459067",
+      "published_sha256": "909251aef924247ac785a4a667f7667849bb49d3e1e295e4a34e36e023968765",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/configs/source_catalog.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/configs/source_catalog.json",
+      "original_sha256": "7d6b0138e9d03bf5c790c276426011fb4ab818fb96d33e1ed56a6b89c0f4a979",
+      "published_sha256": "d49c0b26265a4726bd6bd938ae172f22c8290f14b6aa156745cb736343971b21",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/SUITE_COMPLETE.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/SUITE_COMPLETE.json",
+      "original_sha256": "c5c243f9938563bac50142060747faf54fc4ce1c82db67bdb26feae955825076",
+      "published_sha256": "c5c243f9938563bac50142060747faf54fc4ce1c82db67bdb26feae955825076",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/analysis.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/analysis.json",
+      "original_sha256": "cd24ce3dee97be95969869718222c3555ef9bc584870163542943c9747403a3f",
+      "published_sha256": "cd24ce3dee97be95969869718222c3555ef9bc584870163542943c9747403a3f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/backward_benchmark.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/backward_benchmark.json",
+      "original_sha256": "259118925f970dde07802b98b35228229bea655b98ddb1a22c398cbf64224545",
+      "published_sha256": "259118925f970dde07802b98b35228229bea655b98ddb1a22c398cbf64224545",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/checkpoint_check_dense10_s42.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/checkpoint_check_dense10_s42.json",
+      "original_sha256": "597bc89d9f865e57d230c8dab39d7a44de279128e0121fb3e148024a6c5aba2c",
+      "published_sha256": "597bc89d9f865e57d230c8dab39d7a44de279128e0121fb3e148024a6c5aba2c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/checkpoint_checks.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/checkpoint_checks.json",
+      "original_sha256": "6ef6d0c333728ec6970400c8f291210ac3a5fe89c26fc32a987951c48a83e726",
+      "published_sha256": "6ef6d0c333728ec6970400c8f291210ac3a5fe89c26fc32a987951c48a83e726",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense10_s42.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense10_s42.jsonl",
+      "original_sha256": "e03e630708e8f9a10d4c596df24a70b82121f35e78dcfdf969ae64175c63414a",
+      "published_sha256": "e03e630708e8f9a10d4c596df24a70b82121f35e78dcfdf969ae64175c63414a",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense10_s42_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense10_s42_summary.json",
+      "original_sha256": "b7e481e38cc6980343f0ca948a75f78829b49064fcc17b7da64023ecffbf5814",
+      "published_sha256": "b7e481e38cc6980343f0ca948a75f78829b49064fcc17b7da64023ecffbf5814",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense10_s43.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense10_s43.jsonl",
+      "original_sha256": "340c57fa092d1e1b3ee48eaef283e9fc6f70fe8a2fabbaf497e4524b8c636a30",
+      "published_sha256": "340c57fa092d1e1b3ee48eaef283e9fc6f70fe8a2fabbaf497e4524b8c636a30",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense10_s43_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense10_s43_summary.json",
+      "original_sha256": "3d9c076f0b5926cfe71a0e8bfe8c36761d68db7e908801e89a2fcc3f5e03ba3f",
+      "published_sha256": "3d9c076f0b5926cfe71a0e8bfe8c36761d68db7e908801e89a2fcc3f5e03ba3f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense10_s44.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense10_s44.jsonl",
+      "original_sha256": "302da3efaa62cee1e72d37ad8654828fd6d758390c1441d4ff6aac025ac9bef7",
+      "published_sha256": "302da3efaa62cee1e72d37ad8654828fd6d758390c1441d4ff6aac025ac9bef7",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense10_s44_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense10_s44_summary.json",
+      "original_sha256": "6cc31af792d1456eca6f6ddf545268c9ff5ba44a81671851acf263a09fa55416",
+      "published_sha256": "6cc31af792d1456eca6f6ddf545268c9ff5ba44a81671851acf263a09fa55416",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense4_s42.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense4_s42.jsonl",
+      "original_sha256": "1cb3261cc5ecc990a8bcea532dcd4f32a4231eea84da1ef8d0d3869203edd1cd",
+      "published_sha256": "1cb3261cc5ecc990a8bcea532dcd4f32a4231eea84da1ef8d0d3869203edd1cd",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense4_s42_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense4_s42_summary.json",
+      "original_sha256": "04496eedfdc5ba9576ad396f183815192e14e08bd36e1b09c8e6ba1044640d4d",
+      "published_sha256": "04496eedfdc5ba9576ad396f183815192e14e08bd36e1b09c8e6ba1044640d4d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense4_s43.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense4_s43.jsonl",
+      "original_sha256": "44451e7d6807ef454f2e3d04755e471814e4c0bc8f1a8ba73d4beec0c9c32a40",
+      "published_sha256": "44451e7d6807ef454f2e3d04755e471814e4c0bc8f1a8ba73d4beec0c9c32a40",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense4_s43_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense4_s43_summary.json",
+      "original_sha256": "834d6b9d4180f3771396c483286a20bde153b86671cbabe0d78abca8973f2269",
+      "published_sha256": "834d6b9d4180f3771396c483286a20bde153b86671cbabe0d78abca8973f2269",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense4_s44.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense4_s44.jsonl",
+      "original_sha256": "24d8a7b63b07abe4c1021e32e31cd41080e4d1539ce330d273d2569427604ad0",
+      "published_sha256": "24d8a7b63b07abe4c1021e32e31cd41080e4d1539ce330d273d2569427604ad0",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/dense4_s44_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/dense4_s44_summary.json",
+      "original_sha256": "e71cf16ca9876e75658e6b18b1ece9ed638a88b53c443f1dbee5440d8f67a173",
+      "published_sha256": "e71cf16ca9876e75658e6b18b1ece9ed638a88b53c443f1dbee5440d8f67a173",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/h1_benchmark_failure.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/h1_benchmark_failure.json",
+      "original_sha256": "8ef96c7b3975678601c6006b9b4757574552e36883e0b4a4faa4d0a262f6422a",
+      "published_sha256": "8ef96c7b3975678601c6006b9b4757574552e36883e0b4a4faa4d0a262f6422a",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/h1_benchmark_v2.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/h1_benchmark_v2.json",
+      "original_sha256": "71cb9f215414666cff7540b542e18d0bfe50c3c2dc153a906b617bb3f8e15756",
+      "published_sha256": "71cb9f215414666cff7540b542e18d0bfe50c3c2dc153a906b617bb3f8e15756",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/launcher_direct_dense10_probe.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/launcher_direct_dense10_probe.jsonl",
+      "original_sha256": "004a8e489eb296d5218aab1cea5b438844d6b77725254d78487f74831210413c",
+      "published_sha256": "004a8e489eb296d5218aab1cea5b438844d6b77725254d78487f74831210413c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/launcher_direct_dense10_probe_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/launcher_direct_dense10_probe_summary.json",
+      "original_sha256": "e1810cbc972c52ed9b160b114643f297c534be5b5f806fddd03e5f31d81eda85",
+      "published_sha256": "e1810cbc972c52ed9b160b114643f297c534be5b5f806fddd03e5f31d81eda85",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/primary_summary.csv",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/primary_summary.csv",
+      "original_sha256": "8afab4d3743bef2c653ab0f96c6bdecce376c52e50d9aa481a5309bebe60fa2f",
+      "published_sha256": "8afab4d3743bef2c653ab0f96c6bdecce376c52e50d9aa481a5309bebe60fa2f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_curr_tb2_s42.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_curr_tb2_s42.jsonl",
+      "original_sha256": "8d408f07056709ed1fae605dc9fc482649103d9443638353ba5a753473b08aa6",
+      "published_sha256": "8d408f07056709ed1fae605dc9fc482649103d9443638353ba5a753473b08aa6",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_curr_tb2_s42_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_curr_tb2_s42_summary.json",
+      "original_sha256": "238022b5234edc99bd6dbcedc22debf66ed0826f69fd6e8c2a45ff7918caef87",
+      "published_sha256": "238022b5234edc99bd6dbcedc22debf66ed0826f69fd6e8c2a45ff7918caef87",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_curr_tb2_s43.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_curr_tb2_s43.jsonl",
+      "original_sha256": "9fa16972c89f48a5b056d467d8b581c0a9a62d08d7661b5753fbd020d0d765bd",
+      "published_sha256": "9fa16972c89f48a5b056d467d8b581c0a9a62d08d7661b5753fbd020d0d765bd",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_curr_tb2_s43_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_curr_tb2_s43_summary.json",
+      "original_sha256": "2cb84d36395c3c710c6963bea10a2a0aef2cbfdd7e6081ffa2bb3144911b43f1",
+      "published_sha256": "2cb84d36395c3c710c6963bea10a2a0aef2cbfdd7e6081ffa2bb3144911b43f1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_curr_tb2_s44.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_curr_tb2_s44.jsonl",
+      "original_sha256": "99c8d061d48194502cbf330f61d2fdb5619cb0005e6acb82a18eeaac64809efc",
+      "published_sha256": "99c8d061d48194502cbf330f61d2fdb5619cb0005e6acb82a18eeaac64809efc",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_curr_tb2_s44_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_curr_tb2_s44_summary.json",
+      "original_sha256": "43243ad94da67695da6618fcdea9cbc771d5d524de2a9b9e00a857627d26af51",
+      "published_sha256": "43243ad94da67695da6618fcdea9cbc771d5d524de2a9b9e00a857627d26af51",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_full_s42.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_full_s42.jsonl",
+      "original_sha256": "16a20597df7892253497dc6ebafb44c90a09e0a63568657510d8c2e5e1424d24",
+      "published_sha256": "16a20597df7892253497dc6ebafb44c90a09e0a63568657510d8c2e5e1424d24",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_full_s42_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_full_s42_summary.json",
+      "original_sha256": "d3ff1b294da3b78b3908612f49699f617e4460015732ba255a36dcf04287eaae",
+      "published_sha256": "d3ff1b294da3b78b3908612f49699f617e4460015732ba255a36dcf04287eaae",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_full_s43.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_full_s43.jsonl",
+      "original_sha256": "b00c38a44bc7f09573ef5af754286d40c34532227d1b8cf4133faf7048918e0e",
+      "published_sha256": "b00c38a44bc7f09573ef5af754286d40c34532227d1b8cf4133faf7048918e0e",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_full_s43_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_full_s43_summary.json",
+      "original_sha256": "e542276621c8d2b657eedfeec5bb7c9fa9b4b7bd310020045e2ab32142143a56",
+      "published_sha256": "e542276621c8d2b657eedfeec5bb7c9fa9b4b7bd310020045e2ab32142143a56",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_full_s44.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_full_s44.jsonl",
+      "original_sha256": "8b1f335493e605246b24a703bea2db97c618f4917b0b01850122fa24e671649c",
+      "published_sha256": "8b1f335493e605246b24a703bea2db97c618f4917b0b01850122fa24e671649c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_full_s44_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_full_s44_summary.json",
+      "original_sha256": "a645da6c43d6e15e30cf54235b87f721fdd361549d624e22c0b3a1ce6d55d5b4",
+      "published_sha256": "a645da6c43d6e15e30cf54235b87f721fdd361549d624e22c0b3a1ce6d55d5b4",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_tb2_s42.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_tb2_s42.jsonl",
+      "original_sha256": "ed796f01099f79b6cdd54ecc98938abcf63b4788f9c0a4b77ef32da58cc82111",
+      "published_sha256": "ed796f01099f79b6cdd54ecc98938abcf63b4788f9c0a4b77ef32da58cc82111",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_tb2_s42_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_tb2_s42_summary.json",
+      "original_sha256": "71b18e4c47df68dfdc4922a20bc63e021ea293bbcedc2e48c6d29a91f7d52658",
+      "published_sha256": "71b18e4c47df68dfdc4922a20bc63e021ea293bbcedc2e48c6d29a91f7d52658",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_tb2_s43.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_tb2_s43.jsonl",
+      "original_sha256": "b6ac9428e4052ed1aaca1886445e22e41957001e6cb44f6a36914e4876bc0b55",
+      "published_sha256": "b6ac9428e4052ed1aaca1886445e22e41957001e6cb44f6a36914e4876bc0b55",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_tb2_s43_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_tb2_s43_summary.json",
+      "original_sha256": "6646c6ef045d2fb1dc4517b0ac85d48b9db78675ec846f2b34f990c6a31f68af",
+      "published_sha256": "6646c6ef045d2fb1dc4517b0ac85d48b9db78675ec846f2b34f990c6a31f68af",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_tb2_s44.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_tb2_s44.jsonl",
+      "original_sha256": "69b04cf1eee5b70d7c1e25dcb966d6d88d22e28550739f528abe30f89ed41df1",
+      "published_sha256": "69b04cf1eee5b70d7c1e25dcb966d6d88d22e28550739f528abe30f89ed41df1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/rec_tb2_s44_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/rec_tb2_s44_summary.json",
+      "original_sha256": "411454be23e4175e583ce6ab2487b4529048a44cb1f4fe0733cafa5b9f236476",
+      "published_sha256": "411454be23e4175e583ce6ab2487b4529048a44cb1f4fe0733cafa5b9f236476",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/reload_checks.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/reload_checks.json",
+      "original_sha256": "0c39c959342bd80c0d6a69461d35f8b82e390552a0094aaddfcdb68d633d140f",
+      "published_sha256": "0c39c959342bd80c0d6a69461d35f8b82e390552a0094aaddfcdb68d633d140f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/selected_rates.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/selected_rates.json",
+      "original_sha256": "16b49a97079ae29252c0b9eaebc2d304e61ece6311ce304d1f2798bfa31d3286",
+      "published_sha256": "16b49a97079ae29252c0b9eaebc2d304e61ece6311ce304d1f2798bfa31d3286",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/setup_smoke_rec_tb2.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/setup_smoke_rec_tb2.jsonl",
+      "original_sha256": "db84baefd0b32af8992bf70b7242c60c7664988953268bad2f2d739ef753faa5",
+      "published_sha256": "db84baefd0b32af8992bf70b7242c60c7664988953268bad2f2d739ef753faa5",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/setup_smoke_rec_tb2_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/setup_smoke_rec_tb2_summary.json",
+      "original_sha256": "094b7fc0be9b38fcdbf0669c59323360fd227ee60afc1b9d25077a029c32c16b",
+      "published_sha256": "094b7fc0be9b38fcdbf0669c59323360fd227ee60afc1b9d25077a029c32c16b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/suite_events.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/suite_events.jsonl",
+      "original_sha256": "463b1c875c0569387cfadc477a3cd96e0e0a768d09fd387bf4576276da6b8771",
+      "published_sha256": "cc76d6df4087727218673d4299ef042c219f0208acd4a6d8767cecb6202a859c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense10_mu0p003.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense10_mu0p003.jsonl",
+      "original_sha256": "f2c9e51c8af1ccce44e64f569722d81135cc99dc25fd0b241fe13e7f45d38704",
+      "published_sha256": "f2c9e51c8af1ccce44e64f569722d81135cc99dc25fd0b241fe13e7f45d38704",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense10_mu0p003_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense10_mu0p003_summary.json",
+      "original_sha256": "de8ce3d0bbe8c2428439898e5f6e99fd1fbad7df851155dc4c999e61f70445d8",
+      "published_sha256": "de8ce3d0bbe8c2428439898e5f6e99fd1fbad7df851155dc4c999e61f70445d8",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense10_mu0p01.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense10_mu0p01.jsonl",
+      "original_sha256": "0902882b5dc5e2f90e6205069efc2585d66d28021b78aa98216a6afe459d9b76",
+      "published_sha256": "0902882b5dc5e2f90e6205069efc2585d66d28021b78aa98216a6afe459d9b76",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense10_mu0p01_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense10_mu0p01_summary.json",
+      "original_sha256": "0eb335da07d767019787f590b89b424a477dbfc85ad588670c800903e383b269",
+      "published_sha256": "0eb335da07d767019787f590b89b424a477dbfc85ad588670c800903e383b269",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense10_mu0p02.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense10_mu0p02.jsonl",
+      "original_sha256": "91acd0cb33e29d502af957c95b50699dde0bb172794f8aaaa13af3eb21adb286",
+      "published_sha256": "91acd0cb33e29d502af957c95b50699dde0bb172794f8aaaa13af3eb21adb286",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense10_mu0p02_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense10_mu0p02_summary.json",
+      "original_sha256": "35c41359aacf4f86639d50e8bc867b65269431d64226ef4633dc6e6e03cd48a6",
+      "published_sha256": "35c41359aacf4f86639d50e8bc867b65269431d64226ef4633dc6e6e03cd48a6",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense4_mu0p003.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense4_mu0p003.jsonl",
+      "original_sha256": "5903177ca3c2349e39f894547b7563adeb7385885a62eceeca7de1f0fdf5e48d",
+      "published_sha256": "5903177ca3c2349e39f894547b7563adeb7385885a62eceeca7de1f0fdf5e48d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense4_mu0p003_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense4_mu0p003_summary.json",
+      "original_sha256": "a57ac925d4603b57d0ea01dbd83b72eabed55f5b82f87a52a8e5e2051e509f5d",
+      "published_sha256": "a57ac925d4603b57d0ea01dbd83b72eabed55f5b82f87a52a8e5e2051e509f5d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense4_mu0p01.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense4_mu0p01.jsonl",
+      "original_sha256": "437ff27fe37b0dc81f9b43d0de2e1d85cd61f30effbaaf06a45f98e73933402f",
+      "published_sha256": "437ff27fe37b0dc81f9b43d0de2e1d85cd61f30effbaaf06a45f98e73933402f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense4_mu0p01_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense4_mu0p01_summary.json",
+      "original_sha256": "cb7d310a6464eb749749d8a4bde2f6f9ea60a356fd754eb9d171a8fae7b4b4bf",
+      "published_sha256": "cb7d310a6464eb749749d8a4bde2f6f9ea60a356fd754eb9d171a8fae7b4b4bf",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense4_mu0p02.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense4_mu0p02.jsonl",
+      "original_sha256": "9b4a2fdcba9a7023d8d2396adc762b27532b8db3644b96eabed5c8cfa671524d",
+      "published_sha256": "9b4a2fdcba9a7023d8d2396adc762b27532b8db3644b96eabed5c8cfa671524d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_dense4_mu0p02_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_dense4_mu0p02_summary.json",
+      "original_sha256": "203c1c3acd773e07f9064fe79030efff9628dd23b2fc249fe6f23fea8bc530b2",
+      "published_sha256": "203c1c3acd773e07f9064fe79030efff9628dd23b2fc249fe6f23fea8bc530b2",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p003.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p003.jsonl",
+      "original_sha256": "9f6acb7b00ee1f21e766ec6e190743a90df4c5a383c21ea926b17f452349fc16",
+      "published_sha256": "9f6acb7b00ee1f21e766ec6e190743a90df4c5a383c21ea926b17f452349fc16",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p003_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p003_summary.json",
+      "original_sha256": "d77e8d518ad7cf9979ce00e62d9adaa81b8bcb0d03a4b0e8c708e321d9c36b5e",
+      "published_sha256": "d77e8d518ad7cf9979ce00e62d9adaa81b8bcb0d03a4b0e8c708e321d9c36b5e",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p01.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p01.jsonl",
+      "original_sha256": "d19750972298c69af197383767b28210661a62eaab4f0a452b6d8f4abbe3a616",
+      "published_sha256": "d19750972298c69af197383767b28210661a62eaab4f0a452b6d8f4abbe3a616",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p01_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p01_summary.json",
+      "original_sha256": "77bda70a4fe553e5c630737bf931ffd67f0a380f2196980536ed40d9fb5db506",
+      "published_sha256": "77bda70a4fe553e5c630737bf931ffd67f0a380f2196980536ed40d9fb5db506",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p02.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p02.jsonl",
+      "original_sha256": "3a34f86a4de60668ad46be2efd1d8773daeb9e2be7f3cd4a981b514bf9bf2ea5",
+      "published_sha256": "3a34f86a4de60668ad46be2efd1d8773daeb9e2be7f3cd4a981b514bf9bf2ea5",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p02_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_curr_tb2_mu0p02_summary.json",
+      "original_sha256": "3d5accef3d3c0dc099e86f097efc2e08c34a29012a2b6b23b104ffe62c6e476e",
+      "published_sha256": "3d5accef3d3c0dc099e86f097efc2e08c34a29012a2b6b23b104ffe62c6e476e",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_full_mu0p003.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_full_mu0p003.jsonl",
+      "original_sha256": "4407fc4baa94adb1703774d7ecb9ff4de552ec1cb6930795fd9c45547369ddb4",
+      "published_sha256": "4407fc4baa94adb1703774d7ecb9ff4de552ec1cb6930795fd9c45547369ddb4",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_full_mu0p003_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_full_mu0p003_summary.json",
+      "original_sha256": "babe5c22c04da968bce524ae065d3f3ff1c6a00b127cc335ea73a2f9aebcbf1b",
+      "published_sha256": "babe5c22c04da968bce524ae065d3f3ff1c6a00b127cc335ea73a2f9aebcbf1b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_full_mu0p01.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_full_mu0p01.jsonl",
+      "original_sha256": "f17c4ca3e24991c52cca610ec7254866c8447211e1a8c29fe84d855ffc513d2a",
+      "published_sha256": "f17c4ca3e24991c52cca610ec7254866c8447211e1a8c29fe84d855ffc513d2a",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_full_mu0p01_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_full_mu0p01_summary.json",
+      "original_sha256": "e3ec5b6b4277625b0c7fa6c64b5f0b66549351d3ee8e9c7dd3a4159e820166df",
+      "published_sha256": "e3ec5b6b4277625b0c7fa6c64b5f0b66549351d3ee8e9c7dd3a4159e820166df",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_full_mu0p02.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_full_mu0p02.jsonl",
+      "original_sha256": "35ec4623399629f625610fe6b9bd0bad4ae4e0c6e16ab4d17a62a364968cd2e0",
+      "published_sha256": "35ec4623399629f625610fe6b9bd0bad4ae4e0c6e16ab4d17a62a364968cd2e0",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_full_mu0p02_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_full_mu0p02_summary.json",
+      "original_sha256": "9bd6b4a9d55ebf9378173c6fc076f24612c6b58d7fd5aeda033f6e19b2c71e4e",
+      "published_sha256": "9bd6b4a9d55ebf9378173c6fc076f24612c6b58d7fd5aeda033f6e19b2c71e4e",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p003.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p003.jsonl",
+      "original_sha256": "c52aaeebdc85b36a68d940e1e67cdace48513d4325c5ecd69bb921f5613cf343",
+      "published_sha256": "c52aaeebdc85b36a68d940e1e67cdace48513d4325c5ecd69bb921f5613cf343",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p003_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p003_summary.json",
+      "original_sha256": "2f375e5e8e88d6fbb2d41e6e8671dfab68dcee7c0b23f29fdc2d9a1ec4ab21e6",
+      "published_sha256": "2f375e5e8e88d6fbb2d41e6e8671dfab68dcee7c0b23f29fdc2d9a1ec4ab21e6",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p01.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p01.jsonl",
+      "original_sha256": "ea38aee78212f7824a80a35c454abde04feba66ef964b49cb8bf30b9683dcde9",
+      "published_sha256": "ea38aee78212f7824a80a35c454abde04feba66ef964b49cb8bf30b9683dcde9",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p01_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p01_summary.json",
+      "original_sha256": "af54a0db1a18b7e098db05a1db0262ca39c018f03d315d8831ec720e10271f8a",
+      "published_sha256": "af54a0db1a18b7e098db05a1db0262ca39c018f03d315d8831ec720e10271f8a",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p02.jsonl",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p02.jsonl",
+      "original_sha256": "42b0b80f895c634790912747cb8f62be86fc04b1f876e7ce1ca2eaef2b9278c7",
+      "published_sha256": "42b0b80f895c634790912747cb8f62be86fc04b1f876e7ce1ca2eaef2b9278c7",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p02_summary.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/tune_rec_tb2_mu0p02_summary.json",
+      "original_sha256": "f10489fe4f9abd0c0f6dad8361c241008a30a18c7db39b6abbf3b39fb71f5d8b",
+      "published_sha256": "f10489fe4f9abd0c0f6dad8361c241008a30a18c7db39b6abbf3b39fb71f5d8b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/metrics/verification.json",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/metrics/verification.json",
+      "original_sha256": "148d48beb7b012ca55f866d08d8405f3ab5caed062b73aa03429cc2186b80ce1",
+      "published_sha256": "148d48beb7b012ca55f866d08d8405f3ab5caed062b73aa03429cc2186b80ce1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/plots/backward_cost.png",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/plots/backward_cost.png",
+      "original_sha256": "842f95184781d80c6a821f0871b7bb838fb68d295c5843f47b5bad8d8d27dbc2",
+      "published_sha256": "842f95184781d80c6a821f0871b7bb838fb68d295c5843f47b5bad8d8d27dbc2",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/plots/final_comparison.png",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/plots/final_comparison.png",
+      "original_sha256": "6a26c91bd940a82c454c0bfd13200f630514c3d1829d448bafb685fb17217c2b",
+      "published_sha256": "6a26c91bd940a82c454c0bfd13200f630514c3d1829d448bafb685fb17217c2b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/plots/hardware_context.png",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/plots/hardware_context.png",
+      "original_sha256": "ecafd79a68a649a0c2103c6f65d9f6b0a09b2f7a8edf79ecb6494e9f33427aa3",
+      "published_sha256": "ecafd79a68a649a0c2103c6f65d9f6b0a09b2f7a8edf79ecb6494e9f33427aa3",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/plots/learning_curves.png",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/plots/learning_curves.png",
+      "original_sha256": "f5aa9d249c418c1649d97c285f51f7b8cceb583c4bb090d6edfc337d8bf1daba",
+      "published_sha256": "f5aa9d249c418c1649d97c285f51f7b8cceb583c4bb090d6edfc337d8bf1daba",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/analyze.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/analyze.py",
+      "original_sha256": "9502414fd5674701a6254368acb2e2cf178292810b4ff39c4b526680636840b0",
+      "published_sha256": "9502414fd5674701a6254368acb2e2cf178292810b4ff39c4b526680636840b0",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/audit_freezes.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/audit_freezes.py",
+      "original_sha256": "394855221ea04f3ea9466d48b459f8c0fcb0d6afd8a47318821e292946214b13",
+      "published_sha256": "394855221ea04f3ea9466d48b459f8c0fcb0d6afd8a47318821e292946214b13",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/benchmark_backward.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/benchmark_backward.py",
+      "original_sha256": "fb181bb646c213409da8a425dbd5c15d8c90a03833d7d403be587d3cb6572815",
+      "published_sha256": "fb181bb646c213409da8a425dbd5c15d8c90a03833d7d403be587d3cb6572815",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/benchmark_h1.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/benchmark_h1.py",
+      "original_sha256": "0fe263d285b9f5e42b23b6b3f22b200793cb42bd39c5d7ff4c6fb38f8b0c5bd4",
+      "published_sha256": "0fe263d285b9f5e42b23b6b3f22b200793cb42bd39c5d7ff4c6fb38f8b0c5bd4",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/benchmark_h1_v2.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/benchmark_h1_v2.py",
+      "original_sha256": "73181478f84d33ac55b65f86fff1b6fe6642fd3265464683f5cc252308eca4e1",
+      "published_sha256": "73181478f84d33ac55b65f86fff1b6fe6642fd3265464683f5cc252308eca4e1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/model.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/model.py",
+      "original_sha256": "972f6a4cff2e2c8ba033c5b5ef6ca6204a5756dafac8be80c8236a856a5789f2",
+      "published_sha256": "972f6a4cff2e2c8ba033c5b5ef6ca6204a5756dafac8be80c8236a856a5789f2",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/optimizer.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/optimizer.py",
+      "original_sha256": "365688d10fd490521a24a028ffa80514823abf29428b28578faf631def0b137e",
+      "published_sha256": "365688d10fd490521a24a028ffa80514823abf29428b28578faf631def0b137e",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/prepare_data.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/prepare_data.py",
+      "original_sha256": "73de8a6e0e7291d8f393b769be2330aa3d229d1d978a0356e5a3b8c528deb9cd",
+      "published_sha256": "282207e0c8dfadd70fb2532eb0844482f37cc4a9de72ab705c09b8099efc7fc2",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/run_suite.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/run_suite.py",
+      "original_sha256": "29d654ebfa8ab16884ecd238eee9599c2b428a1283c202686aa1ac7d77b265d7",
+      "published_sha256": "29d654ebfa8ab16884ecd238eee9599c2b428a1283c202686aa1ac7d77b265d7",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/run_suite_v2.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/run_suite_v2.py",
+      "original_sha256": "9334f22e1db3eac17c458bb1f351d10b3717b4de2ac3f78b6aa0afc7021a129f",
+      "published_sha256": "9334f22e1db3eac17c458bb1f351d10b3717b4de2ac3f78b6aa0afc7021a129f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/train.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/train.py",
+      "original_sha256": "087753049053d6a59ea7c356927487d89d298b3bfe37fc53a572d408830071b8",
+      "published_sha256": "087753049053d6a59ea7c356927487d89d298b3bfe37fc53a572d408830071b8",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/verify.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/verify.py",
+      "original_sha256": "08be8a984deceff94ee05584f3aaf89ac059def2391582ecd404c17de3ef0669",
+      "published_sha256": "08be8a984deceff94ee05584f3aaf89ac059def2391582ecd404c17de3ef0669",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/verify_checkpoints.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/verify_checkpoints.py",
+      "original_sha256": "129fb66f1dd8d1910a3b73422ad5a39283d63c5ce5283d68dd93af6a3406b93f",
+      "published_sha256": "129fb66f1dd8d1910a3b73422ad5a39283d63c5ce5283d68dd93af6a3406b93f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/verify_reload.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/verify_reload.py",
+      "original_sha256": "db75f3d24f8e620a3b43b1dc5f72dd70c40301a933dc87176b4757c53019ef3d",
+      "published_sha256": "db75f3d24f8e620a3b43b1dc5f72dd70c40301a933dc87176b4757c53019ef3d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/watch_completion.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/watch_completion.py",
+      "original_sha256": "54b71ddc73d16eadd0eb7260b0e23d98b96cd5957ad27e6fca3c3aa3480fa2b1",
+      "published_sha256": "54b71ddc73d16eadd0eb7260b0e23d98b96cd5957ad27e6fca3c3aa3480fa2b1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-04-recurrence/scripts/write_report.py",
+      "source_path": "research/moe-night/results/2026-10-04-recurrence/scripts/write_report.py",
+      "original_sha256": "78583a5c51b64cccf3cac822b4f37727744eb9c3d79bb15c54feae049161b3d9",
+      "published_sha256": "835c1c4addc8ac82ef6bc56ed7302360f20706f92b2596dbf8c1917a123c6b5c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-04-speed-options/NOTES.md",
+      "source_path": "research/moe-night/results/2026-10-04-speed-options/NOTES.md",
+      "original_sha256": "9a21e0ee413e060f4c3919d4bee600a55935f6ec21c4cefd19c297d635fbf466",
+      "published_sha256": "d835967b9ae080231b96cfd93062a84e266ab583ed8577ec86ec5010372cfd40",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-h1-laptop/PLAN.md",
+      "source_path": "research/moe-night/results/2026-10-05-h1-laptop/PLAN.md",
+      "original_sha256": "d7c636d3d41c1c3331ef7e965a53522a432bfdb827b3c1052c9b5b16f641220f",
+      "published_sha256": "70a46174ae60d0a85b0f7f4064384c4933d831d94ae67a541ac0f0a579ce62aa",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-h1-laptop/STATUS.md",
+      "source_path": "research/moe-night/results/2026-10-05-h1-laptop/STATUS.md",
+      "original_sha256": "6a6cd99a4f62ea0f19a29f3981d9357f62e0595980bbcaa833b5afac2bea6c4f",
+      "published_sha256": "b8507d7eaeacc4b1d656532abd23cf96ae15895423581eb72528dadc59ad21b5",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/ENVIRONMENT.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/ENVIRONMENT.json",
+      "original_sha256": "9e25af9413b35f692c21ee1137a2d60866fd5bdf5401592512d0f148ea16af63",
+      "published_sha256": "0535aad9622a6ca58fe25471c4e8b34a60d68ee3edd4f5646b92c62193c8993f",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/FINAL_VERIFICATION.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/FINAL_VERIFICATION.json",
+      "original_sha256": "5421bbd08a41b9c08931884ea96487b680421a6aad24ccc4b2d22b5ab02bfbc7",
+      "published_sha256": "5421bbd08a41b9c08931884ea96487b680421a6aad24ccc4b2d22b5ab02bfbc7",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/FREEZE.json",
+      "original_sha256": "e31982da74fedf77c7f5fd5a464f65474f30ffccb85b3210df1e6d249b950115",
+      "published_sha256": "414bcc8732d8e1abf8079807039dc6d06c48b4c389afb38a3bb48aca1223f8e4",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/IMPLEMENTATION.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/IMPLEMENTATION.md",
+      "original_sha256": "4fa36bd0a073980fd1d391a1fa203b70b8b25fbd5f836c2c5507c02ee076fc79",
+      "published_sha256": "0b2b1b028ef0dd99170ebd2007b9156555a26ab3f98d8f3b3cea4223bf88f7bd",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/NUMERICAL_NOTES.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/NUMERICAL_NOTES.md",
+      "original_sha256": "5b249a939ac2250d39bf52365dca537f6dd233ab84a0f38d3a80cbf96e367a5e",
+      "published_sha256": "648fade1197157dc303c805f384316b6ac49f167dc6fcaa49fad4b4fd3c7ddd5",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/PLAN.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/PLAN.md",
+      "original_sha256": "4dc3e3f26bafcbbd4cfcb8fda21a4e3e973effffe38dbcde8e1ac3e0a941495c",
+      "published_sha256": "75fed5156bc51c97884868e4afd2417b6d69d6a13ade6bb27583495149f91f98",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/PREFLIGHT_INCIDENT.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/PREFLIGHT_INCIDENT.md",
+      "original_sha256": "d5007939fb839bfb837c5c8b05185d4e919594467f7c9bb9217a47e7c8fdec77",
+      "published_sha256": "f33b79956e7d458b3cc9d3464219071df452c83a4eba33e9a8e2853b187349a7",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/REPORT.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/REPORT.md",
+      "original_sha256": "75917d9b5bb1ff4e2afab65cab30b55bf0a16ec710ea9e0148c70ccaaafefdf9",
+      "published_sha256": "6a8d20f06f40385826e7ad4e71e7d6f71d3a949fa6f9f5a02336893b3dec4353",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/SUMMARY.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/SUMMARY.json",
+      "original_sha256": "e95c202af63f1214ae3908dd07be2afee8208ce908f3130f3526d6d3fabbafcf",
+      "published_sha256": "e95c202af63f1214ae3908dd07be2afee8208ce908f3130f3526d6d3fabbafcf",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/comparison.png",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/comparison.png",
+      "original_sha256": "dae607e7eedb2c2249e48f5db6cfdc0c8479ab1d9d6a1892a471bd50e0bdde48",
+      "published_sha256": "dae607e7eedb2c2249e48f5db6cfdc0c8479ab1d9d6a1892a471bd50e0bdde48",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/B1_R1.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/B1_R1.json",
+      "original_sha256": "68a5a79af5f78cdcd176995a5c0178275eff9927a41b03a3937b7a4e4c6dba1d",
+      "published_sha256": "68a5a79af5f78cdcd176995a5c0178275eff9927a41b03a3937b7a4e4c6dba1d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/B1_R2.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/B1_R2.json",
+      "original_sha256": "7d78dd17b76d7edaacf361ccaa0b7f2bb41e310ccf95c72f86f8298cf4d4dd0d",
+      "published_sha256": "7d78dd17b76d7edaacf361ccaa0b7f2bb41e310ccf95c72f86f8298cf4d4dd0d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/B2_R1.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/B2_R1.json",
+      "original_sha256": "f775571136dd0e4a07b147cfd14d8f7ac91d9d228be3da20448a46f2774e774d",
+      "published_sha256": "f775571136dd0e4a07b147cfd14d8f7ac91d9d228be3da20448a46f2774e774d",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/B2_R2.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/B2_R2.json",
+      "original_sha256": "bbf66ecea8996f5ea2a634a99c931f787cafd4e0018b585f4b37970be507057c",
+      "published_sha256": "bbf66ecea8996f5ea2a634a99c931f787cafd4e0018b585f4b37970be507057c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/B4_R1.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/B4_R1.json",
+      "original_sha256": "4aee3abcdeb4adc9a1e6f52ffb59f5eef55a84d5243c909cfd9b101b4747cf45",
+      "published_sha256": "4aee3abcdeb4adc9a1e6f52ffb59f5eef55a84d5243c909cfd9b101b4747cf45",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/B4_R2.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/B4_R2.json",
+      "original_sha256": "c50c9b98584acd4d86673bf430ccbc4b3feee173e34a25f4bbd97549430a324c",
+      "published_sha256": "c50c9b98584acd4d86673bf430ccbc4b3feee173e34a25f4bbd97549430a324c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/events.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/events.jsonl",
+      "original_sha256": "0b3eced64dc214ca6d2f97215956bf8698fcd1d3ac2267ce5b277fd9a652f410",
+      "published_sha256": "ea0ce55ecbc951f6ad8ca2bb1a2d9162bcf17ee8306250daa02e78095dc21ae5",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/validation_4095.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/validation_4095.json",
+      "original_sha256": "24953157ef87f2ab23ac96f6a5672d940ff33655e46835e0bbf93ee4291df66e",
+      "published_sha256": "24953157ef87f2ab23ac96f6a5672d940ff33655e46835e0bbf93ee4291df66e",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/metrics/validation_64.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/metrics/validation_64.json",
+      "original_sha256": "394782325597795a9f4b0b7d38dd03b31b08d8675346719c485febc0fa2b6c4b",
+      "published_sha256": "394782325597795a9f4b0b7d38dd03b31b08d8675346719c485febc0fa2b6c4b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/scripts/analyze.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/scripts/analyze.py",
+      "original_sha256": "754811629a44f91a44e98d29bfdcc674c8617c581c9435c283e897d477b4eb4b",
+      "published_sha256": "754811629a44f91a44e98d29bfdcc674c8617c581c9435c283e897d477b4eb4b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/scripts/controller.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/scripts/controller.py",
+      "original_sha256": "d31cba7177191cc0d4565f7bd70d6792be22cac29fd3f165a08f35cd60790e99",
+      "published_sha256": "d31cba7177191cc0d4565f7bd70d6792be22cac29fd3f165a08f35cd60790e99",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-batching/scripts/worker.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-batching/scripts/worker.py",
+      "original_sha256": "3beba3cd272b5f2ac68436ac500cd61db1c2e6c0b7f8bec6b074bfd5aa5b975a",
+      "published_sha256": "3beba3cd272b5f2ac68436ac500cd61db1c2e6c0b7f8bec6b074bfd5aa5b975a",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/AMENDMENT_V2.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/AMENDMENT_V2.md",
+      "original_sha256": "cafb23e2852c4a8ca2b6b3ee31ef3339ef4e6a3cc00eefaf507382f02d5d7e17",
+      "published_sha256": "f37c46f20aad6c8a1a528440554b6d589ba8da1d2f8ec6216799990835683005",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/DIAGNOSTIC_FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/DIAGNOSTIC_FREEZE.json",
+      "original_sha256": "24382378898a77f6f1f8d57cfcfb2840baa51b2a0bcd6204c0adc45730005b07",
+      "published_sha256": "85a94ea80b627074cde2a89017f922c4c327932ad1e0f3be5d0d13dd186c2a71",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/DIAGNOSTIC_RUNNER_FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/DIAGNOSTIC_RUNNER_FREEZE.json",
+      "original_sha256": "81bea6d30f9f4f386df593e6e65e6876393094161a19234b300dd9d9e2cc29a4",
+      "published_sha256": "4da08cae07c42c0f7210f5f6c77f7bfb167d76fc9afe375e5ab75c92a3ef535b",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/ENVIRONMENT.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/ENVIRONMENT.json",
+      "original_sha256": "044878aa96fa2afbe8c0f7e804b5c7ec8c3c4a2b6196e0757a7b2c70537784fc",
+      "published_sha256": "b1d7c43e80d98ab114046ccecf3e00a2a6f075eb17c5e942b06356ceee112d3a",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/EXPLORATORY_PLAN.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/EXPLORATORY_PLAN.md",
+      "original_sha256": "31bfa5e8a1b1dfccea2f00afc2f08aa24d903c117af70669e167019077380760",
+      "published_sha256": "4e88ff72178452bed7cfd3a0197b74d08edada66b901eb71061384923b85768f",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/FINAL_VERIFICATION.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/FINAL_VERIFICATION.json",
+      "original_sha256": "9837ab116f0792fe3fdbf2a5433b0888589f745aaec63d9e623d4e1c04262c61",
+      "published_sha256": "9837ab116f0792fe3fdbf2a5433b0888589f745aaec63d9e623d4e1c04262c61",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/FREEZE.json",
+      "original_sha256": "79a55a8e4c30d937f806017d4f6dc018ada3e35ec6c2a1032f88bb4dd280bac1",
+      "published_sha256": "213a2006504150129cd5fa996b8e483e2f058716d05f6a987b6118452accd108",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/FULL_CONTEXT_FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/FULL_CONTEXT_FREEZE.json",
+      "original_sha256": "7c453e6bdab486de7b40fb260572ec16d9f618e7bf3d527409636107fe970587",
+      "published_sha256": "c91e5215c453cdea54d063389a9c76796f41704f33d0b3bdaa775ff1544f1c4b",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/FULL_CONTEXT_VALIDATION.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/FULL_CONTEXT_VALIDATION.md",
+      "original_sha256": "3f0355fb341bef018ced58e2e1f32bc516d5c25094d84c5f8b2310475159b4f0",
+      "published_sha256": "6eca6f9336ea00ce8e907f5539fa7a07a960a73a69298fb4b23c0c60f3e0e6e8",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/INCIDENT_DIAGNOSTIC_LAUNCH.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/INCIDENT_DIAGNOSTIC_LAUNCH.md",
+      "original_sha256": "4d5ef8a8827fc5eabbde698dffd3aec523f2c221734a510113797035c22b68ef",
+      "published_sha256": "ee30b89d02ade47915d717eb74c1fcc25735b53bae1447369f6c5f4fe3ae46a4",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/INCIDENT_FULL_GRADIENT.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/INCIDENT_FULL_GRADIENT.md",
+      "original_sha256": "9612368f7982c2e6dce9a65a046cc12f65f474b7998fc87681715f0ae03df440",
+      "published_sha256": "ed924f63bc24f96adfffb6b0fc829b02e96a9d0ed7e1b75669d4003ccbc014e6",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/PLAN.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/PLAN.md",
+      "original_sha256": "3d604d3ad37ce502ec11facc2ec0a5ba52d13973bda3f4242c30a7b303b485a7",
+      "published_sha256": "9a556a2de6a5f141a5797ccd584b92e3b6198b7dbe8814d433f4b1321a90f0d5",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/REPORT.md",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/REPORT.md",
+      "original_sha256": "8dd2a853b20308015ac13af1678395c92c3ed737cf480734791b14ec8bfeadc5",
+      "published_sha256": "527b0e6d9b9a2070e11cd8457f8bde40f2a681c2b21e0098da0c580ff82c2396",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/SUMMARY_V2.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/SUMMARY_V2.json",
+      "original_sha256": "0222afaa1794bbf63339e38e29b692d371392ac11231dfef537c7711c41e99b2",
+      "published_sha256": "0222afaa1794bbf63339e38e29b692d371392ac11231dfef537c7711c41e99b2",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/V2_FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/V2_FREEZE.json",
+      "original_sha256": "8d08a096fd9129844bccdb100604da176be215da95c0d4fdabe8ff7a3ec5a411",
+      "published_sha256": "e0d9557eb10a90a0d32c1272ec14bd75d4dedea73bc91ef2bbe4ad4dc1243d0d",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/comparison.png",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/comparison.png",
+      "original_sha256": "73279e43f9db2b01aceb01cc3e9f6ff07b44813ebddc4fc71de6074b756e35be",
+      "published_sha256": "73279e43f9db2b01aceb01cc3e9f6ff07b44813ebddc4fc71de6074b756e35be",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/checkpointing_gate.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/checkpointing_gate.json",
+      "original_sha256": "4924e855f52fd0d7a3d8212e793f003444f9c7a44f60fd7482f457127bbb9eb9",
+      "published_sha256": "4924e855f52fd0d7a3d8212e793f003444f9c7a44f60fd7482f457127bbb9eb9",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/correctness.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/correctness.json",
+      "original_sha256": "bfa6d09611f6ad05f763d66c758ed3d87bc974ccbfb28bc55b61e5ec3b45c5b1",
+      "published_sha256": "bfa6d09611f6ad05f763d66c758ed3d87bc974ccbfb28bc55b61e5ec3b45c5b1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/diagnostic_events.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/diagnostic_events.jsonl",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/diagnostic_events_v2.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/diagnostic_events_v2.jsonl",
+      "original_sha256": "5952e3519b913d499b6a152ec361efd1628c998f944e4ae1dd843d21906a9130",
+      "published_sha256": "734e3ab58b47383c4d2419714a81a50880224edafa0f6c054856e55ecb79d433",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/events.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/events.jsonl",
+      "original_sha256": "c7101f04f1b39108e1718764455320622bd1a71215fe4a9d316be1910def2dc2",
+      "published_sha256": "8e1ce0cda2688c0c0b498caaed53f885722800244fcd36cd9dc906b023c5dd48",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/full_context_validation.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/full_context_validation.json",
+      "original_sha256": "33c3d86b010aacbc621a44ca05362797afb2ea79ea512c001d40ead034643e56",
+      "published_sha256": "33c3d86b010aacbc621a44ca05362797afb2ea79ea512c001d40ead034643e56",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/gradient_diagnostic.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/gradient_diagnostic.json",
+      "original_sha256": "2fd94e4ae38b58717bc31f623858647f8dadcb0d7bf8a4a6ec60b208f2e3dc0f",
+      "published_sha256": "2fd94e4ae38b58717bc31f623858647f8dadcb0d7bf8a4a6ec60b208f2e3dc0f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/timing_rows.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/timing_rows.json",
+      "original_sha256": "347ebcb26771157594fc92ec714b6babbf32f47265c708864a345cdb9df0232c",
+      "published_sha256": "347ebcb26771157594fc92ec714b6babbf32f47265c708864a345cdb9df0232c",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/v2_events.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/v2_events.jsonl",
+      "original_sha256": "5d5a98e780f5509810e6c8ddf634bf48b4a59c96399db4994e3525ba5b3214b4",
+      "published_sha256": "9bf1ad1a971019808401cbebb6bc0b55a6c2c4ec5c7cdbc0e38f73a45e0214c4",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/validation_events.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/validation_events.jsonl",
+      "original_sha256": "e6ffd2c7f1a021ed485b0bd51debc690c23b0c4cffe7317ee0214539af9c1f64",
+      "published_sha256": "07b9b5532786c3d4efd80ab772ae54a972de268ca7fc383fc5067ec83d56bb5c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/metrics/verify_failure.json",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/metrics/verify_failure.json",
+      "original_sha256": "9e710854b2a588811af7dfd94c1bce5fb01ff90021d71cf77537505731e5b3c7",
+      "published_sha256": "9e710854b2a588811af7dfd94c1bce5fb01ff90021d71cf77537505731e5b3c7",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/analyze.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/analyze.py",
+      "original_sha256": "9970e418c7019ede7e84be386e17d90466069e22bc30c4b66ae1776444a2e318",
+      "published_sha256": "9970e418c7019ede7e84be386e17d90466069e22bc30c4b66ae1776444a2e318",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/analyze_v2.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/analyze_v2.py",
+      "original_sha256": "dda9f94654c84228cce606c51aed21af1036013d91e884ed5d1df1d16dd83515",
+      "published_sha256": "dda9f94654c84228cce606c51aed21af1036013d91e884ed5d1df1d16dd83515",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/check_checkpointing.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/check_checkpointing.py",
+      "original_sha256": "427f35a27325ae64663e3c0ba12f03734b770043a55a49f9bb4ae328426c64c1",
+      "published_sha256": "427f35a27325ae64663e3c0ba12f03734b770043a55a49f9bb4ae328426c64c1",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/check_full_context.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/check_full_context.py",
+      "original_sha256": "85d5d44c935b4ee00768850792ec8ed21b268f05bd820e00d5ff6b3fcfd13310",
+      "published_sha256": "85d5d44c935b4ee00768850792ec8ed21b268f05bd820e00d5ff6b3fcfd13310",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/controller.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/controller.py",
+      "original_sha256": "06204e8ccedf55b754c6ea0fb4951e1952a4915aec4651612aa8becb0760a859",
+      "published_sha256": "06204e8ccedf55b754c6ea0fb4951e1952a4915aec4651612aa8becb0760a859",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/diagnose_gradients.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/diagnose_gradients.py",
+      "original_sha256": "fa1d465eb5a368dea82c386e0f90870e57657c65927f40095fe513507912e60f",
+      "published_sha256": "fa1d465eb5a368dea82c386e0f90870e57657c65927f40095fe513507912e60f",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/run_diagnostic.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/run_diagnostic.py",
+      "original_sha256": "9a00bd09bf19eeb65ae904e663f42f7ad0828d960ff8e6cf2bdee67fb1faaf75",
+      "published_sha256": "9a00bd09bf19eeb65ae904e663f42f7ad0828d960ff8e6cf2bdee67fb1faaf75",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/run_v2.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/run_v2.py",
+      "original_sha256": "8fc911da04a6be857663a0097385ddb9da5367e482cbe74e51a5491478acc90b",
+      "published_sha256": "8fc911da04a6be857663a0097385ddb9da5367e482cbe74e51a5491478acc90b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/run_validation.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/run_validation.py",
+      "original_sha256": "5c8875e86f670db9bacd9fbcc6953d37ca501d41c184c7e4d8350161e2efec95",
+      "published_sha256": "5c8875e86f670db9bacd9fbcc6953d37ca501d41c184c7e4d8350161e2efec95",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/thermal.m",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/thermal.m",
+      "original_sha256": "e3ffd80e6b88d95fcf747f22beb952197634815afb01c13022898c7a49600590",
+      "published_sha256": "e3ffd80e6b88d95fcf747f22beb952197634815afb01c13022898c7a49600590",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-mlx-loss/scripts/worker.py",
+      "source_path": "research/moe-night/results/2026-10-05-mlx-loss/scripts/worker.py",
+      "original_sha256": "8c0661dacbffc4bb183c1862b86860e91afd0896d222956c8d5c9f5dc1ca2698",
+      "published_sha256": "8c0661dacbffc4bb183c1862b86860e91afd0896d222956c8d5c9f5dc1ca2698",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/BACKEND_CONTEXT.md",
+      "source_path": "research/moe-night/results/2026-10-05-windows/BACKEND_CONTEXT.md",
+      "original_sha256": "7ad607a944ca76dac2f8bb49f1f9edf17e96e42dfd2b444a9697a1df1ca3aa47",
+      "published_sha256": "f7f35b844fad2bad85feb9c8ed1940af4d713b8f54d3cf9879de7999e2b09b39",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/PLAN.md",
+      "source_path": "research/moe-night/results/2026-10-05-windows/PLAN.md",
+      "original_sha256": "ac25e72fc6cc98176cc75ed13160ffc8991e0f66122be6a600a666fb2d9f570f",
+      "published_sha256": "507a1cca9fe6270cef72aecb09f88c0c804174a4310635e029f5dff203bf999e",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/FINAL_VERIFICATION.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/FINAL_VERIFICATION.json",
+      "original_sha256": "c06fba69219bd1694d7550688d2ab6831de986c82f8efa51da2e6bc02440ca71",
+      "published_sha256": "2eed8d77ca362b4b16081cb34e443a2c26b28901b70c11827431649c19d27b13",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/REPORT.md",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/REPORT.md",
+      "original_sha256": "be52e474b498d194e25684580c496f012712d44d5f5df44f3bbf5cde8b9103b1",
+      "published_sha256": "b1fac3554e4e9f9c319ffea1e15a6daa85b64abd2bc245e3aa4f241db36f2012",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/SUMMARY.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/SUMMARY.json",
+      "original_sha256": "19c626b24b79f4bb62bf30de3fc3f4ed9b61ef04ceda0dc766a03d97881bf0bf",
+      "published_sha256": "90c525b9cbd033e425eafe835f5456e50a6e38310f264ff019c15c0865624798",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v1/correctness-cpu.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v1/correctness-cpu.json",
+      "original_sha256": "e77e92d6cb0bcc92633d03a3858e945d28acc07a238117e8c63ec3d040c20bca",
+      "published_sha256": "9a0c905f70d537ce71d0f185cf337786ee1cb0f606412bb716052f8ae79d2663",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v1/gpu-active-ledger.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v1/gpu-active-ledger.jsonl",
+      "original_sha256": "caee4441ed167152779f0e58acaff8a889d7be41c78c7ebe213363d74032581e",
+      "published_sha256": "fc265611338621c64e83551ccf9b509f2622d6aab91fbad42d3d1a725eb8f6c5",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v1/results.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v1/results.json",
+      "original_sha256": "cf28408ea71821356721c7b1c1d4193a990da1b43dce866e75a17bee533f15ce",
+      "published_sha256": "f3dc6cfa17a88d1a74eca2b84e0bc689b69e812183de78335f07aae3564c1d44",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v1/telemetry.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v1/telemetry.jsonl",
+      "original_sha256": "fbbeb2375af3387cb533b1a621876a493e6299be4b6d94e5d8716fc5966ea287",
+      "published_sha256": "6810507204f85c5955bc6f1d91815f45638bd9759f324afc990f11ea29cd81e6",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v2/benchmarks.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v2/benchmarks.jsonl",
+      "original_sha256": "135bbad36aedee1c6c7ed2dc5888550475e18531a753c9486446d96a3c24a2d3",
+      "published_sha256": "36b7d4dd095bcffa3bb3cceb73509c333e9c8bc3dafa4262d38255d6b21570df",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v2/correctness-cpu.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v2/correctness-cpu.json",
+      "original_sha256": "e77e92d6cb0bcc92633d03a3858e945d28acc07a238117e8c63ec3d040c20bca",
+      "published_sha256": "9a0c905f70d537ce71d0f185cf337786ee1cb0f606412bb716052f8ae79d2663",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v2/correctness-cuda.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v2/correctness-cuda.json",
+      "original_sha256": "f2e3eca397915861d5386dc3cd5a36fae53428d2e960eafacd3d144a0f287915",
+      "published_sha256": "8c847c47485b4f22e5bfda2d77687a1caba81f5d28d2f6e56477748ed0cb8d86",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v2/gpu-active-ledger.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v2/gpu-active-ledger.jsonl",
+      "original_sha256": "ee1aecd78350449b5f916497be2ecc2f98abe29134b8a5c6a0fd139436c8f189",
+      "published_sha256": "c7aa1ac9a7d156884031c837a4728db5c990558a6f2f556147ca08b040188121",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v2/results.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v2/results.json",
+      "original_sha256": "3aeee288dfc3d5d69431f8692e427641a57b527664c06e2b0d3092267d68c51a",
+      "published_sha256": "9b4c709d31f1fd2eb28f56e9ed7e675166d6ded231c441187bff9a33acce764b",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v2/steps.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v2/steps.jsonl",
+      "original_sha256": "6ff32a64c767c73bfb8d99e4217f5ac426f849e4b9c1cf1e236587c9c9ce99ba",
+      "published_sha256": "d500d14dcfc48d1fdecdbd7be27abd0c46f008881614c903cf26ddce1d3331df",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v2/telemetry.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v2/telemetry.jsonl",
+      "original_sha256": "9bb5108aa759e8fd09b821ca66c2f405b8d4cb534b32689b90ea74655968c5d3",
+      "published_sha256": "fc786b32eac5582d88dc6de3d54a9eea0417319ce5e275c1844e621ca5955bb9",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v3/cuda-checkpoint-verification.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v3/cuda-checkpoint-verification.json",
+      "original_sha256": "6a45d5dea5c361c38d53036c730811ad7e323de31b3046182d5aabc06491e77a",
+      "published_sha256": "3e32b327433ddcb432bcf8f718454a91198da2579cfd85b3faedc3b29ef4767c",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v3/full-geometry-verification.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v3/full-geometry-verification.json",
+      "original_sha256": "0853e4aadaaa1059c7bad54139daedd230bdedcaa542b14f545554abac35c1a9",
+      "published_sha256": "68b1e3f5fe4320a731f7ddbd9ade27e7ba9fcbde957ae3b2bdeb38cf05019e7a",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v3/gpu-active-ledger.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v3/gpu-active-ledger.jsonl",
+      "original_sha256": "cd38d81f37f505084dbd44be0760e08db0eba512a6643c13500e618ed63c6655",
+      "published_sha256": "b6bf10af996c9abdd44404a34649a9f25fadb6b60c81e37ba95792b685387cf2",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v3/optimizer-profile.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v3/optimizer-profile.json",
+      "original_sha256": "f586d849b9570b4a70955b8da94db28ebf88827f6d1cbd1446776178471d8431",
+      "published_sha256": "3b61a1b5de0433b30d82d866f859b68e6dc30f89da9f3afaedf165af7c608d37",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v3/results.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v3/results.json",
+      "original_sha256": "b53dd9c9ec3de2b1f9d3df7438f56e832ecf774f12062fd1d515ce5263fba701",
+      "published_sha256": "584e8152b1587bb3567d7e1141e0e1225a8aba3e3b1d3ba7f757471933ccc576",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v3/telemetry.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v3/telemetry.jsonl",
+      "original_sha256": "de8de551e6f31e668da7f7c41a01f8ae59321de1cb6aa9244f93f61cd099377b",
+      "published_sha256": "ecf18018cd68eb65dbc21cc33ee9cc6b10e2b3a2189f4c30d2d8b9a13b3b39cf",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v4/gpu-active-ledger.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v4/gpu-active-ledger.jsonl",
+      "original_sha256": "eeb30b635e56487e3ba3c65be673dabbe3e2942b7069f4052514895374a1826a",
+      "published_sha256": "2d399de4c3a40fc59852b366e7982725e900862a7493a41e2368bf73d0b75c4b",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v4/optimizer-profile.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v4/optimizer-profile.json",
+      "original_sha256": "d0ce2409cb61f45bc7d58a2d68ab439d58df22cf8c39202b35b25da11d2730c1",
+      "published_sha256": "4e5d977a014e0f2868a67149b144e75eab17a2901038cbede160d2d713320ae6",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v4/results.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v4/results.json",
+      "original_sha256": "0ab037482abc1fb2a367d7919231164c959ad16b07fff561b7f0bf31d87e6e35",
+      "published_sha256": "d7872d5c00ade42a746679d1ab3cc928337e9f404a21d5223b004ca3c04d9630",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/measurements/v4/telemetry.jsonl",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/measurements/v4/telemetry.jsonl",
+      "original_sha256": "f913decec4b8c39213aebc30cb3cd32bd97ca0d26fdb427e673082b37e022371",
+      "published_sha256": "59a89743f0a1988d66fe8bb80f858d1d653997af130e5f9143e7de1b17bea8d3",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/reference-integrity.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/reference-integrity.json",
+      "original_sha256": "39ac0beaa2f94a6175f205752ed78c553f4fd16bed50a03f6a79c0e899745f53",
+      "published_sha256": "293706cef63f439e463fc0295140dacbdfa0c083c6de5e2bb52ef3450704dc55",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/summarize.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/summarize.py",
+      "original_sha256": "27671e87c39e6f61bba0d2e2c4aaf3fc3afcdf4655cecde77aeb5aef1cd36b68",
+      "published_sha256": "bcea0272a1a4e0de0cb6c6b6060355e84147c13f18b399cdf80b003f4b2abc21",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v1/CONTRACT.md",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v1/CONTRACT.md",
+      "original_sha256": "41032ede5fd8a8b338c38edd866a1f73e405b1b25efaf057e83f7bf42a529724",
+      "published_sha256": "95d1c7a295b5a74f85a9ba4e278775f012c753c2adea6979dcf3464f46fd423d",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v1/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v1/FREEZE.json",
+      "original_sha256": "aaefaf94a2f52a0ff41508df47f8d02c253ff29204bbd614368dd1af7b9583f3",
+      "published_sha256": "0d9963cd4b126e8b5b2075e0904f1dad2ba44a7cb411a3e730a1ceb64f161343",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v1/campaign.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v1/campaign.py",
+      "original_sha256": "3016c56d3fe654094a217cf83d6626a5c0249b99e25840c60a287742eac8607b",
+      "published_sha256": "3016c56d3fe654094a217cf83d6626a5c0249b99e25840c60a287742eac8607b",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v1/config.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v1/config.json",
+      "original_sha256": "5f48dd119270649e55ab8264f96bf45af4304664df600cf7999ae063574290e4",
+      "published_sha256": "2323c9d494fa610d63414453b1014ea940ba45e38975f8e751590c9b9e80f8a8",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v1/model.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v1/model.py",
+      "original_sha256": "1fb9d8af3d7385580ff878963b4c1e1c50895df4fdbe24fc86ca88f8d8f67aba",
+      "published_sha256": "1fb9d8af3d7385580ff878963b4c1e1c50895df4fdbe24fc86ca88f8d8f67aba",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v1/optimizer.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v1/optimizer.py",
+      "original_sha256": "079b0c86c115ef0832c66de411e2336a27e51700546d3199c3f78fb91b84a5d5",
+      "published_sha256": "079b0c86c115ef0832c66de411e2336a27e51700546d3199c3f78fb91b84a5d5",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v1/verify.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v1/verify.py",
+      "original_sha256": "928c7ff49adab405aceae14a20972b5e85b70e4daf0368b7f51fb5d6ddb472b9",
+      "published_sha256": "928c7ff49adab405aceae14a20972b5e85b70e4daf0368b7f51fb5d6ddb472b9",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v2/AMENDMENT.md",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v2/AMENDMENT.md",
+      "original_sha256": "011447b37c590ddeee3f1e467e59437a1e6eeec51e097d80d706f4c5f68c9976",
+      "published_sha256": "fe9a60d60b005b0ac84c888037fdb356d3ef926e4751ca2524c513c75f1d3295",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v2/CONTRACT.md",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v2/CONTRACT.md",
+      "original_sha256": "69649e698f970bbab181ee0f0c330f338bc8641c3bc0fdafd5c6b4f454e2208d",
+      "published_sha256": "a6566b6dd3b11ab248685b3e769d4964bed543802de49618fbb01ac3bc313682",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v2/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v2/FREEZE.json",
+      "original_sha256": "bcf3065459a54c18e957d3b09c09ade7afed677f74409291582c501260c6d15f",
+      "published_sha256": "327bef230b96440435515d5cf4d99bcceb56ed0d35f8c4a69172526703805728",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v2/campaign.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v2/campaign.py",
+      "original_sha256": "8a7b2d7e084cb9488d4e85feec25a34783c481c2fdefc24147cee7d954101108",
+      "published_sha256": "deafe08d87675fa030f1837fc847e88c0ab4d8e9f78396d6c496d39231d8f491",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v2/config.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v2/config.json",
+      "original_sha256": "6346482d30ff2c301ad3e51e73151c0b6a4a4d8f129c13deddc01f68bd94a7c1",
+      "published_sha256": "542484ae8c7b6c10b5a2e8fa431f94b22a8c3be56248cae1b460987075fb6553",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v2/model.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v2/model.py",
+      "original_sha256": "1fb9d8af3d7385580ff878963b4c1e1c50895df4fdbe24fc86ca88f8d8f67aba",
+      "published_sha256": "1fb9d8af3d7385580ff878963b4c1e1c50895df4fdbe24fc86ca88f8d8f67aba",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v2/optimizer.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v2/optimizer.py",
+      "original_sha256": "079b0c86c115ef0832c66de411e2336a27e51700546d3199c3f78fb91b84a5d5",
+      "published_sha256": "079b0c86c115ef0832c66de411e2336a27e51700546d3199c3f78fb91b84a5d5",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v2/verify.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v2/verify.py",
+      "original_sha256": "928c7ff49adab405aceae14a20972b5e85b70e4daf0368b7f51fb5d6ddb472b9",
+      "published_sha256": "928c7ff49adab405aceae14a20972b5e85b70e4daf0368b7f51fb5d6ddb472b9",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v3/CONTRACT.md",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v3/CONTRACT.md",
+      "original_sha256": "9b358a87ef096d682686646856c44ae5f2b14ab0b597a6dcf6b4b4c9369a708a",
+      "published_sha256": "39384bef9ff529f07ba04b9bfc5c01929b2ee28c41ab84a5da40e6b1f1e25b41",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v3/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v3/FREEZE.json",
+      "original_sha256": "10aaa248ce4ab4e298201a582382f4a51614dc686ad3e7f0ee3585944b6e8aa6",
+      "published_sha256": "6f731ca7f317b3d0998a0f8a93a1991b910b7152dc66baf059c4188be8074921",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v3/addendum.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v3/addendum.py",
+      "original_sha256": "dbb5e81ca7153e04d022ec22e6d378f514ec255c2dc8c9f5a7c743f183fc6054",
+      "published_sha256": "dbb5e81ca7153e04d022ec22e6d378f514ec255c2dc8c9f5a7c743f183fc6054",
+      "sanitized": false
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v3/config.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v3/config.json",
+      "original_sha256": "f9fbb6fad19a12e9518048e46ca5b8ba0ae0dbf75da9f1dd0b9d5adb199b99f7",
+      "published_sha256": "263b1e7c289930d4e5a5876778f7de54b2f50d808171f62dc8e92083dc9a1538",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v4/CONTRACT.md",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v4/CONTRACT.md",
+      "original_sha256": "90c29e394f89291987a3e195f74608bf09a31401f7a909e0695feb33243c3d73",
+      "published_sha256": "1612012ee8158d4cdf802fd283710b290df53a1627f51719dead48516ebb3889",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v4/FREEZE.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v4/FREEZE.json",
+      "original_sha256": "a33bd8522c1d50e16112226d13cf28b729a1cd56e5e984502a8de12ed1c5a81e",
+      "published_sha256": "701376f4e3a14513f46219dfc8fe40f00ebce64396bb1d0cd0c56700e9a88bc9",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v4/addendum.py",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v4/addendum.py",
+      "original_sha256": "357913aba574e44946562dfd3bce10213ee036863779f7e0dc0db49b3e79eb91",
+      "published_sha256": "180bc624b8d2119b23a457c6cbbc37a6e4aff05e35ad31e809688d0f3695c888",
+      "sanitized": true
+    },
+    {
+      "path": "experiments/2026-10-05-windows/returned/versions/v4/config.json",
+      "source_path": "research/moe-night/results/2026-10-05-windows/returned/versions/v4/config.json",
+      "original_sha256": "60cd3d05f43a5d2c9eb3902b585fa518ad02b45625e45f824307535d92cb3294",
+      "published_sha256": "133b024c688a9189a3ebc57b9ba5f62cf49b9c559f9b2915356a3169b0401da0",
+      "sanitized": true
+    }
+  ]
+}

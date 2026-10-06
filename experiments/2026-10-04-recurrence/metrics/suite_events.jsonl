@@ -1,0 +1,95 @@
+{"event": "suite_start", "utc": "2026-10-05T03:17:32.062236+00:00"}
+{"event": "preflight", "tag": "tune_dense10_mu0p003", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:17:32.320613+00:00"}
+{"event": "run_start", "tag": "tune_dense10_mu0p003", "utc": "2026-10-05T03:17:32.321325+00:00"}
+{"event": "run_end", "tag": "tune_dense10_mu0p003", "exit_code": 0, "utc": "2026-10-05T03:19:25.457438+00:00"}
+{"event": "preflight", "tag": "tune_dense10_mu0p01", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:19:25.736565+00:00"}
+{"event": "run_start", "tag": "tune_dense10_mu0p01", "utc": "2026-10-05T03:19:25.737153+00:00"}
+{"event": "run_end", "tag": "tune_dense10_mu0p01", "exit_code": 0, "utc": "2026-10-05T03:21:11.058242+00:00"}
+{"event": "preflight", "tag": "tune_dense10_mu0p02", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:21:11.329978+00:00"}
+{"event": "run_start", "tag": "tune_dense10_mu0p02", "utc": "2026-10-05T03:21:11.330435+00:00"}
+{"event": "suite_priority_corrected_start", "launcher": "Interactive, nice0, no background IO clamp", "utc": "2026-10-05T03:23:55.482849+00:00"}
+{"event": "reuse_completed_tuning", "tag": "tune_dense10_mu0p003", "summary_sha256": "de8ce3d0bbe8c2428439898e5f6e99fd1fbad7df851155dc4c999e61f70445d8", "utc": "2026-10-05T03:23:55.484674+00:00"}
+{"event": "reuse_completed_tuning", "tag": "tune_dense10_mu0p01", "summary_sha256": "0eb335da07d767019787f590b89b424a477dbfc85ad588670c800903e383b269", "utc": "2026-10-05T03:23:55.486156+00:00"}
+{"event": "reuse_completed_tuning", "tag": "tune_dense10_mu0p02", "summary_sha256": "35c41359aacf4f86639d50e8bc867b65269431d64226ef4633dc6e6e03cd48a6", "utc": "2026-10-05T03:23:55.487600+00:00"}
+{"event": "preflight", "tag": "tune_dense4_mu0p01", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:23:55.529208+00:00"}
+{"event": "run_start", "tag": "tune_dense4_mu0p01", "utc": "2026-10-05T03:23:55.529328+00:00"}
+{"event": "run_end", "tag": "tune_dense4_mu0p01", "exit_code": 0, "utc": "2026-10-05T03:24:18.382646+00:00"}
+{"event": "preflight", "tag": "tune_dense4_mu0p02", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:24:18.434620+00:00"}
+{"event": "run_start", "tag": "tune_dense4_mu0p02", "utc": "2026-10-05T03:24:18.434742+00:00"}
+{"event": "run_end", "tag": "tune_dense4_mu0p02", "exit_code": 0, "utc": "2026-10-05T03:24:41.317518+00:00"}
+{"event": "preflight", "tag": "tune_dense4_mu0p003", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:24:41.364320+00:00"}
+{"event": "run_start", "tag": "tune_dense4_mu0p003", "utc": "2026-10-05T03:24:41.364446+00:00"}
+{"event": "run_end", "tag": "tune_dense4_mu0p003", "exit_code": 0, "utc": "2026-10-05T03:25:04.369093+00:00"}
+{"event": "preflight", "tag": "tune_rec_full_mu0p02", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:25:04.416035+00:00"}
+{"event": "run_start", "tag": "tune_rec_full_mu0p02", "utc": "2026-10-05T03:25:04.416158+00:00"}
+{"event": "run_end", "tag": "tune_rec_full_mu0p02", "exit_code": 0, "utc": "2026-10-05T03:25:35.583130+00:00"}
+{"event": "preflight", "tag": "tune_rec_full_mu0p003", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:25:35.638689+00:00"}
+{"event": "run_start", "tag": "tune_rec_full_mu0p003", "utc": "2026-10-05T03:25:35.638824+00:00"}
+{"event": "run_end", "tag": "tune_rec_full_mu0p003", "exit_code": 0, "utc": "2026-10-05T03:26:06.556973+00:00"}
+{"event": "preflight", "tag": "tune_rec_full_mu0p01", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:26:06.611547+00:00"}
+{"event": "run_start", "tag": "tune_rec_full_mu0p01", "utc": "2026-10-05T03:26:06.611660+00:00"}
+{"event": "run_end", "tag": "tune_rec_full_mu0p01", "exit_code": 0, "utc": "2026-10-05T03:26:37.384836+00:00"}
+{"event": "preflight", "tag": "tune_rec_tb2_mu0p003", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:26:37.428303+00:00"}
+{"event": "run_start", "tag": "tune_rec_tb2_mu0p003", "utc": "2026-10-05T03:26:37.428445+00:00"}
+{"event": "run_end", "tag": "tune_rec_tb2_mu0p003", "exit_code": 0, "utc": "2026-10-05T03:27:03.554327+00:00"}
+{"event": "preflight", "tag": "tune_rec_tb2_mu0p01", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:27:03.598012+00:00"}
+{"event": "run_start", "tag": "tune_rec_tb2_mu0p01", "utc": "2026-10-05T03:27:03.598153+00:00"}
+{"event": "run_end", "tag": "tune_rec_tb2_mu0p01", "exit_code": 0, "utc": "2026-10-05T03:27:29.678232+00:00"}
+{"event": "preflight", "tag": "tune_rec_tb2_mu0p02", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:27:29.730654+00:00"}
+{"event": "run_start", "tag": "tune_rec_tb2_mu0p02", "utc": "2026-10-05T03:27:29.730798+00:00"}
+{"event": "run_end", "tag": "tune_rec_tb2_mu0p02", "exit_code": 0, "utc": "2026-10-05T03:27:55.779078+00:00"}
+{"event": "preflight", "tag": "tune_rec_curr_tb2_mu0p01", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:27:55.831613+00:00"}
+{"event": "run_start", "tag": "tune_rec_curr_tb2_mu0p01", "utc": "2026-10-05T03:27:55.831774+00:00"}
+{"event": "run_end", "tag": "tune_rec_curr_tb2_mu0p01", "exit_code": 0, "utc": "2026-10-05T03:28:22.627804+00:00"}
+{"event": "preflight", "tag": "tune_rec_curr_tb2_mu0p02", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:28:22.684229+00:00"}
+{"event": "run_start", "tag": "tune_rec_curr_tb2_mu0p02", "utc": "2026-10-05T03:28:22.684366+00:00"}
+{"event": "run_end", "tag": "tune_rec_curr_tb2_mu0p02", "exit_code": 0, "utc": "2026-10-05T03:28:48.983163+00:00"}
+{"event": "preflight", "tag": "tune_rec_curr_tb2_mu0p003", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:28:49.037491+00:00"}
+{"event": "run_start", "tag": "tune_rec_curr_tb2_mu0p003", "utc": "2026-10-05T03:28:49.037625+00:00"}
+{"event": "run_end", "tag": "tune_rec_curr_tb2_mu0p003", "exit_code": 0, "utc": "2026-10-05T03:29:15.364119+00:00"}
+{"event": "preflight", "tag": "dense10_s42", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:29:15.421365+00:00"}
+{"event": "run_start", "tag": "dense10_s42", "utc": "2026-10-05T03:29:15.421492+00:00"}
+{"event": "run_end", "tag": "dense10_s42", "exit_code": 0, "utc": "2026-10-05T03:33:45.969940+00:00"}
+{"event": "preflight", "tag": "dense4_s42", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:33:46.012266+00:00"}
+{"event": "run_start", "tag": "dense4_s42", "utc": "2026-10-05T03:33:46.012402+00:00"}
+{"event": "run_end", "tag": "dense4_s42", "exit_code": 0, "utc": "2026-10-05T03:36:55.068283+00:00"}
+{"event": "preflight", "tag": "rec_full_s42", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:36:55.111468+00:00"}
+{"event": "run_start", "tag": "rec_full_s42", "utc": "2026-10-05T03:36:55.111580+00:00"}
+{"event": "run_end", "tag": "rec_full_s42", "exit_code": 0, "utc": "2026-10-05T03:41:08.575860+00:00"}
+{"event": "preflight", "tag": "rec_tb2_s42", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:41:08.619348+00:00"}
+{"event": "run_start", "tag": "rec_tb2_s42", "utc": "2026-10-05T03:41:08.619452+00:00"}
+{"event": "run_end", "tag": "rec_tb2_s42", "exit_code": 0, "utc": "2026-10-05T03:44:43.707178+00:00"}
+{"event": "preflight", "tag": "rec_curr_tb2_s42", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:44:43.749054+00:00"}
+{"event": "run_start", "tag": "rec_curr_tb2_s42", "utc": "2026-10-05T03:44:43.749177+00:00"}
+{"event": "run_end", "tag": "rec_curr_tb2_s42", "exit_code": 0, "utc": "2026-10-05T03:48:17.593506+00:00"}
+{"event": "preflight", "tag": "dense4_s43", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:48:17.638130+00:00"}
+{"event": "run_start", "tag": "dense4_s43", "utc": "2026-10-05T03:48:17.638249+00:00"}
+{"event": "run_end", "tag": "dense4_s43", "exit_code": 0, "utc": "2026-10-05T03:51:26.660326+00:00"}
+{"event": "preflight", "tag": "rec_full_s43", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:51:26.703382+00:00"}
+{"event": "run_start", "tag": "rec_full_s43", "utc": "2026-10-05T03:51:26.703502+00:00"}
+{"event": "run_end", "tag": "rec_full_s43", "exit_code": 0, "utc": "2026-10-05T03:55:39.536739+00:00"}
+{"event": "preflight", "tag": "rec_tb2_s43", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:55:39.580028+00:00"}
+{"event": "run_start", "tag": "rec_tb2_s43", "utc": "2026-10-05T03:55:39.580153+00:00"}
+{"event": "run_end", "tag": "rec_tb2_s43", "exit_code": 0, "utc": "2026-10-05T03:59:14.897111+00:00"}
+{"event": "preflight", "tag": "rec_curr_tb2_s43", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T03:59:14.942386+00:00"}
+{"event": "run_start", "tag": "rec_curr_tb2_s43", "utc": "2026-10-05T03:59:14.942541+00:00"}
+{"event": "run_end", "tag": "rec_curr_tb2_s43", "exit_code": 0, "utc": "2026-10-05T04:02:48.710494+00:00"}
+{"event": "preflight", "tag": "dense10_s43", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T04:02:48.752748+00:00"}
+{"event": "run_start", "tag": "dense10_s43", "utc": "2026-10-05T04:02:48.752872+00:00"}
+{"event": "run_end", "tag": "dense10_s43", "exit_code": 0, "utc": "2026-10-05T04:07:18.903130+00:00"}
+{"event": "preflight", "tag": "rec_full_s44", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T04:07:18.946299+00:00"}
+{"event": "run_start", "tag": "rec_full_s44", "utc": "2026-10-05T04:07:18.946415+00:00"}
+{"event": "run_end", "tag": "rec_full_s44", "exit_code": 0, "utc": "2026-10-05T04:11:31.587535+00:00"}
+{"event": "preflight", "tag": "rec_tb2_s44", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T04:11:31.631349+00:00"}
+{"event": "run_start", "tag": "rec_tb2_s44", "utc": "2026-10-05T04:11:31.631462+00:00"}
+{"event": "run_end", "tag": "rec_tb2_s44", "exit_code": 0, "utc": "2026-10-05T04:15:06.402607+00:00"}
+{"event": "preflight", "tag": "rec_curr_tb2_s44", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T04:15:06.445170+00:00"}
+{"event": "run_start", "tag": "rec_curr_tb2_s44", "utc": "2026-10-05T04:15:06.445288+00:00"}
+{"event": "run_end", "tag": "rec_curr_tb2_s44", "exit_code": 0, "utc": "2026-10-05T04:18:40.160992+00:00"}
+{"event": "preflight", "tag": "dense10_s44", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T04:18:40.202933+00:00"}
+{"event": "run_start", "tag": "dense10_s44", "utc": "2026-10-05T04:18:40.203055+00:00"}
+{"event": "run_end", "tag": "dense10_s44", "exit_code": 0, "utc": "2026-10-05T04:23:10.571950+00:00"}
+{"event": "preflight", "tag": "dense4_s44", "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n", "utc": "2026-10-05T04:23:10.615259+00:00"}
+{"event": "run_start", "tag": "dense4_s44", "utc": "2026-10-05T04:23:10.615368+00:00"}
+{"event": "run_end", "tag": "dense4_s44", "exit_code": 0, "utc": "2026-10-05T04:26:19.335989+00:00"}
+{"event": "suite_complete", "primary_fits": 15, "utc": "2026-10-05T04:26:19.337028+00:00"}

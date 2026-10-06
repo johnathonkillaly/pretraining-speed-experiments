@@ -1,0 +1,1462 @@
+{
+  "summaries": [
+    {
+      "kind": "dense10",
+      "seed": 42,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 16667904,
+      "shared_initialization_sha256": "03689360f2e6d0a21565c7e230cad27fbe31efe461db5cd1341d329d768552a1",
+      "optimizer_ownership": {
+        "muon_tensors": 70,
+        "adamw_tensors": 22,
+        "muon_parameters": 8273920,
+        "adamw_parameters": 8393984,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight",
+            "blocks.4.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.down_proj.weight",
+            "blocks.6.mlp.down_proj.weight",
+            "blocks.7.mlp.down_proj.weight",
+            "blocks.8.mlp.down_proj.weight",
+            "blocks.9.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight",
+            "blocks.4.mlp.gate_proj.weight",
+            "blocks.4.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.gate_proj.weight",
+            "blocks.5.mlp.up_proj.weight",
+            "blocks.6.mlp.gate_proj.weight",
+            "blocks.6.mlp.up_proj.weight",
+            "blocks.7.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.7.mlp.up_proj.weight",
+            "blocks.8.mlp.gate_proj.weight",
+            "blocks.8.mlp.up_proj.weight",
+            "blocks.9.mlp.gate_proj.weight",
+            "blocks.9.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight",
+            "blocks.4.self_attn.k_proj.weight",
+            "blocks.4.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.k_proj.weight",
+            "blocks.5.self_attn.v_proj.weight",
+            "blocks.6.self_attn.k_proj.weight",
+            "blocks.6.self_attn.v_proj.weight",
+            "blocks.7.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.v_proj.weight",
+            "blocks.8.self_attn.k_proj.weight",
+            "blocks.8.self_attn.v_proj.weight",
+            "blocks.9.self_attn.k_proj.weight",
+            "blocks.9.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight",
+            "blocks.4.self_attn.o_proj.weight",
+            "blocks.4.self_attn.q_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.o_proj.weight",
+            "blocks.5.self_attn.q_proj.weight",
+            "blocks.6.self_attn.o_proj.weight",
+            "blocks.6.self_attn.q_proj.weight",
+            "blocks.7.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.q_proj.weight",
+            "blocks.8.self_attn.o_proj.weight",
+            "blocks.8.self_attn.q_proj.weight",
+            "blocks.9.self_attn.o_proj.weight",
+            "blocks.9.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 100247556
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "42948a28ec26034aa14eccb5e759cded7e3d58111478665b49f29f5261e877cf",
+      "final_test_loss": 7.225225856527686,
+      "checkpoint_seconds": 0.11132583295693621,
+      "initial_development_loss": 10.897973410785198,
+      "final_development_loss": 7.272730249911547,
+      "training_seconds_including_compile": 265.9391203226405,
+      "elapsed_seconds": 270.3598862080253,
+      "steady_tokens_per_second": 38507.52525213177,
+      "steady_median_step_ms": 52.494728995952755,
+      "peak_active_bytes": 2018988846,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "dense4",
+      "seed": 42,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "03689360f2e6d0a21565c7e230cad27fbe31efe461db5cd1341d329d768552a1",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "42948a28ec26034aa14eccb5e759cded7e3d58111478665b49f29f5261e877cf",
+      "final_test_loss": 7.303605816327035,
+      "checkpoint_seconds": 0.07791933399857953,
+      "initial_development_loss": 10.896382175385952,
+      "final_development_loss": 7.340429957956076,
+      "training_seconds_including_compile": 184.44622595777037,
+      "elapsed_seconds": 188.8546287919744,
+      "steady_tokens_per_second": 55517.78733951724,
+      "steady_median_step_ms": 36.69812448788434,
+      "peak_active_bytes": 1771301544,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_full",
+      "seed": 42,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "03689360f2e6d0a21565c7e230cad27fbe31efe461db5cd1341d329d768552a1",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "42948a28ec26034aa14eccb5e759cded7e3d58111478665b49f29f5261e877cf",
+      "final_test_loss": 7.215877044945955,
+      "checkpoint_seconds": 0.08221720805158839,
+      "initial_development_loss": 10.894395612180233,
+      "final_development_loss": 7.256213504821062,
+      "training_seconds_including_compile": 249.2226625434705,
+      "elapsed_seconds": 253.2562462919741,
+      "steady_tokens_per_second": 41087.38726632728,
+      "steady_median_step_ms": 49.82881250907667,
+      "peak_active_bytes": 1995674388,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 4,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_tb2",
+      "seed": 42,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "03689360f2e6d0a21565c7e230cad27fbe31efe461db5cd1341d329d768552a1",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "42948a28ec26034aa14eccb5e759cded7e3d58111478665b49f29f5261e877cf",
+      "final_test_loss": 7.184104571118951,
+      "checkpoint_seconds": 0.0836610000114888,
+      "initial_development_loss": 10.894395612180233,
+      "final_development_loss": 7.233117178082466,
+      "training_seconds_including_compile": 210.902224269812,
+      "elapsed_seconds": 214.89935974997934,
+      "steady_tokens_per_second": 48557.87379126238,
+      "steady_median_step_ms": 42.13402100140229,
+      "peak_active_bytes": 1863766796,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_curr_tb2",
+      "seed": 42,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "03689360f2e6d0a21565c7e230cad27fbe31efe461db5cd1341d329d768552a1",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "42948a28ec26034aa14eccb5e759cded7e3d58111478665b49f29f5261e877cf",
+      "final_test_loss": 7.213655311614275,
+      "checkpoint_seconds": 0.08472841599723324,
+      "initial_development_loss": 10.894395612180233,
+      "final_development_loss": 7.2624830193817616,
+      "training_seconds_including_compile": 209.24429418629734,
+      "elapsed_seconds": 213.6199877919862,
+      "steady_tokens_per_second": 48867.27057156311,
+      "steady_median_step_ms": 42.01345852925442,
+      "peak_active_bytes": 1863766960,
+      "compiler_signatures": [
+        {
+          "loops": 1,
+          "k": 1,
+          "calls": 250
+        },
+        {
+          "loops": 2,
+          "k": 2,
+          "calls": 250
+        },
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 4500
+        }
+      ]
+    },
+    {
+      "kind": "dense4",
+      "seed": 43,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "23e5551f3621967a8c3eb5ddca61f1fd7e718cadaad0f27bc30987fc830a8b0d",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "dbc3167e921ee9f750b3fc4ad02c1219139f8ec0e30bc06593699df13d3f05ea",
+      "final_test_loss": 7.294190127402544,
+      "checkpoint_seconds": 0.07714408403262496,
+      "initial_development_loss": 10.903299488127232,
+      "final_development_loss": 7.33319828659296,
+      "training_seconds_including_compile": 184.4730090724188,
+      "elapsed_seconds": 188.8246153749642,
+      "steady_tokens_per_second": 55507.448209284565,
+      "steady_median_step_ms": 36.72131249913946,
+      "peak_active_bytes": 1772317352,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_full",
+      "seed": 43,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "23e5551f3621967a8c3eb5ddca61f1fd7e718cadaad0f27bc30987fc830a8b0d",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "dbc3167e921ee9f750b3fc4ad02c1219139f8ec0e30bc06593699df13d3f05ea",
+      "final_test_loss": 7.20976391993463,
+      "checkpoint_seconds": 0.0820889170281589,
+      "initial_development_loss": 10.889359675347805,
+      "final_development_loss": 7.246497701853514,
+      "training_seconds_including_compile": 248.587013453478,
+      "elapsed_seconds": 252.6373519579647,
+      "steady_tokens_per_second": 41194.02879201746,
+      "steady_median_step_ms": 49.699958006385714,
+      "peak_active_bytes": 1995690628,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 4,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_tb2",
+      "seed": 43,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "23e5551f3621967a8c3eb5ddca61f1fd7e718cadaad0f27bc30987fc830a8b0d",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "dbc3167e921ee9f750b3fc4ad02c1219139f8ec0e30bc06593699df13d3f05ea",
+      "final_test_loss": 7.174232778139412,
+      "checkpoint_seconds": 0.078508333011996,
+      "initial_development_loss": 10.889359675347805,
+      "final_development_loss": 7.225258558988571,
+      "training_seconds_including_compile": 211.11810929403873,
+      "elapsed_seconds": 215.1030716660316,
+      "steady_tokens_per_second": 48504.249392613245,
+      "steady_median_step_ms": 42.15037502581254,
+      "peak_active_bytes": 1863766660,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_curr_tb2",
+      "seed": 43,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "23e5551f3621967a8c3eb5ddca61f1fd7e718cadaad0f27bc30987fc830a8b0d",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "dbc3167e921ee9f750b3fc4ad02c1219139f8ec0e30bc06593699df13d3f05ea",
+      "final_test_loss": 7.201390168629587,
+      "checkpoint_seconds": 0.08032749994890764,
+      "initial_development_loss": 10.889359675347805,
+      "final_development_loss": 7.2410820461809635,
+      "training_seconds_including_compile": 209.13912111200625,
+      "elapsed_seconds": 213.56103641702794,
+      "steady_tokens_per_second": 48892.22137564792,
+      "steady_median_step_ms": 42.04329149797559,
+      "peak_active_bytes": 1863766908,
+      "compiler_signatures": [
+        {
+          "loops": 1,
+          "k": 1,
+          "calls": 250
+        },
+        {
+          "loops": 2,
+          "k": 2,
+          "calls": 250
+        },
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 4500
+        }
+      ]
+    },
+    {
+      "kind": "dense10",
+      "seed": 43,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 16667904,
+      "shared_initialization_sha256": "23e5551f3621967a8c3eb5ddca61f1fd7e718cadaad0f27bc30987fc830a8b0d",
+      "optimizer_ownership": {
+        "muon_tensors": 70,
+        "adamw_tensors": 22,
+        "muon_parameters": 8273920,
+        "adamw_parameters": 8393984,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight",
+            "blocks.4.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.down_proj.weight",
+            "blocks.6.mlp.down_proj.weight",
+            "blocks.7.mlp.down_proj.weight",
+            "blocks.8.mlp.down_proj.weight",
+            "blocks.9.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight",
+            "blocks.4.mlp.gate_proj.weight",
+            "blocks.4.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.gate_proj.weight",
+            "blocks.5.mlp.up_proj.weight",
+            "blocks.6.mlp.gate_proj.weight",
+            "blocks.6.mlp.up_proj.weight",
+            "blocks.7.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.7.mlp.up_proj.weight",
+            "blocks.8.mlp.gate_proj.weight",
+            "blocks.8.mlp.up_proj.weight",
+            "blocks.9.mlp.gate_proj.weight",
+            "blocks.9.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight",
+            "blocks.4.self_attn.k_proj.weight",
+            "blocks.4.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.k_proj.weight",
+            "blocks.5.self_attn.v_proj.weight",
+            "blocks.6.self_attn.k_proj.weight",
+            "blocks.6.self_attn.v_proj.weight",
+            "blocks.7.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.v_proj.weight",
+            "blocks.8.self_attn.k_proj.weight",
+            "blocks.8.self_attn.v_proj.weight",
+            "blocks.9.self_attn.k_proj.weight",
+            "blocks.9.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight",
+            "blocks.4.self_attn.o_proj.weight",
+            "blocks.4.self_attn.q_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.o_proj.weight",
+            "blocks.5.self_attn.q_proj.weight",
+            "blocks.6.self_attn.o_proj.weight",
+            "blocks.6.self_attn.q_proj.weight",
+            "blocks.7.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.q_proj.weight",
+            "blocks.8.self_attn.o_proj.weight",
+            "blocks.8.self_attn.q_proj.weight",
+            "blocks.9.self_attn.o_proj.weight",
+            "blocks.9.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 100247556
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "dbc3167e921ee9f750b3fc4ad02c1219139f8ec0e30bc06593699df13d3f05ea",
+      "final_test_loss": 7.227388537488878,
+      "checkpoint_seconds": 0.10825449996627867,
+      "initial_development_loss": 10.895232073962688,
+      "final_development_loss": 7.264325480908155,
+      "training_seconds_including_compile": 265.5850466286065,
+      "elapsed_seconds": 269.9624477920006,
+      "steady_tokens_per_second": 38563.29034290663,
+      "steady_median_step_ms": 52.03616700600833,
+      "peak_active_bytes": 2018988850,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_full",
+      "seed": 44,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "bd23eb16ff421e60c3e0b9cdf162d52bf8c83a4e5f6eef3a573a4ca72f2f7685",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "d6446bef7835ba2370990eb33f002eb95a6e38f452dc0f1a78e31e37aff245a0",
+      "final_test_loss": 7.223358943127096,
+      "checkpoint_seconds": 0.08040441601769999,
+      "initial_development_loss": 10.890473760664463,
+      "final_development_loss": 7.258873865008354,
+      "training_seconds_including_compile": 248.37299485993572,
+      "elapsed_seconds": 252.4335743339616,
+      "steady_tokens_per_second": 41227.9644964905,
+      "steady_median_step_ms": 49.66360400430858,
+      "peak_active_bytes": 1995690772,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 4,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_tb2",
+      "seed": 44,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "bd23eb16ff421e60c3e0b9cdf162d52bf8c83a4e5f6eef3a573a4ca72f2f7685",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "d6446bef7835ba2370990eb33f002eb95a6e38f452dc0f1a78e31e37aff245a0",
+      "final_test_loss": 7.1783169731497765,
+      "checkpoint_seconds": 0.08194470900343731,
+      "initial_development_loss": 10.890473760664463,
+      "final_development_loss": 7.224319342523813,
+      "training_seconds_including_compile": 210.51971635536756,
+      "elapsed_seconds": 214.59675358299864,
+      "steady_tokens_per_second": 48637.75562729946,
+      "steady_median_step_ms": 42.036958009703085,
+      "peak_active_bytes": 1863766796,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "rec_curr_tb2",
+      "seed": 44,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "bd23eb16ff421e60c3e0b9cdf162d52bf8c83a4e5f6eef3a573a4ca72f2f7685",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "d6446bef7835ba2370990eb33f002eb95a6e38f452dc0f1a78e31e37aff245a0",
+      "final_test_loss": 7.205399484373629,
+      "checkpoint_seconds": 0.08817162498598918,
+      "initial_development_loss": 10.890473760664463,
+      "final_development_loss": 7.251379456371069,
+      "training_seconds_including_compile": 209.08760586136486,
+      "elapsed_seconds": 213.53222208301304,
+      "steady_tokens_per_second": 48909.18141687451,
+      "steady_median_step_ms": 42.00739550287835,
+      "peak_active_bytes": 1863766962,
+      "compiler_signatures": [
+        {
+          "loops": 1,
+          "k": 1,
+          "calls": 250
+        },
+        {
+          "loops": 2,
+          "k": 2,
+          "calls": 250
+        },
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 4500
+        }
+      ]
+    },
+    {
+      "kind": "dense10",
+      "seed": 44,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 16667904,
+      "shared_initialization_sha256": "bd23eb16ff421e60c3e0b9cdf162d52bf8c83a4e5f6eef3a573a4ca72f2f7685",
+      "optimizer_ownership": {
+        "muon_tensors": 70,
+        "adamw_tensors": 22,
+        "muon_parameters": 8273920,
+        "adamw_parameters": 8393984,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight",
+            "blocks.4.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.down_proj.weight",
+            "blocks.6.mlp.down_proj.weight",
+            "blocks.7.mlp.down_proj.weight",
+            "blocks.8.mlp.down_proj.weight",
+            "blocks.9.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight",
+            "blocks.4.mlp.gate_proj.weight",
+            "blocks.4.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.gate_proj.weight",
+            "blocks.5.mlp.up_proj.weight",
+            "blocks.6.mlp.gate_proj.weight",
+            "blocks.6.mlp.up_proj.weight",
+            "blocks.7.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.7.mlp.up_proj.weight",
+            "blocks.8.mlp.gate_proj.weight",
+            "blocks.8.mlp.up_proj.weight",
+            "blocks.9.mlp.gate_proj.weight",
+            "blocks.9.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight",
+            "blocks.4.self_attn.k_proj.weight",
+            "blocks.4.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.k_proj.weight",
+            "blocks.5.self_attn.v_proj.weight",
+            "blocks.6.self_attn.k_proj.weight",
+            "blocks.6.self_attn.v_proj.weight",
+            "blocks.7.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.v_proj.weight",
+            "blocks.8.self_attn.k_proj.weight",
+            "blocks.8.self_attn.v_proj.weight",
+            "blocks.9.self_attn.k_proj.weight",
+            "blocks.9.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight",
+            "blocks.4.self_attn.o_proj.weight",
+            "blocks.4.self_attn.q_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.o_proj.weight",
+            "blocks.5.self_attn.q_proj.weight",
+            "blocks.6.self_attn.o_proj.weight",
+            "blocks.6.self_attn.q_proj.weight",
+            "blocks.7.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.q_proj.weight",
+            "blocks.8.self_attn.o_proj.weight",
+            "blocks.8.self_attn.q_proj.weight",
+            "blocks.9.self_attn.o_proj.weight",
+            "blocks.9.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 100247556
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "d6446bef7835ba2370990eb33f002eb95a6e38f452dc0f1a78e31e37aff245a0",
+      "final_test_loss": 7.229700050316751,
+      "checkpoint_seconds": 0.10819033300504088,
+      "initial_development_loss": 10.894943542778492,
+      "final_development_loss": 7.266312275081873,
+      "training_seconds_including_compile": 265.8267247522017,
+      "elapsed_seconds": 270.1960742090014,
+      "steady_tokens_per_second": 38523.079317352305,
+      "steady_median_step_ms": 52.28093749610707,
+      "peak_active_bytes": 2018988850,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    },
+    {
+      "kind": "dense4",
+      "seed": 44,
+      "steps": 5000,
+      "tune": false,
+      "muon_peak": 0.01,
+      "adamw_peak": 0.0003,
+      "parameter_count": 11700480,
+      "shared_initialization_sha256": "bd23eb16ff421e60c3e0b9cdf162d52bf8c83a4e5f6eef3a573a4ca72f2f7685",
+      "optimizer_ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight"
+          ]
+        ],
+        "state_logical_bytes_excluding_masters": 80365572
+      },
+      "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+      "batch_size": 8,
+      "sequence_length": 256,
+      "targets_per_update": 2048,
+      "compiled": true,
+      "weight_decay": 0,
+      "order_sha256": "d6446bef7835ba2370990eb33f002eb95a6e38f452dc0f1a78e31e37aff245a0",
+      "final_test_loss": 7.291110973805189,
+      "checkpoint_seconds": 0.07561699999496341,
+      "initial_development_loss": 10.889937579631805,
+      "final_development_loss": 7.331965290009975,
+      "training_seconds_including_compile": 184.19396217510803,
+      "elapsed_seconds": 188.53482716699364,
+      "steady_tokens_per_second": 55598.86180650509,
+      "steady_median_step_ms": 36.618416517740116,
+      "peak_active_bytes": 1771301544,
+      "compiler_signatures": [
+        {
+          "loops": 4,
+          "k": 2,
+          "calls": 5000
+        }
+      ]
+    }
+  ]
+}

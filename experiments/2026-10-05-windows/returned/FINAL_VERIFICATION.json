@@ -1,0 +1,19 @@
+{
+  "original_reference_tree_unchanged": true,
+  "reference_files": 330,
+  "frozen_versions_verified": [
+    "v1",
+    "v2",
+    "v3",
+    "v4"
+  ],
+  "completed_windows": 12,
+  "start_ac_and_temperature_rules_verified": true,
+  "benchmark_and_corrected_profile_telemetry_gaps_under_one_second": true,
+  "supplemental_v3_cadence_deviation_max_gap_s": 1.1412780999999086,
+  "whole_campaign_strict_one_second_cadence_compliance": false,
+  "all_budget_ledgers_agree": true,
+  "profiler_annotations_and_memory_separated": true,
+  "checkpoints_excluded_from_package": true,
+  "cumulative_gpu_active_seconds": 130.29443799999945
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "custom": false,
+    "audit": {
+      "logical_gradient_bytes": 21233664,
+      "gradient_objects": 24,
+      "unselected_norms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "loss": 0.011048082262277603
+    },
+    "repeats": [
+      {
+        "forward_ms": 1.3566669658757746,
+        "backward_ms": 1.8364170100539923,
+        "total_ms": 3.193083975929767,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.3114160392433405,
+        "backward_ms": 1.593041990417987,
+        "total_ms": 2.9044580296613276,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.3324169558472931,
+        "backward_ms": 1.7433750326745212,
+        "total_ms": 3.0757919885218143,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.5718750073574483,
+        "backward_ms": 1.9679589895531535,
+        "total_ms": 3.539833996910602,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.5426249592565,
+        "backward_ms": 2.078833000268787,
+        "total_ms": 3.621457959525287,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.0682920110411942,
+        "backward_ms": 1.193750009406358,
+        "total_ms": 2.262042020447552,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.0712919756770134,
+        "backward_ms": 1.2011660146526992,
+        "total_ms": 2.2724579903297126,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 0.9382910211570561,
+        "backward_ms": 1.2445419561117887,
+        "total_ms": 2.182832977268845,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 0.9762090048752725,
+        "backward_ms": 1.3007080415263772,
+        "total_ms": 2.2769170464016497,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.0686670430004597,
+        "backward_ms": 1.3919160119257867,
+        "total_ms": 2.4605830549262464,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.0743750026449561,
+        "backward_ms": 1.2187500251457095,
+        "total_ms": 2.2931250277906656,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 0.9239579667337239,
+        "backward_ms": 1.344999996945262,
+        "total_ms": 2.268957963678986,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 0.9451660444028676,
+        "backward_ms": 1.1766249663196504,
+        "total_ms": 2.121791010722518,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 1.0048330295830965,
+        "backward_ms": 1.2017919798381627,
+        "total_ms": 2.206625009421259,
+        "retained_gradient_bytes": 21233664
+      },
+      {
+        "forward_ms": 0.9119170135818422,
+        "backward_ms": 1.0984999826177955,
+        "total_ms": 2.0104169961996377,
+        "retained_gradient_bytes": 21233664
+      }
+    ],
+    "median": {
+      "forward_ms": 1.0686670430004597,
+      "backward_ms": 1.3007080415263772,
+      "total_ms": 2.2769170464016497,
+      "retained_gradient_bytes": 21233664.0
+    },
+    "gradient_clip_additional_retained_bytes": 21233908,
+    "optimizer_additional_active_bytes": 60162200,
+    "optimizer_state_logical_bytes": 42467340
+  },
+  {
+    "custom": true,
+    "audit": {
+      "logical_gradient_bytes": 21233664,
+      "gradient_objects": 24,
+      "unselected_norms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "loss": 0.011048082262277603
+    },
+    "repeats": [
+      {
+        "forward_ms": 1.2880000285804272,
+        "backward_ms": 1.1697079753503203,
+        "total_ms": 2.4577080039307475,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.9754999773576856,
+        "backward_ms": 1.04674999602139,
+        "total_ms": 2.0222499733790755,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 1.0256670066155493,
+        "backward_ms": 1.1643750476650894,
+        "total_ms": 2.1900420542806387,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.9910839726217091,
+        "backward_ms": 0.9552499977871776,
+        "total_ms": 1.9463339704088867,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.9907089988701046,
+        "backward_ms": 0.8876250358298421,
+        "total_ms": 1.8783340346999466,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.916499993763864,
+        "backward_ms": 0.8207919890992343,
+        "total_ms": 1.7372919828630984,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.9401659481227398,
+        "backward_ms": 1.024334051180631,
+        "total_ms": 1.9644999993033707,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.7768329815007746,
+        "backward_ms": 1.0680420091375709,
+        "total_ms": 1.8448749906383455,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.9950000094249845,
+        "backward_ms": 1.149583957158029,
+        "total_ms": 2.1445839665830135,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.9170420235022902,
+        "backward_ms": 1.1189999640919268,
+        "total_ms": 2.036041987594217,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 1.1205830378457904,
+        "backward_ms": 1.0936670005321503,
+        "total_ms": 2.2142500383779407,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.9705410338938236,
+        "backward_ms": 1.144916983321309,
+        "total_ms": 2.1154580172151327,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.8980840211734176,
+        "backward_ms": 1.0019579785875976,
+        "total_ms": 1.9000419997610152,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 1.0333750396966934,
+        "backward_ms": 1.0002499911934137,
+        "total_ms": 2.033625030890107,
+        "retained_gradient_bytes": 2654212
+      },
+      {
+        "forward_ms": 0.9027920314110816,
+        "backward_ms": 0.9394169901497662,
+        "total_ms": 1.8422090215608478,
+        "retained_gradient_bytes": 2654212
+      }
+    ],
+    "median": {
+      "forward_ms": 0.9754999773576856,
+      "backward_ms": 1.04674999602139,
+      "total_ms": 2.0222499733790755,
+      "retained_gradient_bytes": 2654212.0
+    },
+    "gradient_clip_additional_retained_bytes": 2654484,
+    "optimizer_additional_active_bytes": 60162224,
+    "optimizer_state_logical_bytes": 42467340
+  }
+]

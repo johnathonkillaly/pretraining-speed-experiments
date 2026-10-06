@@ -1,0 +1,23 @@
+{
+  "freezes_verified": {
+    "FREEZE.json": 64,
+    "DIAGNOSTIC_FREEZE.json": 2,
+    "DIAGNOSTIC_RUNNER_FREEZE.json": 2,
+    "V2_FREEZE.json": 4,
+    "FULL_CONTEXT_FREEZE.json": 3
+  },
+  "raw_records_archived_and_verified": 8,
+  "no_research_python_processes": true,
+  "max_recorded_worker_monitor_gap_seconds": 1.5871935839531943,
+  "max_thermal_state": 1,
+  "min_recorded_memory_free_pct": 83,
+  "all_monitored_on_ac": true,
+  "no_competing_ml_job_observed": true,
+  "aggregate_worker_seconds": 660.0583717109403,
+  "campaign_seconds": 1349.8359872429282,
+  "full_context_checkpointing_passed": true,
+  "memory_candidate_recommendation_gate": true,
+  "fused_default_recommendation_gate": false,
+  "original_environment": "MLX/Metal0.32.2 preserved",
+  "candidate_environment": "isolated MLX/Metal0.32.3"
+}

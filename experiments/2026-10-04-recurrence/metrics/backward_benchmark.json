@@ -1,0 +1,754 @@
+[
+  {
+    "kind": "dense10",
+    "batch": 8,
+    "sequence": 256,
+    "dtype": "bfloat16",
+    "repeats": [
+      {
+        "forward_ms": 60.67591602914035,
+        "backward_ms": 29.83970899367705,
+        "total_ms": 90.5156250228174,
+        "peak_incremental_bytes": 1045513358,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 22.066458011977375,
+        "backward_ms": 24.723041977267712,
+        "total_ms": 46.78949998924509,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 40741376,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.798125002533197,
+        "backward_ms": 24.57091596443206,
+        "total_ms": 46.36904096696526,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 20.56812500813976,
+        "backward_ms": 24.494374985806644,
+        "total_ms": 45.0624999939464,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 20.805667038075626,
+        "backward_ms": 24.632916960399598,
+        "total_ms": 45.438583998475224,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 20.92120796442032,
+        "backward_ms": 24.72058404237032,
+        "total_ms": 45.64179200679064,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.57645800616592,
+        "backward_ms": 24.628624960314482,
+        "total_ms": 46.205082966480404,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.351166011299938,
+        "backward_ms": 24.57045897608623,
+        "total_ms": 45.92162498738617,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.248332981485873,
+        "backward_ms": 24.41283396910876,
+        "total_ms": 45.661166950594634,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.34024997940287,
+        "backward_ms": 24.796082987450063,
+        "total_ms": 46.13633296685293,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 20.97804204095155,
+        "backward_ms": 24.58995796041563,
+        "total_ms": 45.56800000136718,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 25.561749993357807,
+        "backward_ms": 24.42429104121402,
+        "total_ms": 49.98604103457183,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.695957984775305,
+        "backward_ms": 24.580375000368804,
+        "total_ms": 46.27633298514411,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 22.155084006953984,
+        "backward_ms": 24.485500005539507,
+        "total_ms": 46.64058401249349,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.719624986872077,
+        "backward_ms": 24.598208023235202,
+        "total_ms": 46.31783301010728,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 20.67404199624434,
+        "backward_ms": 24.765082984231412,
+        "total_ms": 45.43912498047575,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.030790987424552,
+        "backward_ms": 24.602124991361052,
+        "total_ms": 45.632915978785604,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 21.150499989744276,
+        "backward_ms": 24.554583011195064,
+        "total_ms": 45.70508300093934,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      },
+      {
+        "forward_ms": 20.85891703609377,
+        "backward_ms": 24.329665990080684,
+        "total_ms": 45.188583026174456,
+        "peak_incremental_bytes": 1386373246,
+        "gradient_logical_bytes": 33335808,
+        "gradient_physical_retained_bytes": 33335808,
+        "loss": 10.87336254119873
+      }
+    ],
+    "median": {
+      "forward_ms": 21.248332981485873,
+      "backward_ms": 24.58995796041563,
+      "total_ms": 45.70508300093934,
+      "peak_incremental_bytes": 1386373246.0,
+      "gradient_logical_bytes": 33335808.0,
+      "gradient_physical_retained_bytes": 33335808.0,
+      "loss": 10.87336254119873
+    }
+  },
+  {
+    "kind": "dense4",
+    "batch": 8,
+    "sequence": 256,
+    "dtype": "bfloat16",
+    "repeats": [
+      {
+        "forward_ms": 18.759583006612957,
+        "backward_ms": 16.495583986397833,
+        "total_ms": 35.25516699301079,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 19.429833977483213,
+        "backward_ms": 16.37029100675136,
+        "total_ms": 35.80012498423457,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.991374992765486,
+        "backward_ms": 16.555875015910715,
+        "total_ms": 35.5472500086762,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.596415990032256,
+        "backward_ms": 16.43462502397597,
+        "total_ms": 35.031041014008224,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.819583987351507,
+        "backward_ms": 16.38262503547594,
+        "total_ms": 35.20220902282745,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 19.64345801388845,
+        "backward_ms": 16.44149998901412,
+        "total_ms": 36.08495800290257,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.12016702024266,
+        "backward_ms": 16.542207973543555,
+        "total_ms": 34.662374993786216,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.940874957479537,
+        "backward_ms": 16.373000049497932,
+        "total_ms": 35.31387500697747,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.383916991297156,
+        "backward_ms": 16.399082960560918,
+        "total_ms": 34.78299995185807,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.773666000925004,
+        "backward_ms": 16.291208972688764,
+        "total_ms": 35.06487497361377,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.70204199803993,
+        "backward_ms": 16.28537505166605,
+        "total_ms": 34.98741704970598,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.54487502714619,
+        "backward_ms": 16.408167022746056,
+        "total_ms": 34.95304204989225,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.746874993667006,
+        "backward_ms": 16.508375003468245,
+        "total_ms": 35.25524999713525,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.38333299383521,
+        "backward_ms": 16.4507920271717,
+        "total_ms": 34.83412502100691,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.874083005357534,
+        "backward_ms": 16.534916998352855,
+        "total_ms": 35.40900000371039,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.572375003714114,
+        "backward_ms": 16.278291994240135,
+        "total_ms": 34.85066699795425,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.551291956100613,
+        "backward_ms": 16.346000018529594,
+        "total_ms": 34.89729197463021,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 18.995249993167818,
+        "backward_ms": 16.464084037579596,
+        "total_ms": 35.459334030747414,
+        "peak_incremental_bytes": 1054708282,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      },
+      {
+        "forward_ms": 19.39870900241658,
+        "backward_ms": 16.518666001502424,
+        "total_ms": 35.917375003919005,
+        "peak_incremental_bytes": 1054708278,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.858942031860352
+      }
+    ],
+    "median": {
+      "forward_ms": 18.746874993667006,
+      "backward_ms": 16.408167022746056,
+      "total_ms": 35.06487497361377,
+      "peak_incremental_bytes": 1054708282.0,
+      "gradient_logical_bytes": 23400960.0,
+      "gradient_physical_retained_bytes": 23400960.0,
+      "loss": 10.858942031860352
+    }
+  },
+  {
+    "kind": "rec_full",
+    "batch": 8,
+    "sequence": 256,
+    "dtype": "bfloat16",
+    "repeats": [
+      {
+        "forward_ms": 25.78599995467812,
+        "backward_ms": 24.050167005043477,
+        "total_ms": 49.836166959721595,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.25558297848329,
+        "backward_ms": 24.301208031829447,
+        "total_ms": 45.556791010312736,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.699124947190285,
+        "backward_ms": 24.28966702427715,
+        "total_ms": 45.988791971467435,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.3968749740161,
+        "backward_ms": 23.859624983742833,
+        "total_ms": 45.25649995775893,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.893167005851865,
+        "backward_ms": 24.13320797495544,
+        "total_ms": 45.026374980807304,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.489167003892362,
+        "backward_ms": 23.98145804181695,
+        "total_ms": 45.47062504570931,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.654749987646937,
+        "backward_ms": 24.12966702831909,
+        "total_ms": 45.78441701596603,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.149875014089048,
+        "backward_ms": 24.029791995417327,
+        "total_ms": 45.179667009506375,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.260959038045257,
+        "backward_ms": 24.139832996297628,
+        "total_ms": 45.400792034342885,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.98466601455584,
+        "backward_ms": 24.22766701783985,
+        "total_ms": 45.21233303239569,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.97783295903355,
+        "backward_ms": 24.154999991878867,
+        "total_ms": 45.132832950912416,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.28441701643169,
+        "backward_ms": 24.125457974150777,
+        "total_ms": 45.409874990582466,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.650125039741397,
+        "backward_ms": 24.091666971798986,
+        "total_ms": 45.74179201154038,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.26937500340864,
+        "backward_ms": 24.187083006836474,
+        "total_ms": 44.456458010245115,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.67012502811849,
+        "backward_ms": 24.005834013223648,
+        "total_ms": 44.67595904134214,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 22.02770800795406,
+        "backward_ms": 24.13108298787847,
+        "total_ms": 46.15879099583253,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.08074998250231,
+        "backward_ms": 23.923375003505498,
+        "total_ms": 45.00412498600781,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.923250005580485,
+        "backward_ms": 23.858250002376735,
+        "total_ms": 44.78150000795722,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.611791987903416,
+        "backward_ms": 24.1499170078896,
+        "total_ms": 44.761708995793015,
+        "peak_incremental_bytes": 1386407046,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      }
+    ],
+    "median": {
+      "forward_ms": 21.08074998250231,
+      "backward_ms": 24.12966702831909,
+      "total_ms": 45.179667009506375,
+      "peak_incremental_bytes": 1386407046.0,
+      "gradient_logical_bytes": 23400960.0,
+      "gradient_physical_retained_bytes": 23400960.0,
+      "loss": 10.825332641601562
+    }
+  },
+  {
+    "kind": "rec_tb2",
+    "batch": 8,
+    "sequence": 256,
+    "dtype": "bfloat16",
+    "repeats": [
+      {
+        "forward_ms": 20.094542007427663,
+        "backward_ms": 18.972457968629897,
+        "total_ms": 39.06699997605756,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.964249968528748,
+        "backward_ms": 18.992834025993943,
+        "total_ms": 39.95708399452269,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.205666998866946,
+        "backward_ms": 19.121665973216295,
+        "total_ms": 40.32733297208324,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.29937498830259,
+        "backward_ms": 19.068124995101243,
+        "total_ms": 40.36749998340383,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.648375026416034,
+        "backward_ms": 19.163666001986712,
+        "total_ms": 40.812041028402746,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.72808297816664,
+        "backward_ms": 19.387041975278407,
+        "total_ms": 40.11512495344505,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 22.154250007588416,
+        "backward_ms": 18.94204196287319,
+        "total_ms": 41.09629197046161,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.168208040762693,
+        "backward_ms": 19.04662500601262,
+        "total_ms": 40.21483304677531,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.526542026549578,
+        "backward_ms": 19.040499988477677,
+        "total_ms": 40.567042015027255,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 22.23079203395173,
+        "backward_ms": 19.073290983214974,
+        "total_ms": 41.304083017166704,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.945166994351894,
+        "backward_ms": 19.064583000726998,
+        "total_ms": 40.00974999507889,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.58716699341312,
+        "backward_ms": 19.091333029791713,
+        "total_ms": 40.67850002320483,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.370292000938207,
+        "backward_ms": 18.985375005286187,
+        "total_ms": 40.355667006224394,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.034082979895175,
+        "backward_ms": 19.019291969016194,
+        "total_ms": 40.05337494891137,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.20904199546203,
+        "backward_ms": 18.97262502461672,
+        "total_ms": 40.18166702007875,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 22.49100001063198,
+        "backward_ms": 19.047125009819865,
+        "total_ms": 41.538125020451844,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.931375038344413,
+        "backward_ms": 18.987541960086673,
+        "total_ms": 39.91891699843109,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 20.583875011652708,
+        "backward_ms": 19.05870798509568,
+        "total_ms": 39.64258299674839,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      },
+      {
+        "forward_ms": 21.263415983412415,
+        "backward_ms": 19.12770903436467,
+        "total_ms": 40.391125017777085,
+        "peak_incremental_bytes": 1222762578,
+        "gradient_logical_bytes": 23400960,
+        "gradient_physical_retained_bytes": 23400960,
+        "loss": 10.825332641601562
+      }
+    ],
+    "median": {
+      "forward_ms": 21.263415983412415,
+      "backward_ms": 19.047125009819865,
+      "total_ms": 40.355667006224394,
+      "peak_incremental_bytes": 1222762578.0,
+      "gradient_logical_bytes": 23400960.0,
+      "gradient_physical_retained_bytes": 23400960.0,
+      "loss": 10.825332641601562
+    }
+  }
+]

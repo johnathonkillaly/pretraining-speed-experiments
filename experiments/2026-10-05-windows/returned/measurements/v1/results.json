@@ -1,0 +1,86 @@
+{
+  "status": "FAIL",
+  "version": "v1",
+  "freeze": {
+    "registration_commit": "93e68b04b61a8cbe142244f4bc60229b52633f72",
+    "sha256": {
+      "model.py": "1fb9d8af3d7385580ff878963b4c1e1c50895df4fdbe24fc86ca88f8d8f67aba",
+      "optimizer.py": "079b0c86c115ef0832c66de411e2336a27e51700546d3199c3f78fb91b84a5d5",
+      "verify.py": "928c7ff49adab405aceae14a20972b5e85b70e4daf0368b7f51fb5d6ddb472b9",
+      "campaign.py": "3016c56d3fe654094a217cf83d6626a5c0249b99e25840c60a287742eac8607b",
+      "config.json": "5f48dd119270649e55ab8264f96bf45af4304664df600cf7999ae063574290e4",
+      "CONTRACT.md": "41032ede5fd8a8b338c38edd866a1f73e405b1b25efaf057e83f7bf42a529724"
+    }
+  },
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "orders": [
+      [
+        "dense4",
+        "dense10",
+        "rec_full",
+        "rec_tb2"
+      ],
+      [
+        "dense10",
+        "dense4",
+        "rec_tb2",
+        "rec_full"
+      ],
+      [
+        "dense4",
+        "dense10",
+        "rec_full",
+        "rec_tb2"
+      ]
+    ],
+    "warmup_steps": 3,
+    "measurement_window_s": 10,
+    "start_temperature_c": 65,
+    "stop_temperature_c": 85,
+    "gpu_active_cap_s": 600,
+    "optional_sustained_probe": false,
+    "batch": 8,
+    "context": 256,
+    "geometry": {
+      "d": 256,
+      "h": 864,
+      "heads": 8,
+      "kv_heads": 2,
+      "head_dim": 32,
+      "vocab": 32768,
+      "rope_theta": 500000,
+      "rms_norm_eps": 1e-05
+    },
+    "muon_lr": 0.01,
+    "adam_lr": 0.0003,
+    "clip": 1,
+    "weight_decay": 0,
+    "compiled": false,
+    "dtype": "BF16 parameters and gradients; FP32 master weights, clipping, momentum and moments",
+    "source_zip_sha256": "688f5517f878e8583dc0584a6a13aec56aa826537582753ff3a90128a2e4e539"
+  },
+  "started_utc": "2026-10-05T14:07:20.009895+00:00",
+  "torch": "2.7.0+cu128",
+  "cuda_runtime": "12.8",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "attention": "PyTorch Flash SDPA forced on CUDA, explicit KV repetition; eager",
+  "benchmarks": [],
+  "initial_free_bytes": 7411335168,
+  "total_vram_bytes": 8585216000,
+  "allocator_budget_bytes": 5800722432,
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "allowed_desktop_pids": [],
+  "empty_cuda_synchronize_median_host_us": 2.7999999474559445,
+  "error": "No available kernel. Aborting execution.",
+  "traceback": "Traceback (most recent call last):\n  File \"/EXTERNAL_RESOURCE/8798de40934f\", line 170, in main\n    cuda=numerical_cuda(); torch.cuda.synchronize()\n  File \"/EXTERNAL_RESOURCE/dcd768be8c6e\", line 115, in numerical_cuda\n    full,g1=grads(model,x,y,4); same,g2=grads(model,x,y,8); trace={}; truncated,gt=grads(model,x,y,2,trace)\n            ~~~~~^^^^^^^^^^^^^\n  File \"/EXTERNAL_RESOURCE/dcd768be8c6e\", line 13, in grads\n    loss=objective(model,x,y,4,k,trace=trace)\n  File \"/EXTERNAL_RESOURCE/d772f80727bb\", line 110, in objective\n    logits=model(x,loops,k,**kwargs)\n  File \"/EXTERNAL_RESOURCE/d1fe8be4963f\", line 1751, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/EXTERNAL_RESOURCE/d1fe8be4963f\", line 1762, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/EXTERNAL_RESOURCE/d772f80727bb\", line 92, in forward\n    e=self.prelude(x); x=e if frozen_prefix is None else frozen_prefix\n  File \"/EXTERNAL_RESOURCE/d1fe8be4963f\", line 1751, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/EXTERNAL_RESOURCE/d1fe8be4963f\", line 1762, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/EXTERNAL_RESOURCE/d772f80727bb\", line 67, in forward\n    x=x+self.self_attn(self.input_layernorm(x))\n        ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/EXTERNAL_RESOURCE/d1fe8be4963f\", line 1751, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/EXTERNAL_RESOURCE/d1fe8be4963f\", line 1762, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/EXTERNAL_RESOURCE/d772f80727bb\", line 51, in forward\n    z=F.scaled_dot_product_attention(q,k,v,is_causal=True,dropout_p=0,scale=g.head_dim**-.5)\nRuntimeError: No available kernel. Aborting execution.\n",
+  "gpu_active_seconds": 0.48339169999962905,
+  "max_sampled_gpu_temperature_c": 36.0,
+  "telemetry_samples": 2,
+  "max_telemetry_sample_gap_s": 0.10890120000021852,
+  "finished_utc": "2026-10-05T14:07:23.107702+00:00"
+}

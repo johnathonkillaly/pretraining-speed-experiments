@@ -1,0 +1,4 @@
+{"event": "worker_start", "tag": "gradient_diagnostic", "preflight": {"ac": true, "memory_free_pct": 92, "competing_ml": []}, "monotonic_seconds": 0.059918625047430396}
+{"event": "monitor", "tag": "gradient_diagnostic", "thermal_state": 0, "ac": true, "memory_free_pct": 92, "competing_ml": [], "monotonic_seconds": 0.12240308301988989}
+{"event": "monitor", "tag": "gradient_diagnostic", "thermal_state": 0, "ac": true, "memory_free_pct": 92, "competing_ml": [], "monotonic_seconds": 1.6330782920122147}
+{"event": "worker_end", "tag": "gradient_diagnostic", "exit_code": 0, "aggregate_worker_seconds": 7.6646714160451666, "monotonic_seconds": 3.1383658749982715}

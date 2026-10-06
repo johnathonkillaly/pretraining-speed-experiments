@@ -1,0 +1,7628 @@
+{
+  "preflight": {
+    "substantial_ml_jobs": [],
+    "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"
+  },
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "mlx_version": "0.32.2",
+  "optimizer_source_sha256": "57501691b4cf5e16cc4edd738f2dd358305e6c54bcd4bb93c7d10144d09e2c3a",
+  "numerical_checks": {
+    "passed": true,
+    "batched_vs_independent_relative_differences": [
+      1.4576977491742582e-07,
+      2.0805740064133715e-07,
+      2.5245279289265454e-07
+    ],
+    "cross_expert_coupling": {
+      "muon": {
+        "expert_zero_update_relative_difference": 0.1513001173734665,
+        "max_absolute_difference": 0.0015357914380729198
+      },
+      "per_expert_muon": {
+        "expert_zero_update_relative_difference": 0.0,
+        "max_absolute_difference": 0.0
+      }
+    },
+    "zero_gradient_after_active_step_max_weight_change": {
+      "adamw": 0.0004129484295845032,
+      "sgd": 0.0,
+      "momentum_sgd": 0.0016505420207977295,
+      "lion": 0.0010000020265579224,
+      "adafactor": 0.0,
+      "muon": 0.015098199248313904
+    }
+  },
+  "gradient_checks": [
+    {
+      "custom_broadcast_zeros": false,
+      "loss": 0.011048082262277603,
+      "logical_gradient_bytes": 21233664,
+      "physical_gradient_retained_bytes": 21233664
+    },
+    {
+      "custom_broadcast_zeros": true,
+      "loss": 0.011048082262277603,
+      "logical_gradient_bytes": 21233664,
+      "physical_gradient_retained_bytes": 2654016
+    }
+  ],
+  "cases": [
+    {
+      "optimizer": "adamw",
+      "layout": "dense",
+      "activity": "all",
+      "parameter_logical_bytes": 2654208,
+      "gradient_logical_bytes": 2654208,
+      "state_logical_bytes": 5308428,
+      "matrix_state_logical_bytes": 5308416,
+      "state_physical_retained_bytes": 5308428,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 0.9800000116229057,
+          "incremental_peak_bytes": 15925396
+        },
+        {
+          "index": 1,
+          "update_ms": 0.6302919937297702,
+          "incremental_peak_bytes": 16
+        },
+        {
+          "index": 2,
+          "update_ms": 0.6281249807216227,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 3,
+          "update_ms": 0.6198750343173742,
+          "incremental_peak_bytes": 64
+        },
+        {
+          "index": 4,
+          "update_ms": 0.6332499906420708,
+          "incremental_peak_bytes": 60
+        },
+        {
+          "index": 5,
+          "update_ms": 0.6455840193666518,
+          "incremental_peak_bytes": 64
+        },
+        {
+          "index": 6,
+          "update_ms": 0.6271659513004124,
+          "incremental_peak_bytes": 16
+        },
+        {
+          "index": 7,
+          "update_ms": 0.6165000377222896,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 8,
+          "update_ms": 0.6275830091908574,
+          "incremental_peak_bytes": 24
+        },
+        {
+          "index": 9,
+          "update_ms": 0.7788750226609409,
+          "incremental_peak_bytes": 36
+        },
+        {
+          "index": 10,
+          "update_ms": 0.5693330313079059,
+          "incremental_peak_bytes": 64
+        },
+        {
+          "index": 11,
+          "update_ms": 0.30037498800083995,
+          "incremental_peak_bytes": 68
+        },
+        {
+          "index": 12,
+          "update_ms": 0.30229100957512856,
+          "incremental_peak_bytes": 44
+        },
+        {
+          "index": 13,
+          "update_ms": 0.30037498800083995,
+          "incremental_peak_bytes": 48
+        },
+        {
+          "index": 14,
+          "update_ms": 0.2981669967994094,
+          "incremental_peak_bytes": 48
+        },
+        {
+          "index": 15,
+          "update_ms": 0.299291976261884,
+          "incremental_peak_bytes": 60
+        },
+        {
+          "index": 16,
+          "update_ms": 0.30283298110589385,
+          "incremental_peak_bytes": 44
+        },
+        {
+          "index": 17,
+          "update_ms": 0.30587497167289257,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 18,
+          "update_ms": 0.3593750298023224,
+          "incremental_peak_bytes": 16
+        }
+      ],
+      "median_update_ms": 0.3593750298023224,
+      "q25_update_ms": 0.30133299878798425,
+      "q75_update_ms": 0.6273744802456349,
+      "median_incremental_peak_bytes": 48.0
+    },
+    {
+      "optimizer": "sgd",
+      "layout": "dense",
+      "activity": "all",
+      "parameter_logical_bytes": 2654208,
+      "gradient_logical_bytes": 2654208,
+      "state_logical_bytes": 2654220,
+      "matrix_state_logical_bytes": 2654208,
+      "state_physical_retained_bytes": 2654220,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 0.38058398058637977,
+          "incremental_peak_bytes": 5308444
+        },
+        {
+          "index": 1,
+          "update_ms": 0.22625003475695848,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 2,
+          "update_ms": 0.31754199881106615,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 3,
+          "update_ms": 0.1977919600903988,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 4,
+          "update_ms": 0.1955829793587327,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 5,
+          "update_ms": 0.21254195598885417,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 6,
+          "update_ms": 0.19187497673556209,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 7,
+          "update_ms": 0.19362499006092548,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 8,
+          "update_ms": 0.19225000869482756,
+          "incremental_peak_bytes": 1769472
+        },
+        {
+          "index": 9,
+          "update_ms": 0.1961250090971589,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 10,
+          "update_ms": 0.19420799799263477,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 11,
+          "update_ms": 0.18933304818347096,
+          "incremental_peak_bytes": 1769472
+        },
+        {
+          "index": 12,
+          "update_ms": 0.18995895516127348,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 13,
+          "update_ms": 0.1942919916473329,
+          "incremental_peak_bytes": 884744
+        },
+        {
+          "index": 14,
+          "update_ms": 0.20029203733429313,
+          "incremental_peak_bytes": 1769480
+        },
+        {
+          "index": 15,
+          "update_ms": 0.19229098688811064,
+          "incremental_peak_bytes": 1769464
+        },
+        {
+          "index": 16,
+          "update_ms": 0.2132089575752616,
+          "incremental_peak_bytes": 1769480
+        },
+        {
+          "index": 17,
+          "update_ms": 0.1937909983098507,
+          "incremental_peak_bytes": 1769480
+        },
+        {
+          "index": 18,
+          "update_ms": 0.19237503875046968,
+          "incremental_peak_bytes": 884744
+        }
+      ],
+      "median_update_ms": 0.1937909983098507,
+      "q25_update_ms": 0.1922704977914691,
+      "q75_update_ms": 0.1958539942279458,
+      "median_incremental_peak_bytes": 884744.0
+    },
+    {
+      "optimizer": "momentum_sgd",
+      "layout": "dense",
+      "activity": "all",
+      "parameter_logical_bytes": 2654208,
+      "gradient_logical_bytes": 2654208,
+      "state_logical_bytes": 2654220,
+      "matrix_state_logical_bytes": 2654208,
+      "state_physical_retained_bytes": 2654220,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 0.4229589831084013,
+          "incremental_peak_bytes": 5308456
+        },
+        {
+          "index": 1,
+          "update_ms": 0.259916007053107,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 2,
+          "update_ms": 0.28483301866799593,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 3,
+          "update_ms": 0.25525002274662256,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 4,
+          "update_ms": 0.4825830110348761,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 5,
+          "update_ms": 0.2749169943854213,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 6,
+          "update_ms": 0.24866696912795305,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 7,
+          "update_ms": 0.25841599563136697,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 8,
+          "update_ms": 0.28508302057161927,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 9,
+          "update_ms": 0.2641670289449394,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 10,
+          "update_ms": 0.259124964941293,
+          "incremental_peak_bytes": 1769472
+        },
+        {
+          "index": 11,
+          "update_ms": 0.25804201140999794,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 12,
+          "update_ms": 0.2566250041127205,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 13,
+          "update_ms": 0.2596669946797192,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 14,
+          "update_ms": 0.27550000231713057,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 15,
+          "update_ms": 0.25587499840185046,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 16,
+          "update_ms": 0.25924999499693513,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 17,
+          "update_ms": 0.2616659621708095,
+          "incremental_peak_bytes": 884756
+        },
+        {
+          "index": 18,
+          "update_ms": 0.28491701232269406,
+          "incremental_peak_bytes": 16
+        }
+      ],
+      "median_update_ms": 0.2596669946797192,
+      "q25_update_ms": 0.25822900352068245,
+      "q75_update_ms": 0.2752084983512759,
+      "median_incremental_peak_bytes": 884756.0
+    },
+    {
+      "optimizer": "lion",
+      "layout": "dense",
+      "activity": "all",
+      "parameter_logical_bytes": 2654208,
+      "gradient_logical_bytes": 2654208,
+      "state_logical_bytes": 2654220,
+      "matrix_state_logical_bytes": 2654208,
+      "state_physical_retained_bytes": 2654220,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 5.844625004101545,
+          "incremental_peak_bytes": 13271116
+        },
+        {
+          "index": 1,
+          "update_ms": 0.4225830198265612,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 2,
+          "update_ms": 0.3863330348394811,
+          "incremental_peak_bytes": 40
+        },
+        {
+          "index": 3,
+          "update_ms": 0.40316698141396046,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 4,
+          "update_ms": 0.36566698690876365,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 5,
+          "update_ms": 0.4331660456955433,
+          "incremental_peak_bytes": 40
+        },
+        {
+          "index": 6,
+          "update_ms": 0.39350002771243453,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 7,
+          "update_ms": 0.3913340042345226,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 8,
+          "update_ms": 0.3923330223187804,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 9,
+          "update_ms": 0.43587503023445606,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 10,
+          "update_ms": 0.3863750025629997,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 11,
+          "update_ms": 0.3826250322163105,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 12,
+          "update_ms": 0.3740839892998338,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 13,
+          "update_ms": 0.3780830302275717,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 14,
+          "update_ms": 0.37237501237541437,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 15,
+          "update_ms": 0.3468750510364771,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 16,
+          "update_ms": 0.36991701927036047,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 17,
+          "update_ms": 0.3784580039791763,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 18,
+          "update_ms": 0.3968329983763397,
+          "incremental_peak_bytes": 24
+        }
+      ],
+      "median_update_ms": 0.3826250322163105,
+      "q25_update_ms": 0.3732295008376241,
+      "q75_update_ms": 0.3929165250156075,
+      "median_incremental_peak_bytes": 56.0
+    },
+    {
+      "optimizer": "adafactor",
+      "layout": "dense",
+      "activity": "all",
+      "parameter_logical_bytes": 2654208,
+      "gradient_logical_bytes": 2654208,
+      "state_logical_bytes": 13452,
+      "matrix_state_logical_bytes": 13440,
+      "state_physical_retained_bytes": 13452,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.1407499550841749,
+          "incremental_peak_bytes": 10724552
+        },
+        {
+          "index": 1,
+          "update_ms": 0.6787079619243741,
+          "incremental_peak_bytes": 5402636
+        },
+        {
+          "index": 2,
+          "update_ms": 0.641374965198338,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 3,
+          "update_ms": 0.6622499786317348,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 4,
+          "update_ms": 0.6456249975599349,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 5,
+          "update_ms": 0.6395410164259374,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 6,
+          "update_ms": 0.6585420342162251,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 7,
+          "update_ms": 0.6685410044156015,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 8,
+          "update_ms": 0.6719579687342048,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 9,
+          "update_ms": 0.668874999973923,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 10,
+          "update_ms": 0.677208008710295,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 11,
+          "update_ms": 0.6747909937985241,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 12,
+          "update_ms": 0.6730830064043403,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 13,
+          "update_ms": 0.6473750108852983,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 14,
+          "update_ms": 0.7432500133290887,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 15,
+          "update_ms": 0.6719160010106862,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 16,
+          "update_ms": 0.649666995741427,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 17,
+          "update_ms": 0.6791249616071582,
+          "incremental_peak_bytes": 8056868
+        },
+        {
+          "index": 18,
+          "update_ms": 0.5244159838184714,
+          "incremental_peak_bytes": 8056868
+        }
+      ],
+      "median_update_ms": 0.668874999973923,
+      "q25_update_ms": 0.6485210033133626,
+      "q75_update_ms": 0.6739370001014322,
+      "median_incremental_peak_bytes": 8056868.0
+    },
+    {
+      "optimizer": "muon",
+      "layout": "dense",
+      "activity": "all",
+      "parameter_logical_bytes": 2654208,
+      "gradient_logical_bytes": 2654208,
+      "state_logical_bytes": 2654220,
+      "matrix_state_logical_bytes": 2654208,
+      "state_physical_retained_bytes": 2654220,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 3.355958964675665,
+          "incremental_peak_bytes": 69994240
+        },
+        {
+          "index": 1,
+          "update_ms": 2.646417007781565,
+          "incremental_peak_bytes": 64685812
+        },
+        {
+          "index": 2,
+          "update_ms": 2.242417016532272,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 3,
+          "update_ms": 1.4390000142157078,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 4,
+          "update_ms": 1.2909579672850668,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 5,
+          "update_ms": 1.2364580179564655,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 6,
+          "update_ms": 1.2640420463867486,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 7,
+          "update_ms": 1.2471669469960034,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 8,
+          "update_ms": 1.2146250228397548,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 9,
+          "update_ms": 1.2667499831877649,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 10,
+          "update_ms": 1.2297079665586352,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 11,
+          "update_ms": 1.1936670052818954,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 12,
+          "update_ms": 1.2253749882802367,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 13,
+          "update_ms": 1.2102909968234599,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 14,
+          "update_ms": 1.2341670226305723,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 15,
+          "update_ms": 1.221249985974282,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 16,
+          "update_ms": 1.2277080095373094,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 17,
+          "update_ms": 1.279583026189357,
+          "incremental_peak_bytes": 43583132
+        },
+        {
+          "index": 18,
+          "update_ms": 1.1950830230489373,
+          "incremental_peak_bytes": 43583132
+        }
+      ],
+      "median_update_ms": 1.2297079665586352,
+      "q25_update_ms": 1.2179375044070184,
+      "q75_update_ms": 1.255604496691376,
+      "median_incremental_peak_bytes": 43583132.0
+    },
+    {
+      "optimizer": "adamw",
+      "layout": "independent",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 42467340,
+      "matrix_state_logical_bytes": 42467328,
+      "state_physical_retained_bytes": 42467340,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 2.7148330118507147,
+          "incremental_peak_bytes": 122979220
+        },
+        {
+          "index": 1,
+          "update_ms": 1.3923750375397503,
+          "incremental_peak_bytes": 74318544
+        },
+        {
+          "index": 2,
+          "update_ms": 1.2849579798057675,
+          "incremental_peak_bytes": 77857480
+        },
+        {
+          "index": 3,
+          "update_ms": 1.2684580287896097,
+          "incremental_peak_bytes": 84935412
+        },
+        {
+          "index": 4,
+          "update_ms": 1.300833944696933,
+          "incremental_peak_bytes": 81396488
+        },
+        {
+          "index": 5,
+          "update_ms": 1.260666991584003,
+          "incremental_peak_bytes": 81396532
+        },
+        {
+          "index": 6,
+          "update_ms": 1.2569159734994173,
+          "incremental_peak_bytes": 81396532
+        },
+        {
+          "index": 7,
+          "update_ms": 1.2743750121444464,
+          "incremental_peak_bytes": 81396416
+        },
+        {
+          "index": 8,
+          "update_ms": 1.299499999731779,
+          "incremental_peak_bytes": 78742224
+        },
+        {
+          "index": 9,
+          "update_ms": 1.269790984224528,
+          "incremental_peak_bytes": 84935452
+        },
+        {
+          "index": 10,
+          "update_ms": 1.260249991901219,
+          "incremental_peak_bytes": 78742132
+        },
+        {
+          "index": 11,
+          "update_ms": 1.260208955500275,
+          "incremental_peak_bytes": 81396392
+        },
+        {
+          "index": 12,
+          "update_ms": 1.2547909864224494,
+          "incremental_peak_bytes": 81396400
+        },
+        {
+          "index": 13,
+          "update_ms": 1.2747080181725323,
+          "incremental_peak_bytes": 81396456
+        },
+        {
+          "index": 14,
+          "update_ms": 1.2822920107282698,
+          "incremental_peak_bytes": 80511664
+        },
+        {
+          "index": 15,
+          "update_ms": 1.2643340160138905,
+          "incremental_peak_bytes": 80511696
+        },
+        {
+          "index": 16,
+          "update_ms": 1.2535409769043326,
+          "incremental_peak_bytes": 81396532
+        },
+        {
+          "index": 17,
+          "update_ms": 1.2628749827854335,
+          "incremental_peak_bytes": 81396520
+        },
+        {
+          "index": 18,
+          "update_ms": 1.2594159925356507,
+          "incremental_peak_bytes": 80511636
+        }
+      ],
+      "median_update_ms": 1.2628749827854335,
+      "q25_update_ms": 1.2598124740179628,
+      "q75_update_ms": 1.2745415151584893,
+      "median_incremental_peak_bytes": 81396416.0
+    },
+    {
+      "optimizer": "sgd",
+      "layout": "independent",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.3231250341050327,
+          "incremental_peak_bytes": 42467440
+        },
+        {
+          "index": 1,
+          "update_ms": 0.40675001218914986,
+          "incremental_peak_bytes": 3538960
+        },
+        {
+          "index": 2,
+          "update_ms": 0.37895800778642297,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 3,
+          "update_ms": 0.36945799365639687,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 4,
+          "update_ms": 0.3706669667735696,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 5,
+          "update_ms": 0.3779589897021651,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 6,
+          "update_ms": 0.3792080096900463,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 7,
+          "update_ms": 0.3745409776456654,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 8,
+          "update_ms": 0.37579197669401765,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 9,
+          "update_ms": 0.37412502570077777,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 10,
+          "update_ms": 0.3741669934242964,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 11,
+          "update_ms": 0.37341698771342635,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 12,
+          "update_ms": 0.37404103204607964,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 13,
+          "update_ms": 0.3743330016732216,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 14,
+          "update_ms": 0.3719999804161489,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 15,
+          "update_ms": 0.37225004052743316,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 16,
+          "update_ms": 0.3843330196104944,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 17,
+          "update_ms": 0.37695898208767176,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 18,
+          "update_ms": 0.3740839892998338,
+          "incremental_peak_bytes": 8
+        }
+      ],
+      "median_update_ms": 0.3741669934242964,
+      "q25_update_ms": 0.373729009879753,
+      "q75_update_ms": 0.3763754793908447,
+      "median_incremental_peak_bytes": 8.0
+    },
+    {
+      "optimizer": "momentum_sgd",
+      "layout": "independent",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.1684169876389205,
+          "incremental_peak_bytes": 42467536
+        },
+        {
+          "index": 1,
+          "update_ms": 0.5290840053930879,
+          "incremental_peak_bytes": 4423792
+        },
+        {
+          "index": 2,
+          "update_ms": 0.5196669953875244,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 3,
+          "update_ms": 0.5344169912859797,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 4,
+          "update_ms": 0.526291027199477,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 5,
+          "update_ms": 0.5272919661365449,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 6,
+          "update_ms": 0.5269579705782235,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 7,
+          "update_ms": 0.5306669627316296,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 8,
+          "update_ms": 0.5227500223554671,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 9,
+          "update_ms": 0.5243339692242444,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 10,
+          "update_ms": 0.5307919927872717,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 11,
+          "update_ms": 0.530958001036197,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 12,
+          "update_ms": 0.5359579809010029,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 13,
+          "update_ms": 0.6179590127430856,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 14,
+          "update_ms": 0.5341659998521209,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 15,
+          "update_ms": 0.529124983586371,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 16,
+          "update_ms": 0.579165993258357,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 17,
+          "update_ms": 0.5248749512247741,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 18,
+          "update_ms": 0.5302080535329878,
+          "incremental_peak_bytes": 96
+        }
+      ],
+      "median_update_ms": 0.5302080535329878,
+      "q25_update_ms": 0.5266244988888502,
+      "q75_update_ms": 0.5325620004441589,
+      "median_incremental_peak_bytes": 96.0
+    },
+    {
+      "optimizer": "lion",
+      "layout": "independent",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 2.3059590021148324,
+          "incremental_peak_bytes": 106168816
+        },
+        {
+          "index": 1,
+          "update_ms": 0.9419579873792827,
+          "incremental_peak_bytes": 67240336
+        },
+        {
+          "index": 2,
+          "update_ms": 0.9483749745413661,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 3,
+          "update_ms": 0.958832970354706,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 4,
+          "update_ms": 0.9595000301487744,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 5,
+          "update_ms": 0.950958055909723,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 6,
+          "update_ms": 0.9587499662302434,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 7,
+          "update_ms": 0.9577079908922315,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 8,
+          "update_ms": 0.9583749924786389,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 9,
+          "update_ms": 0.969666987657547,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 10,
+          "update_ms": 0.981291988864541,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 11,
+          "update_ms": 0.9817499667406082,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 12,
+          "update_ms": 0.9677920024842024,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 13,
+          "update_ms": 0.9648340055719018,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 14,
+          "update_ms": 0.9651670115999877,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 15,
+          "update_ms": 0.9641250362619758,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 16,
+          "update_ms": 0.9685829863883555,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 17,
+          "update_ms": 0.9618749609217048,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 18,
+          "update_ms": 0.9591249981895089,
+          "incremental_peak_bytes": 73433488
+        }
+      ],
+      "median_update_ms": 0.9641250362619758,
+      "q25_update_ms": 0.9589374822098762,
+      "q75_update_ms": 0.9681874944362789,
+      "median_incremental_peak_bytes": 73433488.0
+    },
+    {
+      "optimizer": "adafactor",
+      "layout": "independent",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 107532,
+      "matrix_state_logical_bytes": 107520,
+      "state_physical_retained_bytes": 107532,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.0.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.0.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.0.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.0.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.0.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.1.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.1.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.1.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.1.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.1.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.1.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.2.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.2.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.2.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.2.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.2.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.2.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.3.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.3.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.3.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.3.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.3.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.3.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.4.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.4.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.4.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.4.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.4.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.4.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.5.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.5.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.5.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.5.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.5.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.5.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.6.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.6.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.6.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.6.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.6.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.6.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.7.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.7.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.7.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.7.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.7.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.7.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 2.4292089510709047,
+          "incremental_peak_bytes": 39981196
+        },
+        {
+          "index": 1,
+          "update_ms": 1.9956249743700027,
+          "incremental_peak_bytes": 28392140
+        },
+        {
+          "index": 2,
+          "update_ms": 1.976250030566007,
+          "incremental_peak_bytes": 31056360
+        },
+        {
+          "index": 3,
+          "update_ms": 1.9838750013150275,
+          "incremental_peak_bytes": 34600356
+        },
+        {
+          "index": 4,
+          "update_ms": 2.035207988228649,
+          "incremental_peak_bytes": 28392124
+        },
+        {
+          "index": 5,
+          "update_ms": 2.0734589779749513,
+          "incremental_peak_bytes": 27507300
+        },
+        {
+          "index": 6,
+          "update_ms": 2.0682920003309846,
+          "incremental_peak_bytes": 28397132
+        },
+        {
+          "index": 7,
+          "update_ms": 2.042750013060868,
+          "incremental_peak_bytes": 28392128
+        },
+        {
+          "index": 8,
+          "update_ms": 2.0389999845065176,
+          "incremental_peak_bytes": 31056352
+        },
+        {
+          "index": 9,
+          "update_ms": 2.0293749985285103,
+          "incremental_peak_bytes": 31945584
+        },
+        {
+          "index": 10,
+          "update_ms": 2.0301250042393804,
+          "incremental_peak_bytes": 28397128
+        },
+        {
+          "index": 11,
+          "update_ms": 2.1177500020712614,
+          "incremental_peak_bytes": 34600348
+        },
+        {
+          "index": 12,
+          "update_ms": 2.243374998215586,
+          "incremental_peak_bytes": 34600400
+        },
+        {
+          "index": 13,
+          "update_ms": 2.149459032807499,
+          "incremental_peak_bytes": 34600400
+        },
+        {
+          "index": 14,
+          "update_ms": 2.1735839545726776,
+          "incremental_peak_bytes": 31941100
+        },
+        {
+          "index": 15,
+          "update_ms": 2.229458012152463,
+          "incremental_peak_bytes": 28397132
+        },
+        {
+          "index": 16,
+          "update_ms": 2.2214159835129976,
+          "incremental_peak_bytes": 34600400
+        },
+        {
+          "index": 17,
+          "update_ms": 2.1457920083776116,
+          "incremental_peak_bytes": 31944560
+        },
+        {
+          "index": 18,
+          "update_ms": 2.159958006814122,
+          "incremental_peak_bytes": 33715572
+        }
+      ],
+      "median_update_ms": 2.1177500020712614,
+      "q25_update_ms": 2.0408749987836927,
+      "q75_update_ms": 2.1667709806934,
+      "median_incremental_peak_bytes": 31941100.0
+    },
+    {
+      "optimizer": "muon",
+      "layout": "independent",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 13.562917010858655,
+          "incremental_peak_bytes": 301734720
+        },
+        {
+          "index": 1,
+          "update_ms": 13.122583040967584,
+          "incremental_peak_bytes": 267328988
+        },
+        {
+          "index": 2,
+          "update_ms": 8.904166985303164,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 3,
+          "update_ms": 9.117042005527765,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 4,
+          "update_ms": 8.798166003543884,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 5,
+          "update_ms": 8.769334002863616,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 6,
+          "update_ms": 8.884250011760741,
+          "incremental_peak_bytes": 262020528
+        },
+        {
+          "index": 7,
+          "update_ms": 8.959500002674758,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 8,
+          "update_ms": 9.431125014089048,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 9,
+          "update_ms": 8.823707990814,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 10,
+          "update_ms": 9.212750010192394,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 11,
+          "update_ms": 8.791291038505733,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 12,
+          "update_ms": 9.216624952387065,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 13,
+          "update_ms": 8.786832971964031,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 14,
+          "update_ms": 9.121916024014354,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 15,
+          "update_ms": 8.865042007528245,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 16,
+          "update_ms": 9.203042020089924,
+          "incremental_peak_bytes": 262020532
+        },
+        {
+          "index": 17,
+          "update_ms": 8.947541005909443,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 18,
+          "update_ms": 8.98016698192805,
+          "incremental_peak_bytes": 262020540
+        }
+      ],
+      "median_update_ms": 8.947541005909443,
+      "q25_update_ms": 8.810936997178942,
+      "q75_update_ms": 9.162479022052139,
+      "median_incremental_peak_bytes": 262020512.0
+    },
+    {
+      "optimizer": "adamw",
+      "layout": "independent",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 42467340,
+      "matrix_state_logical_bytes": 42467328,
+      "state_physical_retained_bytes": 42467340,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 2.6382090291008353,
+          "incremental_peak_bytes": 122979216
+        },
+        {
+          "index": 1,
+          "update_ms": 1.2969999806955457,
+          "incremental_peak_bytes": 67240480
+        },
+        {
+          "index": 2,
+          "update_ms": 1.253083988558501,
+          "incremental_peak_bytes": 84935480
+        },
+        {
+          "index": 3,
+          "update_ms": 1.3127080164849758,
+          "incremental_peak_bytes": 84935476
+        },
+        {
+          "index": 4,
+          "update_ms": 1.3174170162528753,
+          "incremental_peak_bytes": 84935444
+        },
+        {
+          "index": 5,
+          "update_ms": 1.2597090099006891,
+          "incremental_peak_bytes": 84935532
+        },
+        {
+          "index": 6,
+          "update_ms": 1.2532920227386057,
+          "incremental_peak_bytes": 84935428
+        },
+        {
+          "index": 7,
+          "update_ms": 1.2565840152092278,
+          "incremental_peak_bytes": 81396516
+        },
+        {
+          "index": 8,
+          "update_ms": 1.2717909994535148,
+          "incremental_peak_bytes": 81396420
+        },
+        {
+          "index": 9,
+          "update_ms": 1.257083029486239,
+          "incremental_peak_bytes": 84935484
+        },
+        {
+          "index": 10,
+          "update_ms": 1.2814169749617577,
+          "incremental_peak_bytes": 81396408
+        },
+        {
+          "index": 11,
+          "update_ms": 1.2586250086314976,
+          "incremental_peak_bytes": 84935392
+        },
+        {
+          "index": 12,
+          "update_ms": 1.2837499962188303,
+          "incremental_peak_bytes": 78742136
+        },
+        {
+          "index": 13,
+          "update_ms": 1.2559579918161035,
+          "incremental_peak_bytes": 81396516
+        },
+        {
+          "index": 14,
+          "update_ms": 1.2554999557323754,
+          "incremental_peak_bytes": 84935476
+        },
+        {
+          "index": 15,
+          "update_ms": 1.2580420006997883,
+          "incremental_peak_bytes": 84935460
+        },
+        {
+          "index": 16,
+          "update_ms": 1.259916985873133,
+          "incremental_peak_bytes": 81396592
+        },
+        {
+          "index": 17,
+          "update_ms": 1.2474170071072876,
+          "incremental_peak_bytes": 84935536
+        },
+        {
+          "index": 18,
+          "update_ms": 1.243292004801333,
+          "incremental_peak_bytes": 80511856
+        }
+      ],
+      "median_update_ms": 1.2580420006997883,
+      "q25_update_ms": 1.2557289737742394,
+      "q75_update_ms": 1.2658539926633239,
+      "median_incremental_peak_bytes": 84935392.0
+    },
+    {
+      "optimizer": "sgd",
+      "layout": "independent",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.2902089511044323,
+          "incremental_peak_bytes": 42467440
+        },
+        {
+          "index": 1,
+          "update_ms": 0.40195899782702327,
+          "incremental_peak_bytes": 3538960
+        },
+        {
+          "index": 2,
+          "update_ms": 0.3905000048689544,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 3,
+          "update_ms": 0.49966596998274326,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 4,
+          "update_ms": 0.38287497591227293,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 5,
+          "update_ms": 0.3869999782182276,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 6,
+          "update_ms": 0.3845409955829382,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 7,
+          "update_ms": 0.3884169855155051,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 8,
+          "update_ms": 0.38412498543038964,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 9,
+          "update_ms": 0.3844170132651925,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 10,
+          "update_ms": 0.3838749835267663,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 11,
+          "update_ms": 0.38541696267202497,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 12,
+          "update_ms": 0.3897909773513675,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 13,
+          "update_ms": 0.3926249919459224,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 14,
+          "update_ms": 0.39441598346456885,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 15,
+          "update_ms": 0.3982079797424376,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 16,
+          "update_ms": 0.399957993067801,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 17,
+          "update_ms": 0.39320799987763166,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 18,
+          "update_ms": 0.39383297553285956,
+          "incremental_peak_bytes": 8
+        }
+      ],
+      "median_update_ms": 0.3884169855155051,
+      "q25_update_ms": 0.38447900442406535,
+      "q75_update_ms": 0.3935204877052456,
+      "median_incremental_peak_bytes": 8.0
+    },
+    {
+      "optimizer": "momentum_sgd",
+      "layout": "independent",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.1891250032931566,
+          "incremental_peak_bytes": 42467536
+        },
+        {
+          "index": 1,
+          "update_ms": 0.5330409621819854,
+          "incremental_peak_bytes": 4423792
+        },
+        {
+          "index": 2,
+          "update_ms": 0.5284579819999635,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 3,
+          "update_ms": 0.524875009432435,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 4,
+          "update_ms": 0.521165959071368,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 5,
+          "update_ms": 0.5205420311540365,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 6,
+          "update_ms": 0.5207500071264803,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 7,
+          "update_ms": 0.5402920069172978,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 8,
+          "update_ms": 0.5402090027928352,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 9,
+          "update_ms": 0.5137919797562063,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 10,
+          "update_ms": 0.5172920064069331,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 11,
+          "update_ms": 0.5125830066390336,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 12,
+          "update_ms": 0.5179999861866236,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 13,
+          "update_ms": 0.5136670079082251,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 14,
+          "update_ms": 0.5178339779376984,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 15,
+          "update_ms": 0.5067909951321781,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 16,
+          "update_ms": 0.522624992299825,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 17,
+          "update_ms": 0.5368749843910336,
+          "incremental_peak_bytes": 96
+        },
+        {
+          "index": 18,
+          "update_ms": 0.5326669779606164,
+          "incremental_peak_bytes": 96
+        }
+      ],
+      "median_update_ms": 0.5205420311540365,
+      "q25_update_ms": 0.5155419930815697,
+      "q75_update_ms": 0.5276459851302207,
+      "median_incremental_peak_bytes": 96.0
+    },
+    {
+      "optimizer": "lion",
+      "layout": "independent",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.m",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.m",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 2.2984170354902744,
+          "incremental_peak_bytes": 106168816
+        },
+        {
+          "index": 1,
+          "update_ms": 0.9581249905750155,
+          "incremental_peak_bytes": 67240336
+        },
+        {
+          "index": 2,
+          "update_ms": 0.9560830076225102,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 3,
+          "update_ms": 0.9469580254517496,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 4,
+          "update_ms": 0.9649160201661289,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 5,
+          "update_ms": 0.9741670219227672,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 6,
+          "update_ms": 0.9625410311855376,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 7,
+          "update_ms": 0.9709159494377673,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 8,
+          "update_ms": 0.9669580031186342,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 9,
+          "update_ms": 0.9888330241665244,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 10,
+          "update_ms": 1.0002090130001307,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 11,
+          "update_ms": 0.9744999697431922,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 12,
+          "update_ms": 0.9722909890115261,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 13,
+          "update_ms": 0.9720420348457992,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 14,
+          "update_ms": 0.9733339538797736,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 15,
+          "update_ms": 0.9627499966882169,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 16,
+          "update_ms": 0.9551250259391963,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 17,
+          "update_ms": 0.9643749799579382,
+          "incremental_peak_bytes": 73433488
+        },
+        {
+          "index": 18,
+          "update_ms": 0.9644170058891177,
+          "incremental_peak_bytes": 73433488
+        }
+      ],
+      "median_update_ms": 0.9709159494377673,
+      "q25_update_ms": 0.964395992923528,
+      "q75_update_ms": 0.9737504879012704,
+      "median_incremental_peak_bytes": 73433488.0
+    },
+    {
+      "optimizer": "adafactor",
+      "layout": "independent",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 107532,
+      "matrix_state_logical_bytes": 107520,
+      "state_physical_retained_bytes": 107532,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.0.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.0.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.0.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.0.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.0.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.1.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.1.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.1.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.1.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.1.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.1.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.2.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.2.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.2.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.2.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.2.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.2.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.3.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.3.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.3.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.3.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.3.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.3.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.4.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.4.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.4.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.4.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.4.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.4.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.5.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.5.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.5.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.5.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.5.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.5.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.6.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.6.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.6.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.6.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.6.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.6.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.7.gate.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.7.gate.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.7.up.exp_avg_sq_row",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        },
+        {
+          "path": "experts.7.up.exp_avg_sq_col",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.7.down.exp_avg_sq_row",
+          "shape": [
+            256
+          ],
+          "bytes": 1024
+        },
+        {
+          "path": "experts.7.down.exp_avg_sq_col",
+          "shape": [
+            864
+          ],
+          "bytes": 3456
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 2.3670410155318677,
+          "incremental_peak_bytes": 39981164
+        },
+        {
+          "index": 1,
+          "update_ms": 2.0089169847778976,
+          "incremental_peak_bytes": 28397144
+        },
+        {
+          "index": 2,
+          "update_ms": 2.062584040686488,
+          "incremental_peak_bytes": 31056348
+        },
+        {
+          "index": 3,
+          "update_ms": 2.0614999812096357,
+          "incremental_peak_bytes": 34600400
+        },
+        {
+          "index": 4,
+          "update_ms": 2.0714589627459645,
+          "incremental_peak_bytes": 31945584
+        },
+        {
+          "index": 5,
+          "update_ms": 2.0402910304255784,
+          "incremental_peak_bytes": 28397132
+        },
+        {
+          "index": 6,
+          "update_ms": 2.154499990865588,
+          "incremental_peak_bytes": 31055824
+        },
+        {
+          "index": 7,
+          "update_ms": 2.0803750376217067,
+          "incremental_peak_bytes": 28397132
+        },
+        {
+          "index": 8,
+          "update_ms": 2.0398329943418503,
+          "incremental_peak_bytes": 28396608
+        },
+        {
+          "index": 9,
+          "update_ms": 2.0212079980410635,
+          "incremental_peak_bytes": 28397136
+        },
+        {
+          "index": 10,
+          "update_ms": 2.0521670230664313,
+          "incremental_peak_bytes": 31056360
+        },
+        {
+          "index": 11,
+          "update_ms": 2.026542031671852,
+          "incremental_peak_bytes": 29286360
+        },
+        {
+          "index": 12,
+          "update_ms": 2.0083750132471323,
+          "incremental_peak_bytes": 33715056
+        },
+        {
+          "index": 13,
+          "update_ms": 2.014958008658141,
+          "incremental_peak_bytes": 28397128
+        },
+        {
+          "index": 14,
+          "update_ms": 2.0012089516967535,
+          "incremental_peak_bytes": 33715576
+        },
+        {
+          "index": 15,
+          "update_ms": 2.0121250418014824,
+          "incremental_peak_bytes": 34600396
+        },
+        {
+          "index": 16,
+          "update_ms": 2.0056660287082195,
+          "incremental_peak_bytes": 31056352
+        },
+        {
+          "index": 17,
+          "update_ms": 2.019957988522947,
+          "incremental_peak_bytes": 31055832
+        },
+        {
+          "index": 18,
+          "update_ms": 2.022167027462274,
+          "incremental_peak_bytes": 33715572
+        }
+      ],
+      "median_update_ms": 2.022167027462274,
+      "q25_update_ms": 2.0135415252298117,
+      "q75_update_ms": 2.046229026746005,
+      "median_incremental_peak_bytes": 31055832.0
+    },
+    {
+      "optimizer": "muon",
+      "layout": "independent",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "experts.0.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.0.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.1.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.2.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.3.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.4.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.5.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.6.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.gate.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.up.v",
+          "shape": [
+            864,
+            256
+          ],
+          "bytes": 884736
+        },
+        {
+          "path": "experts.7.down.v",
+          "shape": [
+            256,
+            864
+          ],
+          "bytes": 884736
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 9.809540992137045,
+          "incremental_peak_bytes": 301734720
+        },
+        {
+          "index": 1,
+          "update_ms": 8.899291045963764,
+          "incremental_peak_bytes": 267328988
+        },
+        {
+          "index": 2,
+          "update_ms": 9.042042016517371,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 3,
+          "update_ms": 8.992708986625075,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 4,
+          "update_ms": 9.206166956573725,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 5,
+          "update_ms": 9.099708986468613,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 6,
+          "update_ms": 9.00112499948591,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 7,
+          "update_ms": 9.185625007376075,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 8,
+          "update_ms": 9.12637502187863,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 9,
+          "update_ms": 8.925499976612628,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 10,
+          "update_ms": 8.910459000617266,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 11,
+          "update_ms": 9.117249981500208,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 12,
+          "update_ms": 8.778540999628603,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 13,
+          "update_ms": 9.076249960344285,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 14,
+          "update_ms": 8.966749999672174,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 15,
+          "update_ms": 9.181833011098206,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 16,
+          "update_ms": 8.937917009461671,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 17,
+          "update_ms": 8.892874990124255,
+          "incremental_peak_bytes": 262020512
+        },
+        {
+          "index": 18,
+          "update_ms": 9.294416988268495,
+          "incremental_peak_bytes": 262020524
+        }
+      ],
+      "median_update_ms": 9.076249960344285,
+      "q25_update_ms": 8.93170849303715,
+      "q75_update_ms": 9.154104016488418,
+      "median_incremental_peak_bytes": 262020512.0
+    },
+    {
+      "optimizer": "adamw",
+      "layout": "stacked",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 42467340,
+      "matrix_state_logical_bytes": 42467328,
+      "state_physical_retained_bytes": 42467340,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.m",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.m",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.m",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 3.238458011765033,
+          "incremental_peak_bytes": 127402132
+        },
+        {
+          "index": 1,
+          "update_ms": 1.4111250056885183,
+          "incremental_peak_bytes": 35389508
+        },
+        {
+          "index": 2,
+          "update_ms": 1.402875001076609,
+          "incremental_peak_bytes": 84
+        },
+        {
+          "index": 3,
+          "update_ms": 1.448499970138073,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 4,
+          "update_ms": 1.4187920023687184,
+          "incremental_peak_bytes": 28
+        },
+        {
+          "index": 5,
+          "update_ms": 1.3723329757340252,
+          "incremental_peak_bytes": 92
+        },
+        {
+          "index": 6,
+          "update_ms": 1.4472919865511358,
+          "incremental_peak_bytes": 84
+        },
+        {
+          "index": 7,
+          "update_ms": 1.3899580226279795,
+          "incremental_peak_bytes": 72
+        },
+        {
+          "index": 8,
+          "update_ms": 1.5479589928872883,
+          "incremental_peak_bytes": 92
+        },
+        {
+          "index": 9,
+          "update_ms": 1.4434170443564653,
+          "incremental_peak_bytes": 36
+        },
+        {
+          "index": 10,
+          "update_ms": 1.4372500008903444,
+          "incremental_peak_bytes": 36
+        },
+        {
+          "index": 11,
+          "update_ms": 1.4969169860705733,
+          "incremental_peak_bytes": 36
+        },
+        {
+          "index": 12,
+          "update_ms": 1.4632910024374723,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 13,
+          "update_ms": 1.4371250290423632,
+          "incremental_peak_bytes": 24
+        },
+        {
+          "index": 14,
+          "update_ms": 1.4513750211335719,
+          "incremental_peak_bytes": 32
+        },
+        {
+          "index": 15,
+          "update_ms": 1.4643750037066638,
+          "incremental_peak_bytes": 32
+        },
+        {
+          "index": 16,
+          "update_ms": 1.4433329924941063,
+          "incremental_peak_bytes": 36
+        },
+        {
+          "index": 17,
+          "update_ms": 1.4544579898938537,
+          "incremental_peak_bytes": 44
+        },
+        {
+          "index": 18,
+          "update_ms": 1.6105420072562993,
+          "incremental_peak_bytes": 60
+        }
+      ],
+      "median_update_ms": 1.4472919865511358,
+      "q25_update_ms": 1.4371875149663538,
+      "q75_update_ms": 1.463833003072068,
+      "median_incremental_peak_bytes": 36.0
+    },
+    {
+      "optimizer": "sgd",
+      "layout": "stacked",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.0110409930348396,
+          "incremental_peak_bytes": 42467356
+        },
+        {
+          "index": 1,
+          "update_ms": 0.3154170117340982,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 2,
+          "update_ms": 0.4432500572875142,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 3,
+          "update_ms": 0.32720802119001746,
+          "incremental_peak_bytes": 7077880
+        },
+        {
+          "index": 4,
+          "update_ms": 0.3197080222889781,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 5,
+          "update_ms": 0.31754199881106615,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 6,
+          "update_ms": 0.3195839817635715,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 7,
+          "update_ms": 0.3873330424539745,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 8,
+          "update_ms": 0.30700000934302807,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 9,
+          "update_ms": 0.3052090178243816,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 10,
+          "update_ms": 0.31179096549749374,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 11,
+          "update_ms": 0.31274999491870403,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 12,
+          "update_ms": 0.43183303205296397,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 13,
+          "update_ms": 0.33183395862579346,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 14,
+          "update_ms": 0.3337920061312616,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 15,
+          "update_ms": 0.334082986228168,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 16,
+          "update_ms": 0.32704195473343134,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 17,
+          "update_ms": 0.3441660082899034,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 18,
+          "update_ms": 0.33166701905429363,
+          "incremental_peak_bytes": 7077896
+        }
+      ],
+      "median_update_ms": 0.32704195473343134,
+      "q25_update_ms": 0.3151459968648851,
+      "q75_update_ms": 0.3339374961797148,
+      "median_incremental_peak_bytes": 8.0
+    },
+    {
+      "optimizer": "momentum_sgd",
+      "layout": "stacked",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.0910829878412187,
+          "incremental_peak_bytes": 42467368
+        },
+        {
+          "index": 1,
+          "update_ms": 0.6221249932423234,
+          "incremental_peak_bytes": 7077876
+        },
+        {
+          "index": 2,
+          "update_ms": 0.4861659836024046,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 3,
+          "update_ms": 0.49299997044727206,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 4,
+          "update_ms": 0.4960420192219317,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 5,
+          "update_ms": 0.4931250005029142,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 6,
+          "update_ms": 0.5014580092392862,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 7,
+          "update_ms": 0.6076660356484354,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 8,
+          "update_ms": 0.6145410006865859,
+          "incremental_peak_bytes": 14155784
+        },
+        {
+          "index": 9,
+          "update_ms": 0.6064579938538373,
+          "incremental_peak_bytes": 7077908
+        },
+        {
+          "index": 10,
+          "update_ms": 0.6453330279327929,
+          "incremental_peak_bytes": 21233684
+        },
+        {
+          "index": 11,
+          "update_ms": 0.6160829798318446,
+          "incremental_peak_bytes": 21233684
+        },
+        {
+          "index": 12,
+          "update_ms": 0.5379579961299896,
+          "incremental_peak_bytes": 21233684
+        },
+        {
+          "index": 13,
+          "update_ms": 0.7301670266315341,
+          "incremental_peak_bytes": 28311572
+        },
+        {
+          "index": 14,
+          "update_ms": 0.5300000193528831,
+          "incremental_peak_bytes": 21233684
+        },
+        {
+          "index": 15,
+          "update_ms": 0.5494169890880585,
+          "incremental_peak_bytes": 21233684
+        },
+        {
+          "index": 16,
+          "update_ms": 0.6313749472610652,
+          "incremental_peak_bytes": 35389460
+        },
+        {
+          "index": 17,
+          "update_ms": 0.512458966113627,
+          "incremental_peak_bytes": 42467356
+        },
+        {
+          "index": 18,
+          "update_ms": 0.528500007931143,
+          "incremental_peak_bytes": 21233684
+        }
+      ],
+      "median_update_ms": 0.5494169890880585,
+      "q25_update_ms": 0.520479487022385,
+      "q75_update_ms": 0.6153119902592152,
+      "median_incremental_peak_bytes": 21233684.0
+    },
+    {
+      "optimizer": "lion",
+      "layout": "stacked",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.m",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.m",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.m",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 2.495791995897889,
+          "incremental_peak_bytes": 106168396
+        },
+        {
+          "index": 1,
+          "update_ms": 1.073584018740803,
+          "incremental_peak_bytes": 12
+        },
+        {
+          "index": 2,
+          "update_ms": 1.0396660072728992,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 3,
+          "update_ms": 1.0786670027300715,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 4,
+          "update_ms": 1.064915966708213,
+          "incremental_peak_bytes": 24
+        },
+        {
+          "index": 5,
+          "update_ms": 1.1586250038817525,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 6,
+          "update_ms": 1.116250001359731,
+          "incremental_peak_bytes": 28
+        },
+        {
+          "index": 7,
+          "update_ms": 1.0860419715754688,
+          "incremental_peak_bytes": 36
+        },
+        {
+          "index": 8,
+          "update_ms": 1.0451250127516687,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 9,
+          "update_ms": 1.0800410527735949,
+          "incremental_peak_bytes": 24
+        },
+        {
+          "index": 10,
+          "update_ms": 1.03479198878631,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 11,
+          "update_ms": 1.2166670057922602,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 12,
+          "update_ms": 1.1094589717686176,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 13,
+          "update_ms": 1.078583998605609,
+          "incremental_peak_bytes": 32
+        },
+        {
+          "index": 14,
+          "update_ms": 1.0450840345583856,
+          "incremental_peak_bytes": 7077944
+        },
+        {
+          "index": 15,
+          "update_ms": 1.1560000129975379,
+          "incremental_peak_bytes": 24
+        },
+        {
+          "index": 16,
+          "update_ms": 1.0987910209223628,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 17,
+          "update_ms": 1.0779169970192015,
+          "incremental_peak_bytes": 16
+        },
+        {
+          "index": 18,
+          "update_ms": 1.0484169470146298,
+          "incremental_peak_bytes": 56
+        }
+      ],
+      "median_update_ms": 1.0800410527735949,
+      "q25_update_ms": 1.0566664568614215,
+      "q75_update_ms": 1.1128544865641743,
+      "median_incremental_peak_bytes": 32.0
+    },
+    {
+      "optimizer": "adafactor",
+      "layout": "stacked",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 107532,
+      "matrix_state_logical_bytes": 107520,
+      "state_physical_retained_bytes": 122892,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.exp_avg_sq_row",
+          "shape": [
+            8,
+            864
+          ],
+          "bytes": 27648
+        },
+        {
+          "path": "gate.exp_avg_sq_col",
+          "shape": [
+            8,
+            256
+          ],
+          "bytes": 8192
+        },
+        {
+          "path": "up.exp_avg_sq_row",
+          "shape": [
+            8,
+            864
+          ],
+          "bytes": 27648
+        },
+        {
+          "path": "up.exp_avg_sq_col",
+          "shape": [
+            8,
+            256
+          ],
+          "bytes": 8192
+        },
+        {
+          "path": "down.exp_avg_sq_row",
+          "shape": [
+            8,
+            256
+          ],
+          "bytes": 8192
+        },
+        {
+          "path": "down.exp_avg_sq_col",
+          "shape": [
+            8,
+            864
+          ],
+          "bytes": 27648
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 6.0566660249605775,
+          "incremental_peak_bytes": 63997692
+        },
+        {
+          "index": 1,
+          "update_ms": 1.20524998055771,
+          "incremental_peak_bytes": 43239252
+        },
+        {
+          "index": 2,
+          "update_ms": 0.9475830011069775,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 3,
+          "update_ms": 0.9400409762747586,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 4,
+          "update_ms": 0.9327500010840595,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 5,
+          "update_ms": 0.9375420049764216,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 6,
+          "update_ms": 0.9910420048981905,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 7,
+          "update_ms": 0.9362499695271254,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 8,
+          "update_ms": 0.9209160343743861,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 9,
+          "update_ms": 0.945500039961189,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 10,
+          "update_ms": 0.9224169771187007,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 11,
+          "update_ms": 0.9182080393657088,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 12,
+          "update_ms": 0.9151250123977661,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 13,
+          "update_ms": 0.9222920052707195,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 14,
+          "update_ms": 0.9192919824272394,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 15,
+          "update_ms": 0.9487500065006316,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 16,
+          "update_ms": 0.9588339598849416,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 17,
+          "update_ms": 0.9552919655106962,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 18,
+          "update_ms": 0.9659999632276595,
+          "incremental_peak_bytes": 64472940
+        }
+      ],
+      "median_update_ms": 0.9362499695271254,
+      "q25_update_ms": 0.9216040198225528,
+      "q75_update_ms": 0.9520209860056639,
+      "median_incremental_peak_bytes": 64472940.0
+    },
+    {
+      "optimizer": "muon",
+      "layout": "stacked",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 52.10400000214577,
+          "incremental_peak_bytes": 254913420
+        },
+        {
+          "index": 1,
+          "update_ms": 5.800208018627018,
+          "incremental_peak_bytes": 212443560
+        },
+        {
+          "index": 2,
+          "update_ms": 5.688417004421353,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 3,
+          "update_ms": 5.727084004320204,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 4,
+          "update_ms": 5.6790829985402524,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 5,
+          "update_ms": 5.64591697184369,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 6,
+          "update_ms": 5.700999987311661,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 7,
+          "update_ms": 5.654084030538797,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 8,
+          "update_ms": 5.600582982879132,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 9,
+          "update_ms": 5.633916996885091,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 10,
+          "update_ms": 5.704334005713463,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 11,
+          "update_ms": 5.645625002216548,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 12,
+          "update_ms": 5.73712500045076,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 13,
+          "update_ms": 5.667416960932314,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 14,
+          "update_ms": 5.78312500147149,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 15,
+          "update_ms": 5.693458020687103,
+          "incremental_peak_bytes": 212444592
+        },
+        {
+          "index": 16,
+          "update_ms": 5.597625044174492,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 17,
+          "update_ms": 5.648582999128848,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 18,
+          "update_ms": 5.628209037240595,
+          "incremental_peak_bytes": 212444080
+        }
+      ],
+      "median_update_ms": 5.654084030538797,
+      "q25_update_ms": 5.639770999550819,
+      "q75_update_ms": 5.697229003999382,
+      "median_incremental_peak_bytes": 212444080.0
+    },
+    {
+      "optimizer": "per_expert_muon",
+      "layout": "stacked",
+      "activity": "all",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 8.294458966702223,
+          "incremental_peak_bytes": 434110792
+        },
+        {
+          "index": 1,
+          "update_ms": 4.642958985641599,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 2,
+          "update_ms": 4.627584014087915,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 3,
+          "update_ms": 4.641500010620803,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 4,
+          "update_ms": 4.576125007588416,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 5,
+          "update_ms": 4.5718749752268195,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 6,
+          "update_ms": 4.6237080241553485,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 7,
+          "update_ms": 4.656667006202042,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 8,
+          "update_ms": 4.600084037519991,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 9,
+          "update_ms": 4.61933296173811,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 10,
+          "update_ms": 4.636583034880459,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 11,
+          "update_ms": 4.659790953155607,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 12,
+          "update_ms": 4.600208019837737,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 13,
+          "update_ms": 4.629375005606562,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 14,
+          "update_ms": 4.646209010388702,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 15,
+          "update_ms": 4.61133400676772,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 16,
+          "update_ms": 4.644291999284178,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 17,
+          "update_ms": 4.608709015883505,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 18,
+          "update_ms": 4.634875047486275,
+          "incremental_peak_bytes": 330301700
+        }
+      ],
+      "median_update_ms": 4.6237080241553485,
+      "q25_update_ms": 4.604458517860621,
+      "q75_update_ms": 4.640437517082319,
+      "median_incremental_peak_bytes": 330301700.0
+    },
+    {
+      "optimizer": "adamw",
+      "layout": "stacked",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 42467340,
+      "matrix_state_logical_bytes": 42467328,
+      "state_physical_retained_bytes": 42467340,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.m",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.m",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.m",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 3.2368749962188303,
+          "incremental_peak_bytes": 127402132
+        },
+        {
+          "index": 1,
+          "update_ms": 1.4024999691173434,
+          "incremental_peak_bytes": 42467424
+        },
+        {
+          "index": 2,
+          "update_ms": 1.4111250056885183,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 3,
+          "update_ms": 1.4655839768238366,
+          "incremental_peak_bytes": 32
+        },
+        {
+          "index": 4,
+          "update_ms": 1.4204999897629023,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 5,
+          "update_ms": 1.3860000181011856,
+          "incremental_peak_bytes": 76
+        },
+        {
+          "index": 6,
+          "update_ms": 1.4449579757638276,
+          "incremental_peak_bytes": 12
+        },
+        {
+          "index": 7,
+          "update_ms": 1.4258750015869737,
+          "incremental_peak_bytes": 16
+        },
+        {
+          "index": 8,
+          "update_ms": 1.4401249936781824,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 9,
+          "update_ms": 1.469957991503179,
+          "incremental_peak_bytes": 16
+        },
+        {
+          "index": 10,
+          "update_ms": 1.4312080456875265,
+          "incremental_peak_bytes": 16
+        },
+        {
+          "index": 11,
+          "update_ms": 1.4448330039158463,
+          "incremental_peak_bytes": 32
+        },
+        {
+          "index": 12,
+          "update_ms": 1.40729098347947,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 13,
+          "update_ms": 1.3669170439243317,
+          "incremental_peak_bytes": 64
+        },
+        {
+          "index": 14,
+          "update_ms": 1.471332972869277,
+          "incremental_peak_bytes": 52
+        },
+        {
+          "index": 15,
+          "update_ms": 1.4369579730555415,
+          "incremental_peak_bytes": 24
+        },
+        {
+          "index": 16,
+          "update_ms": 1.4254580019041896,
+          "incremental_peak_bytes": 12
+        },
+        {
+          "index": 17,
+          "update_ms": 1.432916964404285,
+          "incremental_peak_bytes": 16
+        },
+        {
+          "index": 18,
+          "update_ms": 1.4276659931056201,
+          "incremental_peak_bytes": 32
+        }
+      ],
+      "median_update_ms": 1.4312080456875265,
+      "q25_update_ms": 1.422978995833546,
+      "q75_update_ms": 1.4424789987970144,
+      "median_incremental_peak_bytes": 16.0
+    },
+    {
+      "optimizer": "sgd",
+      "layout": "stacked",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.0122500243596733,
+          "incremental_peak_bytes": 42467356
+        },
+        {
+          "index": 1,
+          "update_ms": 0.32816699240356684,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 2,
+          "update_ms": 0.437250011600554,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 3,
+          "update_ms": 0.33116701524704695,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 4,
+          "update_ms": 0.32166700111702085,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 5,
+          "update_ms": 0.32400002237409353,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 6,
+          "update_ms": 0.3226250410079956,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 7,
+          "update_ms": 0.31995901372283697,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 8,
+          "update_ms": 0.3255839692428708,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 9,
+          "update_ms": 0.3286250284872949,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 10,
+          "update_ms": 0.32887503039091825,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 11,
+          "update_ms": 0.3225000109523535,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 12,
+          "update_ms": 0.45308296103030443,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 13,
+          "update_ms": 0.35204103915020823,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 14,
+          "update_ms": 0.3393749939277768,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 15,
+          "update_ms": 0.34320796839892864,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 16,
+          "update_ms": 0.3418749547563493,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 17,
+          "update_ms": 0.34487497759982944,
+          "incremental_peak_bytes": 7077896
+        },
+        {
+          "index": 18,
+          "update_ms": 0.4302500165067613,
+          "incremental_peak_bytes": 7077896
+        }
+      ],
+      "median_update_ms": 0.32887503039091825,
+      "q25_update_ms": 0.32331253169104457,
+      "q75_update_ms": 0.34404147299937904,
+      "median_incremental_peak_bytes": 7077896.0
+    },
+    {
+      "optimizer": "momentum_sgd",
+      "layout": "stacked",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.1102919816039503,
+          "incremental_peak_bytes": 42467368
+        },
+        {
+          "index": 1,
+          "update_ms": 0.6187089602462947,
+          "incremental_peak_bytes": 7077876
+        },
+        {
+          "index": 2,
+          "update_ms": 0.504625029861927,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 3,
+          "update_ms": 0.49362494610249996,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 4,
+          "update_ms": 0.7859580218791962,
+          "incremental_peak_bytes": 21233664
+        },
+        {
+          "index": 5,
+          "update_ms": 0.485417025629431,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 6,
+          "update_ms": 0.48716599121689796,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 7,
+          "update_ms": 0.490125035867095,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 8,
+          "update_ms": 0.4791249521076679,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 9,
+          "update_ms": 0.4924999666400254,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 10,
+          "update_ms": 0.49104203935712576,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 11,
+          "update_ms": 0.4847500240430236,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 12,
+          "update_ms": 0.5204170010983944,
+          "incremental_peak_bytes": 14155776
+        },
+        {
+          "index": 13,
+          "update_ms": 0.5159170250408351,
+          "incremental_peak_bytes": 7077908
+        },
+        {
+          "index": 14,
+          "update_ms": 0.5220419843681157,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 15,
+          "update_ms": 0.5123330047354102,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 16,
+          "update_ms": 0.5170000367797911,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 17,
+          "update_ms": 0.5070830229669809,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 18,
+          "update_ms": 0.5077910027466714,
+          "incremental_peak_bytes": 20
+        }
+      ],
+      "median_update_ms": 0.5070830229669809,
+      "q25_update_ms": 0.4886455135419965,
+      "q75_update_ms": 0.5164585309103131,
+      "median_incremental_peak_bytes": 20.0
+    },
+    {
+      "optimizer": "lion",
+      "layout": "stacked",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.m",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.m",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.m",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 2.5209999876096845,
+          "incremental_peak_bytes": 106168396
+        },
+        {
+          "index": 1,
+          "update_ms": 1.0809590457938612,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 2,
+          "update_ms": 1.022250042296946,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 3,
+          "update_ms": 1.0283750016242266,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 4,
+          "update_ms": 1.0318339918740094,
+          "incremental_peak_bytes": 52
+        },
+        {
+          "index": 5,
+          "update_ms": 1.1383749661035836,
+          "incremental_peak_bytes": 12
+        },
+        {
+          "index": 6,
+          "update_ms": 1.076459011528641,
+          "incremental_peak_bytes": 52
+        },
+        {
+          "index": 7,
+          "update_ms": 1.1295410222373903,
+          "incremental_peak_bytes": 24
+        },
+        {
+          "index": 8,
+          "update_ms": 1.0404160129837692,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 9,
+          "update_ms": 1.0877089807763696,
+          "incremental_peak_bytes": 24
+        },
+        {
+          "index": 10,
+          "update_ms": 1.0861250339075923,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 11,
+          "update_ms": 1.0437910095788538,
+          "incremental_peak_bytes": 52
+        },
+        {
+          "index": 12,
+          "update_ms": 1.0430000256747007,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 13,
+          "update_ms": 1.209292036946863,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 14,
+          "update_ms": 1.1547500034794211,
+          "incremental_peak_bytes": 16
+        },
+        {
+          "index": 15,
+          "update_ms": 1.081500027794391,
+          "incremental_peak_bytes": 20
+        },
+        {
+          "index": 16,
+          "update_ms": 1.1053329799324274,
+          "incremental_peak_bytes": 56
+        },
+        {
+          "index": 17,
+          "update_ms": 1.088665972929448,
+          "incremental_peak_bytes": 8
+        },
+        {
+          "index": 18,
+          "update_ms": 1.0698330006562173,
+          "incremental_peak_bytes": 24
+        }
+      ],
+      "median_update_ms": 1.0861250339075923,
+      "q25_update_ms": 1.0568120051175356,
+      "q75_update_ms": 1.1174370010849088,
+      "median_incremental_peak_bytes": 24.0
+    },
+    {
+      "optimizer": "adafactor",
+      "layout": "stacked",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 107532,
+      "matrix_state_logical_bytes": 107520,
+      "state_physical_retained_bytes": 122892,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.exp_avg_sq_row",
+          "shape": [
+            8,
+            864
+          ],
+          "bytes": 27648
+        },
+        {
+          "path": "gate.exp_avg_sq_col",
+          "shape": [
+            8,
+            256
+          ],
+          "bytes": 8192
+        },
+        {
+          "path": "up.exp_avg_sq_row",
+          "shape": [
+            8,
+            864
+          ],
+          "bytes": 27648
+        },
+        {
+          "path": "up.exp_avg_sq_col",
+          "shape": [
+            8,
+            256
+          ],
+          "bytes": 8192
+        },
+        {
+          "path": "down.exp_avg_sq_row",
+          "shape": [
+            8,
+            256
+          ],
+          "bytes": 8192
+        },
+        {
+          "path": "down.exp_avg_sq_col",
+          "shape": [
+            8,
+            864
+          ],
+          "bytes": 27648
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 1.792083028703928,
+          "incremental_peak_bytes": 85829520
+        },
+        {
+          "index": 1,
+          "update_ms": 0.9618329931981862,
+          "incremental_peak_bytes": 43239252
+        },
+        {
+          "index": 2,
+          "update_ms": 0.9332500048913062,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 3,
+          "update_ms": 0.9858749690465629,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 4,
+          "update_ms": 0.9446660405956209,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 5,
+          "update_ms": 0.9571669506840408,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 6,
+          "update_ms": 0.962458027061075,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 7,
+          "update_ms": 0.9587089880369604,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 8,
+          "update_ms": 0.9748750017024577,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 9,
+          "update_ms": 0.9850829956121743,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 10,
+          "update_ms": 0.9614999871701002,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 11,
+          "update_ms": 0.9424589807167649,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 12,
+          "update_ms": 0.9691249579191208,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 13,
+          "update_ms": 1.064541982486844,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 14,
+          "update_ms": 0.9795420337468386,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 15,
+          "update_ms": 0.9820830309763551,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 16,
+          "update_ms": 0.9883750462904572,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 17,
+          "update_ms": 0.9723749826662242,
+          "incremental_peak_bytes": 64472940
+        },
+        {
+          "index": 18,
+          "update_ms": 0.9619170450605452,
+          "incremental_peak_bytes": 64472940
+        }
+      ],
+      "median_update_ms": 0.9691249579191208,
+      "q25_update_ms": 0.9601044876035303,
+      "q75_update_ms": 0.9808125323615968,
+      "median_incremental_peak_bytes": 64472940.0
+    },
+    {
+      "optimizer": "muon",
+      "layout": "stacked",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 8.089165959972888,
+          "incremental_peak_bytes": 339874816
+        },
+        {
+          "index": 1,
+          "update_ms": 5.6740419822745025,
+          "incremental_peak_bytes": 212444592
+        },
+        {
+          "index": 2,
+          "update_ms": 5.509915994480252,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 3,
+          "update_ms": 5.659707996528596,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 4,
+          "update_ms": 5.582124984357506,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 5,
+          "update_ms": 5.587459017988294,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 6,
+          "update_ms": 5.654334032442421,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 7,
+          "update_ms": 5.672624974977225,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 8,
+          "update_ms": 5.618375027552247,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 9,
+          "update_ms": 5.574458045884967,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 10,
+          "update_ms": 5.555458017624915,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 11,
+          "update_ms": 5.608999985270202,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 12,
+          "update_ms": 5.71208301698789,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 13,
+          "update_ms": 5.712707992643118,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 14,
+          "update_ms": 5.601415992714465,
+          "incremental_peak_bytes": 212444592
+        },
+        {
+          "index": 15,
+          "update_ms": 5.730625009164214,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 16,
+          "update_ms": 5.629374994896352,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 17,
+          "update_ms": 5.707167030777782,
+          "incremental_peak_bytes": 212444080
+        },
+        {
+          "index": 18,
+          "update_ms": 5.675458000041544,
+          "incremental_peak_bytes": 212444080
+        }
+      ],
+      "median_update_ms": 5.629374994896352,
+      "q25_update_ms": 5.5944375053513795,
+      "q75_update_ms": 5.691312515409663,
+      "median_incremental_peak_bytes": 212444080.0
+    },
+    {
+      "optimizer": "per_expert_muon",
+      "layout": "stacked",
+      "activity": "one",
+      "parameter_logical_bytes": 21233664,
+      "gradient_logical_bytes": 21233664,
+      "state_logical_bytes": 21233676,
+      "matrix_state_logical_bytes": 21233664,
+      "state_physical_retained_bytes": 21233676,
+      "state_metadata": [
+        {
+          "path": "step",
+          "shape": [],
+          "bytes": 8
+        },
+        {
+          "path": "learning_rate",
+          "shape": [],
+          "bytes": 4
+        },
+        {
+          "path": "gate.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "up.v",
+          "shape": [
+            8,
+            864,
+            256
+          ],
+          "bytes": 7077888
+        },
+        {
+          "path": "down.v",
+          "shape": [
+            8,
+            256,
+            864
+          ],
+          "bytes": 7077888
+        }
+      ],
+      "windows": [
+        {
+          "index": 0,
+          "update_ms": 8.363957982510328,
+          "incremental_peak_bytes": 434110792
+        },
+        {
+          "index": 1,
+          "update_ms": 4.624874971341342,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 2,
+          "update_ms": 4.64216701220721,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 3,
+          "update_ms": 4.622833977919072,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 4,
+          "update_ms": 4.622249980457127,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 5,
+          "update_ms": 4.635834018699825,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 6,
+          "update_ms": 4.645416978746653,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 7,
+          "update_ms": 4.650207993108779,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 8,
+          "update_ms": 4.56366699654609,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 9,
+          "update_ms": 4.665124986786395,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 10,
+          "update_ms": 4.643374995794147,
+          "incremental_peak_bytes": 412877116
+        },
+        {
+          "index": 11,
+          "update_ms": 4.662249993998557,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 12,
+          "update_ms": 4.607333044987172,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 13,
+          "update_ms": 4.611707990989089,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 14,
+          "update_ms": 4.625957983080298,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 15,
+          "update_ms": 4.667291999794543,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 16,
+          "update_ms": 4.60366701008752,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 17,
+          "update_ms": 4.565750015899539,
+          "incremental_peak_bytes": 330301700
+        },
+        {
+          "index": 18,
+          "update_ms": 4.636250028852373,
+          "incremental_peak_bytes": 330301700
+        }
+      ],
+      "median_update_ms": 4.635834018699825,
+      "q25_update_ms": 4.6095205179881305,
+      "q75_update_ms": 4.647812485927716,
+      "median_incremental_peak_bytes": 330301700.0
+    }
+  ],
+  "elapsed_seconds": 2.3089051246643066,
+  "postflight": {
+    "substantial_ml_jobs": [],
+    "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"
+  }
+}

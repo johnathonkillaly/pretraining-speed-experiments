@@ -1,0 +1,8 @@
+{
+  "sha256": {
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/AMENDMENT_V2.md": "cafb23e2852c4a8ca2b6b3ee31ef3339ef4e6a3cc00eefaf507382f02d5d7e17",
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/scripts/check_checkpointing.py": "427f35a27325ae64663e3c0ba12f03734b770043a55a49f9bb4ae328426c64c1",
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/scripts/run_v2.py": "8fc911da04a6be857663a0097385ddb9da5367e482cbe74e51a5491478acc90b",
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/scripts/analyze_v2.py": "dda9f94654c84228cce606c51aed21af1036013d91e884ed5d1df1d16dd83515"
+  }
+}

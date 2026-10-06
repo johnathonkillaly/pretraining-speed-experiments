@@ -1,0 +1,6 @@
+{"event": "worker_start", "tag": "verify", "preflight": {"ac": true, "memory_free_pct": 92, "competing_ml": []}, "monotonic_seconds": 0.0566359999938868}
+{"event": "monitor", "tag": "verify", "thermal_state": 0, "ac": true, "memory_free_pct": 92, "competing_ml": [], "monotonic_seconds": 0.1158714159973897}
+{"event": "monitor", "tag": "verify", "thermal_state": 0, "ac": true, "memory_free_pct": 92, "competing_ml": [], "monotonic_seconds": 1.6251427499810234}
+{"event": "monitor", "tag": "verify", "thermal_state": 0, "ac": true, "memory_free_pct": 92, "competing_ml": [], "monotonic_seconds": 3.137858333007898}
+{"event": "worker_end", "tag": "verify", "exit_code": 1, "aggregate_worker_seconds": 4.586318458023015, "monotonic_seconds": 4.6430589579977095}
+{"event": "campaign_stopped", "error": "RuntimeError('Worker verify failed; inspect its preserved log')", "aggregate_worker_seconds": 4.586318458023015, "monotonic_seconds": 4.643439500010572}

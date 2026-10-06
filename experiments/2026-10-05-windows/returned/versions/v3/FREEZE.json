@@ -1,0 +1,9 @@
+{
+  "registration_commit": "d178a35c02f6f0664c0bdbd1b194ed7a769444e4",
+  "dependency_freeze_sha256": "bcf3065459a54c18e957d3b09c09ade7afed677f74409291582c501260c6d15f",
+  "sha256": {
+    "addendum.py": "dbb5e81ca7153e04d022ec22e6d378f514ec255c2dc8c9f5a7c743f183fc6054",
+    "config.json": "f9fbb6fad19a12e9518048e46ca5b8ba0ae0dbf75da9f1dd0b9d5adb199b99f7",
+    "CONTRACT.md": "9b358a87ef096d682686646856c44ae5f2b14ab0b597a6dcf6b4b4c9369a708a"
+  }
+}

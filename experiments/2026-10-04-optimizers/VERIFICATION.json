@@ -1,0 +1,7 @@
+{
+  "case_count": 37,
+  "measured_update_windows": 555,
+  "numerical_checks_passed": true,
+  "frozen_sources_match": true,
+  "original_git_status_unchanged": true
+}

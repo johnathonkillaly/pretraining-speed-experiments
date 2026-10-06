@@ -1,0 +1,54 @@
+{
+  "training_shape": [
+    40000,
+    257
+  ],
+  "development_shape": [
+    128,
+    257
+  ],
+  "test_shape": [
+    512,
+    257
+  ],
+  "training_targets": 10240000,
+  "seed": 2026100417,
+  "training_shards": [
+    0,
+    40,
+    80,
+    121,
+    161,
+    201,
+    242,
+    282,
+    322,
+    363,
+    403,
+    443,
+    484,
+    524,
+    564,
+    605
+  ],
+  "excluded_old_training_blocks": 4800,
+  "reused_old_blocks": 0,
+  "exact_train_dev_test_window_overlap": 0,
+  "test_dataset_counts": {
+    "HuggingFaceTB/stackexchange_2025_md": 32,
+    "HuggingFaceTB/smollm-corpus": 111,
+    "HuggingFaceTB/finemath": 52,
+    "HuggingFaceFW/fineweb-edu": 317
+  },
+  "tokenizer_path": "/EXTERNAL_RESOURCE/f033a331c535",
+  "tokenizer_sha256": "5a082a774fcb053eb0599cfcc84f41148d2686eb200438cd06622d94036d0c49",
+  "packed_manifest_sha256": "2fe86c0c891e3c9df3af2fdb45348682bb250d43fc6215323b376e7b7b5a7712",
+  "data_sha256": {
+    "train.npy": "e9ed95c55a969a97bdff12fe240d186edf2bd50ca5e168a48c056871aabd764a",
+    "development.npy": "54e33288a2734f8c75928f8153172c7c9f54ee178b3ff4a964443dbca72f964d",
+    "test.npy": "247500d7f1146cd666b9253121ecaf58c4603f675f2724abdf99b0d1af11433f",
+    "train_provenance.jsonl": "a2e975818fffd4800419363cd266ef5446820b6685af4e6e219b0c8155392301",
+    "test_provenance.jsonl": "02d85da727b1d76a52feda7f1887188abbdf3bfc2edbcc8b4ca47d4121ff5243"
+  },
+  "limitations": "Original v7 train/val; old mix rather than current Fedora v2; no semantic deduplication"
+}

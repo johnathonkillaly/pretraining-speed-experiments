@@ -1,0 +1,7 @@
+{
+  "sha256": {
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/FULL_CONTEXT_VALIDATION.md": "3f0355fb341bef018ced58e2e1f32bc516d5c25094d84c5f8b2310475159b4f0",
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/scripts/check_full_context.py": "85d5d44c935b4ee00768850792ec8ed21b268f05bd820e00d5ff6b3fcfd13310",
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/scripts/run_validation.py": "5c8875e86f670db9bacd9fbcc6953d37ca501d41c184c7e4d8350161e2efec95"
+  }
+}

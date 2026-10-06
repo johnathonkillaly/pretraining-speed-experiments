@@ -1,0 +1,52 @@
+{
+  "provided_source_commit": "c022d50ed5268514ef5cfa1348274d3840d0ae4e",
+  "source_commit_verification": "Sender-attested; tracked-files ZIP has no .git history",
+  "archive_sha256": "688f5517f878e8583dc0584a6a13aec56aa826537582753ff3a90128a2e4e539",
+  "files": 330,
+  "freeze_checks": [
+    {
+      "map": "research/moe-night/results/2026-10-04-recurrence/FREEZE.json",
+      "verified": [
+        "research/moe-night/results/2026-10-04-recurrence/CONTRACT.md",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/benchmark_backward.py",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/benchmark_h1.py",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/model.py",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/optimizer.py",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/prepare_data.py",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/run_suite.py",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/train.py",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/verify.py",
+        "research/moe-night/results/2026-10-04-recurrence/configs/data.json",
+        "research/moe-night/results/2026-10-04/scripts/arch/llama.py",
+        "research/moe-night/results/2026-10-04/scripts/arch/rope_utils.py"
+      ],
+      "missing": [
+        "research/moe-night/results/2026-10-04-recurrence/data/development.npy",
+        "research/moe-night/results/2026-10-04-recurrence/data/test.npy",
+        "research/moe-night/results/2026-10-04-recurrence/data/test_provenance.jsonl",
+        "research/moe-night/results/2026-10-04-recurrence/data/train.npy",
+        "research/moe-night/results/2026-10-04-recurrence/data/train_provenance.jsonl"
+      ],
+      "mismatch": []
+    },
+    {
+      "map": "research/moe-night/results/2026-10-04-recurrence/H1_V2_FREEZE.json",
+      "verified": [
+        "research/moe-night/results/2026-10-04-recurrence/AMENDMENT_H1_CAPTURE.md",
+        "research/moe-night/results/2026-10-04-recurrence/scripts/benchmark_h1_v2.py"
+      ],
+      "missing": [],
+      "mismatch": []
+    },
+    {
+      "map": "research/moe-night/results/2026-10-04-recurrence/PRIORITY_FREEZE.json",
+      "verified": [
+        "research/moe-night/results/2026-10-04-recurrence/scripts/run_suite_v2.py",
+        "research/moe-night/results/2026-10-04-recurrence/configs/launchd_v2.plist",
+        "research/moe-night/results/2026-10-04-recurrence/AMENDMENT_LAUNCH_PRIORITY.md"
+      ],
+      "missing": [],
+      "mismatch": []
+    }
+  ]
+}

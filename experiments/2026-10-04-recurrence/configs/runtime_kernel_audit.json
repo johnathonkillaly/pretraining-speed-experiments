@@ -1,0 +1,8 @@
+{
+  "local_version": "MLX0.32.2",
+  "loss_source": "/RESEARCH_ROOT/.venv/lib/python3.11/site-packages/mlx/nn/losses.py",
+  "loss_source_sha256": "10b5439bf1a9ebbb6e5f0dc115efc01a17bf1edac0e746ba564a09ada15be849",
+  "attention_path": "Copied block requests mx.fast.scaled_dot_product_attention with causal string; no quantized cache or dense Python attention fallback in these runs.",
+  "loss_path": "nn.losses.cross_entropy use_fast requires mx.cuda.is_available(); Metal uses composed max/gather/logsumexp. Pilot/probe explicitly promote logits toFP32 for loss accuracy, as local library documents for Metal.",
+  "limit": "Code-path audit only. No isolated CE timing, optimized Metal implementation, or attribution of the observed hardware pipeline gap."
+}

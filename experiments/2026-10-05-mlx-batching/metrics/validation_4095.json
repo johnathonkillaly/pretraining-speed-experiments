@@ -1,0 +1,3898 @@
+{
+  "parameters": 298361856,
+  "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+  "full_input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+  "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+  "context_inputs": 4095,
+  "targets_per_update": 32760,
+  "initialization_seconds": 0.6425005829660222,
+  "mlx": "0.32.3",
+  "loss": "composed_fp32",
+  "checkpointing": "none",
+  "dtype": "BF16 model/backward; FP32 masters/accumulation/state",
+  "memory_allowance_bytes": 85899345920,
+  "cache_allowance_bytes": 1073741824,
+  "stage": "validation",
+  "arms": {
+    "1": {
+      "batch_size": 1,
+      "accumulation": 8,
+      "status": "checked",
+      "loss": 10.903714895248413,
+      "seconds": 8.488558667013422,
+      "peak_active_bytes": 17013267192,
+      "passed": true,
+      "relative_l2": 0.0,
+      "finite": true,
+      "reference_nonzero": true,
+      "candidate_nonzero": true,
+      "parameter_errors": {
+        "embed_tokens.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.111345075070858,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "norm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.001243634382262826,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0008435000199824572,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0008487914456054568,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.20831501483917236,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.20899462699890137,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.06688489019870758,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.25669607520103455,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.07426433265209198,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 7.387754158116877e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.0.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.456917304196395e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.00010761311568785459,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0001069424906745553,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.14035958051681519,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.14622877538204193,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.017655126750469208,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.06305872648954391,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.01926480606198311,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.146328865317628e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.1.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.1436250133556314e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 6.0548598412424326e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 6.318854866549373e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.1023523360490799,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.10535857081413269,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.009724936448037624,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.032678455114364624,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.009912779554724693,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 3.264962288085371e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.2.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 6.372320513037266e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 3.9495600503869355e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.1108913137577474e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0670793354511261,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.06884288787841797,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0061156973242759705,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.020804639905691147,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.005962688475847244,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.252330887131393e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.3.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.16270449932199e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.9365917725954205e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.737173781497404e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.048264168202877045,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.05346713215112686,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.004299498163163662,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.01425192691385746,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0042902203276753426,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.6472444258397445e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.4.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.789540758385556e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.3427899577654898e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.3997687094379216e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.03677831590175629,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.034105293452739716,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.00336145400069654,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.010829610750079155,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.003268755739554763,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.315036388405133e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.5.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.1428627405839507e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.7950485926121473e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.7826385374064557e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.026644742116332054,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.027370747178792953,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0026912859175354242,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.008695779368281364,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0025436116848140955,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 8.697539669810794e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.6.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.5125808658922324e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.368084667774383e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.3414712157100439e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.021445557475090027,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.022189268842339516,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.002203962067142129,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.007289889268577099,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0020948327146470547,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 7.400342383334646e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.7.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.2919847449666122e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.2111160685890354e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.2423193766153418e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.01881692185997963,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.01815170980989933,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0018847621977329254,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0063018715009093285,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0018329289741814137,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.976795364404097e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.8.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.2189002518425696e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.1676074791466817e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.1405365512473509e-05,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.01550496555864811,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.016217635944485664,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.001609803643077612,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0052029769867658615,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0015378119423985481,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.842541329708183e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.9.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.002208819045336e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 9.373464308737312e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 8.68140887178015e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.013862377032637596,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.013420850038528442,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0014844841789454222,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.004686632193624973,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0013984532561153173,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.207757567404769e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.10.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 9.28280769585399e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 7.700861715420615e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 8.478998097416479e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.012722310610115528,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0116258030757308,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0012928762007504702,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.004237167537212372,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0012492560781538486,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.020022061013151e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.11.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 8.765122174736462e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 7.27829910829314e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 7.991173333721235e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.010849233716726303,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.010213319212198257,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.001198750687763095,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0037940028123557568,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0011304272338747978,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 3.5349187328392873e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.12.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 6.980817488511093e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.721223715227097e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.9889621297770645e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.01010438147932291,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.010179294273257256,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0010272095678374171,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0033583054319024086,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0010547575075179338,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 3.362372808624059e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.13.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 6.46484522803803e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.067229722044431e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.5370060181303415e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.008563946932554245,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.008450671099126339,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.000983311445452273,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0033170494716614485,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0009444523602724075,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.8010340429318603e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.14.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 6.950052693355246e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.512743427971145e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.693083039659541e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.008078278973698616,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.008373504504561424,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0009005320607684553,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0028670867905020714,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0008574729436077178,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.777477448034915e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.15.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.822807906952221e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.52879237147863e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.718877673643874e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.007238774560391903,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.007268215529620647,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0008176508708857,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.002576865255832672,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0007772298995405436,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.1806367840326857e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.16.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 5.080934215584421e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.5330489228945225e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.67055451736087e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.006851787678897381,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.006768092513084412,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0007735086837783456,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.002521964255720377,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0007421626942232251,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 2.1302275854395702e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.17.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.7445459472328366e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 3.9023075260047335e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.023526344099082e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.006261141039431095,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.006379644386470318,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0007047688704915345,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0022828825749456882,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0006608419353142381,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.9695874016179005e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.18.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.397063833039283e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.self_attn.q_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.691780304710846e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.self_attn.k_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.337105565355159e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.self_attn.v_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.005853503011167049,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.self_attn.o_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.006049913354218006,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.mlp.gate_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0006897782441228628,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.mlp.down_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0023430711589753628,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.mlp.up_proj.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 0.0006676352932117879,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.input_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 1.9117073861707468e-06,
+          "relative_l2": 0.0,
+          "finite": true
+        },
+        "blocks.19.post_attention_layernorm.weight": {
+          "max_abs": 0.0,
+          "squared_difference": 0.0,
+          "reference_squared_norm": 4.5905289880465716e-07,
+          "relative_l2": 0.0,
+          "finite": true
+        }
+      },
+      "loss_abs": 0.0
+    },
+    "2": {
+      "batch_size": 2,
+      "accumulation": 4,
+      "status": "checked",
+      "loss": 10.903715372085571,
+      "seconds": 8.813438083976507,
+      "peak_active_bytes": 29976914712,
+      "passed": true,
+      "relative_l2": 0.0023510628406986167,
+      "finite": true,
+      "reference_nonzero": true,
+      "candidate_nonzero": true,
+      "parameter_errors": {
+        "embed_tokens.weight": {
+          "max_abs": 2.568773925304413e-05,
+          "squared_difference": 7.078745056787739e-07,
+          "reference_squared_norm": 0.111345075070858,
+          "relative_l2": 0.0025214051147037456,
+          "finite": true
+        },
+        "norm.weight": {
+          "max_abs": 8.702278137207031e-06,
+          "squared_difference": 2.6785662576855884e-09,
+          "reference_squared_norm": 0.001243634382262826,
+          "relative_l2": 0.0014675903136607542,
+          "finite": true
+        },
+        "blocks.0.self_attn.q_proj.weight": {
+          "max_abs": 5.364418029785156e-07,
+          "squared_difference": 4.627173311178012e-09,
+          "reference_squared_norm": 0.0008435000199824572,
+          "relative_l2": 0.002342153392753649,
+          "finite": true
+        },
+        "blocks.0.self_attn.k_proj.weight": {
+          "max_abs": 9.238719940185547e-07,
+          "squared_difference": 4.668159636622704e-09,
+          "reference_squared_norm": 0.0008487914456054568,
+          "relative_l2": 0.002345159322454671,
+          "finite": true
+        },
+        "blocks.0.self_attn.v_proj.weight": {
+          "max_abs": 2.09808349609375e-05,
+          "squared_difference": 1.1550530416570837e-06,
+          "reference_squared_norm": 0.20831501483917236,
+          "relative_l2": 0.002354727615313814,
+          "finite": true
+        },
+        "blocks.0.self_attn.o_proj.weight": {
+          "max_abs": 9.417533874511719e-06,
+          "squared_difference": 1.1478022088340367e-06,
+          "reference_squared_norm": 0.20899462699890137,
+          "relative_l2": 0.002343505448436156,
+          "finite": true
+        },
+        "blocks.0.mlp.gate_proj.weight": {
+          "max_abs": 6.1318278312683105e-06,
+          "squared_difference": 3.661988046133047e-07,
+          "reference_squared_norm": 0.06688489019870758,
+          "relative_l2": 0.002339884669030543,
+          "finite": true
+        },
+        "blocks.0.mlp.down_proj.weight": {
+          "max_abs": 1.3843178749084473e-05,
+          "squared_difference": 1.4132995147519978e-06,
+          "reference_squared_norm": 0.25669607520103455,
+          "relative_l2": 0.002346429395116732,
+          "finite": true
+        },
+        "blocks.0.mlp.up_proj.weight": {
+          "max_abs": 7.599592208862305e-06,
+          "squared_difference": 4.080709459231002e-07,
+          "reference_squared_norm": 0.07426433265209198,
+          "relative_l2": 0.0023441084260074187,
+          "finite": true
+        },
+        "blocks.0.input_layernorm.weight": {
+          "max_abs": 4.880130290985107e-06,
+          "squared_difference": 1.0874408040706385e-09,
+          "reference_squared_norm": 7.387754158116877e-05,
+          "relative_l2": 0.0038366006408314594,
+          "finite": true
+        },
+        "blocks.0.post_attention_layernorm.weight": {
+          "max_abs": 3.993511199951172e-06,
+          "squared_difference": 5.393071544901318e-10,
+          "reference_squared_norm": 4.456917304196395e-05,
+          "relative_l2": 0.0034785704457280624,
+          "finite": true
+        },
+        "blocks.1.self_attn.q_proj.weight": {
+          "max_abs": 2.5704503059387207e-07,
+          "squared_difference": 5.889589371754766e-10,
+          "reference_squared_norm": 0.00010761311568785459,
+          "relative_l2": 0.0023394291950432832,
+          "finite": true
+        },
+        "blocks.1.self_attn.k_proj.weight": {
+          "max_abs": 4.023313522338867e-07,
+          "squared_difference": 5.91670268335065e-10,
+          "reference_squared_norm": 0.0001069424906745553,
+          "relative_l2": 0.002352148440386324,
+          "finite": true
+        },
+        "blocks.1.self_attn.v_proj.weight": {
+          "max_abs": 1.5020370483398438e-05,
+          "squared_difference": 7.736191491858335e-07,
+          "reference_squared_norm": 0.14035958051681519,
+          "relative_l2": 0.002347699863962005,
+          "finite": true
+        },
+        "blocks.1.self_attn.o_proj.weight": {
+          "max_abs": 8.225440979003906e-06,
+          "squared_difference": 8.084393812168855e-07,
+          "reference_squared_norm": 0.14622877538204193,
+          "relative_l2": 0.0023512960215875357,
+          "finite": true
+        },
+        "blocks.1.mlp.gate_proj.weight": {
+          "max_abs": 3.8566067814826965e-06,
+          "squared_difference": 9.719502713778638e-08,
+          "reference_squared_norm": 0.017655126750469208,
+          "relative_l2": 0.0023463165435687714,
+          "finite": true
+        },
+        "blocks.1.mlp.down_proj.weight": {
+          "max_abs": 6.318092346191406e-06,
+          "squared_difference": 3.4702890161497635e-07,
+          "reference_squared_norm": 0.06305872648954391,
+          "relative_l2": 0.0023459039418034125,
+          "finite": true
+        },
+        "blocks.1.mlp.up_proj.weight": {
+          "max_abs": 3.829598426818848e-06,
+          "squared_difference": 1.0612215106675649e-07,
+          "reference_squared_norm": 0.01926480606198311,
+          "relative_l2": 0.002347041136572207,
+          "finite": true
+        },
+        "blocks.1.input_layernorm.weight": {
+          "max_abs": 3.2186508178710938e-06,
+          "squared_difference": 5.886030551849331e-10,
+          "reference_squared_norm": 4.146328865317628e-05,
+          "relative_l2": 0.003767726618877951,
+          "finite": true
+        },
+        "blocks.1.post_attention_layernorm.weight": {
+          "max_abs": 1.3485550880432129e-06,
+          "squared_difference": 1.3488163363994943e-10,
+          "reference_squared_norm": 1.1436250133556314e-05,
+          "relative_l2": 0.003434271183973077,
+          "finite": true
+        },
+        "blocks.2.self_attn.q_proj.weight": {
+          "max_abs": 2.3096799850463867e-07,
+          "squared_difference": 3.3442418279072683e-10,
+          "reference_squared_norm": 6.0548598412424326e-05,
+          "relative_l2": 0.002350156535325625,
+          "finite": true
+        },
+        "blocks.2.self_attn.k_proj.weight": {
+          "max_abs": 4.544854164123535e-07,
+          "squared_difference": 3.436405326961989e-10,
+          "reference_squared_norm": 6.318854866549373e-05,
+          "relative_l2": 0.002332023924362584,
+          "finite": true
+        },
+        "blocks.2.self_attn.v_proj.weight": {
+          "max_abs": 1.2755393981933594e-05,
+          "squared_difference": 5.624158916361921e-07,
+          "reference_squared_norm": 0.1023523360490799,
+          "relative_l2": 0.002344120388022672,
+          "finite": true
+        },
+        "blocks.2.self_attn.o_proj.weight": {
+          "max_abs": 7.034279406070709e-06,
+          "squared_difference": 5.740138249166193e-07,
+          "reference_squared_norm": 0.10535857081413269,
+          "relative_l2": 0.002334136450754019,
+          "finite": true
+        },
+        "blocks.2.mlp.gate_proj.weight": {
+          "max_abs": 3.1222589313983917e-06,
+          "squared_difference": 5.355332177714445e-08,
+          "reference_squared_norm": 0.009724936448037624,
+          "relative_l2": 0.002346658111566826,
+          "finite": true
+        },
+        "blocks.2.mlp.down_proj.weight": {
+          "max_abs": 5.401670932769775e-06,
+          "squared_difference": 1.79934588118158e-07,
+          "reference_squared_norm": 0.032678455114364624,
+          "relative_l2": 0.0023465324725515566,
+          "finite": true
+        },
+        "blocks.2.mlp.up_proj.weight": {
+          "max_abs": 3.6656856536865234e-06,
+          "squared_difference": 5.4398512361331086e-08,
+          "reference_squared_norm": 0.009912779554724693,
+          "relative_l2": 0.002342587316115969,
+          "finite": true
+        },
+        "blocks.2.input_layernorm.weight": {
+          "max_abs": 3.298511728644371e-06,
+          "squared_difference": 3.471514187225466e-10,
+          "reference_squared_norm": 3.264962288085371e-05,
+          "relative_l2": 0.003260771658179458,
+          "finite": true
+        },
+        "blocks.2.post_attention_layernorm.weight": {
+          "max_abs": 1.0505318641662598e-06,
+          "squared_difference": 6.107049588255364e-11,
+          "reference_squared_norm": 6.372320513037266e-06,
+          "relative_l2": 0.0030957573831742026,
+          "finite": true
+        },
+        "blocks.3.self_attn.q_proj.weight": {
+          "max_abs": 2.3096799850463867e-07,
+          "squared_difference": 2.1691633211862182e-10,
+          "reference_squared_norm": 3.9495600503869355e-05,
+          "relative_l2": 0.002343536734768483,
+          "finite": true
+        },
+        "blocks.3.self_attn.k_proj.weight": {
+          "max_abs": 2.7567148208618164e-07,
+          "squared_difference": 2.2726069637268864e-10,
+          "reference_squared_norm": 4.1108913137577474e-05,
+          "relative_l2": 0.002351224882645855,
+          "finite": true
+        },
+        "blocks.3.self_attn.v_proj.weight": {
+          "max_abs": 1.0013580322265625e-05,
+          "squared_difference": 3.613056946960569e-07,
+          "reference_squared_norm": 0.0670793354511261,
+          "relative_l2": 0.0023208283858403103,
+          "finite": true
+        },
+        "blocks.3.self_attn.o_proj.weight": {
+          "max_abs": 7.510185241699219e-06,
+          "squared_difference": 3.7350014281400945e-07,
+          "reference_squared_norm": 0.06884288787841797,
+          "relative_l2": 0.0023292486154852013,
+          "finite": true
+        },
+        "blocks.3.mlp.gate_proj.weight": {
+          "max_abs": 1.9818544387817383e-06,
+          "squared_difference": 3.371955870079546e-08,
+          "reference_squared_norm": 0.0061156973242759705,
+          "relative_l2": 0.002348107358030355,
+          "finite": true
+        },
+        "blocks.3.mlp.down_proj.weight": {
+          "max_abs": 3.844499588012695e-06,
+          "squared_difference": 1.1438839919719612e-07,
+          "reference_squared_norm": 0.020804639905691147,
+          "relative_l2": 0.002344827449721868,
+          "finite": true
+        },
+        "blocks.3.mlp.up_proj.weight": {
+          "max_abs": 2.2798776626586914e-06,
+          "squared_difference": 3.271915005598203e-08,
+          "reference_squared_norm": 0.005962688475847244,
+          "relative_l2": 0.0023425018727501494,
+          "finite": true
+        },
+        "blocks.3.input_layernorm.weight": {
+          "max_abs": 2.852408215403557e-06,
+          "squared_difference": 2.193221299018333e-10,
+          "reference_squared_norm": 2.252330887131393e-05,
+          "relative_l2": 0.0031205067844002304,
+          "finite": true
+        },
+        "blocks.3.post_attention_layernorm.weight": {
+          "max_abs": 1.084059476852417e-06,
+          "squared_difference": 3.936534084814092e-11,
+          "reference_squared_norm": 4.16270449932199e-06,
+          "relative_l2": 0.00307517062060979,
+          "finite": true
+        },
+        "blocks.4.self_attn.q_proj.weight": {
+          "max_abs": 1.8812716007232666e-07,
+          "squared_difference": 1.6007908887338829e-10,
+          "reference_squared_norm": 2.9365917725954205e-05,
+          "relative_l2": 0.0023347775731967614,
+          "finite": true
+        },
+        "blocks.4.self_attn.k_proj.weight": {
+          "max_abs": 2.3096799850463867e-07,
+          "squared_difference": 1.4930384706346445e-10,
+          "reference_squared_norm": 2.737173781497404e-05,
+          "relative_l2": 0.0023355238866480687,
+          "finite": true
+        },
+        "blocks.4.self_attn.v_proj.weight": {
+          "max_abs": 8.255243301391602e-06,
+          "squared_difference": 2.634342308738269e-07,
+          "reference_squared_norm": 0.048264168202877045,
+          "relative_l2": 0.0023362735411762833,
+          "finite": true
+        },
+        "blocks.4.self_attn.o_proj.weight": {
+          "max_abs": 5.7220458984375e-06,
+          "squared_difference": 2.912933041443466e-07,
+          "reference_squared_norm": 0.05346713215112686,
+          "relative_l2": 0.002334112614787377,
+          "finite": true
+        },
+        "blocks.4.mlp.gate_proj.weight": {
+          "max_abs": 2.0042061805725098e-06,
+          "squared_difference": 2.3595353226824045e-08,
+          "reference_squared_norm": 0.004299498163163662,
+          "relative_l2": 0.0023426335445400712,
+          "finite": true
+        },
+        "blocks.4.mlp.down_proj.weight": {
+          "max_abs": 3.6582350730895996e-06,
+          "squared_difference": 7.855885542085161e-08,
+          "reference_squared_norm": 0.01425192691385746,
+          "relative_l2": 0.0023477982813256354,
+          "finite": true
+        },
+        "blocks.4.mlp.up_proj.weight": {
+          "max_abs": 1.8477439880371094e-06,
+          "squared_difference": 2.354090256062591e-08,
+          "reference_squared_norm": 0.0042902203276753426,
+          "relative_l2": 0.002342457697590866,
+          "finite": true
+        },
+        "blocks.4.input_layernorm.weight": {
+          "max_abs": 1.7583370208740234e-06,
+          "squared_difference": 1.4712675522332574e-10,
+          "reference_squared_norm": 1.6472444258397445e-05,
+          "relative_l2": 0.002988593208605051,
+          "finite": true
+        },
+        "blocks.4.post_attention_layernorm.weight": {
+          "max_abs": 1.1324882507324219e-06,
+          "squared_difference": 2.7197178537052835e-11,
+          "reference_squared_norm": 2.789540758385556e-06,
+          "relative_l2": 0.0031224505588441876,
+          "finite": true
+        },
+        "blocks.5.self_attn.q_proj.weight": {
+          "max_abs": 2.253800630569458e-07,
+          "squared_difference": 1.2861857412449496e-10,
+          "reference_squared_norm": 2.3427899577654898e-05,
+          "relative_l2": 0.0023430694871997616,
+          "finite": true
+        },
+        "blocks.5.self_attn.k_proj.weight": {
+          "max_abs": 2.421438694000244e-07,
+          "squared_difference": 1.3209397464741812e-10,
+          "reference_squared_norm": 2.3997687094379216e-05,
+          "relative_l2": 0.00234615559578941,
+          "finite": true
+        },
+        "blocks.5.self_attn.v_proj.weight": {
+          "max_abs": 7.867813110351562e-06,
+          "squared_difference": 2.0048281612616847e-07,
+          "reference_squared_norm": 0.03677831590175629,
+          "relative_l2": 0.0023347622227381623,
+          "finite": true
+        },
+        "blocks.5.self_attn.o_proj.weight": {
+          "max_abs": 4.462897777557373e-06,
+          "squared_difference": 1.86599066864801e-07,
+          "reference_squared_norm": 0.034105293452739716,
+          "relative_l2": 0.0023390733370000985,
+          "finite": true
+        },
+        "blocks.5.mlp.gate_proj.weight": {
+          "max_abs": 1.912936568260193e-06,
+          "squared_difference": 1.8541989277309767e-08,
+          "reference_squared_norm": 0.00336145400069654,
+          "relative_l2": 0.0023486298512732434,
+          "finite": true
+        },
+        "blocks.5.mlp.down_proj.weight": {
+          "max_abs": 2.7567148208618164e-06,
+          "squared_difference": 5.963659788221776e-08,
+          "reference_squared_norm": 0.010829610750079155,
+          "relative_l2": 0.00234665911333532,
+          "finite": true
+        },
+        "blocks.5.mlp.up_proj.weight": {
+          "max_abs": 1.8700957298278809e-06,
+          "squared_difference": 1.803574889436277e-08,
+          "reference_squared_norm": 0.003268755739554763,
+          "relative_l2": 0.0023489612675688764,
+          "finite": true
+        },
+        "blocks.5.input_layernorm.weight": {
+          "max_abs": 1.6987323760986328e-06,
+          "squared_difference": 1.0997890098618512e-10,
+          "reference_squared_norm": 1.315036388405133e-05,
+          "relative_l2": 0.0028919168555492135,
+          "finite": true
+        },
+        "blocks.5.post_attention_layernorm.weight": {
+          "max_abs": 7.078051567077637e-07,
+          "squared_difference": 2.2506396052390798e-11,
+          "reference_squared_norm": 2.1428627405839507e-06,
+          "relative_l2": 0.0032408266519303648,
+          "finite": true
+        },
+        "blocks.6.self_attn.q_proj.weight": {
+          "max_abs": 1.3224780559539795e-07,
+          "squared_difference": 9.882694662621816e-11,
+          "reference_squared_norm": 1.7950485926121473e-05,
+          "relative_l2": 0.0023463866767983095,
+          "finite": true
+        },
+        "blocks.6.self_attn.k_proj.weight": {
+          "max_abs": 1.993030309677124e-07,
+          "squared_difference": 9.817627266706097e-11,
+          "reference_squared_norm": 1.7826385374064557e-05,
+          "relative_l2": 0.0023467759259044973,
+          "finite": true
+        },
+        "blocks.6.self_attn.v_proj.weight": {
+          "max_abs": 6.16908073425293e-06,
+          "squared_difference": 1.4494401057163486e-07,
+          "reference_squared_norm": 0.026644742116332054,
+          "relative_l2": 0.002332353510985599,
+          "finite": true
+        },
+        "blocks.6.self_attn.o_proj.weight": {
+          "max_abs": 3.91155481338501e-06,
+          "squared_difference": 1.4970834172345349e-07,
+          "reference_squared_norm": 0.027370747178792953,
+          "relative_l2": 0.0023387277746459894,
+          "finite": true
+        },
+        "blocks.6.mlp.gate_proj.weight": {
+          "max_abs": 1.8376740626990795e-06,
+          "squared_difference": 1.4831226025080468e-08,
+          "reference_squared_norm": 0.0026912859175354242,
+          "relative_l2": 0.0023475162504336534,
+          "finite": true
+        },
+        "blocks.6.mlp.down_proj.weight": {
+          "max_abs": 3.3834949135780334e-06,
+          "squared_difference": 4.793018604232202e-08,
+          "reference_squared_norm": 0.008695779368281364,
+          "relative_l2": 0.002347741631972858,
+          "finite": true
+        },
+        "blocks.6.mlp.up_proj.weight": {
+          "max_abs": 1.537497155368328e-06,
+          "squared_difference": 1.3979484236870121e-08,
+          "reference_squared_norm": 0.0025436116848140955,
+          "relative_l2": 0.0023443376840351585,
+          "finite": true
+        },
+        "blocks.6.input_layernorm.weight": {
+          "max_abs": 1.087784767150879e-06,
+          "squared_difference": 7.210297636728313e-11,
+          "reference_squared_norm": 8.697539669810794e-06,
+          "relative_l2": 0.0028792434472838433,
+          "finite": true
+        },
+        "blocks.6.post_attention_layernorm.weight": {
+          "max_abs": 5.960464477539062e-07,
+          "squared_difference": 1.781319536320325e-11,
+          "reference_squared_norm": 1.5125808658922324e-06,
+          "relative_l2": 0.0034317181712763337,
+          "finite": true
+        },
+        "blocks.7.self_attn.q_proj.weight": {
+          "max_abs": 1.5227124094963074e-07,
+          "squared_difference": 7.527982404109679e-11,
+          "reference_squared_norm": 1.368084667774383e-05,
+          "relative_l2": 0.002345755859196765,
+          "finite": true
+        },
+        "blocks.7.self_attn.k_proj.weight": {
+          "max_abs": 1.564621925354004e-07,
+          "squared_difference": 7.359672593576505e-11,
+          "reference_squared_norm": 1.3414712157100439e-05,
+          "relative_l2": 0.002342278694642334,
+          "finite": true
+        },
+        "blocks.7.self_attn.v_proj.weight": {
+          "max_abs": 6.139278411865234e-06,
+          "squared_difference": 1.1786868014951324e-07,
+          "reference_squared_norm": 0.021445557475090027,
+          "relative_l2": 0.002344393670386932,
+          "finite": true
+        },
+        "blocks.7.self_attn.o_proj.weight": {
+          "max_abs": 3.4868717193603516e-06,
+          "squared_difference": 1.20718567586664e-07,
+          "reference_squared_norm": 0.022189268842339516,
+          "relative_l2": 0.0023324671758874625,
+          "finite": true
+        },
+        "blocks.7.mlp.gate_proj.weight": {
+          "max_abs": 1.5981495380401611e-06,
+          "squared_difference": 1.2124733217433459e-08,
+          "reference_squared_norm": 0.002203962067142129,
+          "relative_l2": 0.0023454924429235514,
+          "finite": true
+        },
+        "blocks.7.mlp.down_proj.weight": {
+          "max_abs": 3.648921847343445e-06,
+          "squared_difference": 4.0031533643514194e-08,
+          "reference_squared_norm": 0.007289889268577099,
+          "relative_l2": 0.0023433688279615875,
+          "finite": true
+        },
+        "blocks.7.mlp.up_proj.weight": {
+          "max_abs": 1.5688128769397736e-06,
+          "squared_difference": 1.1504396546513362e-08,
+          "reference_squared_norm": 0.0020948327146470547,
+          "relative_l2": 0.002343458395702607,
+          "finite": true
+        },
+        "blocks.7.input_layernorm.weight": {
+          "max_abs": 1.12876296043396e-06,
+          "squared_difference": 6.264811586165209e-11,
+          "reference_squared_norm": 7.400342383334646e-06,
+          "relative_l2": 0.0029095652454933824,
+          "finite": true
+        },
+        "blocks.7.post_attention_layernorm.weight": {
+          "max_abs": 6.631016731262207e-07,
+          "squared_difference": 1.503291068016832e-11,
+          "reference_squared_norm": 1.2919847449666122e-06,
+          "relative_l2": 0.0034110873878383657,
+          "finite": true
+        },
+        "blocks.8.self_attn.q_proj.weight": {
+          "max_abs": 2.0023435354232788e-07,
+          "squared_difference": 6.626119791741658e-11,
+          "reference_squared_norm": 1.2111160685890354e-05,
+          "relative_l2": 0.0023390352049430445,
+          "finite": true
+        },
+        "blocks.8.self_attn.k_proj.weight": {
+          "max_abs": 1.8812716007232666e-07,
+          "squared_difference": 6.743046399027008e-11,
+          "reference_squared_norm": 1.2423193766153418e-05,
+          "relative_l2": 0.002329761394764548,
+          "finite": true
+        },
+        "blocks.8.self_attn.v_proj.weight": {
+          "max_abs": 5.811452865600586e-06,
+          "squared_difference": 1.0189179988628894e-07,
+          "reference_squared_norm": 0.01881692185997963,
+          "relative_l2": 0.0023269943363908134,
+          "finite": true
+        },
+        "blocks.8.self_attn.o_proj.weight": {
+          "max_abs": 2.7567148208618164e-06,
+          "squared_difference": 9.975547499152526e-08,
+          "reference_squared_norm": 0.01815170980989933,
+          "relative_l2": 0.0023442806373037235,
+          "finite": true
+        },
+        "blocks.8.mlp.gate_proj.weight": {
+          "max_abs": 1.521781086921692e-06,
+          "squared_difference": 1.040429253862385e-08,
+          "reference_squared_norm": 0.0018847621977329254,
+          "relative_l2": 0.002349513777597656,
+          "finite": true
+        },
+        "blocks.8.mlp.down_proj.weight": {
+          "max_abs": 3.3853575587272644e-06,
+          "squared_difference": 3.462605491222348e-08,
+          "reference_squared_norm": 0.0063018715009093285,
+          "relative_l2": 0.0023440492649208365,
+          "finite": true
+        },
+        "blocks.8.mlp.up_proj.weight": {
+          "max_abs": 1.6763806343078613e-06,
+          "squared_difference": 1.0111063986073532e-08,
+          "reference_squared_norm": 0.0018329289741814137,
+          "relative_l2": 0.0023486895266369105,
+          "finite": true
+        },
+        "blocks.8.input_layernorm.weight": {
+          "max_abs": 1.475214958190918e-06,
+          "squared_difference": 5.0703684306707686e-11,
+          "reference_squared_norm": 5.976795364404097e-06,
+          "relative_l2": 0.0029126316579710103,
+          "finite": true
+        },
+        "blocks.8.post_attention_layernorm.weight": {
+          "max_abs": 4.284083843231201e-07,
+          "squared_difference": 1.1898777102503644e-11,
+          "reference_squared_norm": 1.2189002518425696e-06,
+          "relative_l2": 0.0031244032517820566,
+          "finite": true
+        },
+        "blocks.9.self_attn.q_proj.weight": {
+          "max_abs": 1.2479722499847412e-07,
+          "squared_difference": 6.447006817289491e-11,
+          "reference_squared_norm": 1.1676074791466817e-05,
+          "relative_l2": 0.0023497985453699035,
+          "finite": true
+        },
+        "blocks.9.self_attn.k_proj.weight": {
+          "max_abs": 2.421438694000244e-07,
+          "squared_difference": 6.341185215807954e-11,
+          "reference_squared_norm": 1.1405365512473509e-05,
+          "relative_l2": 0.0023579284105957076,
+          "finite": true
+        },
+        "blocks.9.self_attn.v_proj.weight": {
+          "max_abs": 4.351139068603516e-06,
+          "squared_difference": 8.454021838133485e-08,
+          "reference_squared_norm": 0.01550496555864811,
+          "relative_l2": 0.002335050512225433,
+          "finite": true
+        },
+        "blocks.9.self_attn.o_proj.weight": {
+          "max_abs": 3.427267074584961e-06,
+          "squared_difference": 8.833651321538127e-08,
+          "reference_squared_norm": 0.016217635944485664,
+          "relative_l2": 0.0023338683415557774,
+          "finite": true
+        },
+        "blocks.9.mlp.gate_proj.weight": {
+          "max_abs": 1.4603137969970703e-06,
+          "squared_difference": 8.893207947835435e-09,
+          "reference_squared_norm": 0.001609803643077612,
+          "relative_l2": 0.0023504053704923064,
+          "finite": true
+        },
+        "blocks.9.mlp.down_proj.weight": {
+          "max_abs": 2.4139881134033203e-06,
+          "squared_difference": 2.871092519285412e-08,
+          "reference_squared_norm": 0.0052029769867658615,
+          "relative_l2": 0.00234907910213149,
+          "finite": true
+        },
+        "blocks.9.mlp.up_proj.weight": {
+          "max_abs": 1.0784715414047241e-06,
+          "squared_difference": 8.472461843211931e-09,
+          "reference_squared_norm": 0.0015378119423985481,
+          "relative_l2": 0.0023472167527153354,
+          "finite": true
+        },
+        "blocks.9.input_layernorm.weight": {
+          "max_abs": 1.0728836059570312e-06,
+          "squared_difference": 4.203842829397786e-11,
+          "reference_squared_norm": 4.842541329708183e-06,
+          "relative_l2": 0.0029463651383957452,
+          "finite": true
+        },
+        "blocks.9.post_attention_layernorm.weight": {
+          "max_abs": 5.140900611877441e-07,
+          "squared_difference": 1.1630077109692216e-11,
+          "reference_squared_norm": 1.002208819045336e-06,
+          "relative_l2": 0.003406529757772043,
+          "finite": true
+        },
+        "blocks.10.self_attn.q_proj.weight": {
+          "max_abs": 1.341104507446289e-07,
+          "squared_difference": 5.122752916308926e-11,
+          "reference_squared_norm": 9.373464308737312e-06,
+          "relative_l2": 0.0023377692379815272,
+          "finite": true
+        },
+        "blocks.10.self_attn.k_proj.weight": {
+          "max_abs": 1.5087425708770752e-07,
+          "squared_difference": 4.7063221375598374e-11,
+          "reference_squared_norm": 8.68140887178015e-06,
+          "relative_l2": 0.0023283363572312974,
+          "finite": true
+        },
+        "blocks.10.self_attn.v_proj.weight": {
+          "max_abs": 5.4836273193359375e-06,
+          "squared_difference": 7.528497292241809e-08,
+          "reference_squared_norm": 0.013862377032637596,
+          "relative_l2": 0.0023304258869820144,
+          "finite": true
+        },
+        "blocks.10.self_attn.o_proj.weight": {
+          "max_abs": 2.652406692504883e-06,
+          "squared_difference": 7.299205151412025e-08,
+          "reference_squared_norm": 0.013420850038528442,
+          "relative_l2": 0.002332103244782825,
+          "finite": true
+        },
+        "blocks.10.mlp.gate_proj.weight": {
+          "max_abs": 8.903443813323975e-07,
+          "squared_difference": 8.124787953533996e-09,
+          "reference_squared_norm": 0.0014844841789454222,
+          "relative_l2": 0.0023394740428448677,
+          "finite": true
+        },
+        "blocks.10.mlp.down_proj.weight": {
+          "max_abs": 2.000480890274048e-06,
+          "squared_difference": 2.576046753688388e-08,
+          "reference_squared_norm": 0.004686632193624973,
+          "relative_l2": 0.00234447947348757,
+          "finite": true
+        },
+        "blocks.10.mlp.up_proj.weight": {
+          "max_abs": 9.443610906600952e-07,
+          "squared_difference": 7.682201541570066e-09,
+          "reference_squared_norm": 0.0013984532561153173,
+          "relative_l2": 0.00234379093965329,
+          "finite": true
+        },
+        "blocks.10.input_layernorm.weight": {
+          "max_abs": 1.0579824447631836e-06,
+          "squared_difference": 3.618617905321031e-11,
+          "reference_squared_norm": 5.207757567404769e-06,
+          "relative_l2": 0.0026360035121478073,
+          "finite": true
+        },
+        "blocks.10.post_attention_layernorm.weight": {
+          "max_abs": 4.544854164123535e-07,
+          "squared_difference": 1.2126097868880858e-11,
+          "reference_squared_norm": 9.28280769585399e-07,
+          "relative_l2": 0.0036142722037110974,
+          "finite": true
+        },
+        "blocks.11.self_attn.q_proj.weight": {
+          "max_abs": 1.9487924873828888e-07,
+          "squared_difference": 4.286522872765097e-11,
+          "reference_squared_norm": 7.700861715420615e-06,
+          "relative_l2": 0.0023592986017424333,
+          "finite": true
+        },
+        "blocks.11.self_attn.k_proj.weight": {
+          "max_abs": 2.1141022443771362e-07,
+          "squared_difference": 4.7332929242749344e-11,
+          "reference_squared_norm": 8.478998097416479e-06,
+          "relative_l2": 0.0023627045742660464,
+          "finite": true
+        },
+        "blocks.11.self_attn.v_proj.weight": {
+          "max_abs": 5.0067901611328125e-06,
+          "squared_difference": 6.86817287487429e-08,
+          "reference_squared_norm": 0.012722310610115528,
+          "relative_l2": 0.0023234729018022384,
+          "finite": true
+        },
+        "blocks.11.self_attn.o_proj.weight": {
+          "max_abs": 2.205371856689453e-06,
+          "squared_difference": 6.338734692690196e-08,
+          "reference_squared_norm": 0.0116258030757308,
+          "relative_l2": 0.0023350157065792116,
+          "finite": true
+        },
+        "blocks.11.mlp.gate_proj.weight": {
+          "max_abs": 1.3709068298339844e-06,
+          "squared_difference": 7.1252816979949785e-09,
+          "reference_squared_norm": 0.0012928762007504702,
+          "relative_l2": 0.002347591610948482,
+          "finite": true
+        },
+        "blocks.11.mlp.down_proj.weight": {
+          "max_abs": 3.1106173992156982e-06,
+          "squared_difference": 2.340036431291992e-08,
+          "reference_squared_norm": 0.004237167537212372,
+          "relative_l2": 0.0023500304591641623,
+          "finite": true
+        },
+        "blocks.11.mlp.up_proj.weight": {
+          "max_abs": 1.5497207641601562e-06,
+          "squared_difference": 6.858805967624448e-09,
+          "reference_squared_norm": 0.0012492560781538486,
+          "relative_l2": 0.00234314153748515,
+          "finite": true
+        },
+        "blocks.11.input_layernorm.weight": {
+          "max_abs": 8.381903171539307e-07,
+          "squared_difference": 2.690506498148615e-11,
+          "reference_squared_norm": 4.020022061013151e-06,
+          "relative_l2": 0.0025870379791465845,
+          "finite": true
+        },
+        "blocks.11.post_attention_layernorm.weight": {
+          "max_abs": 4.0978193283081055e-07,
+          "squared_difference": 9.958093377671062e-12,
+          "reference_squared_norm": 8.765122174736462e-07,
+          "relative_l2": 0.003370614697523035,
+          "finite": true
+        },
+        "blocks.12.self_attn.q_proj.weight": {
+          "max_abs": 1.6413105186074972e-07,
+          "squared_difference": 4.0372472726035724e-11,
+          "reference_squared_norm": 7.27829910829314e-06,
+          "relative_l2": 0.0023551996343764343,
+          "finite": true
+        },
+        "blocks.12.self_attn.k_proj.weight": {
+          "max_abs": 2.0209699869155884e-07,
+          "squared_difference": 4.3402764021704954e-11,
+          "reference_squared_norm": 7.991173333721235e-06,
+          "relative_l2": 0.002330523134147504,
+          "finite": true
+        },
+        "blocks.12.self_attn.v_proj.weight": {
+          "max_abs": 4.351139068603516e-06,
+          "squared_difference": 5.9421161324735294e-08,
+          "reference_squared_norm": 0.010849233716726303,
+          "relative_l2": 0.0023402973195599925,
+          "finite": true
+        },
+        "blocks.12.self_attn.o_proj.weight": {
+          "max_abs": 2.4437904357910156e-06,
+          "squared_difference": 5.5734659554218524e-08,
+          "reference_squared_norm": 0.010213319212198257,
+          "relative_l2": 0.0023360343441373495,
+          "finite": true
+        },
+        "blocks.12.mlp.gate_proj.weight": {
+          "max_abs": 1.430511474609375e-06,
+          "squared_difference": 6.603696256490821e-09,
+          "reference_squared_norm": 0.001198750687763095,
+          "relative_l2": 0.002347086578254725,
+          "finite": true
+        },
+        "blocks.12.mlp.down_proj.weight": {
+          "max_abs": 3.335997462272644e-06,
+          "squared_difference": 2.0886904650296856e-08,
+          "reference_squared_norm": 0.0037940028123557568,
+          "relative_l2": 0.002346325269168651,
+          "finite": true
+        },
+        "blocks.12.mlp.up_proj.weight": {
+          "max_abs": 9.275972843170166e-07,
+          "squared_difference": 6.203975999596878e-09,
+          "reference_squared_norm": 0.0011304272338747978,
+          "relative_l2": 0.0023426842005527253,
+          "finite": true
+        },
+        "blocks.12.input_layernorm.weight": {
+          "max_abs": 7.152557373046875e-07,
+          "squared_difference": 2.6531722999156848e-11,
+          "reference_squared_norm": 3.5349187328392873e-06,
+          "relative_l2": 0.0027396369203068374,
+          "finite": true
+        },
+        "blocks.12.post_attention_layernorm.weight": {
+          "max_abs": 3.9674341678619385e-07,
+          "squared_difference": 8.99174051188778e-12,
+          "reference_squared_norm": 6.980817488511093e-07,
+          "relative_l2": 0.0035889610149146462,
+          "finite": true
+        },
+        "blocks.13.self_attn.q_proj.weight": {
+          "max_abs": 9.033828973770142e-08,
+          "squared_difference": 3.1248014592533124e-11,
+          "reference_squared_norm": 5.721223715227097e-06,
+          "relative_l2": 0.0023370432480721882,
+          "finite": true
+        },
+        "blocks.13.self_attn.k_proj.weight": {
+          "max_abs": 1.4062970876693726e-07,
+          "squared_difference": 3.288186736782883e-11,
+          "reference_squared_norm": 5.9889621297770645e-06,
+          "relative_l2": 0.0023431627422120056,
+          "finite": true
+        },
+        "blocks.13.self_attn.v_proj.weight": {
+          "max_abs": 4.017725586891174e-06,
+          "squared_difference": 5.542978698258594e-08,
+          "reference_squared_norm": 0.01010438147932291,
+          "relative_l2": 0.00234216096002167,
+          "finite": true
+        },
+        "blocks.13.self_attn.o_proj.weight": {
+          "max_abs": 2.1904706954956055e-06,
+          "squared_difference": 5.5927802833366513e-08,
+          "reference_squared_norm": 0.010179294273257256,
+          "relative_l2": 0.002343986166358354,
+          "finite": true
+        },
+        "blocks.13.mlp.gate_proj.weight": {
+          "max_abs": 8.493661880493164e-07,
+          "squared_difference": 5.626849208795193e-09,
+          "reference_squared_norm": 0.0010272095678374171,
+          "relative_l2": 0.002340470170968431,
+          "finite": true
+        },
+        "blocks.13.mlp.down_proj.weight": {
+          "max_abs": 1.646578311920166e-06,
+          "squared_difference": 1.8454953121249673e-08,
+          "reference_squared_norm": 0.0033583054319024086,
+          "relative_l2": 0.002344209260414497,
+          "finite": true
+        },
+        "blocks.13.mlp.up_proj.weight": {
+          "max_abs": 9.248033165931702e-07,
+          "squared_difference": 5.775627975879161e-09,
+          "reference_squared_norm": 0.0010547575075179338,
+          "relative_l2": 0.0023400400638976106,
+          "finite": true
+        },
+        "blocks.13.input_layernorm.weight": {
+          "max_abs": 6.556510925292969e-07,
+          "squared_difference": 2.6800190539022495e-11,
+          "reference_squared_norm": 3.362372808624059e-06,
+          "relative_l2": 0.0028232283628816107,
+          "finite": true
+        },
+        "blocks.13.post_attention_layernorm.weight": {
+          "max_abs": 4.023313522338867e-07,
+          "squared_difference": 8.752162189429313e-12,
+          "reference_squared_norm": 6.46484522803803e-07,
+          "relative_l2": 0.0036794136274617448,
+          "finite": true
+        },
+        "blocks.14.self_attn.q_proj.weight": {
+          "max_abs": 1.1615338735282421e-07,
+          "squared_difference": 2.761589221189631e-11,
+          "reference_squared_norm": 5.067229722044431e-06,
+          "relative_l2": 0.002334501959313636,
+          "finite": true
+        },
+        "blocks.14.self_attn.k_proj.weight": {
+          "max_abs": 1.434236764907837e-07,
+          "squared_difference": 3.070584411735133e-11,
+          "reference_squared_norm": 5.5370060181303415e-06,
+          "relative_l2": 0.0023549029982932817,
+          "finite": true
+        },
+        "blocks.14.self_attn.v_proj.weight": {
+          "max_abs": 4.291534423828125e-06,
+          "squared_difference": 4.7049560691903025e-08,
+          "reference_squared_norm": 0.008563946932554245,
+          "relative_l2": 0.0023439093022858304,
+          "finite": true
+        },
+        "blocks.14.self_attn.o_proj.weight": {
+          "max_abs": 1.9688159227371216e-06,
+          "squared_difference": 4.5876205945205584e-08,
+          "reference_squared_norm": 0.008450671099126339,
+          "relative_l2": 0.0023299582936965337,
+          "finite": true
+        },
+        "blocks.14.mlp.gate_proj.weight": {
+          "max_abs": 9.57399606704712e-07,
+          "squared_difference": 5.387082335772675e-09,
+          "reference_squared_norm": 0.000983311445452273,
+          "relative_l2": 0.0023406218749416866,
+          "finite": true
+        },
+        "blocks.14.mlp.down_proj.weight": {
+          "max_abs": 3.0957162380218506e-06,
+          "squared_difference": 1.8243088817371245e-08,
+          "reference_squared_norm": 0.0033170494716614485,
+          "relative_l2": 0.0023451639624298133,
+          "finite": true
+        },
+        "blocks.14.mlp.up_proj.weight": {
+          "max_abs": 1.0936055332422256e-06,
+          "squared_difference": 5.201771458018811e-09,
+          "reference_squared_norm": 0.0009444523602724075,
+          "relative_l2": 0.0023468514762718332,
+          "finite": true
+        },
+        "blocks.14.input_layernorm.weight": {
+          "max_abs": 7.301568984985352e-07,
+          "squared_difference": 2.1020088447620822e-11,
+          "reference_squared_norm": 2.8010340429318603e-06,
+          "relative_l2": 0.0027394165549748696,
+          "finite": true
+        },
+        "blocks.14.post_attention_layernorm.weight": {
+          "max_abs": 3.501772880554199e-07,
+          "squared_difference": 7.915788684254021e-12,
+          "reference_squared_norm": 6.950052693355246e-07,
+          "relative_l2": 0.003374838907737364,
+          "finite": true
+        },
+        "blocks.15.self_attn.q_proj.weight": {
+          "max_abs": 1.1734664440155029e-07,
+          "squared_difference": 3.0461411171245345e-11,
+          "reference_squared_norm": 5.512743427971145e-06,
+          "relative_l2": 0.002350667047780668,
+          "finite": true
+        },
+        "blocks.15.self_attn.k_proj.weight": {
+          "max_abs": 2.300366759300232e-07,
+          "squared_difference": 3.1691121948895784e-11,
+          "reference_squared_norm": 5.693083039659541e-06,
+          "relative_l2": 0.002359364540803892,
+          "finite": true
+        },
+        "blocks.15.self_attn.v_proj.weight": {
+          "max_abs": 3.933906555175781e-06,
+          "squared_difference": 4.391835872752381e-08,
+          "reference_squared_norm": 0.008078278973698616,
+          "relative_l2": 0.0023316514368193473,
+          "finite": true
+        },
+        "blocks.15.self_attn.o_proj.weight": {
+          "max_abs": 2.2649765014648438e-06,
+          "squared_difference": 4.574254575118175e-08,
+          "reference_squared_norm": 0.008373504504561424,
+          "relative_l2": 0.002337257362022607,
+          "finite": true
+        },
+        "blocks.15.mlp.gate_proj.weight": {
+          "max_abs": 9.210780262947083e-07,
+          "squared_difference": 4.955889920665868e-09,
+          "reference_squared_norm": 0.0009005320607684553,
+          "relative_l2": 0.0023459094032581545,
+          "finite": true
+        },
+        "blocks.15.mlp.down_proj.weight": {
+          "max_abs": 1.8849968910217285e-06,
+          "squared_difference": 1.5711130174622667e-08,
+          "reference_squared_norm": 0.0028670867905020714,
+          "relative_l2": 0.002340902328267641,
+          "finite": true
+        },
+        "blocks.15.mlp.up_proj.weight": {
+          "max_abs": 1.400243490934372e-06,
+          "squared_difference": 4.7009782733198335e-09,
+          "reference_squared_norm": 0.0008574729436077178,
+          "relative_l2": 0.0023414447226583254,
+          "finite": true
+        },
+        "blocks.15.input_layernorm.weight": {
+          "max_abs": 8.717179298400879e-07,
+          "squared_difference": 1.8767421644527715e-11,
+          "reference_squared_norm": 2.777477448034915e-06,
+          "relative_l2": 0.0025994234649995385,
+          "finite": true
+        },
+        "blocks.15.post_attention_layernorm.weight": {
+          "max_abs": 5.885958671569824e-07,
+          "squared_difference": 8.277128114853038e-12,
+          "reference_squared_norm": 5.822807906952221e-07,
+          "relative_l2": 0.0037702800245801842,
+          "finite": true
+        },
+        "blocks.16.self_attn.q_proj.weight": {
+          "max_abs": 9.720679372549057e-08,
+          "squared_difference": 3.00349328741234e-11,
+          "reference_squared_norm": 5.52879237147863e-06,
+          "relative_l2": 0.0023307634146390553,
+          "finite": true
+        },
+        "blocks.16.self_attn.k_proj.weight": {
+          "max_abs": 1.1920928955078125e-07,
+          "squared_difference": 3.1265351418952037e-11,
+          "reference_squared_norm": 5.718877673643874e-06,
+          "relative_l2": 0.0023381709136133244,
+          "finite": true
+        },
+        "blocks.16.self_attn.v_proj.weight": {
+          "max_abs": 3.3974647521972656e-06,
+          "squared_difference": 3.915821977784617e-08,
+          "reference_squared_norm": 0.007238774560391903,
+          "relative_l2": 0.0023258352270658024,
+          "finite": true
+        },
+        "blocks.16.self_attn.o_proj.weight": {
+          "max_abs": 1.9669532775878906e-06,
+          "squared_difference": 3.970210116222006e-08,
+          "reference_squared_norm": 0.007268215529620647,
+          "relative_l2": 0.0023371836913140044,
+          "finite": true
+        },
+        "blocks.16.mlp.gate_proj.weight": {
+          "max_abs": 9.010545909404755e-07,
+          "squared_difference": 4.50316761657632e-09,
+          "reference_squared_norm": 0.0008176508708857,
+          "relative_l2": 0.002346794730848741,
+          "finite": true
+        },
+        "blocks.16.mlp.down_proj.weight": {
+          "max_abs": 1.603737473487854e-06,
+          "squared_difference": 1.4165731698767559e-08,
+          "reference_squared_norm": 0.002576865255832672,
+          "relative_l2": 0.00234462640146585,
+          "finite": true
+        },
+        "blocks.16.mlp.up_proj.weight": {
+          "max_abs": 9.103678166866302e-07,
+          "squared_difference": 4.290615862601044e-09,
+          "reference_squared_norm": 0.0007772298995405436,
+          "relative_l2": 0.0023495520333138686,
+          "finite": true
+        },
+        "blocks.16.input_layernorm.weight": {
+          "max_abs": 5.110632628202438e-07,
+          "squared_difference": 1.592710685560661e-11,
+          "reference_squared_norm": 2.1806367840326857e-06,
+          "relative_l2": 0.002702568932676041,
+          "finite": true
+        },
+        "blocks.16.post_attention_layernorm.weight": {
+          "max_abs": 3.2782554626464844e-07,
+          "squared_difference": 7.338615826135708e-12,
+          "reference_squared_norm": 5.080934215584421e-07,
+          "relative_l2": 0.0038004523398536814,
+          "finite": true
+        },
+        "blocks.17.self_attn.q_proj.weight": {
+          "max_abs": 1.1408701539039612e-07,
+          "squared_difference": 2.4980507246086248e-11,
+          "reference_squared_norm": 4.5330489228945225e-06,
+          "relative_l2": 0.0023474990397201203,
+          "finite": true
+        },
+        "blocks.17.self_attn.k_proj.weight": {
+          "max_abs": 1.30385160446167e-07,
+          "squared_difference": 2.5648223128671432e-11,
+          "reference_squared_norm": 4.67055451736087e-06,
+          "relative_l2": 0.0023433891711870194,
+          "finite": true
+        },
+        "blocks.17.self_attn.v_proj.weight": {
+          "max_abs": 3.390014171600342e-06,
+          "squared_difference": 3.78043978344067e-08,
+          "reference_squared_norm": 0.006851787678897381,
+          "relative_l2": 0.0023489253453651653,
+          "finite": true
+        },
+        "blocks.17.self_attn.o_proj.weight": {
+          "max_abs": 1.934356987476349e-06,
+          "squared_difference": 3.6930849489635875e-08,
+          "reference_squared_norm": 0.006768092513084412,
+          "relative_l2": 0.0023359390428338315,
+          "finite": true
+        },
+        "blocks.17.mlp.gate_proj.weight": {
+          "max_abs": 9.354989742860198e-07,
+          "squared_difference": 4.2323988758141695e-09,
+          "reference_squared_norm": 0.0007735086837783456,
+          "relative_l2": 0.0023391641446835806,
+          "finite": true
+        },
+        "blocks.17.mlp.down_proj.weight": {
+          "max_abs": 1.7061829566955566e-06,
+          "squared_difference": 1.3862416992083126e-08,
+          "reference_squared_norm": 0.002521964255720377,
+          "relative_l2": 0.0023444988056694357,
+          "finite": true
+        },
+        "blocks.17.mlp.up_proj.weight": {
+          "max_abs": 9.387731552124023e-07,
+          "squared_difference": 4.080585647159296e-09,
+          "reference_squared_norm": 0.0007421626942232251,
+          "relative_l2": 0.002344831764815437,
+          "finite": true
+        },
+        "blocks.17.input_layernorm.weight": {
+          "max_abs": 8.866190910339355e-07,
+          "squared_difference": 1.702653643076424e-11,
+          "reference_squared_norm": 2.1302275854395702e-06,
+          "relative_l2": 0.0028271584782441276,
+          "finite": true
+        },
+        "blocks.17.post_attention_layernorm.weight": {
+          "max_abs": 4.414469003677368e-07,
+          "squared_difference": 7.424815103018734e-12,
+          "reference_squared_norm": 4.7445459472328366e-07,
+          "relative_l2": 0.003955901716777722,
+          "finite": true
+        },
+        "blocks.18.self_attn.q_proj.weight": {
+          "max_abs": 1.1292286217212677e-07,
+          "squared_difference": 2.1456537935282682e-11,
+          "reference_squared_norm": 3.9023075260047335e-06,
+          "relative_l2": 0.00234487166457316,
+          "finite": true
+        },
+        "blocks.18.self_attn.k_proj.weight": {
+          "max_abs": 1.1920928955078125e-07,
+          "squared_difference": 2.2363834742411548e-11,
+          "reference_squared_norm": 4.023526344099082e-06,
+          "relative_l2": 0.002357597772855439,
+          "finite": true
+        },
+        "blocks.18.self_attn.v_proj.weight": {
+          "max_abs": 3.039836883544922e-06,
+          "squared_difference": 3.441615703536627e-08,
+          "reference_squared_norm": 0.006261141039431095,
+          "relative_l2": 0.0023445227102355777,
+          "finite": true
+        },
+        "blocks.18.self_attn.o_proj.weight": {
+          "max_abs": 1.7583370208740234e-06,
+          "squared_difference": 3.49072593053279e-08,
+          "reference_squared_norm": 0.006379644386470318,
+          "relative_l2": 0.002339158447340297,
+          "finite": true
+        },
+        "blocks.18.mlp.gate_proj.weight": {
+          "max_abs": 9.071081876754761e-07,
+          "squared_difference": 3.880217036567046e-09,
+          "reference_squared_norm": 0.0007047688704915345,
+          "relative_l2": 0.0023464140610373967,
+          "finite": true
+        },
+        "blocks.18.mlp.down_proj.weight": {
+          "max_abs": 1.7974525690078735e-06,
+          "squared_difference": 1.2546953698233665e-08,
+          "reference_squared_norm": 0.0022828825749456882,
+          "relative_l2": 0.0023443765092056503,
+          "finite": true
+        },
+        "blocks.18.mlp.up_proj.weight": {
+          "max_abs": 6.854534149169922e-07,
+          "squared_difference": 3.635038048344086e-09,
+          "reference_squared_norm": 0.0006608419353142381,
+          "relative_l2": 0.0023453393128775005,
+          "finite": true
+        },
+        "blocks.18.input_layernorm.weight": {
+          "max_abs": 5.848705768585205e-07,
+          "squared_difference": 1.4676412862790755e-11,
+          "reference_squared_norm": 1.9695874016179005e-06,
+          "relative_l2": 0.002729746585215791,
+          "finite": true
+        },
+        "blocks.18.post_attention_layernorm.weight": {
+          "max_abs": 3.487803041934967e-07,
+          "squared_difference": 7.2682844985683115e-12,
+          "reference_squared_norm": 4.397063833039283e-07,
+          "relative_l2": 0.004065692924599759,
+          "finite": true
+        },
+        "blocks.19.self_attn.q_proj.weight": {
+          "max_abs": 1.1781230568885803e-07,
+          "squared_difference": 2.571775604975901e-11,
+          "reference_squared_norm": 4.691780304710846e-06,
+          "relative_l2": 0.002341249525136239,
+          "finite": true
+        },
+        "blocks.19.self_attn.k_proj.weight": {
+          "max_abs": 1.3899989426136017e-07,
+          "squared_difference": 2.378841221228889e-11,
+          "reference_squared_norm": 4.337105565355159e-06,
+          "relative_l2": 0.0023419775692832584,
+          "finite": true
+        },
+        "blocks.19.self_attn.v_proj.weight": {
+          "max_abs": 3.973022103309631e-06,
+          "squared_difference": 3.205012788498607e-08,
+          "reference_squared_norm": 0.005853503011167049,
+          "relative_l2": 0.0023399520625859756,
+          "finite": true
+        },
+        "blocks.19.self_attn.o_proj.weight": {
+          "max_abs": 1.8775463104248047e-06,
+          "squared_difference": 3.2966941176937326e-08,
+          "reference_squared_norm": 0.006049913354218006,
+          "relative_l2": 0.00233434342525715,
+          "finite": true
+        },
+        "blocks.19.mlp.gate_proj.weight": {
+          "max_abs": 8.568167686462402e-07,
+          "squared_difference": 3.795637137926633e-09,
+          "reference_squared_norm": 0.0006897782441228628,
+          "relative_l2": 0.00234578171890276,
+          "finite": true
+        },
+        "blocks.19.mlp.down_proj.weight": {
+          "max_abs": 1.8097343854606152e-06,
+          "squared_difference": 1.28653629971609e-08,
+          "reference_squared_norm": 0.0023430711589753628,
+          "relative_l2": 0.0023432481511416092,
+          "finite": true
+        },
+        "blocks.19.mlp.up_proj.weight": {
+          "max_abs": 9.449431672692299e-07,
+          "squared_difference": 3.6794598479161778e-09,
+          "reference_squared_norm": 0.0006676352932117879,
+          "relative_l2": 0.0023475907555592667,
+          "finite": true
+        },
+        "blocks.19.input_layernorm.weight": {
+          "max_abs": 4.954636096954346e-07,
+          "squared_difference": 1.3964183108450268e-11,
+          "reference_squared_norm": 1.9117073861707468e-06,
+          "relative_l2": 0.0027026951258908396,
+          "finite": true
+        },
+        "blocks.19.post_attention_layernorm.weight": {
+          "max_abs": 3.5762786865234375e-07,
+          "squared_difference": 6.627911761092342e-12,
+          "reference_squared_norm": 4.5905289880465716e-07,
+          "relative_l2": 0.003799767220233724,
+          "finite": true
+        }
+      },
+      "loss_abs": 4.76837158203125e-07
+    },
+    "4": {
+      "batch_size": 4,
+      "accumulation": 2,
+      "status": "checked",
+      "loss": 10.903714656829834,
+      "seconds": 9.903554207994603,
+      "peak_active_bytes": 53973935408,
+      "passed": true,
+      "relative_l2": 0.002363454679068518,
+      "finite": true,
+      "reference_nonzero": true,
+      "candidate_nonzero": true,
+      "parameter_errors": {
+        "embed_tokens.weight": {
+          "max_abs": 2.0926818251609802e-05,
+          "squared_difference": 8.406112783632125e-07,
+          "reference_squared_norm": 0.111345075070858,
+          "relative_l2": 0.0027476543609097097,
+          "finite": true
+        },
+        "norm.weight": {
+          "max_abs": 7.741153240203857e-06,
+          "squared_difference": 3.1758391472180847e-09,
+          "reference_squared_norm": 0.001243634382262826,
+          "relative_l2": 0.001598022495913209,
+          "finite": true
+        },
+        "blocks.0.self_attn.q_proj.weight": {
+          "max_abs": 6.92903995513916e-07,
+          "squared_difference": 4.629226335595149e-09,
+          "reference_squared_norm": 0.0008435000199824572,
+          "relative_l2": 0.002342672928605228,
+          "finite": true
+        },
+        "blocks.0.self_attn.k_proj.weight": {
+          "max_abs": 8.940696716308594e-07,
+          "squared_difference": 4.654556740035787e-09,
+          "reference_squared_norm": 0.0008487914456054568,
+          "relative_l2": 0.002341739962814788,
+          "finite": true
+        },
+        "blocks.0.self_attn.v_proj.weight": {
+          "max_abs": 1.9550323486328125e-05,
+          "squared_difference": 1.1518014844114077e-06,
+          "reference_squared_norm": 0.20831501483917236,
+          "relative_l2": 0.0023514109158280835,
+          "finite": true
+        },
+        "blocks.0.self_attn.o_proj.weight": {
+          "max_abs": 1.0013580322265625e-05,
+          "squared_difference": 1.1518886822159402e-06,
+          "reference_squared_norm": 0.20899462699890137,
+          "relative_l2": 0.002347673485334152,
+          "finite": true
+        },
+        "blocks.0.mlp.gate_proj.weight": {
+          "max_abs": 6.288290023803711e-06,
+          "squared_difference": 3.6598123642761493e-07,
+          "reference_squared_norm": 0.06688489019870758,
+          "relative_l2": 0.0023391894727419647,
+          "finite": true
+        },
+        "blocks.0.mlp.down_proj.weight": {
+          "max_abs": 1.461803913116455e-05,
+          "squared_difference": 1.414638063579332e-06,
+          "reference_squared_norm": 0.25669607520103455,
+          "relative_l2": 0.0023475402944561625,
+          "finite": true
+        },
+        "blocks.0.mlp.up_proj.weight": {
+          "max_abs": 7.0035457611083984e-06,
+          "squared_difference": 4.089513367944164e-07,
+          "reference_squared_norm": 0.07426433265209198,
+          "relative_l2": 0.0023466357068419688,
+          "finite": true
+        },
+        "blocks.0.input_layernorm.weight": {
+          "max_abs": 4.284083843231201e-06,
+          "squared_difference": 1.0996830113185752e-09,
+          "reference_squared_norm": 7.387754158116877e-05,
+          "relative_l2": 0.0038581360698561233,
+          "finite": true
+        },
+        "blocks.0.post_attention_layernorm.weight": {
+          "max_abs": 3.077089786529541e-06,
+          "squared_difference": 5.859251972495372e-10,
+          "reference_squared_norm": 4.456917304196395e-05,
+          "relative_l2": 0.003625799622574983,
+          "finite": true
+        },
+        "blocks.1.self_attn.q_proj.weight": {
+          "max_abs": 3.390014171600342e-07,
+          "squared_difference": 5.890592458257515e-10,
+          "reference_squared_norm": 0.00010761311568785459,
+          "relative_l2": 0.002339628406719391,
+          "finite": true
+        },
+        "blocks.1.self_attn.k_proj.weight": {
+          "max_abs": 4.3958425521850586e-07,
+          "squared_difference": 5.943148195797221e-10,
+          "reference_squared_norm": 0.0001069424906745553,
+          "relative_l2": 0.002357399204369064,
+          "finite": true
+        },
+        "blocks.1.self_attn.v_proj.weight": {
+          "max_abs": 1.4781951904296875e-05,
+          "squared_difference": 7.760636435705237e-07,
+          "reference_squared_norm": 0.14035958051681519,
+          "relative_l2": 0.002351406088653117,
+          "finite": true
+        },
+        "blocks.1.self_attn.o_proj.weight": {
+          "max_abs": 8.106231689453125e-06,
+          "squared_difference": 8.035882501644664e-07,
+          "reference_squared_norm": 0.14622877538204193,
+          "relative_l2": 0.002344230799163382,
+          "finite": true
+        },
+        "blocks.1.mlp.gate_proj.weight": {
+          "max_abs": 3.778841346502304e-06,
+          "squared_difference": 9.717777516016213e-08,
+          "reference_squared_norm": 0.017655126750469208,
+          "relative_l2": 0.002346108300420516,
+          "finite": true
+        },
+        "blocks.1.mlp.down_proj.weight": {
+          "max_abs": 6.765127182006836e-06,
+          "squared_difference": 3.4753227851069823e-07,
+          "reference_squared_norm": 0.06305872648954391,
+          "relative_l2": 0.002347604730879697,
+          "finite": true
+        },
+        "blocks.1.mlp.up_proj.weight": {
+          "max_abs": 3.896653652191162e-06,
+          "squared_difference": 1.0603055500268965e-07,
+          "reference_squared_norm": 0.01926480606198311,
+          "relative_l2": 0.002346028029805789,
+          "finite": true
+        },
+        "blocks.1.input_layernorm.weight": {
+          "max_abs": 4.470348358154297e-06,
+          "squared_difference": 5.616601073121785e-10,
+          "reference_squared_norm": 4.146328865317628e-05,
+          "relative_l2": 0.003680483853074927,
+          "finite": true
+        },
+        "blocks.1.post_attention_layernorm.weight": {
+          "max_abs": 2.086162567138672e-06,
+          "squared_difference": 1.4920598090384374e-10,
+          "reference_squared_norm": 1.1436250133556314e-05,
+          "relative_l2": 0.0036120295384313443,
+          "finite": true
+        },
+        "blocks.2.self_attn.q_proj.weight": {
+          "max_abs": 2.2602034732699394e-07,
+          "squared_difference": 3.3374830676891065e-10,
+          "reference_squared_norm": 6.0548598412424326e-05,
+          "relative_l2": 0.0023477804843467023,
+          "finite": true
+        },
+        "blocks.2.self_attn.k_proj.weight": {
+          "max_abs": 3.5762786865234375e-07,
+          "squared_difference": 3.441527063330341e-10,
+          "reference_squared_norm": 6.318854866549373e-05,
+          "relative_l2": 0.002333761141524346,
+          "finite": true
+        },
+        "blocks.2.self_attn.v_proj.weight": {
+          "max_abs": 1.3589859008789062e-05,
+          "squared_difference": 5.615422651317203e-07,
+          "reference_squared_norm": 0.1023523360490799,
+          "relative_l2": 0.0023422990653874376,
+          "finite": true
+        },
+        "blocks.2.self_attn.o_proj.weight": {
+          "max_abs": 6.943941116333008e-06,
+          "squared_difference": 5.737545052397763e-07,
+          "reference_squared_norm": 0.10535857081413269,
+          "relative_l2": 0.002333609149963255,
+          "finite": true
+        },
+        "blocks.2.mlp.gate_proj.weight": {
+          "max_abs": 2.8461217880249023e-06,
+          "squared_difference": 5.35259800926724e-08,
+          "reference_squared_norm": 0.009724936448037624,
+          "relative_l2": 0.002346058991147707,
+          "finite": true
+        },
+        "blocks.2.mlp.down_proj.weight": {
+          "max_abs": 4.887580871582031e-06,
+          "squared_difference": 1.797182846985379e-07,
+          "reference_squared_norm": 0.032678455114364624,
+          "relative_l2": 0.00234512163866644,
+          "finite": true
+        },
+        "blocks.2.mlp.up_proj.weight": {
+          "max_abs": 3.2782554626464844e-06,
+          "squared_difference": 5.436428551774952e-08,
+          "reference_squared_norm": 0.009912779554724693,
+          "relative_l2": 0.0023418502372686825,
+          "finite": true
+        },
+        "blocks.2.input_layernorm.weight": {
+          "max_abs": 2.562999725341797e-06,
+          "squared_difference": 3.4529351600198765e-10,
+          "reference_squared_norm": 3.264962288085371e-05,
+          "relative_l2": 0.003252034370050806,
+          "finite": true
+        },
+        "blocks.2.post_attention_layernorm.weight": {
+          "max_abs": 1.0207295417785645e-06,
+          "squared_difference": 6.480870007319339e-11,
+          "reference_squared_norm": 6.372320513037266e-06,
+          "relative_l2": 0.0031890978841431555,
+          "finite": true
+        },
+        "blocks.3.self_attn.q_proj.weight": {
+          "max_abs": 2.2351741790771484e-07,
+          "squared_difference": 2.173714680475669e-10,
+          "reference_squared_norm": 3.9495600503869355e-05,
+          "relative_l2": 0.002345994062076291,
+          "finite": true
+        },
+        "blocks.3.self_attn.k_proj.weight": {
+          "max_abs": 2.799934009090066e-07,
+          "squared_difference": 2.2829529933154902e-10,
+          "reference_squared_norm": 4.1108913137577474e-05,
+          "relative_l2": 0.00235657077386713,
+          "finite": true
+        },
+        "blocks.3.self_attn.v_proj.weight": {
+          "max_abs": 1.0192394256591797e-05,
+          "squared_difference": 3.6113038959229016e-07,
+          "reference_squared_norm": 0.0670793354511261,
+          "relative_l2": 0.002320265285908435,
+          "finite": true
+        },
+        "blocks.3.self_attn.o_proj.weight": {
+          "max_abs": 7.599592208862305e-06,
+          "squared_difference": 3.7472284475370543e-07,
+          "reference_squared_norm": 0.06884288787841797,
+          "relative_l2": 0.0023330580515127453,
+          "finite": true
+        },
+        "blocks.3.mlp.gate_proj.weight": {
+          "max_abs": 1.9371509552001953e-06,
+          "squared_difference": 3.368371537249004e-08,
+          "reference_squared_norm": 0.0061156973242759705,
+          "relative_l2": 0.002346859026731004,
+          "finite": true
+        },
+        "blocks.3.mlp.down_proj.weight": {
+          "max_abs": 3.974884748458862e-06,
+          "squared_difference": 1.1443807323985311e-07,
+          "reference_squared_norm": 0.020804639905691147,
+          "relative_l2": 0.0023453365241431303,
+          "finite": true
+        },
+        "blocks.3.mlp.up_proj.weight": {
+          "max_abs": 2.391636371612549e-06,
+          "squared_difference": 3.275625459764342e-08,
+          "reference_squared_norm": 0.005962688475847244,
+          "relative_l2": 0.0023438297316701177,
+          "finite": true
+        },
+        "blocks.3.input_layernorm.weight": {
+          "max_abs": 2.7865171432495117e-06,
+          "squared_difference": 2.348256311623942e-10,
+          "reference_squared_norm": 2.252330887131393e-05,
+          "relative_l2": 0.0032289153000863435,
+          "finite": true
+        },
+        "blocks.3.post_attention_layernorm.weight": {
+          "max_abs": 9.052455425262451e-07,
+          "squared_difference": 4.2047303139280956e-11,
+          "reference_squared_norm": 4.16270449932199e-06,
+          "relative_l2": 0.003178200427602469,
+          "finite": true
+        },
+        "blocks.4.self_attn.q_proj.weight": {
+          "max_abs": 2.0302832126617432e-07,
+          "squared_difference": 1.6020275384054372e-10,
+          "reference_squared_norm": 2.9365917725954205e-05,
+          "relative_l2": 0.0023356792351586736,
+          "finite": true
+        },
+        "blocks.4.self_attn.k_proj.weight": {
+          "max_abs": 2.3283064365386963e-07,
+          "squared_difference": 1.4990264585179602e-10,
+          "reference_squared_norm": 2.737173781497404e-05,
+          "relative_l2": 0.002340202632336865,
+          "finite": true
+        },
+        "blocks.4.self_attn.v_proj.weight": {
+          "max_abs": 8.940696716308594e-06,
+          "squared_difference": 2.64495355395411e-07,
+          "reference_squared_norm": 0.048264168202877045,
+          "relative_l2": 0.00234097411803973,
+          "finite": true
+        },
+        "blocks.4.self_attn.o_proj.weight": {
+          "max_abs": 4.827976226806641e-06,
+          "squared_difference": 2.9085492769809207e-07,
+          "reference_squared_norm": 0.05346713215112686,
+          "relative_l2": 0.0023323556137894246,
+          "finite": true
+        },
+        "blocks.4.mlp.gate_proj.weight": {
+          "max_abs": 1.7024576663970947e-06,
+          "squared_difference": 2.360271267320968e-08,
+          "reference_squared_norm": 0.004299498163163662,
+          "relative_l2": 0.0023429988525242125,
+          "finite": true
+        },
+        "blocks.4.mlp.down_proj.weight": {
+          "max_abs": 3.7169083952903748e-06,
+          "squared_difference": 7.85767895195022e-08,
+          "reference_squared_norm": 0.01425192691385746,
+          "relative_l2": 0.0023480662539365964,
+          "finite": true
+        },
+        "blocks.4.mlp.up_proj.weight": {
+          "max_abs": 1.9138678908348083e-06,
+          "squared_difference": 2.3523021752680506e-08,
+          "reference_squared_norm": 0.0042902203276753426,
+          "relative_l2": 0.0023415679060310455,
+          "finite": true
+        },
+        "blocks.4.input_layernorm.weight": {
+          "max_abs": 2.1457672119140625e-06,
+          "squared_difference": 1.504833202492506e-10,
+          "reference_squared_norm": 1.6472444258397445e-05,
+          "relative_l2": 0.003022491993775931,
+          "finite": true
+        },
+        "blocks.4.post_attention_layernorm.weight": {
+          "max_abs": 7.152557373046875e-07,
+          "squared_difference": 2.6859705432036307e-11,
+          "reference_squared_norm": 2.789540758385556e-06,
+          "relative_l2": 0.0031030178015858047,
+          "finite": true
+        },
+        "blocks.5.self_attn.q_proj.weight": {
+          "max_abs": 2.3562461137771606e-07,
+          "squared_difference": 1.2865972176534513e-10,
+          "reference_squared_norm": 2.3427899577654898e-05,
+          "relative_l2": 0.0023434442545015445,
+          "finite": true
+        },
+        "blocks.5.self_attn.k_proj.weight": {
+          "max_abs": 2.1723099052906036e-07,
+          "squared_difference": 1.31408273151834e-10,
+          "reference_squared_norm": 2.3997687094379216e-05,
+          "relative_l2": 0.0023400582108852623,
+          "finite": true
+        },
+        "blocks.5.self_attn.v_proj.weight": {
+          "max_abs": 7.62939453125e-06,
+          "squared_difference": 2.021035072630184e-07,
+          "reference_squared_norm": 0.03677831590175629,
+          "relative_l2": 0.002344180266652669,
+          "finite": true
+        },
+        "blocks.5.self_attn.o_proj.weight": {
+          "max_abs": 4.410743713378906e-06,
+          "squared_difference": 1.873550559139403e-07,
+          "reference_squared_norm": 0.034105293452739716,
+          "relative_l2": 0.002343806818351633,
+          "finite": true
+        },
+        "blocks.5.mlp.gate_proj.weight": {
+          "max_abs": 1.8440186977386475e-06,
+          "squared_difference": 1.853854492139817e-08,
+          "reference_squared_norm": 0.00336145400069654,
+          "relative_l2": 0.002348411700655663,
+          "finite": true
+        },
+        "blocks.5.mlp.down_proj.weight": {
+          "max_abs": 3.2242387533187866e-06,
+          "squared_difference": 5.967469007828186e-08,
+          "reference_squared_norm": 0.010829610750079155,
+          "relative_l2": 0.0023474084445568935,
+          "finite": true
+        },
+        "blocks.5.mlp.up_proj.weight": {
+          "max_abs": 1.8440186977386475e-06,
+          "squared_difference": 1.8032626059039103e-08,
+          "reference_squared_norm": 0.003268755739554763,
+          "relative_l2": 0.002348757900999039,
+          "finite": true
+        },
+        "blocks.5.input_layernorm.weight": {
+          "max_abs": 2.1532177925109863e-06,
+          "squared_difference": 1.0945857414901283e-10,
+          "reference_squared_norm": 1.315036388405133e-05,
+          "relative_l2": 0.0028850676965262514,
+          "finite": true
+        },
+        "blocks.5.post_attention_layernorm.weight": {
+          "max_abs": 7.487833499908447e-07,
+          "squared_difference": 2.4185280514399388e-11,
+          "reference_squared_norm": 2.1428627405839507e-06,
+          "relative_l2": 0.0033595289486488718,
+          "finite": true
+        },
+        "blocks.6.self_attn.q_proj.weight": {
+          "max_abs": 1.4994293451309204e-07,
+          "squared_difference": 9.84595877051575e-11,
+          "reference_squared_norm": 1.7950485926121473e-05,
+          "relative_l2": 0.0023420216294937103,
+          "finite": true
+        },
+        "blocks.6.self_attn.k_proj.weight": {
+          "max_abs": 2.384185791015625e-07,
+          "squared_difference": 9.855293664484677e-11,
+          "reference_squared_norm": 1.7826385374064557e-05,
+          "relative_l2": 0.002351273447123168,
+          "finite": true
+        },
+        "blocks.6.self_attn.v_proj.weight": {
+          "max_abs": 6.951391696929932e-06,
+          "squared_difference": 1.4575121554116777e-07,
+          "reference_squared_norm": 0.026644742116332054,
+          "relative_l2": 0.0023388390270177124,
+          "finite": true
+        },
+        "blocks.6.self_attn.o_proj.weight": {
+          "max_abs": 3.7550926208496094e-06,
+          "squared_difference": 1.5047538681756123e-07,
+          "reference_squared_norm": 0.027370747178792953,
+          "relative_l2": 0.00234471146832643,
+          "finite": true
+        },
+        "blocks.6.mlp.gate_proj.weight": {
+          "max_abs": 1.9350554794073105e-06,
+          "squared_difference": 1.4825230820747493e-08,
+          "reference_squared_norm": 0.0026912859175354242,
+          "relative_l2": 0.0023470417359827966,
+          "finite": true
+        },
+        "blocks.6.mlp.down_proj.weight": {
+          "max_abs": 2.995133399963379e-06,
+          "squared_difference": 4.798571850983535e-08,
+          "reference_squared_norm": 0.008695779368281364,
+          "relative_l2": 0.002349101298550211,
+          "finite": true
+        },
+        "blocks.6.mlp.up_proj.weight": {
+          "max_abs": 1.7583370208740234e-06,
+          "squared_difference": 1.399355653575185e-08,
+          "reference_squared_norm": 0.0025436116848140955,
+          "relative_l2": 0.0023455173385157234,
+          "finite": true
+        },
+        "blocks.6.input_layernorm.weight": {
+          "max_abs": 1.475214958190918e-06,
+          "squared_difference": 7.657031259045155e-11,
+          "reference_squared_norm": 8.697539669810794e-06,
+          "relative_l2": 0.0029670987520386822,
+          "finite": true
+        },
+        "blocks.6.post_attention_layernorm.weight": {
+          "max_abs": 7.450580596923828e-07,
+          "squared_difference": 1.828634639544635e-11,
+          "reference_squared_norm": 1.5125808658922324e-06,
+          "relative_l2": 0.00347699583137501,
+          "finite": true
+        },
+        "blocks.7.self_attn.q_proj.weight": {
+          "max_abs": 1.544831320643425e-07,
+          "squared_difference": 7.526799322699063e-11,
+          "reference_squared_norm": 1.368084667774383e-05,
+          "relative_l2": 0.002345571524998879,
+          "finite": true
+        },
+        "blocks.7.self_attn.k_proj.weight": {
+          "max_abs": 1.9371509552001953e-07,
+          "squared_difference": 7.298293913660103e-11,
+          "reference_squared_norm": 1.3414712157100439e-05,
+          "relative_l2": 0.002332491100415494,
+          "finite": true
+        },
+        "blocks.7.self_attn.v_proj.weight": {
+          "max_abs": 5.498528480529785e-06,
+          "squared_difference": 1.1799366461673344e-07,
+          "reference_squared_norm": 0.021445557475090027,
+          "relative_l2": 0.002345636303964839,
+          "finite": true
+        },
+        "blocks.7.self_attn.o_proj.weight": {
+          "max_abs": 3.814697265625e-06,
+          "squared_difference": 1.2076449706910353e-07,
+          "reference_squared_norm": 0.022189268842339516,
+          "relative_l2": 0.002332910847579815,
+          "finite": true
+        },
+        "blocks.7.mlp.gate_proj.weight": {
+          "max_abs": 1.730397343635559e-06,
+          "squared_difference": 1.2129876658661942e-08,
+          "reference_squared_norm": 0.002203962067142129,
+          "relative_l2": 0.0023459898816373752,
+          "finite": true
+        },
+        "blocks.7.mlp.down_proj.weight": {
+          "max_abs": 3.516674041748047e-06,
+          "squared_difference": 4.011510057466694e-08,
+          "reference_squared_norm": 0.007289889268577099,
+          "relative_l2": 0.0023458134763558415,
+          "finite": true
+        },
+        "blocks.7.mlp.up_proj.weight": {
+          "max_abs": 1.8035061657428741e-06,
+          "squared_difference": 1.1560653767617168e-08,
+          "reference_squared_norm": 0.0020948327146470547,
+          "relative_l2": 0.0023491812372838936,
+          "finite": true
+        },
+        "blocks.7.input_layernorm.weight": {
+          "max_abs": 2.2202730178833008e-06,
+          "squared_difference": 7.024305442859813e-11,
+          "reference_squared_norm": 7.400342383334646e-06,
+          "relative_l2": 0.00308088712592792,
+          "finite": true
+        },
+        "blocks.7.post_attention_layernorm.weight": {
+          "max_abs": 5.513429641723633e-07,
+          "squared_difference": 1.6593639656781178e-11,
+          "reference_squared_norm": 1.2919847449666122e-06,
+          "relative_l2": 0.00358378654424843,
+          "finite": true
+        },
+        "blocks.8.self_attn.q_proj.weight": {
+          "max_abs": 1.9278377294540405e-07,
+          "squared_difference": 6.642616318108807e-11,
+          "reference_squared_norm": 1.2111160685890354e-05,
+          "relative_l2": 0.0023419450504402915,
+          "finite": true
+        },
+        "blocks.8.self_attn.k_proj.weight": {
+          "max_abs": 2.2351741790771484e-07,
+          "squared_difference": 6.769295540776099e-11,
+          "reference_squared_norm": 1.2423193766153418e-05,
+          "relative_l2": 0.0023342916051591403,
+          "finite": true
+        },
+        "blocks.8.self_attn.v_proj.weight": {
+          "max_abs": 5.580484867095947e-06,
+          "squared_difference": 1.0247104853533529e-07,
+          "reference_squared_norm": 0.01881692185997963,
+          "relative_l2": 0.002333599372611259,
+          "finite": true
+        },
+        "blocks.8.self_attn.o_proj.weight": {
+          "max_abs": 3.0100345611572266e-06,
+          "squared_difference": 9.960717761714477e-08,
+          "reference_squared_norm": 0.01815170980989933,
+          "relative_l2": 0.0023425374750130267,
+          "finite": true
+        },
+        "blocks.8.mlp.gate_proj.weight": {
+          "max_abs": 1.605600118637085e-06,
+          "squared_difference": 1.0392419369509298e-08,
+          "reference_squared_norm": 0.0018847621977329254,
+          "relative_l2": 0.002348172786007057,
+          "finite": true
+        },
+        "blocks.8.mlp.down_proj.weight": {
+          "max_abs": 3.635883331298828e-06,
+          "squared_difference": 3.4728699915831385e-08,
+          "reference_squared_norm": 0.0063018715009093285,
+          "relative_l2": 0.0023475210277041736,
+          "finite": true
+        },
+        "blocks.8.mlp.up_proj.weight": {
+          "max_abs": 1.737847924232483e-06,
+          "squared_difference": 1.0110133175089686e-08,
+          "reference_squared_norm": 0.0018329289741814137,
+          "relative_l2": 0.002348581415545501,
+          "finite": true
+        },
+        "blocks.8.input_layernorm.weight": {
+          "max_abs": 1.2516975402832031e-06,
+          "squared_difference": 5.0291548703285116e-11,
+          "reference_squared_norm": 5.976795364404097e-06,
+          "relative_l2": 0.002900770108924264,
+          "finite": true
+        },
+        "blocks.8.post_attention_layernorm.weight": {
+          "max_abs": 4.544854164123535e-07,
+          "squared_difference": 1.4097741203589198e-11,
+          "reference_squared_norm": 1.2189002518425696e-06,
+          "relative_l2": 0.003400875108865962,
+          "finite": true
+        },
+        "blocks.9.self_attn.q_proj.weight": {
+          "max_abs": 1.3204407878220081e-07,
+          "squared_difference": 6.439797306523332e-11,
+          "reference_squared_norm": 1.1676074791466817e-05,
+          "relative_l2": 0.00234848432024368,
+          "finite": true
+        },
+        "blocks.9.self_attn.k_proj.weight": {
+          "max_abs": 1.885928213596344e-07,
+          "squared_difference": 6.270406416319929e-11,
+          "reference_squared_norm": 1.1405365512473509e-05,
+          "relative_l2": 0.002344732166192425,
+          "finite": true
+        },
+        "blocks.9.self_attn.v_proj.weight": {
+          "max_abs": 5.234032869338989e-06,
+          "squared_difference": 8.431662479324586e-08,
+          "reference_squared_norm": 0.01550496555864811,
+          "relative_l2": 0.0023319605746417076,
+          "finite": true
+        },
+        "blocks.9.self_attn.o_proj.weight": {
+          "max_abs": 3.680586814880371e-06,
+          "squared_difference": 8.835139908569545e-08,
+          "reference_squared_norm": 0.016217635944485664,
+          "relative_l2": 0.0023340649771072287,
+          "finite": true
+        },
+        "blocks.9.mlp.gate_proj.weight": {
+          "max_abs": 9.462237358093262e-07,
+          "squared_difference": 8.884954993959582e-09,
+          "reference_squared_norm": 0.001609803643077612,
+          "relative_l2": 0.002349314521743854,
+          "finite": true
+        },
+        "blocks.9.mlp.down_proj.weight": {
+          "max_abs": 2.3692846298217773e-06,
+          "squared_difference": 2.8687241027114396e-08,
+          "reference_squared_norm": 0.0052029769867658615,
+          "relative_l2": 0.0023481100031398153,
+          "finite": true
+        },
+        "blocks.9.mlp.up_proj.weight": {
+          "max_abs": 1.2638047337532043e-06,
+          "squared_difference": 8.479593915922123e-09,
+          "reference_squared_norm": 0.0015378119423985481,
+          "relative_l2": 0.002348204482097818,
+          "finite": true
+        },
+        "blocks.9.input_layernorm.weight": {
+          "max_abs": 9.387731552124023e-07,
+          "squared_difference": 4.060714958731282e-11,
+          "reference_squared_norm": 4.842541329708183e-06,
+          "relative_l2": 0.0028957734681264863,
+          "finite": true
+        },
+        "blocks.9.post_attention_layernorm.weight": {
+          "max_abs": 4.917383193969727e-07,
+          "squared_difference": 1.1791631907009936e-11,
+          "reference_squared_norm": 1.002208819045336e-06,
+          "relative_l2": 0.0034301084136016094,
+          "finite": true
+        },
+        "blocks.10.self_attn.q_proj.weight": {
+          "max_abs": 1.1842348612844944e-07,
+          "squared_difference": 5.131962910187582e-11,
+          "reference_squared_norm": 9.373464308737312e-06,
+          "relative_l2": 0.0023398697854851904,
+          "finite": true
+        },
+        "blocks.10.self_attn.k_proj.weight": {
+          "max_abs": 1.7881393432617188e-07,
+          "squared_difference": 4.7162621030771845e-11,
+          "reference_squared_norm": 8.68140887178015e-06,
+          "relative_l2": 0.0023307938362607064,
+          "finite": true
+        },
+        "blocks.10.self_attn.v_proj.weight": {
+          "max_abs": 4.649162292480469e-06,
+          "squared_difference": 7.529254020255394e-08,
+          "reference_squared_norm": 0.013862377032637596,
+          "relative_l2": 0.0023305430055895835,
+          "finite": true
+        },
+        "blocks.10.self_attn.o_proj.weight": {
+          "max_abs": 3.039836883544922e-06,
+          "squared_difference": 7.323649242607644e-08,
+          "reference_squared_norm": 0.013420850038528442,
+          "relative_l2": 0.0023360049365707663,
+          "finite": true
+        },
+        "blocks.10.mlp.gate_proj.weight": {
+          "max_abs": 9.387731552124023e-07,
+          "squared_difference": 8.139952711871956e-09,
+          "reference_squared_norm": 0.0014844841789454222,
+          "relative_l2": 0.0023416563163755123,
+          "finite": true
+        },
+        "blocks.10.mlp.down_proj.weight": {
+          "max_abs": 2.425163984298706e-06,
+          "squared_difference": 2.566479651022746e-08,
+          "reference_squared_norm": 0.004686632193624973,
+          "relative_l2": 0.0023401218778887787,
+          "finite": true
+        },
+        "blocks.10.mlp.up_proj.weight": {
+          "max_abs": 1.1599622666835785e-06,
+          "squared_difference": 7.690590386744134e-09,
+          "reference_squared_norm": 0.0013984532561153173,
+          "relative_l2": 0.0023450702822068272,
+          "finite": true
+        },
+        "blocks.10.input_layernorm.weight": {
+          "max_abs": 8.866190910339355e-07,
+          "squared_difference": 4.196119146593347e-11,
+          "reference_squared_norm": 5.207757567404769e-06,
+          "relative_l2": 0.0028385629264985287,
+          "finite": true
+        },
+        "blocks.10.post_attention_layernorm.weight": {
+          "max_abs": 4.870817065238953e-07,
+          "squared_difference": 1.1856326684323015e-11,
+          "reference_squared_norm": 9.28280769585399e-07,
+          "relative_l2": 0.003573842439338656,
+          "finite": true
+        },
+        "blocks.11.self_attn.q_proj.weight": {
+          "max_abs": 1.2526288628578186e-07,
+          "squared_difference": 4.259325878108733e-11,
+          "reference_squared_norm": 7.700861715420615e-06,
+          "relative_l2": 0.002351802090365333,
+          "finite": true
+        },
+        "blocks.11.self_attn.k_proj.weight": {
+          "max_abs": 1.7043203115463257e-07,
+          "squared_difference": 4.6836791389726073e-11,
+          "reference_squared_norm": 8.478998097416479e-06,
+          "relative_l2": 0.0023502891672375834,
+          "finite": true
+        },
+        "blocks.11.self_attn.v_proj.weight": {
+          "max_abs": 4.318659193813801e-06,
+          "squared_difference": 6.908648231274128e-08,
+          "reference_squared_norm": 0.012722310610115528,
+          "relative_l2": 0.0023303091629647793,
+          "finite": true
+        },
+        "blocks.11.self_attn.o_proj.weight": {
+          "max_abs": 2.5480985641479492e-06,
+          "squared_difference": 6.364892612964468e-08,
+          "reference_squared_norm": 0.0116258030757308,
+          "relative_l2": 0.002339828675872377,
+          "finite": true
+        },
+        "blocks.11.mlp.gate_proj.weight": {
+          "max_abs": 1.0612420737743378e-06,
+          "squared_difference": 7.132186841118937e-09,
+          "reference_squared_norm": 0.0012928762007504702,
+          "relative_l2": 0.00234872886637586,
+          "finite": true
+        },
+        "blocks.11.mlp.down_proj.weight": {
+          "max_abs": 3.602355718612671e-06,
+          "squared_difference": 2.334781434853994e-08,
+          "reference_squared_norm": 0.004237167537212372,
+          "relative_l2": 0.002347390256098357,
+          "finite": true
+        },
+        "blocks.11.mlp.up_proj.weight": {
+          "max_abs": 1.4603137969970703e-06,
+          "squared_difference": 6.868832169715233e-09,
+          "reference_squared_norm": 0.0012492560781538486,
+          "relative_l2": 0.0023448535141407916,
+          "finite": true
+        },
+        "blocks.11.input_layernorm.weight": {
+          "max_abs": 8.391216397285461e-07,
+          "squared_difference": 3.3963616641319305e-11,
+          "reference_squared_norm": 4.020022061013151e-06,
+          "relative_l2": 0.002906650046294335,
+          "finite": true
+        },
+        "blocks.11.post_attention_layernorm.weight": {
+          "max_abs": 5.21540641784668e-07,
+          "squared_difference": 1.0596419575126248e-11,
+          "reference_squared_norm": 8.765122174736462e-07,
+          "relative_l2": 0.003476967138788772,
+          "finite": true
+        },
+        "blocks.12.self_attn.q_proj.weight": {
+          "max_abs": 1.0896474123001099e-07,
+          "squared_difference": 4.026235941867462e-11,
+          "reference_squared_norm": 7.27829910829314e-06,
+          "relative_l2": 0.0023519856140583897,
+          "finite": true
+        },
+        "blocks.12.self_attn.k_proj.weight": {
+          "max_abs": 2.0489096641540527e-07,
+          "squared_difference": 4.3303437224917474e-11,
+          "reference_squared_norm": 7.991173333721235e-06,
+          "relative_l2": 0.002327854917138757,
+          "finite": true
+        },
+        "blocks.12.self_attn.v_proj.weight": {
+          "max_abs": 4.336237907409668e-06,
+          "squared_difference": 5.947185144350442e-08,
+          "reference_squared_norm": 0.010849233716726303,
+          "relative_l2": 0.0023412953197459326,
+          "finite": true
+        },
+        "blocks.12.self_attn.o_proj.weight": {
+          "max_abs": 2.0712614059448242e-06,
+          "squared_difference": 5.593260965497393e-08,
+          "reference_squared_norm": 0.010213319212198257,
+          "relative_l2": 0.0023401790574797345,
+          "finite": true
+        },
+        "blocks.12.mlp.gate_proj.weight": {
+          "max_abs": 1.5422701835632324e-06,
+          "squared_difference": 6.603438684749108e-09,
+          "reference_squared_norm": 0.001198750687763095,
+          "relative_l2": 0.002347040804717491,
+          "finite": true
+        },
+        "blocks.12.mlp.down_proj.weight": {
+          "max_abs": 2.0135194063186646e-06,
+          "squared_difference": 2.0860763783048242e-08,
+          "reference_squared_norm": 0.0037940028123557568,
+          "relative_l2": 0.0023448565455526974,
+          "finite": true
+        },
+        "blocks.12.mlp.up_proj.weight": {
+          "max_abs": 9.373761713504791e-07,
+          "squared_difference": 6.1876219703549395e-09,
+          "reference_squared_norm": 0.0011304272338747978,
+          "relative_l2": 0.002339594439436889,
+          "finite": true
+        },
+        "blocks.12.input_layernorm.weight": {
+          "max_abs": 6.980844773352146e-07,
+          "squared_difference": 2.439508317575445e-11,
+          "reference_squared_norm": 3.5349187328392873e-06,
+          "relative_l2": 0.0026270082377697524,
+          "finite": true
+        },
+        "blocks.12.post_attention_layernorm.weight": {
+          "max_abs": 4.78699803352356e-07,
+          "squared_difference": 1.0235133920954986e-11,
+          "reference_squared_norm": 6.980817488511093e-07,
+          "relative_l2": 0.003829072795772044,
+          "finite": true
+        },
+        "blocks.13.self_attn.q_proj.weight": {
+          "max_abs": 1.0011717677116394e-07,
+          "squared_difference": 3.1248014592533124e-11,
+          "reference_squared_norm": 5.721223715227097e-06,
+          "relative_l2": 0.0023370432480721882,
+          "finite": true
+        },
+        "blocks.13.self_attn.k_proj.weight": {
+          "max_abs": 1.5459954738616943e-07,
+          "squared_difference": 3.2958625412193854e-11,
+          "reference_squared_norm": 5.9889621297770645e-06,
+          "relative_l2": 0.0023458960381594726,
+          "finite": true
+        },
+        "blocks.13.self_attn.v_proj.weight": {
+          "max_abs": 4.470348358154297e-06,
+          "squared_difference": 5.554084481218524e-08,
+          "reference_squared_norm": 0.01010438147932291,
+          "relative_l2": 0.0023445061354865245,
+          "finite": true
+        },
+        "blocks.13.self_attn.o_proj.weight": {
+          "max_abs": 2.2649765014648438e-06,
+          "squared_difference": 5.5627999984153575e-08,
+          "reference_squared_norm": 0.010179294273257256,
+          "relative_l2": 0.00233769521637391,
+          "finite": true
+        },
+        "blocks.13.mlp.gate_proj.weight": {
+          "max_abs": 8.87550413608551e-07,
+          "squared_difference": 5.637690314586052e-09,
+          "reference_squared_norm": 0.0010272095678374171,
+          "relative_l2": 0.0023427237478840456,
+          "finite": true
+        },
+        "blocks.13.mlp.down_proj.weight": {
+          "max_abs": 1.8253922462463379e-06,
+          "squared_difference": 1.8522158029554703e-08,
+          "reference_squared_norm": 0.0033583054319024086,
+          "relative_l2": 0.0023484736766589027,
+          "finite": true
+        },
+        "blocks.13.mlp.up_proj.weight": {
+          "max_abs": 8.940696716308594e-07,
+          "squared_difference": 5.798403979184741e-09,
+          "reference_squared_norm": 0.0010547575075179338,
+          "relative_l2": 0.0023446494605108273,
+          "finite": true
+        },
+        "blocks.13.input_layernorm.weight": {
+          "max_abs": 9.909272193908691e-07,
+          "squared_difference": 2.945373112073213e-11,
+          "reference_squared_norm": 3.362372808624059e-06,
+          "relative_l2": 0.0029596968242416415,
+          "finite": true
+        },
+        "blocks.13.post_attention_layernorm.weight": {
+          "max_abs": 6.034970283508301e-07,
+          "squared_difference": 9.9147608526029e-12,
+          "reference_squared_norm": 6.46484522803803e-07,
+          "relative_l2": 0.0039161746841681645,
+          "finite": true
+        },
+        "blocks.14.self_attn.q_proj.weight": {
+          "max_abs": 1.1920928955078125e-07,
+          "squared_difference": 2.772476866141904e-11,
+          "reference_squared_norm": 5.067229722044431e-06,
+          "relative_l2": 0.00233909935299963,
+          "finite": true
+        },
+        "blocks.14.self_attn.k_proj.weight": {
+          "max_abs": 2.086162567138672e-07,
+          "squared_difference": 3.0893315683400147e-11,
+          "reference_squared_norm": 5.5370060181303415e-06,
+          "relative_l2": 0.002362080875429746,
+          "finite": true
+        },
+        "blocks.14.self_attn.v_proj.weight": {
+          "max_abs": 3.993511199951172e-06,
+          "squared_difference": 4.696867961229145e-08,
+          "reference_squared_norm": 0.008563946932554245,
+          "relative_l2": 0.002341893773806808,
+          "finite": true
+        },
+        "blocks.14.self_attn.o_proj.weight": {
+          "max_abs": 2.205371856689453e-06,
+          "squared_difference": 4.613288240307156e-08,
+          "reference_squared_norm": 0.008450671099126339,
+          "relative_l2": 0.0023364672371499104,
+          "finite": true
+        },
+        "blocks.14.mlp.gate_proj.weight": {
+          "max_abs": 1.4398247003555298e-06,
+          "squared_difference": 5.395074165193137e-09,
+          "reference_squared_norm": 0.000983311445452273,
+          "relative_l2": 0.0023423574079375806,
+          "finite": true
+        },
+        "blocks.14.mlp.down_proj.weight": {
+          "max_abs": 2.9103830456733704e-06,
+          "squared_difference": 1.828616902344038e-08,
+          "reference_squared_norm": 0.0033170494716614485,
+          "relative_l2": 0.002347931327474178,
+          "finite": true
+        },
+        "blocks.14.mlp.up_proj.weight": {
+          "max_abs": 1.0882504284381866e-06,
+          "squared_difference": 5.204072728304254e-09,
+          "reference_squared_norm": 0.0009444523602724075,
+          "relative_l2": 0.0023473705439028183,
+          "finite": true
+        },
+        "blocks.14.input_layernorm.weight": {
+          "max_abs": 7.301568984985352e-07,
+          "squared_difference": 2.0781397436220317e-11,
+          "reference_squared_norm": 2.8010340429318603e-06,
+          "relative_l2": 0.0027238185956467943,
+          "finite": true
+        },
+        "blocks.14.post_attention_layernorm.weight": {
+          "max_abs": 3.948807716369629e-07,
+          "squared_difference": 8.492271122428896e-12,
+          "reference_squared_norm": 6.950052693355246e-07,
+          "relative_l2": 0.0034955689806416917,
+          "finite": true
+        },
+        "blocks.15.self_attn.q_proj.weight": {
+          "max_abs": 1.0291114449501038e-07,
+          "squared_difference": 3.0304720538554264e-11,
+          "reference_squared_norm": 5.512743427971145e-06,
+          "relative_l2": 0.002344613447907012,
+          "finite": true
+        },
+        "blocks.15.self_attn.k_proj.weight": {
+          "max_abs": 1.5087425708770752e-07,
+          "squared_difference": 3.1531111055471683e-11,
+          "reference_squared_norm": 5.693083039659541e-06,
+          "relative_l2": 0.0023534006974844615,
+          "finite": true
+        },
+        "blocks.15.self_attn.v_proj.weight": {
+          "max_abs": 4.291534423828125e-06,
+          "squared_difference": 4.3982439024148334e-08,
+          "reference_squared_norm": 0.008078278973698616,
+          "relative_l2": 0.0023333518470633327,
+          "finite": true
+        },
+        "blocks.15.self_attn.o_proj.weight": {
+          "max_abs": 2.294778823852539e-06,
+          "squared_difference": 4.566271982753278e-08,
+          "reference_squared_norm": 0.008373504504561424,
+          "relative_l2": 0.0023352170820836833,
+          "finite": true
+        },
+        "blocks.15.mlp.gate_proj.weight": {
+          "max_abs": 8.423812687397003e-07,
+          "squared_difference": 4.965676758672544e-09,
+          "reference_squared_norm": 0.0009005320607684553,
+          "relative_l2": 0.0023482245991200113,
+          "finite": true
+        },
+        "blocks.15.mlp.down_proj.weight": {
+          "max_abs": 1.603737473487854e-06,
+          "squared_difference": 1.572818142392407e-08,
+          "reference_squared_norm": 0.0028670867905020714,
+          "relative_l2": 0.0023421722714424232,
+          "finite": true
+        },
+        "blocks.15.mlp.up_proj.weight": {
+          "max_abs": 1.8016435205936432e-06,
+          "squared_difference": 4.705118517023266e-09,
+          "reference_squared_norm": 0.0008574729436077178,
+          "relative_l2": 0.0023424755738650806,
+          "finite": true
+        },
+        "blocks.15.input_layernorm.weight": {
+          "max_abs": 5.140900611877441e-07,
+          "squared_difference": 2.0403446293615346e-11,
+          "reference_squared_norm": 2.777477448034915e-06,
+          "relative_l2": 0.002710356970862082,
+          "finite": true
+        },
+        "blocks.15.post_attention_layernorm.weight": {
+          "max_abs": 4.470348358154297e-07,
+          "squared_difference": 8.141418095242159e-12,
+          "reference_squared_norm": 5.822807906952221e-07,
+          "relative_l2": 0.0037392439316850106,
+          "finite": true
+        },
+        "blocks.16.self_attn.q_proj.weight": {
+          "max_abs": 8.568167686462402e-08,
+          "squared_difference": 3.011374483108398e-11,
+          "reference_squared_norm": 5.52879237147863e-06,
+          "relative_l2": 0.002333819384201447,
+          "finite": true
+        },
+        "blocks.16.self_attn.k_proj.weight": {
+          "max_abs": 1.578591763973236e-07,
+          "squared_difference": 3.125386754954107e-11,
+          "reference_squared_norm": 5.718877673643874e-06,
+          "relative_l2": 0.002337741465129534,
+          "finite": true
+        },
+        "blocks.16.self_attn.v_proj.weight": {
+          "max_abs": 3.635883331298828e-06,
+          "squared_difference": 3.930445302557928e-08,
+          "reference_squared_norm": 0.007238774560391903,
+          "relative_l2": 0.0023301740031878263,
+          "finite": true
+        },
+        "blocks.16.self_attn.o_proj.weight": {
+          "max_abs": 1.9725412130355835e-06,
+          "squared_difference": 3.980701634986872e-08,
+          "reference_squared_norm": 0.007268215529620647,
+          "relative_l2": 0.0023402697280616247,
+          "finite": true
+        },
+        "blocks.16.mlp.gate_proj.weight": {
+          "max_abs": 8.651986718177795e-07,
+          "squared_difference": 4.50882531310981e-09,
+          "reference_squared_norm": 0.0008176508708857,
+          "relative_l2": 0.0023482685028438127,
+          "finite": true
+        },
+        "blocks.16.mlp.down_proj.weight": {
+          "max_abs": 1.6540288925170898e-06,
+          "squared_difference": 1.4187779839858194e-08,
+          "reference_squared_norm": 0.002576865255832672,
+          "relative_l2": 0.0023464503296436565,
+          "finite": true
+        },
+        "blocks.16.mlp.up_proj.weight": {
+          "max_abs": 8.632196113467216e-07,
+          "squared_difference": 4.2821515222613016e-09,
+          "reference_squared_norm": 0.0007772298995405436,
+          "relative_l2": 0.002347233342171029,
+          "finite": true
+        },
+        "blocks.16.input_layernorm.weight": {
+          "max_abs": 5.997717380523682e-07,
+          "squared_difference": 1.7316299436020977e-11,
+          "reference_squared_norm": 2.1806367840326857e-06,
+          "relative_l2": 0.002817966829531556,
+          "finite": true
+        },
+        "blocks.16.post_attention_layernorm.weight": {
+          "max_abs": 3.427267074584961e-07,
+          "squared_difference": 7.512910432661002e-12,
+          "reference_squared_norm": 5.080934215584421e-07,
+          "relative_l2": 0.0038453185202246723,
+          "finite": true
+        },
+        "blocks.17.self_attn.q_proj.weight": {
+          "max_abs": 1.043081283569336e-07,
+          "squared_difference": 2.4846083523932805e-11,
+          "reference_squared_norm": 4.5330489228945225e-06,
+          "relative_l2": 0.0023411744038847587,
+          "finite": true
+        },
+        "blocks.17.self_attn.k_proj.weight": {
+          "max_abs": 1.4151737559586763e-07,
+          "squared_difference": 2.5800367051131978e-11,
+          "reference_squared_norm": 4.67055451736087e-06,
+          "relative_l2": 0.0023503293254436217,
+          "finite": true
+        },
+        "blocks.17.self_attn.v_proj.weight": {
+          "max_abs": 3.4421682357788086e-06,
+          "squared_difference": 3.767465983628426e-08,
+          "reference_squared_norm": 0.006851787678897381,
+          "relative_l2": 0.0023448913334944707,
+          "finite": true
+        },
+        "blocks.17.self_attn.o_proj.weight": {
+          "max_abs": 1.6652047634124756e-06,
+          "squared_difference": 3.6909792555661625e-08,
+          "reference_squared_norm": 0.006768092513084412,
+          "relative_l2": 0.002335273004437263,
+          "finite": true
+        },
+        "blocks.17.mlp.gate_proj.weight": {
+          "max_abs": 9.387731552124023e-07,
+          "squared_difference": 4.2463197402753394e-09,
+          "reference_squared_norm": 0.0007735086837783456,
+          "relative_l2": 0.0023430078815168437,
+          "finite": true
+        },
+        "blocks.17.mlp.down_proj.weight": {
+          "max_abs": 1.6987323760986328e-06,
+          "squared_difference": 1.3852664793034819e-08,
+          "reference_squared_norm": 0.002521964255720377,
+          "relative_l2": 0.0023436739840797293,
+          "finite": true
+        },
+        "blocks.17.mlp.up_proj.weight": {
+          "max_abs": 1.2360978871583939e-06,
+          "squared_difference": 4.081501359110007e-09,
+          "reference_squared_norm": 0.0007421626942232251,
+          "relative_l2": 0.002345094848378371,
+          "finite": true
+        },
+        "blocks.17.input_layernorm.weight": {
+          "max_abs": 5.811452865600586e-07,
+          "squared_difference": 1.7204723756769624e-11,
+          "reference_squared_norm": 2.1302275854395702e-06,
+          "relative_l2": 0.002841913465469034,
+          "finite": true
+        },
+        "blocks.17.post_attention_layernorm.weight": {
+          "max_abs": 3.390014171600342e-07,
+          "squared_difference": 7.1640983076437514e-12,
+          "reference_squared_norm": 4.7445459472328366e-07,
+          "relative_l2": 0.0038858268066653996,
+          "finite": true
+        },
+        "blocks.18.self_attn.q_proj.weight": {
+          "max_abs": 1.1827796697616577e-07,
+          "squared_difference": 2.154005446231011e-11,
+          "reference_squared_norm": 3.9023075260047335e-06,
+          "relative_l2": 0.0023494307724499686,
+          "finite": true
+        },
+        "blocks.18.self_attn.k_proj.weight": {
+          "max_abs": 1.3317912817001343e-07,
+          "squared_difference": 2.226748646583232e-11,
+          "reference_squared_norm": 4.023526344099082e-06,
+          "relative_l2": 0.0023525137685514695,
+          "finite": true
+        },
+        "blocks.18.self_attn.v_proj.weight": {
+          "max_abs": 3.1888484954833984e-06,
+          "squared_difference": 3.4368063950296346e-08,
+          "reference_squared_norm": 0.006261141039431095,
+          "relative_l2": 0.002342884021339927,
+          "finite": true
+        },
+        "blocks.18.self_attn.o_proj.weight": {
+          "max_abs": 1.7508864402770996e-06,
+          "squared_difference": 3.49077282635335e-08,
+          "reference_squared_norm": 0.006379644386470318,
+          "relative_l2": 0.0023391741598867075,
+          "finite": true
+        },
+        "blocks.18.mlp.gate_proj.weight": {
+          "max_abs": 7.478520274162292e-07,
+          "squared_difference": 3.8906153854156855e-09,
+          "reference_squared_norm": 0.0007047688704915345,
+          "relative_l2": 0.002349555961008919,
+          "finite": true
+        },
+        "blocks.18.mlp.down_proj.weight": {
+          "max_abs": 1.6838312149047852e-06,
+          "squared_difference": 1.254637638226086e-08,
+          "reference_squared_norm": 0.0022828825749456882,
+          "relative_l2": 0.0023443225733417437,
+          "finite": true
+        },
+        "blocks.18.mlp.up_proj.weight": {
+          "max_abs": 7.394701242446899e-07,
+          "squared_difference": 3.635801437695818e-09,
+          "reference_squared_norm": 0.0006608419353142381,
+          "relative_l2": 0.0023455855706942656,
+          "finite": true
+        },
+        "blocks.18.input_layernorm.weight": {
+          "max_abs": 5.811452865600586e-07,
+          "squared_difference": 1.5578024981088845e-11,
+          "reference_squared_norm": 1.9695874016179005e-06,
+          "relative_l2": 0.0028123448260526764,
+          "finite": true
+        },
+        "blocks.18.post_attention_layernorm.weight": {
+          "max_abs": 3.8370490074157715e-07,
+          "squared_difference": 6.993652185149912e-12,
+          "reference_squared_norm": 4.397063833039283e-07,
+          "relative_l2": 0.003988142151278295,
+          "finite": true
+        },
+        "blocks.19.self_attn.q_proj.weight": {
+          "max_abs": 1.1548399925231934e-07,
+          "squared_difference": 2.5740491335635163e-11,
+          "reference_squared_norm": 4.691780304710846e-06,
+          "relative_l2": 0.0023422841647514313,
+          "finite": true
+        },
+        "blocks.19.self_attn.k_proj.weight": {
+          "max_abs": 1.1641532182693481e-07,
+          "squared_difference": 2.395402799726387e-11,
+          "reference_squared_norm": 4.337105565355159e-06,
+          "relative_l2": 0.0023501158952326604,
+          "finite": true
+        },
+        "blocks.19.self_attn.v_proj.weight": {
+          "max_abs": 3.7848949432373047e-06,
+          "squared_difference": 3.196377917902282e-08,
+          "reference_squared_norm": 0.005853503011167049,
+          "relative_l2": 0.0023367978145309664,
+          "finite": true
+        },
+        "blocks.19.self_attn.o_proj.weight": {
+          "max_abs": 1.996755599975586e-06,
+          "squared_difference": 3.285544636355553e-08,
+          "reference_squared_norm": 0.006049913354218006,
+          "relative_l2": 0.002330392685435672,
+          "finite": true
+        },
+        "blocks.19.mlp.gate_proj.weight": {
+          "max_abs": 8.642673492431641e-07,
+          "squared_difference": 3.788801272719411e-09,
+          "reference_squared_norm": 0.0006897782441228628,
+          "relative_l2": 0.0023436684144112537,
+          "finite": true
+        },
+        "blocks.19.mlp.down_proj.weight": {
+          "max_abs": 1.8104910850524902e-06,
+          "squared_difference": 1.2870346566273838e-08,
+          "reference_squared_norm": 0.0023430711589753628,
+          "relative_l2": 0.002343701951335577,
+          "finite": true
+        },
+        "blocks.19.mlp.up_proj.weight": {
+          "max_abs": 8.996576070785522e-07,
+          "squared_difference": 3.6794081115232302e-09,
+          "reference_squared_norm": 0.0006676352932117879,
+          "relative_l2": 0.002347574250921388,
+          "finite": true
+        },
+        "blocks.19.input_layernorm.weight": {
+          "max_abs": 7.897615432739258e-07,
+          "squared_difference": 1.5588108928654698e-11,
+          "reference_squared_norm": 1.9117073861707468e-06,
+          "relative_l2": 0.0028555252641141986,
+          "finite": true
+        },
+        "blocks.19.post_attention_layernorm.weight": {
+          "max_abs": 3.2782554626464844e-07,
+          "squared_difference": 7.042009770447111e-12,
+          "reference_squared_norm": 4.5905289880465716e-07,
+          "relative_l2": 0.003916669666761859,
+          "finite": true
+        }
+      },
+      "loss_abs": 2.384185791015625e-07
+    },
+    "8": {
+      "status": "capacity_skipped",
+      "forecast_active_bytes": 101967976800,
+      "forecast_limit_bytes": 81604378624
+    }
+  },
+  "thresholds": {
+    "loss_abs": 0.0002,
+    "relative_l2": 0.005
+  },
+  "completed": true
+}

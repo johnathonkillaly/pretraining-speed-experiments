@@ -1,0 +1,97 @@
+{
+  "dense10": {
+    "muon_peak": 0.01,
+    "adamw_peak": 0.0003,
+    "selection_metric": 9.052451200783253,
+    "trials": [
+      {
+        "muon_peak": 0.003,
+        "development_loss": 9.083242274820805
+      },
+      {
+        "muon_peak": 0.01,
+        "development_loss": 9.052451200783253
+      },
+      {
+        "muon_peak": 0.02,
+        "development_loss": 9.128687404096127
+      }
+    ]
+  },
+  "dense4": {
+    "muon_peak": 0.01,
+    "adamw_peak": 0.0003,
+    "selection_metric": 9.020959794521332,
+    "trials": [
+      {
+        "muon_peak": 0.01,
+        "development_loss": 9.020959794521332
+      },
+      {
+        "muon_peak": 0.02,
+        "development_loss": 9.127229809761047
+      },
+      {
+        "muon_peak": 0.003,
+        "development_loss": 9.085525214672089
+      }
+    ]
+  },
+  "rec_full": {
+    "muon_peak": 0.01,
+    "adamw_peak": 0.0003,
+    "selection_metric": 9.006773047149181,
+    "trials": [
+      {
+        "muon_peak": 0.02,
+        "development_loss": 9.127267472445965
+      },
+      {
+        "muon_peak": 0.003,
+        "development_loss": 9.074461728334427
+      },
+      {
+        "muon_peak": 0.01,
+        "development_loss": 9.006773047149181
+      }
+    ]
+  },
+  "rec_tb2": {
+    "muon_peak": 0.01,
+    "adamw_peak": 0.0003,
+    "selection_metric": 9.018818870186806,
+    "trials": [
+      {
+        "muon_peak": 0.003,
+        "development_loss": 9.091933347284794
+      },
+      {
+        "muon_peak": 0.01,
+        "development_loss": 9.018818870186806
+      },
+      {
+        "muon_peak": 0.02,
+        "development_loss": 9.129571475088596
+      }
+    ]
+  },
+  "rec_curr_tb2": {
+    "muon_peak": 0.01,
+    "adamw_peak": 0.0003,
+    "selection_metric": 9.06664278358221,
+    "trials": [
+      {
+        "muon_peak": 0.01,
+        "development_loss": 9.06664278358221
+      },
+      {
+        "muon_peak": 0.02,
+        "development_loss": 9.129569508135319
+      },
+      {
+        "muon_peak": 0.003,
+        "development_loss": 9.108788415789604
+      }
+    ]
+  }
+}

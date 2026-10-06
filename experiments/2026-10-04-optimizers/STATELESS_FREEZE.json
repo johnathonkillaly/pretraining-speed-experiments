@@ -1,0 +1,8 @@
+{
+  "source_commit": "a00f5d8a3d293b0ba17145973be695a233546d41",
+  "sha256": {
+    "/RESEARCH_ROOT/experiments/2026-10-04-optimizers/AMENDMENT_STATELESS_SGD.md": "30329d5dfa3039a835c559043018110fb24b24b27f5f0401c67216f05c9c9b66",
+    "/RESEARCH_ROOT/experiments/2026-10-04-optimizers/stateless_sgd_probe.py": "5327d1d7815d42c9396d76fe7d8ffd98b1855a713e5bfc5d081d61dd683e0723",
+    "/RESEARCH_ROOT/experiments/2026-10-04-optimizers/run_optimizer_probe.py": "e11ef16461923f02ebbc19069098fcf786a07ed21f7d388d79ab55c1c72dfc11"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "all_logits_full_vs_tb2_exact": true,
+  "all_logits_one_loop_vs_dense4_exact": true,
+  "shape": [
+    8,
+    256,
+    32768
+  ],
+  "k_ge_r_max_parameter_gradient_relative_l2": 0.0,
+  "k_ge_r_all_gradient_tensors_exact": true,
+  "bf16_gradients": true
+}

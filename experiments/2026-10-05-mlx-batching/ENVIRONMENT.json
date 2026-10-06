@@ -1,0 +1,9 @@
+{
+  "python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "packages": {
+    "numpy": "2.4.6",
+    "mlx": "0.32.3",
+    "mlx-metal": "0.32.3"
+  },
+  "python_executable": "/RESEARCH_ROOT/.venv-mlx0323/bin/python"
+}

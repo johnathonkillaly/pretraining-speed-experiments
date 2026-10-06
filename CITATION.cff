@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite this repository when referring to these local experiments and negative results."
+type: dataset
+title: "Pretraining Speed Experiments: MLX, MoE, Muon and Recurrent Backpropagation"
+authors:
+  - family-names: Killaly
+    given-names: Johnathon
+    affiliation: Independent researcher
+version: 1.0.0
+date-released: 2026-10-06
+repository-code: "https://github.com/johnathonkillaly/pretraining-speed-experiments"
+url: "https://github.com/johnathonkillaly/pretraining-speed-experiments"
+abstract: >-
+  Local Apple M4 Max MLX and RTX 4070 Laptop CUDA pretraining-performance
+  experiments covering sparse expert dispatch, optimizer state and update cost,
+  recurrent depth with truncated backpropagation, fused loss, activation
+  checkpointing and physical sequence batching. Includes negative results,
+  failed numerical gates, corrected measurement errors, scalar measurements,
+  historical sources and explicit reproduction limitations.
+keywords:
+  - pretraining
+  - MLX
+  - Apple Silicon
+  - mixture of experts
+  - Muon
+  - recurrent depth
+  - truncated backpropagation
+  - CUDA
+  - negative results

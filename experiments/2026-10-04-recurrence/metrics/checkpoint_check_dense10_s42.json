@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "records": [
+    {
+      "tag": "dense10_s42",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 16667904,
+      "weight_tensors": 92,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 33345230,
+          "sha256": "74ab9482ad182b0cced089b7a306e1eeaec37bd6967049336072590951f4a66a"
+        },
+        "training_state.npz": {
+          "bytes": 166973714,
+          "sha256": "0bbe06434788ebee48ea6930c5a8cd2c0a6cac8cfddce2e9fb462f62cc6596a9"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "registration_commit": "93e68b04b61a8cbe142244f4bc60229b52633f72",
+  "sha256": {
+    "model.py": "1fb9d8af3d7385580ff878963b4c1e1c50895df4fdbe24fc86ca88f8d8f67aba",
+    "optimizer.py": "079b0c86c115ef0832c66de411e2336a27e51700546d3199c3f78fb91b84a5d5",
+    "verify.py": "928c7ff49adab405aceae14a20972b5e85b70e4daf0368b7f51fb5d6ddb472b9",
+    "campaign.py": "3016c56d3fe654094a217cf83d6626a5c0249b99e25840c60a287742eac8607b",
+    "config.json": "5f48dd119270649e55ab8264f96bf45af4304664df600cf7999ae063574290e4",
+    "CONTRACT.md": "41032ede5fd8a8b338c38edd866a1f73e405b1b25efaf057e83f7bf42a529724"
+  }
+}

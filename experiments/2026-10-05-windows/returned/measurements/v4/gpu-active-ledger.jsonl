@@ -1,0 +1,2 @@
+{"phase": "addendum-cuda-initialize", "elapsed_s": 0.10667980000016541, "cumulative_gpu_active_s": 128.37331809999978}
+{"phase": "optimizer-profile", "elapsed_s": 1.9211198999996668, "cumulative_gpu_active_s": 130.29443799999945}

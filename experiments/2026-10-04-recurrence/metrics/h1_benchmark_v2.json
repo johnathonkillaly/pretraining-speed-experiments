@@ -1,0 +1,366 @@
+{
+  "preflight": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n",
+  "dtype": "BF16 model/gradients; FP32 masters/accumulation/state",
+  "targets_per_update": 32760,
+  "microbatch": 1,
+  "accumulation": 8,
+  "checkpointing": "alternating",
+  "optimizer": "compiled independently batched Muon/AdamW",
+  "input": "fixed seeded uniform synthetic token IDs; no learning interpretation",
+  "nvidia_reference": "Historical 2026-09-18 local CUDA handoff; no fresh NVIDIA run",
+  "parameters": 298361856,
+  "ownership": {
+    "muon_tensors": 140,
+    "adamw_tensors": 42,
+    "muon_parameters": 264765440,
+    "adamw_parameters": 33596416,
+    "matrix_groups": [
+      [
+        "blocks.0.mlp.down_proj.weight",
+        "blocks.1.mlp.down_proj.weight",
+        "blocks.10.mlp.down_proj.weight",
+        "blocks.11.mlp.down_proj.weight",
+        "blocks.12.mlp.down_proj.weight"
+      ],
+      [
+        "blocks.13.mlp.down_proj.weight",
+        "blocks.14.mlp.down_proj.weight",
+        "blocks.15.mlp.down_proj.weight",
+        "blocks.16.mlp.down_proj.weight",
+        "blocks.17.mlp.down_proj.weight"
+      ],
+      [
+        "blocks.18.mlp.down_proj.weight",
+        "blocks.19.mlp.down_proj.weight",
+        "blocks.2.mlp.down_proj.weight",
+        "blocks.3.mlp.down_proj.weight",
+        "blocks.4.mlp.down_proj.weight"
+      ],
+      [
+        "blocks.5.mlp.down_proj.weight",
+        "blocks.6.mlp.down_proj.weight",
+        "blocks.7.mlp.down_proj.weight",
+        "blocks.8.mlp.down_proj.weight",
+        "blocks.9.mlp.down_proj.weight"
+      ],
+      [
+        "blocks.0.mlp.gate_proj.weight",
+        "blocks.0.mlp.up_proj.weight",
+        "blocks.1.mlp.gate_proj.weight",
+        "blocks.1.mlp.up_proj.weight",
+        "blocks.10.mlp.gate_proj.weight"
+      ],
+      [
+        "blocks.10.mlp.up_proj.weight",
+        "blocks.11.mlp.gate_proj.weight",
+        "blocks.11.mlp.up_proj.weight",
+        "blocks.12.mlp.gate_proj.weight",
+        "blocks.12.mlp.up_proj.weight"
+      ],
+      [
+        "blocks.13.mlp.gate_proj.weight",
+        "blocks.13.mlp.up_proj.weight",
+        "blocks.14.mlp.gate_proj.weight",
+        "blocks.14.mlp.up_proj.weight",
+        "blocks.15.mlp.gate_proj.weight"
+      ],
+      [
+        "blocks.15.mlp.up_proj.weight",
+        "blocks.16.mlp.gate_proj.weight",
+        "blocks.16.mlp.up_proj.weight",
+        "blocks.17.mlp.gate_proj.weight",
+        "blocks.17.mlp.up_proj.weight"
+      ],
+      [
+        "blocks.18.mlp.gate_proj.weight",
+        "blocks.18.mlp.up_proj.weight",
+        "blocks.19.mlp.gate_proj.weight",
+        "blocks.19.mlp.up_proj.weight",
+        "blocks.2.mlp.gate_proj.weight"
+      ],
+      [
+        "blocks.2.mlp.up_proj.weight",
+        "blocks.3.mlp.gate_proj.weight",
+        "blocks.3.mlp.up_proj.weight",
+        "blocks.4.mlp.gate_proj.weight",
+        "blocks.4.mlp.up_proj.weight"
+      ],
+      [
+        "blocks.5.mlp.gate_proj.weight",
+        "blocks.5.mlp.up_proj.weight",
+        "blocks.6.mlp.gate_proj.weight",
+        "blocks.6.mlp.up_proj.weight",
+        "blocks.7.mlp.gate_proj.weight"
+      ],
+      [
+        "blocks.7.mlp.up_proj.weight",
+        "blocks.8.mlp.gate_proj.weight",
+        "blocks.8.mlp.up_proj.weight",
+        "blocks.9.mlp.gate_proj.weight",
+        "blocks.9.mlp.up_proj.weight"
+      ],
+      [
+        "blocks.0.self_attn.k_proj.weight",
+        "blocks.0.self_attn.v_proj.weight",
+        "blocks.1.self_attn.k_proj.weight",
+        "blocks.1.self_attn.v_proj.weight",
+        "blocks.10.self_attn.k_proj.weight"
+      ],
+      [
+        "blocks.10.self_attn.v_proj.weight",
+        "blocks.11.self_attn.k_proj.weight",
+        "blocks.11.self_attn.v_proj.weight",
+        "blocks.12.self_attn.k_proj.weight",
+        "blocks.12.self_attn.v_proj.weight"
+      ],
+      [
+        "blocks.13.self_attn.k_proj.weight",
+        "blocks.13.self_attn.v_proj.weight",
+        "blocks.14.self_attn.k_proj.weight",
+        "blocks.14.self_attn.v_proj.weight",
+        "blocks.15.self_attn.k_proj.weight"
+      ],
+      [
+        "blocks.15.self_attn.v_proj.weight",
+        "blocks.16.self_attn.k_proj.weight",
+        "blocks.16.self_attn.v_proj.weight",
+        "blocks.17.self_attn.k_proj.weight",
+        "blocks.17.self_attn.v_proj.weight"
+      ],
+      [
+        "blocks.18.self_attn.k_proj.weight",
+        "blocks.18.self_attn.v_proj.weight",
+        "blocks.19.self_attn.k_proj.weight",
+        "blocks.19.self_attn.v_proj.weight",
+        "blocks.2.self_attn.k_proj.weight"
+      ],
+      [
+        "blocks.2.self_attn.v_proj.weight",
+        "blocks.3.self_attn.k_proj.weight",
+        "blocks.3.self_attn.v_proj.weight",
+        "blocks.4.self_attn.k_proj.weight",
+        "blocks.4.self_attn.v_proj.weight"
+      ],
+      [
+        "blocks.5.self_attn.k_proj.weight",
+        "blocks.5.self_attn.v_proj.weight",
+        "blocks.6.self_attn.k_proj.weight",
+        "blocks.6.self_attn.v_proj.weight",
+        "blocks.7.self_attn.k_proj.weight"
+      ],
+      [
+        "blocks.7.self_attn.v_proj.weight",
+        "blocks.8.self_attn.k_proj.weight",
+        "blocks.8.self_attn.v_proj.weight",
+        "blocks.9.self_attn.k_proj.weight",
+        "blocks.9.self_attn.v_proj.weight"
+      ],
+      [
+        "blocks.0.self_attn.o_proj.weight",
+        "blocks.0.self_attn.q_proj.weight",
+        "blocks.1.self_attn.o_proj.weight",
+        "blocks.1.self_attn.q_proj.weight",
+        "blocks.10.self_attn.o_proj.weight"
+      ],
+      [
+        "blocks.10.self_attn.q_proj.weight",
+        "blocks.11.self_attn.o_proj.weight",
+        "blocks.11.self_attn.q_proj.weight",
+        "blocks.12.self_attn.o_proj.weight",
+        "blocks.12.self_attn.q_proj.weight"
+      ],
+      [
+        "blocks.13.self_attn.o_proj.weight",
+        "blocks.13.self_attn.q_proj.weight",
+        "blocks.14.self_attn.o_proj.weight",
+        "blocks.14.self_attn.q_proj.weight",
+        "blocks.15.self_attn.o_proj.weight"
+      ],
+      [
+        "blocks.15.self_attn.q_proj.weight",
+        "blocks.16.self_attn.o_proj.weight",
+        "blocks.16.self_attn.q_proj.weight",
+        "blocks.17.self_attn.o_proj.weight",
+        "blocks.17.self_attn.q_proj.weight"
+      ],
+      [
+        "blocks.18.self_attn.o_proj.weight",
+        "blocks.18.self_attn.q_proj.weight",
+        "blocks.19.self_attn.o_proj.weight",
+        "blocks.19.self_attn.q_proj.weight",
+        "blocks.2.self_attn.o_proj.weight"
+      ],
+      [
+        "blocks.2.self_attn.q_proj.weight",
+        "blocks.3.self_attn.o_proj.weight",
+        "blocks.3.self_attn.q_proj.weight",
+        "blocks.4.self_attn.o_proj.weight",
+        "blocks.4.self_attn.q_proj.weight"
+      ],
+      [
+        "blocks.5.self_attn.o_proj.weight",
+        "blocks.5.self_attn.q_proj.weight",
+        "blocks.6.self_attn.o_proj.weight",
+        "blocks.6.self_attn.q_proj.weight",
+        "blocks.7.self_attn.o_proj.weight"
+      ],
+      [
+        "blocks.7.self_attn.q_proj.weight",
+        "blocks.8.self_attn.o_proj.weight",
+        "blocks.8.self_attn.q_proj.weight",
+        "blocks.9.self_attn.o_proj.weight",
+        "blocks.9.self_attn.q_proj.weight"
+      ]
+    ],
+    "state_logical_bytes_excluding_masters": 1327833092
+  },
+  "windows": [
+    {
+      "index": 0,
+      "warmup": true,
+      "model_backward_accumulation_seconds": 9.113180540967733,
+      "optimizer_seconds": 0.7432824170100503,
+      "total_seconds": 9.856462957977783,
+      "tokens_per_second": 3323.7075145180943,
+      "peak_active_bytes": 12285336320,
+      "mean_loss": 10.903714895248413,
+      "gradient_norm": 1.5490421056747437
+    },
+    {
+      "index": 1,
+      "warmup": true,
+      "model_backward_accumulation_seconds": 9.092081541020889,
+      "optimizer_seconds": 0.5483548340271227,
+      "total_seconds": 9.640436375048012,
+      "tokens_per_second": 3398.186422846118,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.832969307899475,
+      "gradient_norm": 1.4626903533935547
+    },
+    {
+      "index": 2,
+      "warmup": true,
+      "model_backward_accumulation_seconds": 9.101693083008286,
+      "optimizer_seconds": 0.5472803330048919,
+      "total_seconds": 9.648973416013177,
+      "tokens_per_second": 3395.1798380574232,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.765278458595276,
+      "gradient_norm": 1.338304042816162
+    },
+    {
+      "index": 3,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.101698625017889,
+      "optimizer_seconds": 0.5462737500201911,
+      "total_seconds": 9.64797237503808,
+      "tokens_per_second": 3395.5321104317213,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.701525092124939,
+      "gradient_norm": 1.2190295457839966
+    },
+    {
+      "index": 4,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.293240958009847,
+      "optimizer_seconds": 0.5739376670098864,
+      "total_seconds": 9.867178625019733,
+      "tokens_per_second": 3320.0979981179257,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.64107084274292,
+      "gradient_norm": 1.1375937461853027
+    },
+    {
+      "index": 5,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.581212582997978,
+      "optimizer_seconds": 0.5854545420152135,
+      "total_seconds": 10.166667125013191,
+      "tokens_per_second": 3222.2949366956377,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.583279490470886,
+      "gradient_norm": 1.1015249490737915
+    },
+    {
+      "index": 6,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.589543499983847,
+      "optimizer_seconds": 0.5824626670219004,
+      "total_seconds": 10.172006167005748,
+      "tokens_per_second": 3220.603631391948,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.526853919029236,
+      "gradient_norm": 1.0900825262069702
+    },
+    {
+      "index": 7,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.542134833987802,
+      "optimizer_seconds": 0.5782719160197303,
+      "total_seconds": 10.120406750007533,
+      "tokens_per_second": 3237.0240454985287,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.471157312393188,
+      "gradient_norm": 1.0705327987670898
+    },
+    {
+      "index": 8,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.552083750022575,
+      "optimizer_seconds": 0.5733959999633953,
+      "total_seconds": 10.12547974998597,
+      "tokens_per_second": 3235.4022534137594,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.416123867034912,
+      "gradient_norm": 1.0435863733291626
+    },
+    {
+      "index": 9,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.53198941698065,
+      "optimizer_seconds": 0.5640983330085874,
+      "total_seconds": 10.096087749989238,
+      "tokens_per_second": 3244.821242766528,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.361601948738098,
+      "gradient_norm": 1.0259971618652344
+    },
+    {
+      "index": 10,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.517776499968022,
+      "optimizer_seconds": 0.5661397920339368,
+      "total_seconds": 10.083916292001959,
+      "tokens_per_second": 3248.737797038591,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.307595133781433,
+      "gradient_norm": 1.024533748626709
+    },
+    {
+      "index": 11,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.511966667021625,
+      "optimizer_seconds": 0.567451249982696,
+      "total_seconds": 10.07941791700432,
+      "tokens_per_second": 3250.187686407244,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.254047513008118,
+      "gradient_norm": 1.027321457862854
+    },
+    {
+      "index": 12,
+      "warmup": false,
+      "model_backward_accumulation_seconds": 9.462027542002033,
+      "optimizer_seconds": 0.5686946669593453,
+      "total_seconds": 10.030722208961379,
+      "tokens_per_second": 3265.9662303011883,
+      "peak_active_bytes": 12285336388,
+      "mean_loss": 10.200807452201843,
+      "gradient_norm": 1.0205590724945068
+    }
+  ],
+  "mean_tokens_per_second": 3263.2779490561325,
+  "median_tokens_per_second": 3246.7795199025595,
+  "peak_active_bytes": 12285336388,
+  "postflight": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 88%\n"
+}

@@ -1,0 +1,181 @@
+{
+  "original_fused_matching_gate": "FAILED; unchanged",
+  "arms": {
+    "A": {
+      "mlx": "0.32.2",
+      "loss": "composed",
+      "checkpointing": "alternating",
+      "runs": 2,
+      "targets_per_second": 3193.158134269006,
+      "model_seconds": 9.675748199998633,
+      "optimizer_seconds": 0.5836873251071666,
+      "peak_active_bytes": 12285340878,
+      "finite_state": true
+    },
+    "B": {
+      "mlx": "0.32.3",
+      "loss": "composed",
+      "checkpointing": "alternating",
+      "runs": 2,
+      "targets_per_second": 3217.966168503349,
+      "model_seconds": 9.599149878782919,
+      "optimizer_seconds": 0.5811933207965921,
+      "peak_active_bytes": 12285340484,
+      "finite_state": true
+    },
+    "U": {
+      "mlx": "0.32.3",
+      "loss": "fused",
+      "checkpointing": "alternating",
+      "runs": 2,
+      "targets_per_second": 3341.001299003329,
+      "model_seconds": 9.233254954288714,
+      "optimizer_seconds": 0.5721887041057926,
+      "peak_active_bytes": 11516930884,
+      "finite_state": true
+    },
+    "E": {
+      "mlx": "0.32.3",
+      "loss": "composed",
+      "checkpointing": "none",
+      "runs": 2,
+      "targets_per_second": 3665.960133590593,
+      "model_seconds": 8.370766424998873,
+      "optimizer_seconds": 0.5655009664071258,
+      "peak_active_bytes": 17013271364,
+      "finite_state": true
+    }
+  },
+  "comparisons": {
+    "B/A": {
+      "pairs": [
+        {
+          "round": 1,
+          "speed_ratio": 1.0155441681899118,
+          "memory_ratio": 0.9999999690688273
+        },
+        {
+          "round": 2,
+          "speed_ratio": 0.9995778384924272,
+          "memory_ratio": 0.9999999679292578
+        }
+      ],
+      "median_speed_gain_pct": 0.7561003341169492
+    },
+    "U/B": {
+      "pairs": [
+        {
+          "round": 1,
+          "speed_ratio": 1.0667452414248897,
+          "memory_ratio": 0.9374531295245134
+        },
+        {
+          "round": 2,
+          "speed_ratio": 1.009799532304031,
+          "memory_ratio": 0.9367703150749729
+        }
+      ],
+      "median_speed_gain_pct": 3.827238686446033,
+      "eligible_for_recommendation": false
+    },
+    "U/A": {
+      "pairs": [
+        {
+          "round": 1,
+          "speed_ratio": 1.0833269088733861,
+          "memory_ratio": 0.9374531005279887
+        },
+        {
+          "round": 2,
+          "speed_ratio": 1.0093732338111272,
+          "memory_ratio": 0.9367702850320536
+        }
+      ],
+      "median_speed_gain_pct": 4.635007134225666,
+      "eligible_for_recommendation": false
+    },
+    "E/B": {
+      "pairs": [
+        {
+          "round": 1,
+          "speed_ratio": 1.1686712007402693,
+          "memory_ratio": 1.3848432923904301
+        },
+        {
+          "round": 2,
+          "speed_ratio": 1.1097494696518397,
+          "memory_ratio": 1.3848432923904301
+        }
+      ],
+      "median_speed_gain_pct": 13.921033519605452,
+      "registered_recommendation_gate": true
+    },
+    "E/A": {
+      "pairs": [
+        {
+          "round": 1,
+          "speed_ratio": 1.1868372224432822,
+          "memory_ratio": 1.3848432495556031
+        },
+        {
+          "round": 2,
+          "speed_ratio": 1.1092809761427034,
+          "memory_ratio": 1.384843247977478
+        }
+      ],
+      "median_speed_gain_pct": 14.805909929299288
+    }
+  },
+  "completed_tags": [
+    "A1",
+    "B1",
+    "U1",
+    "U2",
+    "B2",
+    "A2",
+    "E1",
+    "E2"
+  ],
+  "microbenchmarks": [
+    {
+      "shape": [
+        128,
+        1024
+      ],
+      "median_seconds": {
+        "composed": 0.00026875000912696123,
+        "fused": 0.00019658298697322607
+      },
+      "speed_ratio": 1.3671071605172225
+    },
+    {
+      "shape": [
+        1024,
+        32768
+      ],
+      "median_seconds": {
+        "fused": 0.001038416987285018,
+        "composed": 0.0031283750431612134
+      },
+      "speed_ratio": 3.0126385464287067
+    },
+    {
+      "shape": [
+        4095,
+        32768
+      ],
+      "median_seconds": {
+        "composed": 0.020603333949111402,
+        "fused": 0.003691375022754073
+      },
+      "speed_ratio": 5.581479481794727
+    }
+  ],
+  "safety": {
+    "max_thermal_state": 1,
+    "minimum_memory_free_pct": 83,
+    "all_monitored_on_ac": true,
+    "no_competing_ml_job": true,
+    "worker_seconds": 655.4699953359668
+  }
+}

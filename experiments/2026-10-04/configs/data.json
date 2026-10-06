@@ -1,0 +1,46 @@
+{
+  "train_shape": [
+    4800,
+    257
+  ],
+  "val_shape": [
+    128,
+    257
+  ],
+  "train_loss_tokens": 1228800,
+  "val_loss_tokens": 32768,
+  "seed": 20261004,
+  "training_shard_indices": [
+    0,
+    40,
+    80,
+    121,
+    161,
+    202,
+    242,
+    282,
+    323,
+    363,
+    404,
+    444,
+    484,
+    525,
+    565,
+    606
+  ],
+  "dataset": "original v7 16 evenly spaced packed shards; 300 distinct blocks/shard",
+  "validation": "first 128 eligible of 256 uniformly sampled original validation documents",
+  "validation_source_counts": {
+    "HuggingFaceTB/finemath": 21,
+    "HuggingFaceFW/fineweb-edu": 107
+  },
+  "train_sha256": "18d0d48206c034085629ddccc61e327d19ccdd57292b9dd7dbb809c901555099",
+  "validation_sha256": "54e33288a2734f8c75928f8153172c7c9f54ee178b3ff4a964443dbca72f964d",
+  "tokenizer_path": "/EXTERNAL_RESOURCE/f033a331c535",
+  "tokenizer_sha256": "5a082a774fcb053eb0599cfcc84f41148d2686eb200438cd06622d94036d0c49",
+  "packed_manifest_path": "/EXTERNAL_RESOURCE/8e75fb35d250",
+  "packed_manifest_sha256": "2fe86c0c891e3c9df3af2fdb45348682bb250d43fc6215323b376e7b7b5a7712",
+  "split_manifest_sha256": "090a74b0f9efc82279fb8ba43a082889bbe6e1893b732ab65938db9871e7dd1c",
+  "exact_train_validation_window_overlap": 0,
+  "limitations": "original train/val split; no new semantic deduplication; old v7 rather than current Fedora v2 mix"
+}

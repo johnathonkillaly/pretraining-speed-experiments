@@ -1,0 +1,140 @@
+{
+  "kind": "dense10",
+  "seed": 43,
+  "steps": 5000,
+  "tune": false,
+  "muon_peak": 0.01,
+  "adamw_peak": 0.0003,
+  "parameter_count": 16667904,
+  "shared_initialization_sha256": "23e5551f3621967a8c3eb5ddca61f1fd7e718cadaad0f27bc30987fc830a8b0d",
+  "optimizer_ownership": {
+    "muon_tensors": 70,
+    "adamw_tensors": 22,
+    "muon_parameters": 8273920,
+    "adamw_parameters": 8393984,
+    "matrix_groups": [
+      [
+        "blocks.0.mlp.down_proj.weight",
+        "blocks.1.mlp.down_proj.weight",
+        "blocks.2.mlp.down_proj.weight",
+        "blocks.3.mlp.down_proj.weight",
+        "blocks.4.mlp.down_proj.weight"
+      ],
+      [
+        "blocks.5.mlp.down_proj.weight",
+        "blocks.6.mlp.down_proj.weight",
+        "blocks.7.mlp.down_proj.weight",
+        "blocks.8.mlp.down_proj.weight",
+        "blocks.9.mlp.down_proj.weight"
+      ],
+      [
+        "blocks.0.mlp.gate_proj.weight",
+        "blocks.0.mlp.up_proj.weight",
+        "blocks.1.mlp.gate_proj.weight",
+        "blocks.1.mlp.up_proj.weight",
+        "blocks.2.mlp.gate_proj.weight"
+      ],
+      [
+        "blocks.2.mlp.up_proj.weight",
+        "blocks.3.mlp.gate_proj.weight",
+        "blocks.3.mlp.up_proj.weight",
+        "blocks.4.mlp.gate_proj.weight",
+        "blocks.4.mlp.up_proj.weight"
+      ],
+      [
+        "blocks.5.mlp.gate_proj.weight",
+        "blocks.5.mlp.up_proj.weight",
+        "blocks.6.mlp.gate_proj.weight",
+        "blocks.6.mlp.up_proj.weight",
+        "blocks.7.mlp.gate_proj.weight"
+      ],
+      [
+        "blocks.7.mlp.up_proj.weight",
+        "blocks.8.mlp.gate_proj.weight",
+        "blocks.8.mlp.up_proj.weight",
+        "blocks.9.mlp.gate_proj.weight",
+        "blocks.9.mlp.up_proj.weight"
+      ],
+      [
+        "blocks.0.self_attn.k_proj.weight",
+        "blocks.0.self_attn.v_proj.weight",
+        "blocks.1.self_attn.k_proj.weight",
+        "blocks.1.self_attn.v_proj.weight",
+        "blocks.2.self_attn.k_proj.weight"
+      ],
+      [
+        "blocks.2.self_attn.v_proj.weight",
+        "blocks.3.self_attn.k_proj.weight",
+        "blocks.3.self_attn.v_proj.weight",
+        "blocks.4.self_attn.k_proj.weight",
+        "blocks.4.self_attn.v_proj.weight"
+      ],
+      [
+        "blocks.5.self_attn.k_proj.weight",
+        "blocks.5.self_attn.v_proj.weight",
+        "blocks.6.self_attn.k_proj.weight",
+        "blocks.6.self_attn.v_proj.weight",
+        "blocks.7.self_attn.k_proj.weight"
+      ],
+      [
+        "blocks.7.self_attn.v_proj.weight",
+        "blocks.8.self_attn.k_proj.weight",
+        "blocks.8.self_attn.v_proj.weight",
+        "blocks.9.self_attn.k_proj.weight",
+        "blocks.9.self_attn.v_proj.weight"
+      ],
+      [
+        "blocks.0.self_attn.o_proj.weight",
+        "blocks.0.self_attn.q_proj.weight",
+        "blocks.1.self_attn.o_proj.weight",
+        "blocks.1.self_attn.q_proj.weight",
+        "blocks.2.self_attn.o_proj.weight"
+      ],
+      [
+        "blocks.2.self_attn.q_proj.weight",
+        "blocks.3.self_attn.o_proj.weight",
+        "blocks.3.self_attn.q_proj.weight",
+        "blocks.4.self_attn.o_proj.weight",
+        "blocks.4.self_attn.q_proj.weight"
+      ],
+      [
+        "blocks.5.self_attn.o_proj.weight",
+        "blocks.5.self_attn.q_proj.weight",
+        "blocks.6.self_attn.o_proj.weight",
+        "blocks.6.self_attn.q_proj.weight",
+        "blocks.7.self_attn.o_proj.weight"
+      ],
+      [
+        "blocks.7.self_attn.q_proj.weight",
+        "blocks.8.self_attn.o_proj.weight",
+        "blocks.8.self_attn.q_proj.weight",
+        "blocks.9.self_attn.o_proj.weight",
+        "blocks.9.self_attn.q_proj.weight"
+      ]
+    ],
+    "state_logical_bytes_excluding_masters": 100247556
+  },
+  "dtype": "BF16 model and gradients; FP32 masters/clipping/optimizer state",
+  "batch_size": 8,
+  "sequence_length": 256,
+  "targets_per_update": 2048,
+  "compiled": true,
+  "weight_decay": 0,
+  "order_sha256": "dbc3167e921ee9f750b3fc4ad02c1219139f8ec0e30bc06593699df13d3f05ea",
+  "final_test_loss": 7.227388537488878,
+  "checkpoint_seconds": 0.10825449996627867,
+  "initial_development_loss": 10.895232073962688,
+  "final_development_loss": 7.264325480908155,
+  "training_seconds_including_compile": 265.5850466286065,
+  "elapsed_seconds": 269.9624477920006,
+  "steady_tokens_per_second": 38563.29034290663,
+  "steady_median_step_ms": 52.03616700600833,
+  "peak_active_bytes": 2018988850,
+  "compiler_signatures": [
+    {
+      "loops": 4,
+      "k": 2,
+      "calls": 5000
+    }
+  ]
+}

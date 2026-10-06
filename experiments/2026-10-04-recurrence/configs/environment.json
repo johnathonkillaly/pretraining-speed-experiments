@@ -1,0 +1,22 @@
+{
+  "python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "dependencies": {
+    "mlx": "0.32.2",
+    "mlx-metal": "0.32.2",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "tokenizers": "0.23.2"
+  },
+  "source_commit": "d5ed8894c901638c4fc19e7bd96fb10e41a97515",
+  "hardware": "MacBook Pro M4 Max,128GiB unified memory",
+  "limits": "16GiB MLX allocations;1GiB cache",
+  "gpu": [
+    {
+      "spdisplays_vendor": "sppci_vendor_Apple",
+      "sppci_bus": "spdisplays_builtin",
+      "sppci_cores": "40",
+      "sppci_model": "Apple M4 Max"
+    }
+  ]
+}

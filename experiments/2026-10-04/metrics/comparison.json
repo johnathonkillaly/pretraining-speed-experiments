@@ -1,0 +1,27 @@
+{
+  "mean_final_validation": {
+    "dense": 9.150643279155096,
+    "top1": 9.151343554258347,
+    "top2": 9.151583780845007
+  },
+  "paired_moe_minus_dense": {
+    "top1": [
+      -0.002619236707687378,
+      0.004419416189193726,
+      0.0003006458282470703
+    ],
+    "top2": [
+      -0.003583580255508423,
+      0.00675627589225769,
+      -0.00035119056701660156
+    ]
+  },
+  "equal_wall_time_seconds": 32.604229792021215,
+  "equal_wall_loss_linear_interpolation": {
+    "dense": 9.151585794242628,
+    "top1": 9.170522470104977,
+    "top2": 9.17308934920279
+  },
+  "best_per_token_point_estimate": "dense",
+  "best_equal_wall_point_estimate": "dense"
+}

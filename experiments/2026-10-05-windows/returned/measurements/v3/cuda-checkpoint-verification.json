@@ -1,0 +1,8 @@
+{
+  "prediction_exact": true,
+  "serialized_optimizer_tensors_exact": true,
+  "resumed_master_relative_l2": 0.0,
+  "resumed_master_tensors_exact": true,
+  "checkpoint_bytes": 473453,
+  "checkpoint_sha256": "912e66fd966e5c7f54caf08b224fa19472647ce87770911a13d7cfbadeb403c3"
+}

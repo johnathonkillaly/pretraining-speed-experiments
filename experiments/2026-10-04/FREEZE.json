@@ -1,0 +1,23 @@
+{
+  "files": {
+    "scripts/benchmark.py": "7310fc19f0d03d631db659328a484b0ac07bb005a6fe81f2784bda743b90a56e",
+    "scripts/prepare_data.py": "5462d0fea5a07a1cba944a0ebdc9bdb59672008714aae96c2d36c66876425f74",
+    "scripts/train.py": "e608c7df246fc7009b32433a5ffc65ee7e3f0827372d5c97879b77df2407766c",
+    "scripts/verify.py": "fe385a0f8837e7a2ba3c4ae5e1ff48d6322ae30f89b84d1103096451e55148c7",
+    "scripts/run_suite.py": "df0eb974028b70ad1ad5db293301e65f492981785d78b95d5060d7d948902375",
+    "scripts/moe.py": "224ee25363955534f8204dd682e8a45d8507c76cdcaccd7a85693a89e894f568",
+    "scripts/arch/rope_utils.py": "ac7d1be7d2bb1df9c697d5979f94b0bda3cd414a3d3ff930bb1e5df0d284d66b",
+    "scripts/arch/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/arch/llama.py": "0316c27256356a689c9efca413bebbc769de0a571f363ea6ec2f722d90c52be1",
+    "CONTRACT.md": "2bf263344bd7faf214af018811682f6f72fa8cff0499664228c142e6e63b1729",
+    "AMENDMENT_01.md": "37e56b02b5932514f3e30f116b5d58b9b7b2457fa274d58be4b4074063945247",
+    "AMENDMENT_02.md": "a215d9409bcabc6ecbad467faa2e2eef3eb96ad8cb00c96fadab22dfdbf4ff64",
+    "configs/data.json": "09685a4f2418de8c4d31cfd21929b0a53afcec4ced04bf647d7d223ada8ffa8d",
+    "configs/run_matrix.json": "2b0be0b04545da8bb0b0af3e121e0be4867548a756f23c8b30ee8d2c130f1cf4",
+    "data/train.npy": "18d0d48206c034085629ddccc61e327d19ccdd57292b9dd7dbb809c901555099",
+    "data/validation.npy": "54e33288a2734f8c75928f8153172c7c9f54ee178b3ff4a964443dbca72f964d",
+    "data/train_provenance.jsonl": "18f09fb37a8571207943a910f9c2a7cb7e5d982a085d971bc8eb02db098cbeaf",
+    "data/validation_provenance.jsonl": "c323196b764199b39427d63e61e0b759ca55a8d84bc8ef688e1c97973d7f5ec8"
+  },
+  "created_utc": "2026-10-05T01:41:01Z"
+}

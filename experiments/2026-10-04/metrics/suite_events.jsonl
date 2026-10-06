@@ -1,0 +1,29 @@
+{"utc": "2026-10-05T01:41:01.811416+00:00", "event": "start", "matrix": [{"kind": "dense", "seed": 42, "steps": 1200}, {"kind": "top1", "seed": 42, "steps": 1200}, {"kind": "top2", "seed": 42, "steps": 1200}, {"kind": "top2", "seed": 43, "steps": 1200}, {"kind": "dense", "seed": 43, "steps": 1200}, {"kind": "top1", "seed": 43, "steps": 1200}, {"kind": "top1", "seed": 44, "steps": 1200}, {"kind": "top2", "seed": 44, "steps": 1200}, {"kind": "dense", "seed": 44, "steps": 1200}]}
+{"utc": "2026-10-05T01:41:01.858746+00:00", "event": "preflight", "run": {"kind": "dense", "seed": 42, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:41:01.858975+00:00", "event": "run_start", "run": {"kind": "dense", "seed": 42, "steps": 1200}}
+{"utc": "2026-10-05T01:41:35.050094+00:00", "event": "run_end", "run": {"kind": "dense", "seed": 42, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:41:35.115460+00:00", "event": "preflight", "run": {"kind": "top1", "seed": 42, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:41:35.115697+00:00", "event": "run_start", "run": {"kind": "top1", "seed": 42, "steps": 1200}}
+{"utc": "2026-10-05T01:42:14.986342+00:00", "event": "run_end", "run": {"kind": "top1", "seed": 42, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:42:15.072930+00:00", "event": "preflight", "run": {"kind": "top2", "seed": 42, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:42:15.073155+00:00", "event": "run_start", "run": {"kind": "top2", "seed": 42, "steps": 1200}}
+{"utc": "2026-10-05T01:42:55.487361+00:00", "event": "run_end", "run": {"kind": "top2", "seed": 42, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:42:55.570657+00:00", "event": "preflight", "run": {"kind": "top2", "seed": 43, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:42:55.570906+00:00", "event": "run_start", "run": {"kind": "top2", "seed": 43, "steps": 1200}}
+{"utc": "2026-10-05T01:43:35.734259+00:00", "event": "run_end", "run": {"kind": "top2", "seed": 43, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:43:35.820221+00:00", "event": "preflight", "run": {"kind": "dense", "seed": 43, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:43:35.820472+00:00", "event": "run_start", "run": {"kind": "dense", "seed": 43, "steps": 1200}}
+{"utc": "2026-10-05T01:44:09.276083+00:00", "event": "run_end", "run": {"kind": "dense", "seed": 43, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:44:09.362499+00:00", "event": "preflight", "run": {"kind": "top1", "seed": 43, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:44:09.362724+00:00", "event": "run_start", "run": {"kind": "top1", "seed": 43, "steps": 1200}}
+{"utc": "2026-10-05T01:44:48.824339+00:00", "event": "run_end", "run": {"kind": "top1", "seed": 43, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:44:48.909951+00:00", "event": "preflight", "run": {"kind": "top1", "seed": 44, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:44:48.910196+00:00", "event": "run_start", "run": {"kind": "top1", "seed": 44, "steps": 1200}}
+{"utc": "2026-10-05T01:45:28.421415+00:00", "event": "run_end", "run": {"kind": "top1", "seed": 44, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:45:28.481227+00:00", "event": "preflight", "run": {"kind": "top2", "seed": 44, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:45:28.481473+00:00", "event": "run_start", "run": {"kind": "top2", "seed": 44, "steps": 1200}}
+{"utc": "2026-10-05T01:46:08.517794+00:00", "event": "run_end", "run": {"kind": "top2", "seed": 44, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:46:08.582862+00:00", "event": "preflight", "run": {"kind": "dense", "seed": 44, "steps": 1200}, "memory_pressure": "The system has 137438953472 (8388608 pages with a page size of 16384).\nSystem-wide memory free percentage: 91%\n"}
+{"utc": "2026-10-05T01:46:08.583140+00:00", "event": "run_start", "run": {"kind": "dense", "seed": 44, "steps": 1200}}
+{"utc": "2026-10-05T01:46:41.543516+00:00", "event": "run_end", "run": {"kind": "dense", "seed": 44, "steps": 1200}, "exit_code": 0}
+{"utc": "2026-10-05T01:46:41.544742+00:00", "event": "complete"}

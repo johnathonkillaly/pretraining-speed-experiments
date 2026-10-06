@@ -1,0 +1,2554 @@
+[
+  {
+    "tag": "A1",
+    "mlx": "0.32.2",
+    "loss": "composed",
+    "checkpointing": "alternating",
+    "parameters": 298361856,
+    "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+    "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+    "ownership": {
+      "muon_tensors": 140,
+      "adamw_tensors": 42,
+      "muon_parameters": 264765440,
+      "adamw_parameters": 33596416,
+      "matrix_groups": [
+        [
+          "blocks.0.mlp.down_proj.weight",
+          "blocks.1.mlp.down_proj.weight",
+          "blocks.10.mlp.down_proj.weight",
+          "blocks.11.mlp.down_proj.weight",
+          "blocks.12.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.down_proj.weight",
+          "blocks.14.mlp.down_proj.weight",
+          "blocks.15.mlp.down_proj.weight",
+          "blocks.16.mlp.down_proj.weight",
+          "blocks.17.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.down_proj.weight",
+          "blocks.19.mlp.down_proj.weight",
+          "blocks.2.mlp.down_proj.weight",
+          "blocks.3.mlp.down_proj.weight",
+          "blocks.4.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.down_proj.weight",
+          "blocks.6.mlp.down_proj.weight",
+          "blocks.7.mlp.down_proj.weight",
+          "blocks.8.mlp.down_proj.weight",
+          "blocks.9.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.0.mlp.gate_proj.weight",
+          "blocks.0.mlp.up_proj.weight",
+          "blocks.1.mlp.gate_proj.weight",
+          "blocks.1.mlp.up_proj.weight",
+          "blocks.10.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.10.mlp.up_proj.weight",
+          "blocks.11.mlp.gate_proj.weight",
+          "blocks.11.mlp.up_proj.weight",
+          "blocks.12.mlp.gate_proj.weight",
+          "blocks.12.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.gate_proj.weight",
+          "blocks.13.mlp.up_proj.weight",
+          "blocks.14.mlp.gate_proj.weight",
+          "blocks.14.mlp.up_proj.weight",
+          "blocks.15.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.15.mlp.up_proj.weight",
+          "blocks.16.mlp.gate_proj.weight",
+          "blocks.16.mlp.up_proj.weight",
+          "blocks.17.mlp.gate_proj.weight",
+          "blocks.17.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.gate_proj.weight",
+          "blocks.18.mlp.up_proj.weight",
+          "blocks.19.mlp.gate_proj.weight",
+          "blocks.19.mlp.up_proj.weight",
+          "blocks.2.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.2.mlp.up_proj.weight",
+          "blocks.3.mlp.gate_proj.weight",
+          "blocks.3.mlp.up_proj.weight",
+          "blocks.4.mlp.gate_proj.weight",
+          "blocks.4.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.gate_proj.weight",
+          "blocks.5.mlp.up_proj.weight",
+          "blocks.6.mlp.gate_proj.weight",
+          "blocks.6.mlp.up_proj.weight",
+          "blocks.7.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.7.mlp.up_proj.weight",
+          "blocks.8.mlp.gate_proj.weight",
+          "blocks.8.mlp.up_proj.weight",
+          "blocks.9.mlp.gate_proj.weight",
+          "blocks.9.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.k_proj.weight",
+          "blocks.0.self_attn.v_proj.weight",
+          "blocks.1.self_attn.k_proj.weight",
+          "blocks.1.self_attn.v_proj.weight",
+          "blocks.10.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.v_proj.weight",
+          "blocks.11.self_attn.k_proj.weight",
+          "blocks.11.self_attn.v_proj.weight",
+          "blocks.12.self_attn.k_proj.weight",
+          "blocks.12.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.k_proj.weight",
+          "blocks.13.self_attn.v_proj.weight",
+          "blocks.14.self_attn.k_proj.weight",
+          "blocks.14.self_attn.v_proj.weight",
+          "blocks.15.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.v_proj.weight",
+          "blocks.16.self_attn.k_proj.weight",
+          "blocks.16.self_attn.v_proj.weight",
+          "blocks.17.self_attn.k_proj.weight",
+          "blocks.17.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.k_proj.weight",
+          "blocks.18.self_attn.v_proj.weight",
+          "blocks.19.self_attn.k_proj.weight",
+          "blocks.19.self_attn.v_proj.weight",
+          "blocks.2.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.v_proj.weight",
+          "blocks.3.self_attn.k_proj.weight",
+          "blocks.3.self_attn.v_proj.weight",
+          "blocks.4.self_attn.k_proj.weight",
+          "blocks.4.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.k_proj.weight",
+          "blocks.5.self_attn.v_proj.weight",
+          "blocks.6.self_attn.k_proj.weight",
+          "blocks.6.self_attn.v_proj.weight",
+          "blocks.7.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.v_proj.weight",
+          "blocks.8.self_attn.k_proj.weight",
+          "blocks.8.self_attn.v_proj.weight",
+          "blocks.9.self_attn.k_proj.weight",
+          "blocks.9.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.o_proj.weight",
+          "blocks.0.self_attn.q_proj.weight",
+          "blocks.1.self_attn.o_proj.weight",
+          "blocks.1.self_attn.q_proj.weight",
+          "blocks.10.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.q_proj.weight",
+          "blocks.11.self_attn.o_proj.weight",
+          "blocks.11.self_attn.q_proj.weight",
+          "blocks.12.self_attn.o_proj.weight",
+          "blocks.12.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.o_proj.weight",
+          "blocks.13.self_attn.q_proj.weight",
+          "blocks.14.self_attn.o_proj.weight",
+          "blocks.14.self_attn.q_proj.weight",
+          "blocks.15.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.q_proj.weight",
+          "blocks.16.self_attn.o_proj.weight",
+          "blocks.16.self_attn.q_proj.weight",
+          "blocks.17.self_attn.o_proj.weight",
+          "blocks.17.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.o_proj.weight",
+          "blocks.18.self_attn.q_proj.weight",
+          "blocks.19.self_attn.o_proj.weight",
+          "blocks.19.self_attn.q_proj.weight",
+          "blocks.2.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.q_proj.weight",
+          "blocks.3.self_attn.o_proj.weight",
+          "blocks.3.self_attn.q_proj.weight",
+          "blocks.4.self_attn.o_proj.weight",
+          "blocks.4.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.o_proj.weight",
+          "blocks.5.self_attn.q_proj.weight",
+          "blocks.6.self_attn.o_proj.weight",
+          "blocks.6.self_attn.q_proj.weight",
+          "blocks.7.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.q_proj.weight",
+          "blocks.8.self_attn.o_proj.weight",
+          "blocks.8.self_attn.q_proj.weight",
+          "blocks.9.self_attn.o_proj.weight",
+          "blocks.9.self_attn.q_proj.weight"
+        ]
+      ],
+      "state_logical_bytes_excluding_masters": 1327833092
+    },
+    "initialization_seconds": 0.7121115829795599,
+    "targets_per_update": 32760,
+    "records": [
+      {
+        "index": 0,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.3841798339854,
+        "optimizer_seconds": 0.574979875003919,
+        "total_seconds": 9.959159708989318,
+        "tokens_per_second": 3289.4341447733013,
+        "peak_active_bytes": 12285336700,
+        "cache_bytes": 1119354900,
+        "mean_loss": 10.903714895248413,
+        "gradient_norm": 1.5490421056747437
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.375996874994598,
+        "optimizer_seconds": 0.5639957909588702,
+        "total_seconds": 9.939992665953469,
+        "tokens_per_second": 3295.7770796159416,
+        "peak_active_bytes": 12285340864,
+        "cache_bytes": 1098383400,
+        "mean_loss": 10.832969307899475,
+        "gradient_norm": 1.4626903533935547
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.28671212500194,
+        "optimizer_seconds": 0.5635907499818131,
+        "total_seconds": 9.850302874983754,
+        "tokens_per_second": 3325.7860611777414,
+        "peak_active_bytes": 12285340864,
+        "cache_bytes": 1119354920,
+        "mean_loss": 10.765270471572876,
+        "gradient_norm": 1.3380656242370605
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.621493833023123,
+        "optimizer_seconds": 0.6078037089901045,
+        "total_seconds": 10.229297542013228,
+        "tokens_per_second": 3202.5659499540284,
+        "peak_active_bytes": 12285340864,
+        "cache_bytes": 1111490560,
+        "mean_loss": 10.701524138450623,
+        "gradient_norm": 1.2192412614822388
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 10.047267250018194,
+        "optimizer_seconds": 0.6209585419856012,
+        "total_seconds": 10.668225792003796,
+        "tokens_per_second": 3070.8011471368327,
+        "peak_active_bytes": 12285340864,
+        "cache_bytes": 1098383400,
+        "mean_loss": 10.641083478927612,
+        "gradient_norm": 1.1378377676010132
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 10.083951250009704,
+        "optimizer_seconds": 0.5982550000189804,
+        "total_seconds": 10.682206250028685,
+        "tokens_per_second": 3066.7822014681688,
+        "peak_active_bytes": 12285340864,
+        "cache_bytes": 1139015740,
+        "mean_loss": 10.583349108695984,
+        "gradient_norm": 1.101985216140747
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 10.060009207983967,
+        "optimizer_seconds": 0.6016847499995492,
+        "total_seconds": 10.661693957983516,
+        "tokens_per_second": 3072.6824582569443,
+        "peak_active_bytes": 12285340864,
+        "cache_bytes": 1119354900,
+        "mean_loss": 10.526855826377869,
+        "gradient_norm": 1.0898041725158691
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 10.215117582993116,
+        "optimizer_seconds": 0.5840170420124196,
+        "total_seconds": 10.799134625005536,
+        "tokens_per_second": 3033.57640566345,
+        "peak_active_bytes": 12285340864,
+        "cache_bytes": 1129840680,
+        "mean_loss": 10.47113835811615,
+        "gradient_norm": 1.0707454681396484
+      }
+    ],
+    "finite_final_state": true,
+    "steady_targets_per_second": 3088.2027953809,
+    "median_targets_per_second": 3070.8011471368327,
+    "peak_active_bytes": 12285340864,
+    "completed": true
+  },
+  {
+    "tag": "B1",
+    "mlx": "0.32.3",
+    "loss": "composed",
+    "checkpointing": "alternating",
+    "parameters": 298361856,
+    "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+    "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+    "ownership": {
+      "muon_tensors": 140,
+      "adamw_tensors": 42,
+      "muon_parameters": 264765440,
+      "adamw_parameters": 33596416,
+      "matrix_groups": [
+        [
+          "blocks.0.mlp.down_proj.weight",
+          "blocks.1.mlp.down_proj.weight",
+          "blocks.10.mlp.down_proj.weight",
+          "blocks.11.mlp.down_proj.weight",
+          "blocks.12.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.down_proj.weight",
+          "blocks.14.mlp.down_proj.weight",
+          "blocks.15.mlp.down_proj.weight",
+          "blocks.16.mlp.down_proj.weight",
+          "blocks.17.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.down_proj.weight",
+          "blocks.19.mlp.down_proj.weight",
+          "blocks.2.mlp.down_proj.weight",
+          "blocks.3.mlp.down_proj.weight",
+          "blocks.4.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.down_proj.weight",
+          "blocks.6.mlp.down_proj.weight",
+          "blocks.7.mlp.down_proj.weight",
+          "blocks.8.mlp.down_proj.weight",
+          "blocks.9.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.0.mlp.gate_proj.weight",
+          "blocks.0.mlp.up_proj.weight",
+          "blocks.1.mlp.gate_proj.weight",
+          "blocks.1.mlp.up_proj.weight",
+          "blocks.10.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.10.mlp.up_proj.weight",
+          "blocks.11.mlp.gate_proj.weight",
+          "blocks.11.mlp.up_proj.weight",
+          "blocks.12.mlp.gate_proj.weight",
+          "blocks.12.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.gate_proj.weight",
+          "blocks.13.mlp.up_proj.weight",
+          "blocks.14.mlp.gate_proj.weight",
+          "blocks.14.mlp.up_proj.weight",
+          "blocks.15.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.15.mlp.up_proj.weight",
+          "blocks.16.mlp.gate_proj.weight",
+          "blocks.16.mlp.up_proj.weight",
+          "blocks.17.mlp.gate_proj.weight",
+          "blocks.17.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.gate_proj.weight",
+          "blocks.18.mlp.up_proj.weight",
+          "blocks.19.mlp.gate_proj.weight",
+          "blocks.19.mlp.up_proj.weight",
+          "blocks.2.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.2.mlp.up_proj.weight",
+          "blocks.3.mlp.gate_proj.weight",
+          "blocks.3.mlp.up_proj.weight",
+          "blocks.4.mlp.gate_proj.weight",
+          "blocks.4.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.gate_proj.weight",
+          "blocks.5.mlp.up_proj.weight",
+          "blocks.6.mlp.gate_proj.weight",
+          "blocks.6.mlp.up_proj.weight",
+          "blocks.7.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.7.mlp.up_proj.weight",
+          "blocks.8.mlp.gate_proj.weight",
+          "blocks.8.mlp.up_proj.weight",
+          "blocks.9.mlp.gate_proj.weight",
+          "blocks.9.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.k_proj.weight",
+          "blocks.0.self_attn.v_proj.weight",
+          "blocks.1.self_attn.k_proj.weight",
+          "blocks.1.self_attn.v_proj.weight",
+          "blocks.10.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.v_proj.weight",
+          "blocks.11.self_attn.k_proj.weight",
+          "blocks.11.self_attn.v_proj.weight",
+          "blocks.12.self_attn.k_proj.weight",
+          "blocks.12.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.k_proj.weight",
+          "blocks.13.self_attn.v_proj.weight",
+          "blocks.14.self_attn.k_proj.weight",
+          "blocks.14.self_attn.v_proj.weight",
+          "blocks.15.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.v_proj.weight",
+          "blocks.16.self_attn.k_proj.weight",
+          "blocks.16.self_attn.v_proj.weight",
+          "blocks.17.self_attn.k_proj.weight",
+          "blocks.17.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.k_proj.weight",
+          "blocks.18.self_attn.v_proj.weight",
+          "blocks.19.self_attn.k_proj.weight",
+          "blocks.19.self_attn.v_proj.weight",
+          "blocks.2.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.v_proj.weight",
+          "blocks.3.self_attn.k_proj.weight",
+          "blocks.3.self_attn.v_proj.weight",
+          "blocks.4.self_attn.k_proj.weight",
+          "blocks.4.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.k_proj.weight",
+          "blocks.5.self_attn.v_proj.weight",
+          "blocks.6.self_attn.k_proj.weight",
+          "blocks.6.self_attn.v_proj.weight",
+          "blocks.7.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.v_proj.weight",
+          "blocks.8.self_attn.k_proj.weight",
+          "blocks.8.self_attn.v_proj.weight",
+          "blocks.9.self_attn.k_proj.weight",
+          "blocks.9.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.o_proj.weight",
+          "blocks.0.self_attn.q_proj.weight",
+          "blocks.1.self_attn.o_proj.weight",
+          "blocks.1.self_attn.q_proj.weight",
+          "blocks.10.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.q_proj.weight",
+          "blocks.11.self_attn.o_proj.weight",
+          "blocks.11.self_attn.q_proj.weight",
+          "blocks.12.self_attn.o_proj.weight",
+          "blocks.12.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.o_proj.weight",
+          "blocks.13.self_attn.q_proj.weight",
+          "blocks.14.self_attn.o_proj.weight",
+          "blocks.14.self_attn.q_proj.weight",
+          "blocks.15.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.q_proj.weight",
+          "blocks.16.self_attn.o_proj.weight",
+          "blocks.16.self_attn.q_proj.weight",
+          "blocks.17.self_attn.o_proj.weight",
+          "blocks.17.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.o_proj.weight",
+          "blocks.18.self_attn.q_proj.weight",
+          "blocks.19.self_attn.o_proj.weight",
+          "blocks.19.self_attn.q_proj.weight",
+          "blocks.2.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.q_proj.weight",
+          "blocks.3.self_attn.o_proj.weight",
+          "blocks.3.self_attn.q_proj.weight",
+          "blocks.4.self_attn.o_proj.weight",
+          "blocks.4.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.o_proj.weight",
+          "blocks.5.self_attn.q_proj.weight",
+          "blocks.6.self_attn.o_proj.weight",
+          "blocks.6.self_attn.q_proj.weight",
+          "blocks.7.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.q_proj.weight",
+          "blocks.8.self_attn.o_proj.weight",
+          "blocks.8.self_attn.q_proj.weight",
+          "blocks.9.self_attn.o_proj.weight",
+          "blocks.9.self_attn.q_proj.weight"
+        ]
+      ],
+      "state_logical_bytes_excluding_masters": 1327833092
+    },
+    "initialization_seconds": 0.7023360839812085,
+    "targets_per_update": 32760,
+    "records": [
+      {
+        "index": 0,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 10.136149541998748,
+        "optimizer_seconds": 2.359449250041507,
+        "total_seconds": 12.495598792040255,
+        "tokens_per_second": 2621.7230998860373,
+        "peak_active_bytes": 12285336320,
+        "cache_bytes": 1120010260,
+        "mean_loss": 10.903714895248413,
+        "gradient_norm": 1.5490421056747437
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.590462624968495,
+        "optimizer_seconds": 0.6070155409979634,
+        "total_seconds": 10.197478165966459,
+        "tokens_per_second": 3212.558974564394,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1120010280,
+        "mean_loss": 10.832969307899475,
+        "gradient_norm": 1.4626903533935547
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 10.323089874989819,
+        "optimizer_seconds": 0.6187104999553412,
+        "total_seconds": 10.94180037494516,
+        "tokens_per_second": 2994.0228186775153,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1111490580,
+        "mean_loss": 10.765242099761963,
+        "gradient_norm": 1.338591456413269
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.897521665960085,
+        "optimizer_seconds": 0.5896675830008462,
+        "total_seconds": 10.48718924896093,
+        "tokens_per_second": 3123.8112731918,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1124597800,
+        "mean_loss": 10.701579809188843,
+        "gradient_norm": 1.2190791368484497
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.896178790950216,
+        "optimizer_seconds": 0.6155212500016205,
+        "total_seconds": 10.511700040951837,
+        "tokens_per_second": 3116.5272860120135,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1120665620,
+        "mean_loss": 10.641148567199707,
+        "gradient_norm": 1.1372747421264648
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.909210332960356,
+        "optimizer_seconds": 0.5927827910054475,
+        "total_seconds": 10.501993123965804,
+        "tokens_per_second": 3119.407869849094,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1135083540,
+        "mean_loss": 10.583289504051208,
+        "gradient_norm": 1.1021982431411743
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.744425790966488,
+        "optimizer_seconds": 0.5839230419951491,
+        "total_seconds": 10.328348832961638,
+        "tokens_per_second": 3171.852590362803,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1124597760,
+        "mean_loss": 10.526842951774597,
+        "gradient_norm": 1.0894662141799927
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.813302040973213,
+        "optimizer_seconds": 0.5861730830511078,
+        "total_seconds": 10.39947512402432,
+        "tokens_per_second": 3150.1589848818016,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1120010280,
+        "mean_loss": 10.471257448196411,
+        "gradient_norm": 1.0705496072769165
+      }
+    ],
+    "finite_final_state": true,
+    "steady_targets_per_second": 3136.2063390368567,
+    "median_targets_per_second": 3123.8112731918,
+    "peak_active_bytes": 12285340484,
+    "completed": true
+  },
+  {
+    "tag": "U1",
+    "mlx": "0.32.3",
+    "loss": "fused",
+    "checkpointing": "alternating",
+    "parameters": 298361856,
+    "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+    "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+    "ownership": {
+      "muon_tensors": 140,
+      "adamw_tensors": 42,
+      "muon_parameters": 264765440,
+      "adamw_parameters": 33596416,
+      "matrix_groups": [
+        [
+          "blocks.0.mlp.down_proj.weight",
+          "blocks.1.mlp.down_proj.weight",
+          "blocks.10.mlp.down_proj.weight",
+          "blocks.11.mlp.down_proj.weight",
+          "blocks.12.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.down_proj.weight",
+          "blocks.14.mlp.down_proj.weight",
+          "blocks.15.mlp.down_proj.weight",
+          "blocks.16.mlp.down_proj.weight",
+          "blocks.17.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.down_proj.weight",
+          "blocks.19.mlp.down_proj.weight",
+          "blocks.2.mlp.down_proj.weight",
+          "blocks.3.mlp.down_proj.weight",
+          "blocks.4.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.down_proj.weight",
+          "blocks.6.mlp.down_proj.weight",
+          "blocks.7.mlp.down_proj.weight",
+          "blocks.8.mlp.down_proj.weight",
+          "blocks.9.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.0.mlp.gate_proj.weight",
+          "blocks.0.mlp.up_proj.weight",
+          "blocks.1.mlp.gate_proj.weight",
+          "blocks.1.mlp.up_proj.weight",
+          "blocks.10.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.10.mlp.up_proj.weight",
+          "blocks.11.mlp.gate_proj.weight",
+          "blocks.11.mlp.up_proj.weight",
+          "blocks.12.mlp.gate_proj.weight",
+          "blocks.12.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.gate_proj.weight",
+          "blocks.13.mlp.up_proj.weight",
+          "blocks.14.mlp.gate_proj.weight",
+          "blocks.14.mlp.up_proj.weight",
+          "blocks.15.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.15.mlp.up_proj.weight",
+          "blocks.16.mlp.gate_proj.weight",
+          "blocks.16.mlp.up_proj.weight",
+          "blocks.17.mlp.gate_proj.weight",
+          "blocks.17.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.gate_proj.weight",
+          "blocks.18.mlp.up_proj.weight",
+          "blocks.19.mlp.gate_proj.weight",
+          "blocks.19.mlp.up_proj.weight",
+          "blocks.2.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.2.mlp.up_proj.weight",
+          "blocks.3.mlp.gate_proj.weight",
+          "blocks.3.mlp.up_proj.weight",
+          "blocks.4.mlp.gate_proj.weight",
+          "blocks.4.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.gate_proj.weight",
+          "blocks.5.mlp.up_proj.weight",
+          "blocks.6.mlp.gate_proj.weight",
+          "blocks.6.mlp.up_proj.weight",
+          "blocks.7.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.7.mlp.up_proj.weight",
+          "blocks.8.mlp.gate_proj.weight",
+          "blocks.8.mlp.up_proj.weight",
+          "blocks.9.mlp.gate_proj.weight",
+          "blocks.9.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.k_proj.weight",
+          "blocks.0.self_attn.v_proj.weight",
+          "blocks.1.self_attn.k_proj.weight",
+          "blocks.1.self_attn.v_proj.weight",
+          "blocks.10.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.v_proj.weight",
+          "blocks.11.self_attn.k_proj.weight",
+          "blocks.11.self_attn.v_proj.weight",
+          "blocks.12.self_attn.k_proj.weight",
+          "blocks.12.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.k_proj.weight",
+          "blocks.13.self_attn.v_proj.weight",
+          "blocks.14.self_attn.k_proj.weight",
+          "blocks.14.self_attn.v_proj.weight",
+          "blocks.15.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.v_proj.weight",
+          "blocks.16.self_attn.k_proj.weight",
+          "blocks.16.self_attn.v_proj.weight",
+          "blocks.17.self_attn.k_proj.weight",
+          "blocks.17.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.k_proj.weight",
+          "blocks.18.self_attn.v_proj.weight",
+          "blocks.19.self_attn.k_proj.weight",
+          "blocks.19.self_attn.v_proj.weight",
+          "blocks.2.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.v_proj.weight",
+          "blocks.3.self_attn.k_proj.weight",
+          "blocks.3.self_attn.v_proj.weight",
+          "blocks.4.self_attn.k_proj.weight",
+          "blocks.4.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.k_proj.weight",
+          "blocks.5.self_attn.v_proj.weight",
+          "blocks.6.self_attn.k_proj.weight",
+          "blocks.6.self_attn.v_proj.weight",
+          "blocks.7.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.v_proj.weight",
+          "blocks.8.self_attn.k_proj.weight",
+          "blocks.8.self_attn.v_proj.weight",
+          "blocks.9.self_attn.k_proj.weight",
+          "blocks.9.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.o_proj.weight",
+          "blocks.0.self_attn.q_proj.weight",
+          "blocks.1.self_attn.o_proj.weight",
+          "blocks.1.self_attn.q_proj.weight",
+          "blocks.10.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.q_proj.weight",
+          "blocks.11.self_attn.o_proj.weight",
+          "blocks.11.self_attn.q_proj.weight",
+          "blocks.12.self_attn.o_proj.weight",
+          "blocks.12.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.o_proj.weight",
+          "blocks.13.self_attn.q_proj.weight",
+          "blocks.14.self_attn.o_proj.weight",
+          "blocks.14.self_attn.q_proj.weight",
+          "blocks.15.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.q_proj.weight",
+          "blocks.16.self_attn.o_proj.weight",
+          "blocks.16.self_attn.q_proj.weight",
+          "blocks.17.self_attn.o_proj.weight",
+          "blocks.17.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.o_proj.weight",
+          "blocks.18.self_attn.q_proj.weight",
+          "blocks.19.self_attn.o_proj.weight",
+          "blocks.19.self_attn.q_proj.weight",
+          "blocks.2.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.q_proj.weight",
+          "blocks.3.self_attn.o_proj.weight",
+          "blocks.3.self_attn.q_proj.weight",
+          "blocks.4.self_attn.o_proj.weight",
+          "blocks.4.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.o_proj.weight",
+          "blocks.5.self_attn.q_proj.weight",
+          "blocks.6.self_attn.o_proj.weight",
+          "blocks.6.self_attn.q_proj.weight",
+          "blocks.7.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.q_proj.weight",
+          "blocks.8.self_attn.o_proj.weight",
+          "blocks.8.self_attn.q_proj.weight",
+          "blocks.9.self_attn.o_proj.weight",
+          "blocks.9.self_attn.q_proj.weight"
+        ]
+      ],
+      "state_logical_bytes_excluding_masters": 1327833092
+    },
+    "initialization_seconds": 0.6570930419838987,
+    "targets_per_update": 32760,
+    "records": [
+      {
+        "index": 0,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.26828904094873,
+        "optimizer_seconds": 0.5744675000314601,
+        "total_seconds": 9.84275654098019,
+        "tokens_per_second": 3328.335905048973,
+        "peak_active_bytes": 11508538112,
+        "cache_bytes": 1124597760,
+        "mean_loss": 10.903714895248413,
+        "gradient_norm": 1.548723578453064
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.20953112503048,
+        "optimizer_seconds": 0.5689792910125107,
+        "total_seconds": 9.778510416042991,
+        "tokens_per_second": 3350.203518344953,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1143078932,
+        "mean_loss": 10.832905054092407,
+        "gradient_norm": 1.4635616540908813
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.219031332992017,
+        "optimizer_seconds": 0.5692614169674926,
+        "total_seconds": 9.78829274995951,
+        "tokens_per_second": 3346.8553543349544,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1114112040,
+        "mean_loss": 10.765293598175049,
+        "gradient_norm": 1.3386112451553345
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.244028624962084,
+        "optimizer_seconds": 0.5865831659757532,
+        "total_seconds": 9.830611790937837,
+        "tokens_per_second": 3332.447735368737,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1124597760,
+        "mean_loss": 10.70153558254242,
+        "gradient_norm": 1.218907356262207
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.19938170799287,
+        "optimizer_seconds": 0.5729306660359725,
+        "total_seconds": 9.772312374028843,
+        "tokens_per_second": 3352.3283687762423,
+        "peak_active_bytes": 11516930884,
+        "cache_bytes": 1123549224,
+        "mean_loss": 10.641106843948364,
+        "gradient_norm": 1.1374753713607788
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.165056624973658,
+        "optimizer_seconds": 0.568851916003041,
+        "total_seconds": 9.7339085409767,
+        "tokens_per_second": 3365.5545315728705,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1120010280,
+        "mean_loss": 10.583205103874207,
+        "gradient_norm": 1.102336049079895
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.228915875020903,
+        "optimizer_seconds": 0.5761753749684431,
+        "total_seconds": 9.805091249989346,
+        "tokens_per_second": 3341.1213791646865,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1130496020,
+        "mean_loss": 10.526869773864746,
+        "gradient_norm": 1.0895057916641235
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.251214166986756,
+        "optimizer_seconds": 0.5676674590213224,
+        "total_seconds": 9.818881626008078,
+        "tokens_per_second": 3336.4288569510704,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1120010280,
+        "mean_loss": 10.471173524856567,
+        "gradient_norm": 1.071242094039917
+      }
+    ],
+    "finite_final_state": true,
+    "steady_targets_per_second": 3345.533188294141,
+    "median_targets_per_second": 3341.1213791646865,
+    "peak_active_bytes": 11516930884,
+    "completed": true
+  },
+  {
+    "tag": "U2",
+    "mlx": "0.32.3",
+    "loss": "fused",
+    "checkpointing": "alternating",
+    "parameters": 298361856,
+    "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+    "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+    "ownership": {
+      "muon_tensors": 140,
+      "adamw_tensors": 42,
+      "muon_parameters": 264765440,
+      "adamw_parameters": 33596416,
+      "matrix_groups": [
+        [
+          "blocks.0.mlp.down_proj.weight",
+          "blocks.1.mlp.down_proj.weight",
+          "blocks.10.mlp.down_proj.weight",
+          "blocks.11.mlp.down_proj.weight",
+          "blocks.12.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.down_proj.weight",
+          "blocks.14.mlp.down_proj.weight",
+          "blocks.15.mlp.down_proj.weight",
+          "blocks.16.mlp.down_proj.weight",
+          "blocks.17.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.down_proj.weight",
+          "blocks.19.mlp.down_proj.weight",
+          "blocks.2.mlp.down_proj.weight",
+          "blocks.3.mlp.down_proj.weight",
+          "blocks.4.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.down_proj.weight",
+          "blocks.6.mlp.down_proj.weight",
+          "blocks.7.mlp.down_proj.weight",
+          "blocks.8.mlp.down_proj.weight",
+          "blocks.9.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.0.mlp.gate_proj.weight",
+          "blocks.0.mlp.up_proj.weight",
+          "blocks.1.mlp.gate_proj.weight",
+          "blocks.1.mlp.up_proj.weight",
+          "blocks.10.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.10.mlp.up_proj.weight",
+          "blocks.11.mlp.gate_proj.weight",
+          "blocks.11.mlp.up_proj.weight",
+          "blocks.12.mlp.gate_proj.weight",
+          "blocks.12.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.gate_proj.weight",
+          "blocks.13.mlp.up_proj.weight",
+          "blocks.14.mlp.gate_proj.weight",
+          "blocks.14.mlp.up_proj.weight",
+          "blocks.15.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.15.mlp.up_proj.weight",
+          "blocks.16.mlp.gate_proj.weight",
+          "blocks.16.mlp.up_proj.weight",
+          "blocks.17.mlp.gate_proj.weight",
+          "blocks.17.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.gate_proj.weight",
+          "blocks.18.mlp.up_proj.weight",
+          "blocks.19.mlp.gate_proj.weight",
+          "blocks.19.mlp.up_proj.weight",
+          "blocks.2.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.2.mlp.up_proj.weight",
+          "blocks.3.mlp.gate_proj.weight",
+          "blocks.3.mlp.up_proj.weight",
+          "blocks.4.mlp.gate_proj.weight",
+          "blocks.4.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.gate_proj.weight",
+          "blocks.5.mlp.up_proj.weight",
+          "blocks.6.mlp.gate_proj.weight",
+          "blocks.6.mlp.up_proj.weight",
+          "blocks.7.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.7.mlp.up_proj.weight",
+          "blocks.8.mlp.gate_proj.weight",
+          "blocks.8.mlp.up_proj.weight",
+          "blocks.9.mlp.gate_proj.weight",
+          "blocks.9.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.k_proj.weight",
+          "blocks.0.self_attn.v_proj.weight",
+          "blocks.1.self_attn.k_proj.weight",
+          "blocks.1.self_attn.v_proj.weight",
+          "blocks.10.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.v_proj.weight",
+          "blocks.11.self_attn.k_proj.weight",
+          "blocks.11.self_attn.v_proj.weight",
+          "blocks.12.self_attn.k_proj.weight",
+          "blocks.12.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.k_proj.weight",
+          "blocks.13.self_attn.v_proj.weight",
+          "blocks.14.self_attn.k_proj.weight",
+          "blocks.14.self_attn.v_proj.weight",
+          "blocks.15.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.v_proj.weight",
+          "blocks.16.self_attn.k_proj.weight",
+          "blocks.16.self_attn.v_proj.weight",
+          "blocks.17.self_attn.k_proj.weight",
+          "blocks.17.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.k_proj.weight",
+          "blocks.18.self_attn.v_proj.weight",
+          "blocks.19.self_attn.k_proj.weight",
+          "blocks.19.self_attn.v_proj.weight",
+          "blocks.2.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.v_proj.weight",
+          "blocks.3.self_attn.k_proj.weight",
+          "blocks.3.self_attn.v_proj.weight",
+          "blocks.4.self_attn.k_proj.weight",
+          "blocks.4.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.k_proj.weight",
+          "blocks.5.self_attn.v_proj.weight",
+          "blocks.6.self_attn.k_proj.weight",
+          "blocks.6.self_attn.v_proj.weight",
+          "blocks.7.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.v_proj.weight",
+          "blocks.8.self_attn.k_proj.weight",
+          "blocks.8.self_attn.v_proj.weight",
+          "blocks.9.self_attn.k_proj.weight",
+          "blocks.9.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.o_proj.weight",
+          "blocks.0.self_attn.q_proj.weight",
+          "blocks.1.self_attn.o_proj.weight",
+          "blocks.1.self_attn.q_proj.weight",
+          "blocks.10.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.q_proj.weight",
+          "blocks.11.self_attn.o_proj.weight",
+          "blocks.11.self_attn.q_proj.weight",
+          "blocks.12.self_attn.o_proj.weight",
+          "blocks.12.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.o_proj.weight",
+          "blocks.13.self_attn.q_proj.weight",
+          "blocks.14.self_attn.o_proj.weight",
+          "blocks.14.self_attn.q_proj.weight",
+          "blocks.15.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.q_proj.weight",
+          "blocks.16.self_attn.o_proj.weight",
+          "blocks.16.self_attn.q_proj.weight",
+          "blocks.17.self_attn.o_proj.weight",
+          "blocks.17.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.o_proj.weight",
+          "blocks.18.self_attn.q_proj.weight",
+          "blocks.19.self_attn.o_proj.weight",
+          "blocks.19.self_attn.q_proj.weight",
+          "blocks.2.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.q_proj.weight",
+          "blocks.3.self_attn.o_proj.weight",
+          "blocks.3.self_attn.q_proj.weight",
+          "blocks.4.self_attn.o_proj.weight",
+          "blocks.4.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.o_proj.weight",
+          "blocks.5.self_attn.q_proj.weight",
+          "blocks.6.self_attn.o_proj.weight",
+          "blocks.6.self_attn.q_proj.weight",
+          "blocks.7.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.q_proj.weight",
+          "blocks.8.self_attn.o_proj.weight",
+          "blocks.8.self_attn.q_proj.weight",
+          "blocks.9.self_attn.o_proj.weight",
+          "blocks.9.self_attn.q_proj.weight"
+        ]
+      ],
+      "state_logical_bytes_excluding_masters": 1327833092
+    },
+    "initialization_seconds": 0.6994178329478018,
+    "targets_per_update": 32760,
+    "records": [
+      {
+        "index": 0,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.248099667020142,
+        "optimizer_seconds": 0.5778065830236301,
+        "total_seconds": 9.825906250043772,
+        "tokens_per_second": 3334.0436155549583,
+        "peak_active_bytes": 11508538112,
+        "cache_bytes": 1135083520,
+        "mean_loss": 10.903714895248413,
+        "gradient_norm": 1.548723578453064
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.242501125030685,
+        "optimizer_seconds": 0.5665519579779357,
+        "total_seconds": 9.80905308300862,
+        "tokens_per_second": 3339.7719150635785,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1111490560,
+        "mean_loss": 10.832905054092407,
+        "gradient_norm": 1.4635616540908813
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.198259915981907,
+        "optimizer_seconds": 0.5618348330026492,
+        "total_seconds": 9.760094748984557,
+        "tokens_per_second": 3356.524792283227,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1133117480,
+        "mean_loss": 10.765300273895264,
+        "gradient_norm": 1.3383809328079224
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.233358833007514,
+        "optimizer_seconds": 0.5778939170413651,
+        "total_seconds": 9.81125275004888,
+        "tokens_per_second": 3339.023143587529,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1119354900,
+        "mean_loss": 10.701519250869751,
+        "gradient_norm": 1.2191253900527954
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.27429316699272,
+        "optimizer_seconds": 0.5680010420037434,
+        "total_seconds": 9.842294208996464,
+        "tokens_per_second": 3328.492250318563,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1117388820,
+        "mean_loss": 10.641098499298096,
+        "gradient_norm": 1.138145089149475
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.211319208960049,
+        "optimizer_seconds": 0.5619290829636157,
+        "total_seconds": 9.773248291923665,
+        "tokens_per_second": 3352.0073389593445,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1119354900,
+        "mean_loss": 10.583257913589478,
+        "gradient_norm": 1.1021698713302612
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.244784125010483,
+        "optimizer_seconds": 0.5745175420306623,
+        "total_seconds": 9.819301667041145,
+        "tokens_per_second": 3336.2861342737,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1133772820,
+        "mean_loss": 10.526926159858704,
+        "gradient_norm": 1.088969111442566
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.280197208980098,
+        "optimizer_seconds": 0.5673368750140071,
+        "total_seconds": 9.847534083994105,
+        "tokens_per_second": 3326.7211588784594,
+        "peak_active_bytes": 11508542276,
+        "cache_bytes": 1114112040,
+        "mean_loss": 10.471194505691528,
+        "gradient_norm": 1.07041335105896
+      }
+    ],
+    "finite_final_state": true,
+    "steady_targets_per_second": 3336.4816709791303,
+    "median_targets_per_second": 3336.2861342737,
+    "peak_active_bytes": 11508542276,
+    "completed": true
+  },
+  {
+    "tag": "B2",
+    "mlx": "0.32.3",
+    "loss": "composed",
+    "checkpointing": "alternating",
+    "parameters": 298361856,
+    "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+    "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+    "ownership": {
+      "muon_tensors": 140,
+      "adamw_tensors": 42,
+      "muon_parameters": 264765440,
+      "adamw_parameters": 33596416,
+      "matrix_groups": [
+        [
+          "blocks.0.mlp.down_proj.weight",
+          "blocks.1.mlp.down_proj.weight",
+          "blocks.10.mlp.down_proj.weight",
+          "blocks.11.mlp.down_proj.weight",
+          "blocks.12.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.down_proj.weight",
+          "blocks.14.mlp.down_proj.weight",
+          "blocks.15.mlp.down_proj.weight",
+          "blocks.16.mlp.down_proj.weight",
+          "blocks.17.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.down_proj.weight",
+          "blocks.19.mlp.down_proj.weight",
+          "blocks.2.mlp.down_proj.weight",
+          "blocks.3.mlp.down_proj.weight",
+          "blocks.4.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.down_proj.weight",
+          "blocks.6.mlp.down_proj.weight",
+          "blocks.7.mlp.down_proj.weight",
+          "blocks.8.mlp.down_proj.weight",
+          "blocks.9.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.0.mlp.gate_proj.weight",
+          "blocks.0.mlp.up_proj.weight",
+          "blocks.1.mlp.gate_proj.weight",
+          "blocks.1.mlp.up_proj.weight",
+          "blocks.10.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.10.mlp.up_proj.weight",
+          "blocks.11.mlp.gate_proj.weight",
+          "blocks.11.mlp.up_proj.weight",
+          "blocks.12.mlp.gate_proj.weight",
+          "blocks.12.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.gate_proj.weight",
+          "blocks.13.mlp.up_proj.weight",
+          "blocks.14.mlp.gate_proj.weight",
+          "blocks.14.mlp.up_proj.weight",
+          "blocks.15.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.15.mlp.up_proj.weight",
+          "blocks.16.mlp.gate_proj.weight",
+          "blocks.16.mlp.up_proj.weight",
+          "blocks.17.mlp.gate_proj.weight",
+          "blocks.17.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.gate_proj.weight",
+          "blocks.18.mlp.up_proj.weight",
+          "blocks.19.mlp.gate_proj.weight",
+          "blocks.19.mlp.up_proj.weight",
+          "blocks.2.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.2.mlp.up_proj.weight",
+          "blocks.3.mlp.gate_proj.weight",
+          "blocks.3.mlp.up_proj.weight",
+          "blocks.4.mlp.gate_proj.weight",
+          "blocks.4.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.gate_proj.weight",
+          "blocks.5.mlp.up_proj.weight",
+          "blocks.6.mlp.gate_proj.weight",
+          "blocks.6.mlp.up_proj.weight",
+          "blocks.7.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.7.mlp.up_proj.weight",
+          "blocks.8.mlp.gate_proj.weight",
+          "blocks.8.mlp.up_proj.weight",
+          "blocks.9.mlp.gate_proj.weight",
+          "blocks.9.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.k_proj.weight",
+          "blocks.0.self_attn.v_proj.weight",
+          "blocks.1.self_attn.k_proj.weight",
+          "blocks.1.self_attn.v_proj.weight",
+          "blocks.10.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.v_proj.weight",
+          "blocks.11.self_attn.k_proj.weight",
+          "blocks.11.self_attn.v_proj.weight",
+          "blocks.12.self_attn.k_proj.weight",
+          "blocks.12.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.k_proj.weight",
+          "blocks.13.self_attn.v_proj.weight",
+          "blocks.14.self_attn.k_proj.weight",
+          "blocks.14.self_attn.v_proj.weight",
+          "blocks.15.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.v_proj.weight",
+          "blocks.16.self_attn.k_proj.weight",
+          "blocks.16.self_attn.v_proj.weight",
+          "blocks.17.self_attn.k_proj.weight",
+          "blocks.17.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.k_proj.weight",
+          "blocks.18.self_attn.v_proj.weight",
+          "blocks.19.self_attn.k_proj.weight",
+          "blocks.19.self_attn.v_proj.weight",
+          "blocks.2.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.v_proj.weight",
+          "blocks.3.self_attn.k_proj.weight",
+          "blocks.3.self_attn.v_proj.weight",
+          "blocks.4.self_attn.k_proj.weight",
+          "blocks.4.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.k_proj.weight",
+          "blocks.5.self_attn.v_proj.weight",
+          "blocks.6.self_attn.k_proj.weight",
+          "blocks.6.self_attn.v_proj.weight",
+          "blocks.7.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.v_proj.weight",
+          "blocks.8.self_attn.k_proj.weight",
+          "blocks.8.self_attn.v_proj.weight",
+          "blocks.9.self_attn.k_proj.weight",
+          "blocks.9.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.o_proj.weight",
+          "blocks.0.self_attn.q_proj.weight",
+          "blocks.1.self_attn.o_proj.weight",
+          "blocks.1.self_attn.q_proj.weight",
+          "blocks.10.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.q_proj.weight",
+          "blocks.11.self_attn.o_proj.weight",
+          "blocks.11.self_attn.q_proj.weight",
+          "blocks.12.self_attn.o_proj.weight",
+          "blocks.12.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.o_proj.weight",
+          "blocks.13.self_attn.q_proj.weight",
+          "blocks.14.self_attn.o_proj.weight",
+          "blocks.14.self_attn.q_proj.weight",
+          "blocks.15.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.q_proj.weight",
+          "blocks.16.self_attn.o_proj.weight",
+          "blocks.16.self_attn.q_proj.weight",
+          "blocks.17.self_attn.o_proj.weight",
+          "blocks.17.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.o_proj.weight",
+          "blocks.18.self_attn.q_proj.weight",
+          "blocks.19.self_attn.o_proj.weight",
+          "blocks.19.self_attn.q_proj.weight",
+          "blocks.2.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.q_proj.weight",
+          "blocks.3.self_attn.o_proj.weight",
+          "blocks.3.self_attn.q_proj.weight",
+          "blocks.4.self_attn.o_proj.weight",
+          "blocks.4.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.o_proj.weight",
+          "blocks.5.self_attn.q_proj.weight",
+          "blocks.6.self_attn.o_proj.weight",
+          "blocks.6.self_attn.q_proj.weight",
+          "blocks.7.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.q_proj.weight",
+          "blocks.8.self_attn.o_proj.weight",
+          "blocks.8.self_attn.q_proj.weight",
+          "blocks.9.self_attn.o_proj.weight",
+          "blocks.9.self_attn.q_proj.weight"
+        ]
+      ],
+      "state_logical_bytes_excluding_masters": 1327833092
+    },
+    "initialization_seconds": 0.6701484579825774,
+    "targets_per_update": 32760,
+    "records": [
+      {
+        "index": 0,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.397414375038352,
+        "optimizer_seconds": 0.5842505420441739,
+        "total_seconds": 9.981664917082526,
+        "tokens_per_second": 3282.0176064951697,
+        "peak_active_bytes": 12285336320,
+        "cache_bytes": 1104936980,
+        "mean_loss": 10.903714895248413,
+        "gradient_norm": 1.5490421056747437
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.30806562496582,
+        "optimizer_seconds": 0.5664364999975078,
+        "total_seconds": 9.874502124963328,
+        "tokens_per_second": 3317.635622071595,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1140981800,
+        "mean_loss": 10.832969307899475,
+        "gradient_norm": 1.4626903533935547
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.288393458002247,
+        "optimizer_seconds": 0.5677679579821415,
+        "total_seconds": 9.856161415984388,
+        "tokens_per_second": 3323.809200899545,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1119354920,
+        "mean_loss": 10.76524043083191,
+        "gradient_norm": 1.3382761478424072
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.357758458005264,
+        "optimizer_seconds": 0.5709722500178032,
+        "total_seconds": 9.928730708023068,
+        "tokens_per_second": 3299.5154127332476,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1117388820,
+        "mean_loss": 10.701469540596008,
+        "gradient_norm": 1.219423532485962
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.386414667009376,
+        "optimizer_seconds": 0.5686315829516388,
+        "total_seconds": 9.955046249961015,
+        "tokens_per_second": 3290.793350169347,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1119354900,
+        "mean_loss": 10.641040682792664,
+        "gradient_norm": 1.1375683546066284
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.268538290983997,
+        "optimizer_seconds": 0.5611012089648284,
+        "total_seconds": 9.829639499948826,
+        "tokens_per_second": 3332.7773617914017,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1131806720,
+        "mean_loss": 10.583304166793823,
+        "gradient_norm": 1.101846694946289
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.317855417029932,
+        "optimizer_seconds": 0.5748171670129523,
+        "total_seconds": 9.892672584042884,
+        "tokens_per_second": 3311.541923750985,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1124597780,
+        "mean_loss": 10.526944994926453,
+        "gradient_norm": 1.0898981094360352
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.400293332990259,
+        "optimizer_seconds": 0.5683432499645278,
+        "total_seconds": 9.968636582954787,
+        "tokens_per_second": 3286.306981640378,
+        "peak_active_bytes": 12285340484,
+        "cache_bytes": 1119354940,
+        "mean_loss": 10.4710932970047,
+        "gradient_norm": 1.0708940029144287
+      }
+    ],
+    "finite_final_state": true,
+    "steady_targets_per_second": 3304.1030068278747,
+    "median_targets_per_second": 3299.5154127332476,
+    "peak_active_bytes": 12285340484,
+    "completed": true
+  },
+  {
+    "tag": "A2",
+    "mlx": "0.32.2",
+    "loss": "composed",
+    "checkpointing": "alternating",
+    "parameters": 298361856,
+    "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+    "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+    "ownership": {
+      "muon_tensors": 140,
+      "adamw_tensors": 42,
+      "muon_parameters": 264765440,
+      "adamw_parameters": 33596416,
+      "matrix_groups": [
+        [
+          "blocks.0.mlp.down_proj.weight",
+          "blocks.1.mlp.down_proj.weight",
+          "blocks.10.mlp.down_proj.weight",
+          "blocks.11.mlp.down_proj.weight",
+          "blocks.12.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.down_proj.weight",
+          "blocks.14.mlp.down_proj.weight",
+          "blocks.15.mlp.down_proj.weight",
+          "blocks.16.mlp.down_proj.weight",
+          "blocks.17.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.down_proj.weight",
+          "blocks.19.mlp.down_proj.weight",
+          "blocks.2.mlp.down_proj.weight",
+          "blocks.3.mlp.down_proj.weight",
+          "blocks.4.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.down_proj.weight",
+          "blocks.6.mlp.down_proj.weight",
+          "blocks.7.mlp.down_proj.weight",
+          "blocks.8.mlp.down_proj.weight",
+          "blocks.9.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.0.mlp.gate_proj.weight",
+          "blocks.0.mlp.up_proj.weight",
+          "blocks.1.mlp.gate_proj.weight",
+          "blocks.1.mlp.up_proj.weight",
+          "blocks.10.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.10.mlp.up_proj.weight",
+          "blocks.11.mlp.gate_proj.weight",
+          "blocks.11.mlp.up_proj.weight",
+          "blocks.12.mlp.gate_proj.weight",
+          "blocks.12.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.gate_proj.weight",
+          "blocks.13.mlp.up_proj.weight",
+          "blocks.14.mlp.gate_proj.weight",
+          "blocks.14.mlp.up_proj.weight",
+          "blocks.15.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.15.mlp.up_proj.weight",
+          "blocks.16.mlp.gate_proj.weight",
+          "blocks.16.mlp.up_proj.weight",
+          "blocks.17.mlp.gate_proj.weight",
+          "blocks.17.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.gate_proj.weight",
+          "blocks.18.mlp.up_proj.weight",
+          "blocks.19.mlp.gate_proj.weight",
+          "blocks.19.mlp.up_proj.weight",
+          "blocks.2.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.2.mlp.up_proj.weight",
+          "blocks.3.mlp.gate_proj.weight",
+          "blocks.3.mlp.up_proj.weight",
+          "blocks.4.mlp.gate_proj.weight",
+          "blocks.4.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.gate_proj.weight",
+          "blocks.5.mlp.up_proj.weight",
+          "blocks.6.mlp.gate_proj.weight",
+          "blocks.6.mlp.up_proj.weight",
+          "blocks.7.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.7.mlp.up_proj.weight",
+          "blocks.8.mlp.gate_proj.weight",
+          "blocks.8.mlp.up_proj.weight",
+          "blocks.9.mlp.gate_proj.weight",
+          "blocks.9.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.k_proj.weight",
+          "blocks.0.self_attn.v_proj.weight",
+          "blocks.1.self_attn.k_proj.weight",
+          "blocks.1.self_attn.v_proj.weight",
+          "blocks.10.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.v_proj.weight",
+          "blocks.11.self_attn.k_proj.weight",
+          "blocks.11.self_attn.v_proj.weight",
+          "blocks.12.self_attn.k_proj.weight",
+          "blocks.12.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.k_proj.weight",
+          "blocks.13.self_attn.v_proj.weight",
+          "blocks.14.self_attn.k_proj.weight",
+          "blocks.14.self_attn.v_proj.weight",
+          "blocks.15.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.v_proj.weight",
+          "blocks.16.self_attn.k_proj.weight",
+          "blocks.16.self_attn.v_proj.weight",
+          "blocks.17.self_attn.k_proj.weight",
+          "blocks.17.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.k_proj.weight",
+          "blocks.18.self_attn.v_proj.weight",
+          "blocks.19.self_attn.k_proj.weight",
+          "blocks.19.self_attn.v_proj.weight",
+          "blocks.2.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.v_proj.weight",
+          "blocks.3.self_attn.k_proj.weight",
+          "blocks.3.self_attn.v_proj.weight",
+          "blocks.4.self_attn.k_proj.weight",
+          "blocks.4.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.k_proj.weight",
+          "blocks.5.self_attn.v_proj.weight",
+          "blocks.6.self_attn.k_proj.weight",
+          "blocks.6.self_attn.v_proj.weight",
+          "blocks.7.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.v_proj.weight",
+          "blocks.8.self_attn.k_proj.weight",
+          "blocks.8.self_attn.v_proj.weight",
+          "blocks.9.self_attn.k_proj.weight",
+          "blocks.9.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.o_proj.weight",
+          "blocks.0.self_attn.q_proj.weight",
+          "blocks.1.self_attn.o_proj.weight",
+          "blocks.1.self_attn.q_proj.weight",
+          "blocks.10.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.q_proj.weight",
+          "blocks.11.self_attn.o_proj.weight",
+          "blocks.11.self_attn.q_proj.weight",
+          "blocks.12.self_attn.o_proj.weight",
+          "blocks.12.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.o_proj.weight",
+          "blocks.13.self_attn.q_proj.weight",
+          "blocks.14.self_attn.o_proj.weight",
+          "blocks.14.self_attn.q_proj.weight",
+          "blocks.15.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.q_proj.weight",
+          "blocks.16.self_attn.o_proj.weight",
+          "blocks.16.self_attn.q_proj.weight",
+          "blocks.17.self_attn.o_proj.weight",
+          "blocks.17.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.o_proj.weight",
+          "blocks.18.self_attn.q_proj.weight",
+          "blocks.19.self_attn.o_proj.weight",
+          "blocks.19.self_attn.q_proj.weight",
+          "blocks.2.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.q_proj.weight",
+          "blocks.3.self_attn.o_proj.weight",
+          "blocks.3.self_attn.q_proj.weight",
+          "blocks.4.self_attn.o_proj.weight",
+          "blocks.4.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.o_proj.weight",
+          "blocks.5.self_attn.q_proj.weight",
+          "blocks.6.self_attn.o_proj.weight",
+          "blocks.6.self_attn.q_proj.weight",
+          "blocks.7.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.q_proj.weight",
+          "blocks.8.self_attn.o_proj.weight",
+          "blocks.8.self_attn.q_proj.weight",
+          "blocks.9.self_attn.o_proj.weight",
+          "blocks.9.self_attn.q_proj.weight"
+        ]
+      ],
+      "state_logical_bytes_excluding_masters": 1327833092
+    },
+    "initialization_seconds": 0.7045691249659285,
+    "targets_per_update": 32760,
+    "records": [
+      {
+        "index": 0,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.310350416984875,
+        "optimizer_seconds": 0.5861437090206891,
+        "total_seconds": 9.896494126005564,
+        "tokens_per_second": 3310.2631682380065,
+        "peak_active_bytes": 12285336714,
+        "cache_bytes": 1105592340,
+        "mean_loss": 10.903714895248413,
+        "gradient_norm": 1.5490421056747437
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.302437166974414,
+        "optimizer_seconds": 0.5632900830241852,
+        "total_seconds": 9.8657272499986,
+        "tokens_per_second": 3320.5864271186547,
+        "peak_active_bytes": 12285340878,
+        "cache_bytes": 1119354900,
+        "mean_loss": 10.832941770553589,
+        "gradient_norm": 1.4630028009414673
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 9.389331749989651,
+        "optimizer_seconds": 0.5644054169533774,
+        "total_seconds": 9.953737166943029,
+        "tokens_per_second": 3291.2261445678882,
+        "peak_active_bytes": 12285340878,
+        "cache_bytes": 1120010280,
+        "mean_loss": 10.765275597572327,
+        "gradient_norm": 1.3383736610412598
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.354217084008269,
+        "optimizer_seconds": 0.5586503330268897,
+        "total_seconds": 9.912867417035159,
+        "tokens_per_second": 3304.7955371321,
+        "peak_active_bytes": 12285340878,
+        "cache_bytes": 1119354900,
+        "mean_loss": 10.701476454734802,
+        "gradient_norm": 1.2193903923034668
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.322109917004127,
+        "optimizer_seconds": 0.5675211670459248,
+        "total_seconds": 9.889631084050052,
+        "tokens_per_second": 3312.56036970228,
+        "peak_active_bytes": 12285340878,
+        "cache_bytes": 1136394260,
+        "mean_loss": 10.641169309616089,
+        "gradient_norm": 1.1379568576812744
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.393862708995584,
+        "optimizer_seconds": 0.5638191250036471,
+        "total_seconds": 9.957681833999231,
+        "tokens_per_second": 3289.9223480052524,
+        "peak_active_bytes": 12285340878,
+        "cache_bytes": 1117388840,
+        "mean_loss": 10.583307266235352,
+        "gradient_norm": 1.1017333269119263
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.375673124974128,
+        "optimizer_seconds": 0.5702846249914728,
+        "total_seconds": 9.9459577499656,
+        "tokens_per_second": 3293.8004386870944,
+        "peak_active_bytes": 12285340878,
+        "cache_bytes": 1120010300,
+        "mean_loss": 10.52678632736206,
+        "gradient_norm": 1.0893634557724
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 9.283780040976126,
+        "optimizer_seconds": 0.5638789579970762,
+        "total_seconds": 9.847658998973202,
+        "tokens_per_second": 3326.678960290545,
+        "peak_active_bytes": 12285340878,
+        "cache_bytes": 1111490560,
+        "mean_loss": 10.471183061599731,
+        "gradient_norm": 1.070845603942871
+      }
+    ],
+    "finite_final_state": true,
+    "steady_targets_per_second": 3305.4984610414676,
+    "median_targets_per_second": 3304.7955371321,
+    "peak_active_bytes": 12285340878,
+    "completed": true
+  },
+  {
+    "tag": "E1",
+    "mlx": "0.32.3",
+    "loss": "composed",
+    "checkpointing": "none",
+    "parameters": 298361856,
+    "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+    "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+    "ownership": {
+      "muon_tensors": 140,
+      "adamw_tensors": 42,
+      "muon_parameters": 264765440,
+      "adamw_parameters": 33596416,
+      "matrix_groups": [
+        [
+          "blocks.0.mlp.down_proj.weight",
+          "blocks.1.mlp.down_proj.weight",
+          "blocks.10.mlp.down_proj.weight",
+          "blocks.11.mlp.down_proj.weight",
+          "blocks.12.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.down_proj.weight",
+          "blocks.14.mlp.down_proj.weight",
+          "blocks.15.mlp.down_proj.weight",
+          "blocks.16.mlp.down_proj.weight",
+          "blocks.17.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.down_proj.weight",
+          "blocks.19.mlp.down_proj.weight",
+          "blocks.2.mlp.down_proj.weight",
+          "blocks.3.mlp.down_proj.weight",
+          "blocks.4.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.down_proj.weight",
+          "blocks.6.mlp.down_proj.weight",
+          "blocks.7.mlp.down_proj.weight",
+          "blocks.8.mlp.down_proj.weight",
+          "blocks.9.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.0.mlp.gate_proj.weight",
+          "blocks.0.mlp.up_proj.weight",
+          "blocks.1.mlp.gate_proj.weight",
+          "blocks.1.mlp.up_proj.weight",
+          "blocks.10.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.10.mlp.up_proj.weight",
+          "blocks.11.mlp.gate_proj.weight",
+          "blocks.11.mlp.up_proj.weight",
+          "blocks.12.mlp.gate_proj.weight",
+          "blocks.12.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.gate_proj.weight",
+          "blocks.13.mlp.up_proj.weight",
+          "blocks.14.mlp.gate_proj.weight",
+          "blocks.14.mlp.up_proj.weight",
+          "blocks.15.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.15.mlp.up_proj.weight",
+          "blocks.16.mlp.gate_proj.weight",
+          "blocks.16.mlp.up_proj.weight",
+          "blocks.17.mlp.gate_proj.weight",
+          "blocks.17.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.gate_proj.weight",
+          "blocks.18.mlp.up_proj.weight",
+          "blocks.19.mlp.gate_proj.weight",
+          "blocks.19.mlp.up_proj.weight",
+          "blocks.2.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.2.mlp.up_proj.weight",
+          "blocks.3.mlp.gate_proj.weight",
+          "blocks.3.mlp.up_proj.weight",
+          "blocks.4.mlp.gate_proj.weight",
+          "blocks.4.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.gate_proj.weight",
+          "blocks.5.mlp.up_proj.weight",
+          "blocks.6.mlp.gate_proj.weight",
+          "blocks.6.mlp.up_proj.weight",
+          "blocks.7.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.7.mlp.up_proj.weight",
+          "blocks.8.mlp.gate_proj.weight",
+          "blocks.8.mlp.up_proj.weight",
+          "blocks.9.mlp.gate_proj.weight",
+          "blocks.9.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.k_proj.weight",
+          "blocks.0.self_attn.v_proj.weight",
+          "blocks.1.self_attn.k_proj.weight",
+          "blocks.1.self_attn.v_proj.weight",
+          "blocks.10.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.v_proj.weight",
+          "blocks.11.self_attn.k_proj.weight",
+          "blocks.11.self_attn.v_proj.weight",
+          "blocks.12.self_attn.k_proj.weight",
+          "blocks.12.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.k_proj.weight",
+          "blocks.13.self_attn.v_proj.weight",
+          "blocks.14.self_attn.k_proj.weight",
+          "blocks.14.self_attn.v_proj.weight",
+          "blocks.15.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.v_proj.weight",
+          "blocks.16.self_attn.k_proj.weight",
+          "blocks.16.self_attn.v_proj.weight",
+          "blocks.17.self_attn.k_proj.weight",
+          "blocks.17.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.k_proj.weight",
+          "blocks.18.self_attn.v_proj.weight",
+          "blocks.19.self_attn.k_proj.weight",
+          "blocks.19.self_attn.v_proj.weight",
+          "blocks.2.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.v_proj.weight",
+          "blocks.3.self_attn.k_proj.weight",
+          "blocks.3.self_attn.v_proj.weight",
+          "blocks.4.self_attn.k_proj.weight",
+          "blocks.4.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.k_proj.weight",
+          "blocks.5.self_attn.v_proj.weight",
+          "blocks.6.self_attn.k_proj.weight",
+          "blocks.6.self_attn.v_proj.weight",
+          "blocks.7.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.v_proj.weight",
+          "blocks.8.self_attn.k_proj.weight",
+          "blocks.8.self_attn.v_proj.weight",
+          "blocks.9.self_attn.k_proj.weight",
+          "blocks.9.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.o_proj.weight",
+          "blocks.0.self_attn.q_proj.weight",
+          "blocks.1.self_attn.o_proj.weight",
+          "blocks.1.self_attn.q_proj.weight",
+          "blocks.10.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.q_proj.weight",
+          "blocks.11.self_attn.o_proj.weight",
+          "blocks.11.self_attn.q_proj.weight",
+          "blocks.12.self_attn.o_proj.weight",
+          "blocks.12.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.o_proj.weight",
+          "blocks.13.self_attn.q_proj.weight",
+          "blocks.14.self_attn.o_proj.weight",
+          "blocks.14.self_attn.q_proj.weight",
+          "blocks.15.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.q_proj.weight",
+          "blocks.16.self_attn.o_proj.weight",
+          "blocks.16.self_attn.q_proj.weight",
+          "blocks.17.self_attn.o_proj.weight",
+          "blocks.17.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.o_proj.weight",
+          "blocks.18.self_attn.q_proj.weight",
+          "blocks.19.self_attn.o_proj.weight",
+          "blocks.19.self_attn.q_proj.weight",
+          "blocks.2.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.q_proj.weight",
+          "blocks.3.self_attn.o_proj.weight",
+          "blocks.3.self_attn.q_proj.weight",
+          "blocks.4.self_attn.o_proj.weight",
+          "blocks.4.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.o_proj.weight",
+          "blocks.5.self_attn.q_proj.weight",
+          "blocks.6.self_attn.o_proj.weight",
+          "blocks.6.self_attn.q_proj.weight",
+          "blocks.7.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.q_proj.weight",
+          "blocks.8.self_attn.o_proj.weight",
+          "blocks.8.self_attn.q_proj.weight",
+          "blocks.9.self_attn.o_proj.weight",
+          "blocks.9.self_attn.q_proj.weight"
+        ]
+      ],
+      "state_logical_bytes_excluding_masters": 1327833092
+    },
+    "initialization_seconds": 0.6518191249924712,
+    "targets_per_update": 32760,
+    "records": [
+      {
+        "index": 0,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 8.317572542000562,
+        "optimizer_seconds": 0.5717681249952875,
+        "total_seconds": 8.88934066699585,
+        "tokens_per_second": 3685.3126938458568,
+        "peak_active_bytes": 17013267200,
+        "cache_bytes": 1131806760,
+        "mean_loss": 10.903714895248413,
+        "gradient_norm": 1.5490421056747437
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 8.314031791000161,
+        "optimizer_seconds": 0.5671171660069376,
+        "total_seconds": 8.881148957007099,
+        "tokens_per_second": 3688.711917634579,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1124597760,
+        "mean_loss": 10.832969307899475,
+        "gradient_norm": 1.4626903533935547
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 8.385484958009329,
+        "optimizer_seconds": 0.5697347500245087,
+        "total_seconds": 8.955219708033837,
+        "tokens_per_second": 3658.2017044886798,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1104936980,
+        "mean_loss": 10.765258193016052,
+        "gradient_norm": 1.3382937908172607
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.39172666601371,
+        "optimizer_seconds": 0.565124457993079,
+        "total_seconds": 8.95685112400679,
+        "tokens_per_second": 3657.535393459239,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1129840660,
+        "mean_loss": 10.701569080352783,
+        "gradient_norm": 1.2189007997512817
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.334574999986216,
+        "optimizer_seconds": 0.5662966659874655,
+        "total_seconds": 8.900871665973682,
+        "tokens_per_second": 3680.538404484043,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1111490560,
+        "mean_loss": 10.641039371490479,
+        "gradient_norm": 1.1372041702270508
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.35774358396884,
+        "optimizer_seconds": 0.570934750023298,
+        "total_seconds": 8.928678333992139,
+        "tokens_per_second": 3669.0760686584777,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1119354920,
+        "mean_loss": 10.583255410194397,
+        "gradient_norm": 1.1017820835113525
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.40979350003181,
+        "optimizer_seconds": 0.5704009580076672,
+        "total_seconds": 8.980194458039477,
+        "tokens_per_second": 3648.027907755579,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1135083540,
+        "mean_loss": 10.526818633079529,
+        "gradient_norm": 1.0894948244094849
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.363622292003129,
+        "optimizer_seconds": 0.5604584580287337,
+        "total_seconds": 8.924080750031862,
+        "tokens_per_second": 3670.96633453065,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1120665620,
+        "mean_loss": 10.471126794815063,
+        "gradient_norm": 1.070488452911377
+      }
+    ],
+    "finite_final_state": true,
+    "steady_targets_per_second": 3665.1940280114472,
+    "median_targets_per_second": 3669.0760686584777,
+    "peak_active_bytes": 17013271364,
+    "completed": true
+  },
+  {
+    "tag": "E2",
+    "mlx": "0.32.3",
+    "loss": "composed",
+    "checkpointing": "none",
+    "parameters": 298361856,
+    "initialization_sha256": "5439c749b50d2402954e5fe7c9e829eeaadcc0659c66abfe7f1e337a03ff750c",
+    "input_sha256": "42d2d1c29c693c53b917bace1c1291f5e260ad127533c28265e75424eea88a0a",
+    "ownership": {
+      "muon_tensors": 140,
+      "adamw_tensors": 42,
+      "muon_parameters": 264765440,
+      "adamw_parameters": 33596416,
+      "matrix_groups": [
+        [
+          "blocks.0.mlp.down_proj.weight",
+          "blocks.1.mlp.down_proj.weight",
+          "blocks.10.mlp.down_proj.weight",
+          "blocks.11.mlp.down_proj.weight",
+          "blocks.12.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.down_proj.weight",
+          "blocks.14.mlp.down_proj.weight",
+          "blocks.15.mlp.down_proj.weight",
+          "blocks.16.mlp.down_proj.weight",
+          "blocks.17.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.down_proj.weight",
+          "blocks.19.mlp.down_proj.weight",
+          "blocks.2.mlp.down_proj.weight",
+          "blocks.3.mlp.down_proj.weight",
+          "blocks.4.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.down_proj.weight",
+          "blocks.6.mlp.down_proj.weight",
+          "blocks.7.mlp.down_proj.weight",
+          "blocks.8.mlp.down_proj.weight",
+          "blocks.9.mlp.down_proj.weight"
+        ],
+        [
+          "blocks.0.mlp.gate_proj.weight",
+          "blocks.0.mlp.up_proj.weight",
+          "blocks.1.mlp.gate_proj.weight",
+          "blocks.1.mlp.up_proj.weight",
+          "blocks.10.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.10.mlp.up_proj.weight",
+          "blocks.11.mlp.gate_proj.weight",
+          "blocks.11.mlp.up_proj.weight",
+          "blocks.12.mlp.gate_proj.weight",
+          "blocks.12.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.13.mlp.gate_proj.weight",
+          "blocks.13.mlp.up_proj.weight",
+          "blocks.14.mlp.gate_proj.weight",
+          "blocks.14.mlp.up_proj.weight",
+          "blocks.15.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.15.mlp.up_proj.weight",
+          "blocks.16.mlp.gate_proj.weight",
+          "blocks.16.mlp.up_proj.weight",
+          "blocks.17.mlp.gate_proj.weight",
+          "blocks.17.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.18.mlp.gate_proj.weight",
+          "blocks.18.mlp.up_proj.weight",
+          "blocks.19.mlp.gate_proj.weight",
+          "blocks.19.mlp.up_proj.weight",
+          "blocks.2.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.2.mlp.up_proj.weight",
+          "blocks.3.mlp.gate_proj.weight",
+          "blocks.3.mlp.up_proj.weight",
+          "blocks.4.mlp.gate_proj.weight",
+          "blocks.4.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.5.mlp.gate_proj.weight",
+          "blocks.5.mlp.up_proj.weight",
+          "blocks.6.mlp.gate_proj.weight",
+          "blocks.6.mlp.up_proj.weight",
+          "blocks.7.mlp.gate_proj.weight"
+        ],
+        [
+          "blocks.7.mlp.up_proj.weight",
+          "blocks.8.mlp.gate_proj.weight",
+          "blocks.8.mlp.up_proj.weight",
+          "blocks.9.mlp.gate_proj.weight",
+          "blocks.9.mlp.up_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.k_proj.weight",
+          "blocks.0.self_attn.v_proj.weight",
+          "blocks.1.self_attn.k_proj.weight",
+          "blocks.1.self_attn.v_proj.weight",
+          "blocks.10.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.v_proj.weight",
+          "blocks.11.self_attn.k_proj.weight",
+          "blocks.11.self_attn.v_proj.weight",
+          "blocks.12.self_attn.k_proj.weight",
+          "blocks.12.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.k_proj.weight",
+          "blocks.13.self_attn.v_proj.weight",
+          "blocks.14.self_attn.k_proj.weight",
+          "blocks.14.self_attn.v_proj.weight",
+          "blocks.15.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.v_proj.weight",
+          "blocks.16.self_attn.k_proj.weight",
+          "blocks.16.self_attn.v_proj.weight",
+          "blocks.17.self_attn.k_proj.weight",
+          "blocks.17.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.k_proj.weight",
+          "blocks.18.self_attn.v_proj.weight",
+          "blocks.19.self_attn.k_proj.weight",
+          "blocks.19.self_attn.v_proj.weight",
+          "blocks.2.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.v_proj.weight",
+          "blocks.3.self_attn.k_proj.weight",
+          "blocks.3.self_attn.v_proj.weight",
+          "blocks.4.self_attn.k_proj.weight",
+          "blocks.4.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.k_proj.weight",
+          "blocks.5.self_attn.v_proj.weight",
+          "blocks.6.self_attn.k_proj.weight",
+          "blocks.6.self_attn.v_proj.weight",
+          "blocks.7.self_attn.k_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.v_proj.weight",
+          "blocks.8.self_attn.k_proj.weight",
+          "blocks.8.self_attn.v_proj.weight",
+          "blocks.9.self_attn.k_proj.weight",
+          "blocks.9.self_attn.v_proj.weight"
+        ],
+        [
+          "blocks.0.self_attn.o_proj.weight",
+          "blocks.0.self_attn.q_proj.weight",
+          "blocks.1.self_attn.o_proj.weight",
+          "blocks.1.self_attn.q_proj.weight",
+          "blocks.10.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.10.self_attn.q_proj.weight",
+          "blocks.11.self_attn.o_proj.weight",
+          "blocks.11.self_attn.q_proj.weight",
+          "blocks.12.self_attn.o_proj.weight",
+          "blocks.12.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.13.self_attn.o_proj.weight",
+          "blocks.13.self_attn.q_proj.weight",
+          "blocks.14.self_attn.o_proj.weight",
+          "blocks.14.self_attn.q_proj.weight",
+          "blocks.15.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.15.self_attn.q_proj.weight",
+          "blocks.16.self_attn.o_proj.weight",
+          "blocks.16.self_attn.q_proj.weight",
+          "blocks.17.self_attn.o_proj.weight",
+          "blocks.17.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.18.self_attn.o_proj.weight",
+          "blocks.18.self_attn.q_proj.weight",
+          "blocks.19.self_attn.o_proj.weight",
+          "blocks.19.self_attn.q_proj.weight",
+          "blocks.2.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.2.self_attn.q_proj.weight",
+          "blocks.3.self_attn.o_proj.weight",
+          "blocks.3.self_attn.q_proj.weight",
+          "blocks.4.self_attn.o_proj.weight",
+          "blocks.4.self_attn.q_proj.weight"
+        ],
+        [
+          "blocks.5.self_attn.o_proj.weight",
+          "blocks.5.self_attn.q_proj.weight",
+          "blocks.6.self_attn.o_proj.weight",
+          "blocks.6.self_attn.q_proj.weight",
+          "blocks.7.self_attn.o_proj.weight"
+        ],
+        [
+          "blocks.7.self_attn.q_proj.weight",
+          "blocks.8.self_attn.o_proj.weight",
+          "blocks.8.self_attn.q_proj.weight",
+          "blocks.9.self_attn.o_proj.weight",
+          "blocks.9.self_attn.q_proj.weight"
+        ]
+      ],
+      "state_logical_bytes_excluding_masters": 1327833092
+    },
+    "initialization_seconds": 0.6990844589890912,
+    "targets_per_update": 32760,
+    "records": [
+      {
+        "index": 0,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 8.348793416982517,
+        "optimizer_seconds": 0.5825098750065081,
+        "total_seconds": 8.931303291989025,
+        "tokens_per_second": 3667.99770749967,
+        "peak_active_bytes": 17013267200,
+        "cache_bytes": 1119354920,
+        "mean_loss": 10.903714895248413,
+        "gradient_norm": 1.5490421056747437
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 8.371310583024751,
+        "optimizer_seconds": 0.5676646250067279,
+        "total_seconds": 8.93897520803148,
+        "tokens_per_second": 3664.8496318197454,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1111490580,
+        "mean_loss": 10.832969307899475,
+        "gradient_norm": 1.4626903533935547
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "model_backward_accumulation_seconds": 8.404377500002738,
+        "optimizer_seconds": 0.5681410410325043,
+        "total_seconds": 8.972518541035242,
+        "tokens_per_second": 3651.1487661100086,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1121714216,
+        "mean_loss": 10.76529836654663,
+        "gradient_norm": 1.338415265083313
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.474170583009254,
+        "optimizer_seconds": 0.5856969999731518,
+        "total_seconds": 9.059867582982406,
+        "tokens_per_second": 3615.9468888413685,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1129840660,
+        "mean_loss": 10.701550960540771,
+        "gradient_norm": 1.2189602851867676
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.520123165973928,
+        "optimizer_seconds": 0.5619071660330519,
+        "total_seconds": 9.08203033200698,
+        "tokens_per_second": 3607.122945245722,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1131151380,
+        "mean_loss": 10.641206741333008,
+        "gradient_norm": 1.1378135681152344
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.339500667003449,
+        "optimizer_seconds": 0.562635499984026,
+        "total_seconds": 8.902136166987475,
+        "tokens_per_second": 3680.015603612828,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1128792084,
+        "mean_loss": 10.583234190940857,
+        "gradient_norm": 1.1018824577331543
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.318568166985642,
+        "optimizer_seconds": 0.5601494580041617,
+        "total_seconds": 8.878717624989804,
+        "tokens_per_second": 3689.722027851699,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1111490560,
+        "mean_loss": 10.526816606521606,
+        "gradient_norm": 1.0891538858413696
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "model_backward_accumulation_seconds": 8.19784062501276,
+        "optimizer_seconds": 0.5514052500366233,
+        "total_seconds": 8.749245875049382,
+        "tokens_per_second": 3744.3227071058964,
+        "peak_active_bytes": 17013271364,
+        "cache_bytes": 1119354940,
+        "mean_loss": 10.471244096755981,
+        "gradient_norm": 1.0709434747695923
+      }
+    ],
+    "finite_final_state": true,
+    "steady_targets_per_second": 3666.726559502283,
+    "median_targets_per_second": 3680.015603612828,
+    "peak_active_bytes": 17013271364,
+    "completed": true
+  }
+]

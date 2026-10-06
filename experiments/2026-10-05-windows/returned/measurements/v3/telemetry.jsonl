@@ -1,0 +1,5 @@
+{"temperature_c": 41.0, "power_w": 13.93, "device_memory_mib": 0.0, "utilization_pct": 0.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 3540.321521, "phase": "idle", "active_total_s": 125.65655040000001}
+{"temperature_c": 41.0, "power_w": 13.93, "device_memory_mib": 19.0, "utilization_pct": 0.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 3540.4473612, "phase": "full-geometry-verification", "active_total_s": 125.78103539999984}
+{"temperature_c": 42.0, "power_w": 12.51, "device_memory_mib": 1745.0, "utilization_pct": 8.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 3541.2119155, "phase": "cuda-checkpoint-reload", "active_total_s": 126.5453563000001}
+{"temperature_c": 43.0, "power_w": 38.74, "device_memory_mib": 1531.0, "utilization_pct": 74.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 3542.3531936, "phase": "optimizer-profile", "active_total_s": 127.68638049999981}
+{"temperature_c": 43.0, "power_w": 16.18, "device_memory_mib": 1531.0, "utilization_pct": 0.0, "sm_clock_mhz": 2520.0, "ac_line_status": 1, "monotonic_s": 3542.9861965, "phase": "cooldown", "active_total_s": 128.2666382999996}

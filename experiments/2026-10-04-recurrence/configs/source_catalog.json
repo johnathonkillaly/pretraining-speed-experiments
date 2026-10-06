@@ -1,0 +1,47 @@
+{
+  "archived_revision": "BoothGPT v7_target_7b; split created2026-06-17; packed2026-07-10",
+  "archived_manifest_path": "/EXTERNAL_RESOURCE/a3e760f13d6b",
+  "archived_manifest_sha256": "090a74b0f9efc82279fb8ba43a082889bbe6e1893b732ab65938db9871e7dd1c",
+  "upstream_remote_commit": "not recorded in archived split manifest; exact sampled token snapshot is pinned by shard/data hashes",
+  "training_provenance": "Each train_provenance row pins packed shard SHA256, block and token offset; original packed manifest links this corpus manifest. Packed windows may cross document/source boundaries; this pilot does not recover per-document licenses from those windows.",
+  "sources": {
+    "HuggingFaceFW/fineweb-edu": {
+      "card": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu",
+      "declared_dataset_license": "odc-by",
+      "subset": "sample_10bt"
+    },
+    "HuggingFaceTB/finemath": {
+      "card": "https://huggingface.co/datasets/HuggingFaceTB/finemath",
+      "declared_dataset_license": "odc-by",
+      "subset": "finemath-4plus"
+    },
+    "HuggingFaceTB/smollm-corpus": {
+      "card": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus",
+      "declared_dataset_license": "odc-by",
+      "subset": "cosmopedia-v2"
+    },
+    "HuggingFaceTB/stackexchange_2025_md": {
+      "card": "https://huggingface.co/datasets/HuggingFaceTB/stackexchange_2025_md",
+      "license_family": "CC BY-SA per existing project notes; contribution-specific versions are not recorded in this archived split",
+      "subset": "15 Stack Exchange site files in archived manifest"
+    }
+  },
+  "license_notes": "Dataset-card declarations read2026-10-04; not a new license clearance or claim that underlying web content shares one license. Existing project provenance and limitations retained; no publication of data/weights.",
+  "input_files": [
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/finemath/finemath_4plus.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/fineweb_edu/sample_10bt.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/smollm_corpus/cosmopedia_v2.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/ai.stackexchange.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/arduino.stackexchange.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/askubuntu.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/datascience.stackexchange.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/devops.stackexchange.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/genai.stackexchange.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/raspberrypi.stackexchange.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/serverfault.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/softwareengineering.stackexchange.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/stackoverflow.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/superuser.com.jsonl",
+    "/mnt/checkpoints/corpus_clean/boothgpt_v7/target_7b_clean/stackexchange_2025_md/unix.stackexchange.com.jsonl"
+  ]
+}

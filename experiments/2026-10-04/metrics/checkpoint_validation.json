@@ -1,0 +1,65 @@
+[
+  {
+    "path": "/EXTERNAL_RESOURCE/d4e6b8584278",
+    "parameters": 15012096,
+    "tensor_count": 74,
+    "bytes": 60056330,
+    "finite": true
+  },
+  {
+    "path": "/EXTERNAL_RESOURCE/dc95455c6c93",
+    "parameters": 15012096,
+    "tensor_count": 74,
+    "bytes": 60056330,
+    "finite": true
+  },
+  {
+    "path": "/EXTERNAL_RESOURCE/036e0ec283a5",
+    "parameters": 15012096,
+    "tensor_count": 74,
+    "bytes": 60056330,
+    "finite": true
+  },
+  {
+    "path": "/EXTERNAL_RESOURCE/f5131a0461b9",
+    "parameters": 24305920,
+    "tensor_count": 76,
+    "bytes": 97231848,
+    "finite": true
+  },
+  {
+    "path": "/EXTERNAL_RESOURCE/9bf574afc560",
+    "parameters": 24305920,
+    "tensor_count": 76,
+    "bytes": 97231848,
+    "finite": true
+  },
+  {
+    "path": "/EXTERNAL_RESOURCE/1ba24e68e0dc",
+    "parameters": 24305920,
+    "tensor_count": 76,
+    "bytes": 97231848,
+    "finite": true
+  },
+  {
+    "path": "/EXTERNAL_RESOURCE/703345153bc8",
+    "parameters": 24305920,
+    "tensor_count": 76,
+    "bytes": 97231848,
+    "finite": true
+  },
+  {
+    "path": "/EXTERNAL_RESOURCE/9774db68cfc7",
+    "parameters": 24305920,
+    "tensor_count": 76,
+    "bytes": 97231848,
+    "finite": true
+  },
+  {
+    "path": "/EXTERNAL_RESOURCE/3b1b90d3860c",
+    "parameters": 24305920,
+    "tensor_count": 76,
+    "bytes": 97231848,
+    "finite": true
+  }
+]

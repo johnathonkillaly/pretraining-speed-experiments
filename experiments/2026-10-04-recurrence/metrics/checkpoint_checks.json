@@ -1,0 +1,366 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "records": [
+    {
+      "tag": "dense10_s42",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 16667904,
+      "weight_tensors": 92,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 33345230,
+          "sha256": "74ab9482ad182b0cced089b7a306e1eeaec37bd6967049336072590951f4a66a"
+        },
+        "training_state.npz": {
+          "bytes": 166973714,
+          "sha256": "0bbe06434788ebee48ea6930c5a8cd2c0a6cac8cfddce2e9fb462f62cc6596a9"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "dense4_s42",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404796,
+          "sha256": "37c0f08063270dcaa891d26558c65f26ad96897f32f69415cb250b06f4155918"
+        },
+        "training_state.npz": {
+          "bytes": 127190258,
+          "sha256": "6eb88d6215235b84ce162a71dfb2168123425b7c703f47b05a0a9b753bf5a2cf"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_full_s42",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "83f4d3af3bade61826ac11c3527871a4d91b98262c2dbf7ce5197098b80a7a32"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "4744658aded0acb9a9e89899689b70fa9f279cf825c40d55e03eadd4b6bfa856"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_tb2_s42",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "6c2967a881a4b43909e2dfd7be2fda51549778487e74633cae5015fa54be68b5"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "d99d10416c6d0d506caf92c4c9ce57503045f41a35f2abed7fb8016b69d322d1"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_curr_tb2_s42",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "196ec0a523a9447690916a9c26cd47cede0496312ab8f97fff25b9983bc17f77"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "86715ccfaac06b44734851ab8d6099c3199a7164d6936e7a90143f300026afe1"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "dense10_s43",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 16667904,
+      "weight_tensors": 92,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 33345230,
+          "sha256": "06ee7ebfbd2daa9b5a37f420aa1152ef6a2f657b028b95b4bcd269b699f1ab2d"
+        },
+        "training_state.npz": {
+          "bytes": 166973714,
+          "sha256": "1d44aca3ae35eb3e671f68d77b11839e9e6ccf077b0a1bcc1428c1ea953faa84"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "dense4_s43",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404796,
+          "sha256": "b0119d078d128fc28e8da21dbbd6a6b4eaedc491d2cc4f11be694fb18c552f55"
+        },
+        "training_state.npz": {
+          "bytes": 127190258,
+          "sha256": "a31a5b118d3db0fa06c760c867d0333fa577a99afbd32933b728ed0e0dae6b5e"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_full_s43",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "c0513158605c07b1ac2295e97a4596f5794cbef23eae51b1ef4d55ced5b1236a"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "20cd6ef1a976919cc8fd088a4f61a8dc5864a5c97d1a06c588a9ee9ab92f0484"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_tb2_s43",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "ee18af1873205cbea920984a9a61cf6b50f81b916fc945b35eed2120319802bb"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "3cc24f88869755f66cb5457ee0461d9c2961c870253f3e7e1e03f1f0834bb487"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_curr_tb2_s43",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "bd7b6a71d8ef2ef4a1f293426b6fc8573ad0252bb480b30cb82859d6f1068617"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "ebf1cda757516a018fc969b3de0cf83a53a918e491c46af371c11a11dee2ffcc"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "dense10_s44",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 16667904,
+      "weight_tensors": 92,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 33345230,
+          "sha256": "6d5c7a459c4a3766948dbe8b05098b019d2850372d08d8d73f1c80a34d57a4b6"
+        },
+        "training_state.npz": {
+          "bytes": 166973714,
+          "sha256": "d5e959eaab2484f44508f2bb9382c9fb6c1c4da03dc8373096a20005ee4e6ab6"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "dense4_s44",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404796,
+          "sha256": "473b2ef901db785f76862db6e74a5c84ef3b35b32070d2e9216a35c4c68bf5ee"
+        },
+        "training_state.npz": {
+          "bytes": 127190258,
+          "sha256": "de7523cfbb5342ec541be9105d208ac356db39a43069e4e38ac98b72aad2c5b8"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_full_s44",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "7f2abc5c3090db866d12d45bd91ddb7736b2d8b8bea0b0573c9ea6697da9ec3d"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "1f599695e1c387288a31ca7eca9982cd4616be4ea4c157d8604aa59863ef659b"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_tb2_s44",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "5473ee73a82ce662b1e71f13336a8f405f7a2fa36665132ff363b8f33114396a"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "2640f6659406e5f1a447cfacca096cd584e4587d305634a8a06c287962dba24c"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    },
+    {
+      "tag": "rec_curr_tb2_s44",
+      "passed": true,
+      "step": 5000,
+      "tokens_seen": 10240000,
+      "parameters": 11700480,
+      "weight_tensors": 38,
+      "finite_weights_and_state": true,
+      "BF16_weights_exactly_match_rounded_FP32_masters": true,
+      "files": {
+        "model.safetensors": {
+          "bytes": 23404733,
+          "sha256": "a85e856fa885e97d48a6f4257132b08edee780d922def0447d8ae755308689f5"
+        },
+        "training_state.npz": {
+          "bytes": 127189898,
+          "sha256": "251d7900e58a9638cbb6eaacc59e8788ba490a45ff4d24e4054a9b454dfbfa32"
+        },
+        "metadata.json": {
+          "bytes": 45,
+          "sha256": "8f555438aa9b421ede1b3a388f27f52b054152fc975248c68e4ae7aa08cf3dba"
+        }
+      }
+    }
+  ]
+}

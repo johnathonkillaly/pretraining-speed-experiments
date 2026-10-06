@@ -1,0 +1,116 @@
+{
+  "full_vs_truncated_forward_exact": true,
+  "k_ge_r_gradient_exact": true,
+  "one_loop_vs_dense4_exact": true,
+  "retained_parameter_gradient_norms": {
+    "embed_tokens": 1.0643518078737528,
+    "prelude": 0.6825912599182429,
+    "core": 2.5824198684682624,
+    "coda": 0.9459130886533006,
+    "norm": 0.2614623276405838
+  },
+  "actual_loop_prefix_gradients_absent": true,
+  "retained_suffix_and_prelude_activation_gradients_nonzero": true,
+  "actual_conditional_finite_differences": [
+    {
+      "name": "core.0.self_attn.q_proj.weight",
+      "index": [
+        0,
+        14
+      ],
+      "analytic": 0.014602763533340715,
+      "finite_difference": 0.014602763531712524,
+      "epsilon": 1e-05
+    },
+    {
+      "name": "prelude.self_attn.q_proj.weight",
+      "index": [
+        23,
+        29
+      ],
+      "analytic": -0.010384626728997561,
+      "finite_difference": -0.010384626758508375,
+      "epsilon": 1e-05
+    }
+  ],
+  "causal_sdpa_vs_manual_double": true,
+  "nontraditional_rope_position_zero_identity_and_norm": true,
+  "batched_vs_individual_muon": [
+    {
+      "shape": [
+        5,
+        64,
+        32
+      ],
+      "relative_l2": 0.0
+    },
+    {
+      "shape": [
+        5,
+        32,
+        64
+      ],
+      "relative_l2": 0.0
+    }
+  ],
+  "hybrid_batched_vs_individual_three_step_master_relative_l2": 0.0,
+  "source_nesterov_and_adam_first_step_formula": true,
+  "ownership": {
+    "muon_tensors": 28,
+    "adamw_tensors": 10,
+    "muon_parameters": 36864,
+    "adamw_parameters": 4384,
+    "matrix_groups": [
+      [
+        "coda.mlp.down_proj.weight",
+        "core.0.mlp.down_proj.weight",
+        "core.1.mlp.down_proj.weight",
+        "prelude.mlp.down_proj.weight"
+      ],
+      [
+        "coda.mlp.gate_proj.weight",
+        "coda.mlp.up_proj.weight",
+        "core.0.mlp.gate_proj.weight",
+        "core.0.mlp.up_proj.weight",
+        "core.1.mlp.gate_proj.weight"
+      ],
+      [
+        "core.1.mlp.up_proj.weight",
+        "prelude.mlp.gate_proj.weight",
+        "prelude.mlp.up_proj.weight"
+      ],
+      [
+        "coda.self_attn.k_proj.weight",
+        "coda.self_attn.v_proj.weight",
+        "core.0.self_attn.k_proj.weight",
+        "core.0.self_attn.v_proj.weight",
+        "core.1.self_attn.k_proj.weight"
+      ],
+      [
+        "core.1.self_attn.v_proj.weight",
+        "prelude.self_attn.k_proj.weight",
+        "prelude.self_attn.v_proj.weight"
+      ],
+      [
+        "coda.self_attn.o_proj.weight",
+        "coda.self_attn.q_proj.weight",
+        "core.0.self_attn.o_proj.weight",
+        "core.0.self_attn.q_proj.weight",
+        "core.1.self_attn.o_proj.weight"
+      ],
+      [
+        "core.1.self_attn.q_proj.weight",
+        "prelude.self_attn.o_proj.weight",
+        "prelude.self_attn.q_proj.weight"
+      ]
+    ],
+    "tied_embedding_head_occurrences": 1,
+    "weight_decay": 0
+  },
+  "bf16_model_fp32_masters_state": true,
+  "checkpoint_prediction_exact": true,
+  "checkpoint_resumed_update_exact": true,
+  "checkpoint_sha256": "d225c046eabf2b25ff89442374917ab9048b66997c857f594150d5cf9445c542",
+  "checkpoint_bytes": 471203,
+  "passed": true
+}

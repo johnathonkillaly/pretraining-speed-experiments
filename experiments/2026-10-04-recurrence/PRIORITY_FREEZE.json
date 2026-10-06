@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-05T03:22:46.237380+00:00",
+  "sha256": {
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/run_suite_v2.py": "9334f22e1db3eac17c458bb1f351d10b3717b4de2ac3f78b6aa0afc7021a129f",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/configs/launchd_v2.plist": "7948e3ef78b0efd278efad02f3831c230c30545150c8fbeaae29b696b5aa3178",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/AMENDMENT_LAUNCH_PRIORITY.md": "a6790828046b477b44b1a7fcf7c5abe1cb32c30c25708f2ebbf5b4457a9349ae"
+  }
+}

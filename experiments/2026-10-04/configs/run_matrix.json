@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "dense",
+    "seed": 42,
+    "steps": 1200
+  },
+  {
+    "kind": "top1",
+    "seed": 42,
+    "steps": 1200
+  },
+  {
+    "kind": "top2",
+    "seed": 42,
+    "steps": 1200
+  },
+  {
+    "kind": "top2",
+    "seed": 43,
+    "steps": 1200
+  },
+  {
+    "kind": "dense",
+    "seed": 43,
+    "steps": 1200
+  },
+  {
+    "kind": "top1",
+    "seed": 43,
+    "steps": 1200
+  },
+  {
+    "kind": "top1",
+    "seed": 44,
+    "steps": 1200
+  },
+  {
+    "kind": "top2",
+    "seed": 44,
+    "steps": 1200
+  },
+  {
+    "kind": "dense",
+    "seed": 44,
+    "steps": 1200
+  }
+]

@@ -1,0 +1,4 @@
+{"temperature_c": 40.0, "power_w": 13.28, "device_memory_mib": 0.0, "utilization_pct": 0.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 3720.4268845, "phase": "idle", "active_total_s": 128.2666382999996}
+{"temperature_c": 40.0, "power_w": 13.28, "device_memory_mib": 21.0, "utilization_pct": 0.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 3720.5803385, "phase": "optimizer-profile", "active_total_s": 128.41842649999944}
+{"temperature_c": 41.0, "power_w": 12.52, "device_memory_mib": 1507.0, "utilization_pct": 6.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 3721.4687488, "phase": "optimizer-profile", "active_total_s": 129.30683649999946}
+{"temperature_c": 42.0, "power_w": 21.03, "device_memory_mib": 1507.0, "utilization_pct": 0.0, "sm_clock_mhz": 2520.0, "ac_line_status": 1, "monotonic_s": 3722.4397607, "phase": "optimizer-profile", "active_total_s": 130.27784849999944}

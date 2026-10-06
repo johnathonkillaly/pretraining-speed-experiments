@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "bf16_forward_full_vs_tb2_exact": true,
+  "k_ge_r_max_parameter_gradient_relative_l2": 0.0,
+  "bf16_gradients": true,
+  "detach_boundary": true,
+  "batched_vs_individual_muon_relative_l2": 0.0,
+  "finite_hybrid_step": true,
+  "loss": 5.313096046447754,
+  "gradient_norm": 3.0334956645965576
+}

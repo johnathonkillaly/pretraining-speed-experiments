@@ -1,0 +1,6 @@
+{"event": "worker_start", "tag": "full_context_validation", "preflight": {"ac": true, "memory_free_pct": 92, "competing_ml": []}, "monotonic_seconds": 1345.246902825951}
+{"event": "monitor", "tag": "full_context_validation", "thermal_state": 0, "ac": true, "memory_free_pct": 92, "competing_ml": [], "monotonic_seconds": 1345.3070089509129}
+{"event": "monitor", "tag": "full_context_validation", "thermal_state": 0, "ac": true, "memory_free_pct": 92, "competing_ml": [], "monotonic_seconds": 1346.8184598259395}
+{"event": "monitor", "tag": "full_context_validation", "thermal_state": 0, "ac": true, "memory_free_pct": 92, "competing_ml": [], "monotonic_seconds": 1348.3301307009533}
+{"event": "worker_end", "tag": "full_context_validation", "exit_code": 0, "aggregate_worker_seconds": 660.0583717109403, "monotonic_seconds": 1349.8353849929408}
+{"event": "validation_complete", "aggregate_worker_seconds": 660.0583717109403, "monotonic_seconds": 1349.8359872429282}

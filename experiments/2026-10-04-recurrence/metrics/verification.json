@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "full_vs_k_at_least_all_gradients_equal": true,
+  "full_vs_truncated_forward_equal": true,
+  "one_loop_vs_dense4_equal": true,
+  "truncated_module_gradient_norms": {
+    "embed_tokens": 1.1303662061691284,
+    "prelude": 1.1375280618667603,
+    "core": 3.127312183380127,
+    "coda": 1.1698453426361084
+  },
+  "toy_per_loop_gradients": [
+    0.0,
+    0.0,
+    0.028953449800610542,
+    0.06057122349739075
+  ],
+  "conditional_finite_difference": 0.02895202301442623,
+  "conditional_analytic_gradient": 0.028953449800610542,
+  "batched_vs_individual_muon_relative_difference": 0.0,
+  "compiled_vs_eager_master_relative_difference": 0.0,
+  "compiled_vs_eager_loss": [
+    5.304690361022949,
+    5.304690361022949
+  ],
+  "ownership": {
+    "muon_tensors": 28,
+    "adamw_tensors": 10,
+    "muon_parameters": 36864,
+    "adamw_parameters": 4384,
+    "matrix_groups": [
+      [
+        "coda.mlp.down_proj.weight",
+        "core.0.mlp.down_proj.weight",
+        "core.1.mlp.down_proj.weight",
+        "prelude.mlp.down_proj.weight"
+      ],
+      [
+        "coda.mlp.gate_proj.weight",
+        "coda.mlp.up_proj.weight",
+        "core.0.mlp.gate_proj.weight",
+        "core.0.mlp.up_proj.weight",
+        "core.1.mlp.gate_proj.weight"
+      ],
+      [
+        "core.1.mlp.up_proj.weight",
+        "prelude.mlp.gate_proj.weight",
+        "prelude.mlp.up_proj.weight"
+      ],
+      [
+        "coda.self_attn.k_proj.weight",
+        "coda.self_attn.v_proj.weight",
+        "core.0.self_attn.k_proj.weight",
+        "core.0.self_attn.v_proj.weight",
+        "core.1.self_attn.k_proj.weight"
+      ],
+      [
+        "core.1.self_attn.v_proj.weight",
+        "prelude.self_attn.k_proj.weight",
+        "prelude.self_attn.v_proj.weight"
+      ],
+      [
+        "coda.self_attn.o_proj.weight",
+        "coda.self_attn.q_proj.weight",
+        "core.0.self_attn.o_proj.weight",
+        "core.0.self_attn.q_proj.weight",
+        "core.1.self_attn.o_proj.weight"
+      ],
+      [
+        "core.1.self_attn.q_proj.weight",
+        "prelude.self_attn.o_proj.weight",
+        "prelude.self_attn.q_proj.weight"
+      ]
+    ],
+    "state_logical_bytes_excluding_masters": 182532
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "source_commit": "4189a97a005d72ffffddca508047a372fa7cde23",
+  "sha256": {
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/CONTRACT.md": "1352ee09d6acc68d4aaaaed16e236a7748e634bb5ba9e0f35b09f6a9028a1385",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/benchmark_backward.py": "fb181bb646c213409da8a425dbd5c15d8c90a03833d7d403be587d3cb6572815",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/benchmark_h1.py": "0fe263d285b9f5e42b23b6b3f22b200793cb42bd39c5d7ff4c6fb38f8b0c5bd4",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/model.py": "972f6a4cff2e2c8ba033c5b5ef6ca6204a5756dafac8be80c8236a856a5789f2",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/optimizer.py": "365688d10fd490521a24a028ffa80514823abf29428b28578faf631def0b137e",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/prepare_data.py": "73de8a6e0e7291d8f393b769be2330aa3d229d1d978a0356e5a3b8c528deb9cd",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/run_suite.py": "29d654ebfa8ab16884ecd238eee9599c2b428a1283c202686aa1ac7d77b265d7",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/train.py": "087753049053d6a59ea7c356927487d89d298b3bfe37fc53a572d408830071b8",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/scripts/verify.py": "08be8a984deceff94ee05584f3aaf89ac059def2391582ecd404c17de3ef0669",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/configs/data.json": "04b52d8b94db8537b4c6c0d628bae0e0c0d0a9f003a490efb2bb59399445d748",
+    "/RESEARCH_ROOT/experiments/2026-10-04/scripts/arch/llama.py": "0316c27256356a689c9efca413bebbc769de0a571f363ea6ec2f722d90c52be1",
+    "/RESEARCH_ROOT/experiments/2026-10-04/scripts/arch/rope_utils.py": "ac7d1be7d2bb1df9c697d5979f94b0bda3cd414a3d3ff930bb1e5df0d284d66b",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/data/development.npy": "54e33288a2734f8c75928f8153172c7c9f54ee178b3ff4a964443dbca72f964d",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/data/test.npy": "247500d7f1146cd666b9253121ecaf58c4603f675f2724abdf99b0d1af11433f",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/data/test_provenance.jsonl": "02d85da727b1d76a52feda7f1887188abbdf3bfc2edbcc8b4ca47d4121ff5243",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/data/train.npy": "e9ed95c55a969a97bdff12fe240d186edf2bd50ca5e168a48c056871aabd764a",
+    "/RESEARCH_ROOT/experiments/2026-10-04-recurrence/data/train_provenance.jsonl": "a2e975818fffd4800419363cd266ef5446820b6685af4e6e219b0c8155392301"
+  }
+}

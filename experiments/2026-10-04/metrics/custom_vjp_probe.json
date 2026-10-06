@@ -1,0 +1,30 @@
+[
+  {
+    "kind": "ordinary",
+    "physical_gradient_bytes": 7110656,
+    "logical_gradient_bytes": 7110656,
+    "unused_norms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "kind": "custom_broadcast_zero",
+    "physical_gradient_bytes": 917532,
+    "logical_gradient_bytes": 7110656,
+    "unused_norms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+]

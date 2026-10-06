@@ -1,0 +1,2 @@
+{"phase": "cuda-initialize", "elapsed_s": 0.054060999999819614, "cumulative_gpu_active_s": 0.054060999999819614}
+{"phase": "cuda-correctness", "elapsed_s": 0.42933069999980944, "cumulative_gpu_active_s": 0.48339169999962905}

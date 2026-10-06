@@ -1,0 +1,2006 @@
+{
+  "status": "PASS",
+  "version": "v2",
+  "freeze": {
+    "registration_commit": "5617dae4095dde226f68c00c65c1e078462efb00",
+    "sha256": {
+      "model.py": "1fb9d8af3d7385580ff878963b4c1e1c50895df4fdbe24fc86ca88f8d8f67aba",
+      "optimizer.py": "079b0c86c115ef0832c66de411e2336a27e51700546d3199c3f78fb91b84a5d5",
+      "verify.py": "928c7ff49adab405aceae14a20972b5e85b70e4daf0368b7f51fb5d6ddb472b9",
+      "campaign.py": "8a7b2d7e084cb9488d4e85feec25a34783c481c2fdefc24147cee7d954101108",
+      "config.json": "6346482d30ff2c301ad3e51e73151c0b6a4a4d8f129c13deddc01f68bd94a7c1",
+      "CONTRACT.md": "69649e698f970bbab181ee0f0c330f338bc8641c3bc0fdafd5c6b4f454e2208d",
+      "AMENDMENT.md": "011447b37c590ddeee3f1e467e59437a1e6eeec51e097d80d706f4c5f68c9976"
+    }
+  },
+  "config": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "orders": [
+      [
+        "dense4",
+        "dense10",
+        "rec_full",
+        "rec_tb2"
+      ],
+      [
+        "dense10",
+        "dense4",
+        "rec_tb2",
+        "rec_full"
+      ],
+      [
+        "dense4",
+        "dense10",
+        "rec_full",
+        "rec_tb2"
+      ]
+    ],
+    "warmup_steps": 3,
+    "measurement_window_s": 10,
+    "start_temperature_c": 65,
+    "stop_temperature_c": 85,
+    "gpu_active_cap_s": 600,
+    "optional_sustained_probe": false,
+    "batch": 8,
+    "context": 256,
+    "geometry": {
+      "d": 256,
+      "h": 864,
+      "heads": 8,
+      "kv_heads": 2,
+      "head_dim": 32,
+      "vocab": 32768,
+      "rope_theta": 500000,
+      "rms_norm_eps": 1e-05
+    },
+    "muon_lr": 0.01,
+    "adam_lr": 0.0003,
+    "clip": 1,
+    "weight_decay": 0,
+    "compiled": false,
+    "dtype": "BF16 parameters and gradients; FP32 master weights, clipping, momentum and moments",
+    "source_zip_sha256": "688f5517f878e8583dc0584a6a13aec56aa826537582753ff3a90128a2e4e539",
+    "prior_gpu_active_s": 0.48339169999962905,
+    "attention_backend_policy": "EFFICIENT_ATTENTION if eligible for both registered small/full shapes; otherwise MATH; one selected backend for all CUDA work"
+  },
+  "started_utc": "2026-10-05T14:09:36.713718+00:00",
+  "torch": "2.7.0+cu128",
+  "cuda_runtime": "12.8",
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "attention": "SDPBackend.EFFICIENT_ATTENTION forced for CUDA tests and all windows; explicit KV repetition; eager",
+  "benchmarks": [
+    {
+      "kind": "dense4",
+      "seed": 42,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "8f5c9b783df89d5ec01de4140923352280adc398952a4a151090d78a4d41579a",
+      "batch_sha256": "f6466cea6fecd5727ff3ed6d863a3420db923a8bf6167651f0aa552f2f166743",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 5.500000042957254e-06,
+      "start_telemetry": {
+        "temperature_c": 37.0,
+        "power_w": 9.03,
+        "device_memory_mib": 21.0,
+        "utilization_pct": 0.0,
+        "sm_clock_mhz": 1980.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3044.0738804,
+        "phase": "cuda-correctness",
+        "active_total_s": 0.5924862999995639
+      },
+      "warmup": [
+        {
+          "loss": 10.91019058227539,
+          "gradient_norm": 2.398878335952759,
+          "clipped": true,
+          "zero_grad_ms": 0.06630000007135095,
+          "forward_ms": 26.830899999822577,
+          "backward_ms": 36.44090000034339,
+          "optimizer_ms": 18.010899999808316,
+          "whole_step_ms": 81.49589999993623,
+          "monitor_finite_overhead_ms": 0.14689999989059288
+        },
+        {
+          "loss": 10.228177070617676,
+          "gradient_norm": 2.2675869464874268,
+          "clipped": true,
+          "zero_grad_ms": 0.12900000001536682,
+          "forward_ms": 10.27029999977458,
+          "backward_ms": 15.290899999854446,
+          "optimizer_ms": 17.680100000234233,
+          "whole_step_ms": 43.50900000008551,
+          "monitor_finite_overhead_ms": 0.13870000020688167
+        },
+        {
+          "loss": 9.515578269958496,
+          "gradient_norm": 4.452725887298584,
+          "clipped": true,
+          "zero_grad_ms": 0.14669999973193626,
+          "forward_ms": 10.22880000027726,
+          "backward_ms": 19.792300000062824,
+          "optimizer_ms": 20.27109999971799,
+          "whole_step_ms": 50.537899999653746,
+          "monitor_finite_overhead_ms": 0.09899999986373587
+        }
+      ],
+      "steps": 275,
+      "actual_window_seconds": 10.025303500000064,
+      "targets": 563200,
+      "targets_per_second": 56177.850376299975,
+      "median_ms": {
+        "zero_grad_ms": 0.1247000000148546,
+        "forward_ms": 8.532300000297255,
+        "backward_ms": 12.11779999994178,
+        "optimizer_ms": 14.566100000138249,
+        "whole_step_ms": 35.49509999993461,
+        "monitor_finite_overhead_ms": 0.11059999997087289
+      },
+      "first_step_ms": 40.461900000082096,
+      "first_10_median_ms": 35.21770000020297,
+      "last_10_median_ms": 39.11329999982627,
+      "loss_first": 8.81251335144043,
+      "loss_last": 0.0001262852892978117,
+      "clipped_fraction": 0.07636363636363637,
+      "peak_allocated_bytes": 1086055424,
+      "peak_reserved_bytes": 1516240896,
+      "max_device_memory_mib": 1603.0,
+      "max_sampled_temperature_c": 48.0,
+      "sampled_power_min_max_w": [
+        57.83,
+        63.77
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 48.0,
+        "power_w": 62.98,
+        "device_memory_mib": 1603.0,
+        "utilization_pct": 78.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3054.5606233,
+        "phase": "dense4_s42-timing",
+        "active_total_s": 11.05479539999942
+      }
+    },
+    {
+      "kind": "dense10",
+      "seed": 42,
+      "parameters": 16667904,
+      "shared_initialization_sha256": "8f5c9b783df89d5ec01de4140923352280adc398952a4a151090d78a4d41579a",
+      "batch_sha256": "f6466cea6fecd5727ff3ed6d863a3420db923a8bf6167651f0aa552f2f166743",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 70,
+        "adamw_tensors": 22,
+        "muon_parameters": 8273920,
+        "adamw_parameters": 8393984,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight",
+            "blocks.4.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.down_proj.weight",
+            "blocks.6.mlp.down_proj.weight",
+            "blocks.7.mlp.down_proj.weight",
+            "blocks.8.mlp.down_proj.weight",
+            "blocks.9.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight",
+            "blocks.4.mlp.gate_proj.weight",
+            "blocks.4.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.gate_proj.weight",
+            "blocks.5.mlp.up_proj.weight",
+            "blocks.6.mlp.gate_proj.weight",
+            "blocks.6.mlp.up_proj.weight",
+            "blocks.7.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.7.mlp.up_proj.weight",
+            "blocks.8.mlp.gate_proj.weight",
+            "blocks.8.mlp.up_proj.weight",
+            "blocks.9.mlp.gate_proj.weight",
+            "blocks.9.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight",
+            "blocks.4.self_attn.k_proj.weight",
+            "blocks.4.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.k_proj.weight",
+            "blocks.5.self_attn.v_proj.weight",
+            "blocks.6.self_attn.k_proj.weight",
+            "blocks.6.self_attn.v_proj.weight",
+            "blocks.7.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.v_proj.weight",
+            "blocks.8.self_attn.k_proj.weight",
+            "blocks.8.self_attn.v_proj.weight",
+            "blocks.9.self_attn.k_proj.weight",
+            "blocks.9.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight",
+            "blocks.4.self_attn.o_proj.weight",
+            "blocks.4.self_attn.q_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.o_proj.weight",
+            "blocks.5.self_attn.q_proj.weight",
+            "blocks.6.self_attn.o_proj.weight",
+            "blocks.6.self_attn.q_proj.weight",
+            "blocks.7.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.q_proj.weight",
+            "blocks.8.self_attn.o_proj.weight",
+            "blocks.8.self_attn.q_proj.weight",
+            "blocks.9.self_attn.o_proj.weight",
+            "blocks.9.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 3.999999989900971e-06,
+      "start_telemetry": {
+        "temperature_c": 48.0,
+        "power_w": 62.98,
+        "device_memory_mib": 1603.0,
+        "utilization_pct": 78.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3054.5606233,
+        "phase": "dense4_s42-timing",
+        "active_total_s": 11.05479539999942
+      },
+      "warmup": [
+        {
+          "loss": 10.881053924560547,
+          "gradient_norm": 2.4431068897247314,
+          "clipped": true,
+          "zero_grad_ms": 0.14209999972081278,
+          "forward_ms": 29.47149999999965,
+          "backward_ms": 23.145299999669078,
+          "optimizer_ms": 24.384400000144524,
+          "whole_step_ms": 77.29599999993297,
+          "monitor_finite_overhead_ms": 0.15270000039890874
+        },
+        {
+          "loss": 10.274105072021484,
+          "gradient_norm": 2.28216814994812,
+          "clipped": true,
+          "zero_grad_ms": 0.26099999968209886,
+          "forward_ms": 14.392000000043481,
+          "backward_ms": 18.028399999820977,
+          "optimizer_ms": 26.542999999946915,
+          "whole_step_ms": 59.31799999962095,
+          "monitor_finite_overhead_ms": 0.0936000001274806
+        },
+        {
+          "loss": 9.71086597442627,
+          "gradient_norm": 3.3405568599700928,
+          "clipped": true,
+          "zero_grad_ms": 0.24470000016663107,
+          "forward_ms": 13.597799999843119,
+          "backward_ms": 24.05559999988327,
+          "optimizer_ms": 28.43699999993987,
+          "whole_step_ms": 66.46840000030352,
+          "monitor_finite_overhead_ms": 0.1333000004706264
+        }
+      ],
+      "steps": 166,
+      "actual_window_seconds": 10.011659000000236,
+      "targets": 339968,
+      "targets_per_second": 33957.20928968835,
+      "median_ms": {
+        "zero_grad_ms": 0.26545000014266407,
+        "forward_ms": 13.346899999760353,
+        "backward_ms": 17.525900000237016,
+        "optimizer_ms": 25.955649999787056,
+        "whole_step_ms": 57.89595000010195,
+        "monitor_finite_overhead_ms": 0.10715000030359079
+      },
+      "first_step_ms": 66.98089999963486,
+      "first_10_median_ms": 59.59385000005568,
+      "last_10_median_ms": 56.19939999974122,
+      "loss_first": 9.181663513183594,
+      "loss_last": 0.0008402615203522146,
+      "clipped_fraction": 0.12650602409638553,
+      "peak_allocated_bytes": 1298336768,
+      "peak_reserved_bytes": 1753219072,
+      "max_device_memory_mib": 1829.0,
+      "max_sampled_temperature_c": 52.0,
+      "sampled_power_min_max_w": [
+        57.82,
+        63.99
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 52.0,
+        "power_w": 63.99,
+        "device_memory_mib": 1829.0,
+        "utilization_pct": 72.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3065.0980583,
+        "phase": "dense10_s42-timing",
+        "active_total_s": 21.552357900000516
+      }
+    },
+    {
+      "kind": "rec_full",
+      "seed": 42,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "8f5c9b783df89d5ec01de4140923352280adc398952a4a151090d78a4d41579a",
+      "batch_sha256": "f6466cea6fecd5727ff3ed6d863a3420db923a8bf6167651f0aa552f2f166743",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 2.8999997994105797e-06,
+      "start_telemetry": {
+        "temperature_c": 52.0,
+        "power_w": 63.99,
+        "device_memory_mib": 1829.0,
+        "utilization_pct": 72.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3065.0980583,
+        "phase": "dense10_s42-timing",
+        "active_total_s": 21.552357900000516
+      },
+      "warmup": [
+        {
+          "loss": 10.904633522033691,
+          "gradient_norm": 2.575385093688965,
+          "clipped": true,
+          "zero_grad_ms": 0.07499999992433004,
+          "forward_ms": 29.89789999992354,
+          "backward_ms": 26.03389999967476,
+          "optimizer_ms": 17.14140000012776,
+          "whole_step_ms": 73.24349999998958,
+          "monitor_finite_overhead_ms": 0.0953000003391935
+        },
+        {
+          "loss": 10.511185646057129,
+          "gradient_norm": 2.154484987258911,
+          "clipped": true,
+          "zero_grad_ms": 0.13230000013209064,
+          "forward_ms": 13.885700000173529,
+          "backward_ms": 17.816400000356225,
+          "optimizer_ms": 14.526699999805714,
+          "whole_step_ms": 46.468300000015006,
+          "monitor_finite_overhead_ms": 0.10719999954744708
+        },
+        {
+          "loss": 10.188047409057617,
+          "gradient_norm": 3.0687639713287354,
+          "clipped": true,
+          "zero_grad_ms": 0.12490000017351122,
+          "forward_ms": 13.435800000024756,
+          "backward_ms": 23.149800000282994,
+          "optimizer_ms": 16.260800000054587,
+          "whole_step_ms": 53.06120000022929,
+          "monitor_finite_overhead_ms": 0.08989999969344353
+        }
+      ],
+      "steps": 207,
+      "actual_window_seconds": 10.042102899999918,
+      "targets": 423936,
+      "targets_per_second": 42215.858991048925,
+      "median_ms": {
+        "zero_grad_ms": 0.1353000002382032,
+        "forward_ms": 13.375599999562837,
+        "backward_ms": 18.022799999926065,
+        "optimizer_ms": 14.428799999677722,
+        "whole_step_ms": 46.884700000191515,
+        "monitor_finite_overhead_ms": 0.09960000033970573
+      },
+      "first_step_ms": 55.446200000005774,
+      "first_10_median_ms": 46.07385000008435,
+      "last_10_median_ms": 49.58160000001044,
+      "loss_first": 9.885021209716797,
+      "loss_last": 0.0004840054316446185,
+      "clipped_fraction": 0.13043478260869565,
+      "peak_allocated_bytes": 1248551936,
+      "peak_reserved_bytes": 1696595968,
+      "max_device_memory_mib": 1775.0,
+      "max_sampled_temperature_c": 56.0,
+      "sampled_power_min_max_w": [
+        53.92,
+        66.28
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 56.0,
+        "power_w": 65.91,
+        "device_memory_mib": 1775.0,
+        "utilization_pct": 70.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3075.5626837,
+        "phase": "rec_full_s42-timing",
+        "active_total_s": 31.979603400000542
+      }
+    },
+    {
+      "kind": "rec_tb2",
+      "seed": 42,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "8f5c9b783df89d5ec01de4140923352280adc398952a4a151090d78a4d41579a",
+      "batch_sha256": "f6466cea6fecd5727ff3ed6d863a3420db923a8bf6167651f0aa552f2f166743",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 3.6999999792897142e-06,
+      "start_telemetry": {
+        "temperature_c": 56.0,
+        "power_w": 65.91,
+        "device_memory_mib": 1775.0,
+        "utilization_pct": 70.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3075.5626837,
+        "phase": "rec_full_s42-timing",
+        "active_total_s": 31.979603400000542
+      },
+      "warmup": [
+        {
+          "loss": 10.904633522033691,
+          "gradient_norm": 1.2466635704040527,
+          "clipped": true,
+          "zero_grad_ms": 0.07329999971261714,
+          "forward_ms": 28.025300000081188,
+          "backward_ms": 19.637299999885727,
+          "optimizer_ms": 14.688499999920168,
+          "whole_step_ms": 62.50599999975748,
+          "monitor_finite_overhead_ms": 0.08160000015777769
+        },
+        {
+          "loss": 10.474384307861328,
+          "gradient_norm": 1.149360179901123,
+          "clipped": true,
+          "zero_grad_ms": 0.12370000013106619,
+          "forward_ms": 14.00389999980689,
+          "backward_ms": 14.117899999746442,
+          "optimizer_ms": 14.94070000035208,
+          "whole_step_ms": 43.281300000217016,
+          "monitor_finite_overhead_ms": 0.09510000018053688
+        },
+        {
+          "loss": 10.109794616699219,
+          "gradient_norm": 1.3117103576660156,
+          "clipped": true,
+          "zero_grad_ms": 0.12809999998353305,
+          "forward_ms": 13.42979999981253,
+          "backward_ms": 19.088000000010652,
+          "optimizer_ms": 14.459699999861186,
+          "whole_step_ms": 47.26649999975052,
+          "monitor_finite_overhead_ms": 0.16090000008261995
+        }
+      ],
+      "steps": 228,
+      "actual_window_seconds": 10.019842300000164,
+      "targets": 466944,
+      "targets_per_second": 46601.931050351195,
+      "median_ms": {
+        "zero_grad_ms": 0.13379999995777325,
+        "forward_ms": 13.443399999914618,
+        "backward_ms": 14.104350000025079,
+        "optimizer_ms": 14.472449999857417,
+        "whole_step_ms": 42.59779999983948,
+        "monitor_finite_overhead_ms": 0.09645000022828754
+      },
+      "first_step_ms": 41.756399999940186,
+      "first_10_median_ms": 42.63665000007677,
+      "last_10_median_ms": 46.28245000003517,
+      "loss_first": 9.732580184936523,
+      "loss_last": 0.00034125024103559554,
+      "clipped_fraction": 0.09649122807017543,
+      "peak_allocated_bytes": 1140220928,
+      "peak_reserved_bytes": 1577058304,
+      "max_device_memory_mib": 1661.0,
+      "max_sampled_temperature_c": 58.0,
+      "sampled_power_min_max_w": [
+        24.69,
+        67.5
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 58.0,
+        "power_w": 65.8,
+        "device_memory_mib": 1661.0,
+        "utilization_pct": 70.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3086.0922366,
+        "phase": "rec_tb2_s42-timing",
+        "active_total_s": 42.47199540000065
+      }
+    },
+    {
+      "kind": "dense10",
+      "seed": 43,
+      "parameters": 16667904,
+      "shared_initialization_sha256": "8f5eef2626e636b2cbf16f2a8cae300d6281687894eda2ab46928293ac95f651",
+      "batch_sha256": "f9db41aac7f52b596d0c01409a108302fea54153637dd490a99007c1874223b9",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 70,
+        "adamw_tensors": 22,
+        "muon_parameters": 8273920,
+        "adamw_parameters": 8393984,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight",
+            "blocks.4.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.down_proj.weight",
+            "blocks.6.mlp.down_proj.weight",
+            "blocks.7.mlp.down_proj.weight",
+            "blocks.8.mlp.down_proj.weight",
+            "blocks.9.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight",
+            "blocks.4.mlp.gate_proj.weight",
+            "blocks.4.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.gate_proj.weight",
+            "blocks.5.mlp.up_proj.weight",
+            "blocks.6.mlp.gate_proj.weight",
+            "blocks.6.mlp.up_proj.weight",
+            "blocks.7.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.7.mlp.up_proj.weight",
+            "blocks.8.mlp.gate_proj.weight",
+            "blocks.8.mlp.up_proj.weight",
+            "blocks.9.mlp.gate_proj.weight",
+            "blocks.9.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight",
+            "blocks.4.self_attn.k_proj.weight",
+            "blocks.4.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.k_proj.weight",
+            "blocks.5.self_attn.v_proj.weight",
+            "blocks.6.self_attn.k_proj.weight",
+            "blocks.6.self_attn.v_proj.weight",
+            "blocks.7.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.v_proj.weight",
+            "blocks.8.self_attn.k_proj.weight",
+            "blocks.8.self_attn.v_proj.weight",
+            "blocks.9.self_attn.k_proj.weight",
+            "blocks.9.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight",
+            "blocks.4.self_attn.o_proj.weight",
+            "blocks.4.self_attn.q_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.o_proj.weight",
+            "blocks.5.self_attn.q_proj.weight",
+            "blocks.6.self_attn.o_proj.weight",
+            "blocks.6.self_attn.q_proj.weight",
+            "blocks.7.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.q_proj.weight",
+            "blocks.8.self_attn.o_proj.weight",
+            "blocks.8.self_attn.q_proj.weight",
+            "blocks.9.self_attn.o_proj.weight",
+            "blocks.9.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 3.900000137946336e-06,
+      "start_telemetry": {
+        "temperature_c": 58.0,
+        "power_w": 65.8,
+        "device_memory_mib": 1661.0,
+        "utilization_pct": 70.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3086.0922366,
+        "phase": "rec_tb2_s42-timing",
+        "active_total_s": 42.47199540000065
+      },
+      "warmup": [
+        {
+          "loss": 10.89405632019043,
+          "gradient_norm": 2.5118136405944824,
+          "clipped": true,
+          "zero_grad_ms": 0.13639999997394625,
+          "forward_ms": 31.272100000023784,
+          "backward_ms": 23.05260000002818,
+          "optimizer_ms": 27.351700000053825,
+          "whole_step_ms": 81.94559999992634,
+          "monitor_finite_overhead_ms": 0.13279999984661117
+        },
+        {
+          "loss": 10.233973503112793,
+          "gradient_norm": 2.384655714035034,
+          "clipped": true,
+          "zero_grad_ms": 0.2760000002126617,
+          "forward_ms": 14.061099999707949,
+          "backward_ms": 19.45739999973739,
+          "optimizer_ms": 26.51349999996455,
+          "whole_step_ms": 60.389199999917764,
+          "monitor_finite_overhead_ms": 0.0812000002952118
+        },
+        {
+          "loss": 9.709295272827148,
+          "gradient_norm": 4.204115390777588,
+          "clipped": true,
+          "zero_grad_ms": 0.24759999996604165,
+          "forward_ms": 13.538700000026438,
+          "backward_ms": 22.370600000158447,
+          "optimizer_ms": 25.063000000045577,
+          "whole_step_ms": 61.334399999850575,
+          "monitor_finite_overhead_ms": 0.11449999965407187
+        }
+      ],
+      "steps": 171,
+      "actual_window_seconds": 10.00945929999989,
+      "targets": 350208,
+      "targets_per_second": 34987.70408107897,
+      "median_ms": {
+        "zero_grad_ms": 0.26679999973566737,
+        "forward_ms": 13.339800000267132,
+        "backward_ms": 17.51109999986511,
+        "optimizer_ms": 25.48639999986335,
+        "whole_step_ms": 57.29269999983444,
+        "monitor_finite_overhead_ms": 0.09139999974649982
+      },
+      "first_step_ms": 61.95870000010473,
+      "first_10_median_ms": 56.58169999992424,
+      "last_10_median_ms": 57.23794999994425,
+      "loss_first": 9.179421424865723,
+      "loss_last": 0.0007629460305906832,
+      "clipped_fraction": 0.11695906432748537,
+      "peak_allocated_bytes": 1298336768,
+      "peak_reserved_bytes": 1753219072,
+      "max_device_memory_mib": 1829.0,
+      "max_sampled_temperature_c": 60.0,
+      "sampled_power_min_max_w": [
+        56.62,
+        66.02
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 59.0,
+        "power_w": 65.21,
+        "device_memory_mib": 1829.0,
+        "utilization_pct": 70.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3095.8057897,
+        "phase": "dense10_s43-timing",
+        "active_total_s": 52.15025109999988
+      }
+    },
+    {
+      "kind": "dense4",
+      "seed": 43,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "8f5eef2626e636b2cbf16f2a8cae300d6281687894eda2ab46928293ac95f651",
+      "batch_sha256": "f9db41aac7f52b596d0c01409a108302fea54153637dd490a99007c1874223b9",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 2.6999996407539584e-06,
+      "start_telemetry": {
+        "temperature_c": 60.0,
+        "power_w": 64.25,
+        "device_memory_mib": 1829.0,
+        "utilization_pct": 64.0,
+        "sm_clock_mhz": 2505.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3096.6540371,
+        "phase": "cooldown",
+        "active_total_s": 52.960244299999886
+      },
+      "warmup": [
+        {
+          "loss": 10.868922233581543,
+          "gradient_norm": 2.2787716388702393,
+          "clipped": true,
+          "zero_grad_ms": 0.06940000002941815,
+          "forward_ms": 21.730399999796646,
+          "backward_ms": 17.764100000022154,
+          "optimizer_ms": 14.877399999932095,
+          "whole_step_ms": 54.69219999986308,
+          "monitor_finite_overhead_ms": 0.2509000000827655
+        },
+        {
+          "loss": 10.15993881225586,
+          "gradient_norm": 2.5783255100250244,
+          "clipped": true,
+          "zero_grad_ms": 0.12900000001536682,
+          "forward_ms": 9.25199999983306,
+          "backward_ms": 12.139999999817519,
+          "optimizer_ms": 14.873500000248896,
+          "whole_step_ms": 36.50900000002366,
+          "monitor_finite_overhead_ms": 0.11450000010881922
+        },
+        {
+          "loss": 9.449938774108887,
+          "gradient_norm": 4.907332897186279,
+          "clipped": true,
+          "zero_grad_ms": 0.11039999981221627,
+          "forward_ms": 9.017100000164646,
+          "backward_ms": 17.96150000018315,
+          "optimizer_ms": 14.691499999571533,
+          "whole_step_ms": 41.863999999804946,
+          "monitor_finite_overhead_ms": 0.08350000007339986
+        }
+      ],
+      "steps": 271,
+      "actual_window_seconds": 10.002147900000182,
+      "targets": 555008,
+      "targets_per_second": 55488.88154313234,
+      "median_ms": {
+        "zero_grad_ms": 0.1287999998567102,
+        "forward_ms": 8.643600000141305,
+        "backward_ms": 12.139099999785685,
+        "optimizer_ms": 14.745599999969272,
+        "whole_step_ms": 35.99100000019462,
+        "monitor_finite_overhead_ms": 0.08750000006330083
+      },
+      "first_step_ms": 35.27540000004592,
+      "first_10_median_ms": 35.08759999999711,
+      "last_10_median_ms": 35.6683999998495,
+      "loss_first": 8.70736312866211,
+      "loss_last": 0.0001327975478488952,
+      "clipped_fraction": 0.08118081180811808,
+      "peak_allocated_bytes": 1086055424,
+      "peak_reserved_bytes": 1516240896,
+      "max_device_memory_mib": 1603.0,
+      "max_sampled_temperature_c": 63.0,
+      "sampled_power_min_max_w": [
+        42.29,
+        68.99
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 62.0,
+        "power_w": 68.14,
+        "device_memory_mib": 1603.0,
+        "utilization_pct": 76.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3106.3248883,
+        "phase": "dense4_s43-timing",
+        "active_total_s": 62.62962569999945
+      }
+    },
+    {
+      "kind": "rec_tb2",
+      "seed": 43,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "8f5eef2626e636b2cbf16f2a8cae300d6281687894eda2ab46928293ac95f651",
+      "batch_sha256": "f9db41aac7f52b596d0c01409a108302fea54153637dd490a99007c1874223b9",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 3.100000412814552e-06,
+      "start_telemetry": {
+        "temperature_c": 62.0,
+        "power_w": 68.14,
+        "device_memory_mib": 1603.0,
+        "utilization_pct": 76.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3106.3248883,
+        "phase": "dense4_s43-timing",
+        "active_total_s": 62.62962569999945
+      },
+      "warmup": [
+        {
+          "loss": 10.863285064697266,
+          "gradient_norm": 1.1788429021835327,
+          "clipped": true,
+          "zero_grad_ms": 0.07120000009308569,
+          "forward_ms": 28.84440000025279,
+          "backward_ms": 19.62150000008478,
+          "optimizer_ms": 14.111299999967741,
+          "whole_step_ms": 62.75690000029499,
+          "monitor_finite_overhead_ms": 0.10849999989659409
+        },
+        {
+          "loss": 10.44383716583252,
+          "gradient_norm": 1.0746500492095947,
+          "clipped": true,
+          "zero_grad_ms": 0.12010000000373111,
+          "forward_ms": 13.563399999839021,
+          "backward_ms": 14.001499999722,
+          "optimizer_ms": 14.136300000245683,
+          "whole_step_ms": 41.89880000012636,
+          "monitor_finite_overhead_ms": 0.07750000031592208
+        },
+        {
+          "loss": 10.079368591308594,
+          "gradient_norm": 1.214910626411438,
+          "clipped": true,
+          "zero_grad_ms": 0.11940000013055396,
+          "forward_ms": 13.291600000229664,
+          "backward_ms": 18.924699999843142,
+          "optimizer_ms": 15.139199999794073,
+          "whole_step_ms": 47.544700000344164,
+          "monitor_finite_overhead_ms": 0.0698000003467314
+        }
+      ],
+      "steps": 230,
+      "actual_window_seconds": 10.033546500000284,
+      "targets": 471040,
+      "targets_per_second": 46946.51088725075,
+      "median_ms": {
+        "zero_grad_ms": 0.13229999990471697,
+        "forward_ms": 13.557300000002215,
+        "backward_ms": 14.111149999962436,
+        "optimizer_ms": 14.401149999685003,
+        "whole_step_ms": 42.69804999989901,
+        "monitor_finite_overhead_ms": 0.09290000002692977
+      },
+      "first_step_ms": 42.56119999990915,
+      "first_10_median_ms": 42.515599999887854,
+      "last_10_median_ms": 43.13454999987698,
+      "loss_first": 9.692161560058594,
+      "loss_last": 0.00032579887192696333,
+      "clipped_fraction": 0.09565217391304348,
+      "peak_allocated_bytes": 1140220928,
+      "peak_reserved_bytes": 1577058304,
+      "max_device_memory_mib": 1661.0,
+      "max_sampled_temperature_c": 65.0,
+      "sampled_power_min_max_w": [
+        59.9,
+        70.02
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 65.0,
+        "power_w": 67.98,
+        "device_memory_mib": 1661.0,
+        "utilization_pct": 73.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3116.8282105,
+        "phase": "rec_tb2_s43-timing",
+        "active_total_s": 73.0964186999995
+      }
+    },
+    {
+      "kind": "rec_full",
+      "seed": 43,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "8f5eef2626e636b2cbf16f2a8cae300d6281687894eda2ab46928293ac95f651",
+      "batch_sha256": "f9db41aac7f52b596d0c01409a108302fea54153637dd490a99007c1874223b9",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 3.499999820633093e-06,
+      "start_telemetry": {
+        "temperature_c": 65.0,
+        "power_w": 67.98,
+        "device_memory_mib": 1661.0,
+        "utilization_pct": 73.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3116.8282105,
+        "phase": "rec_tb2_s43-timing",
+        "active_total_s": 73.0964186999995
+      },
+      "warmup": [
+        {
+          "loss": 10.863285064697266,
+          "gradient_norm": 2.446561098098755,
+          "clipped": true,
+          "zero_grad_ms": 0.0679999998283165,
+          "forward_ms": 32.93660000008458,
+          "backward_ms": 24.18039999975008,
+          "optimizer_ms": 15.07530000026236,
+          "whole_step_ms": 72.3920000000362,
+          "monitor_finite_overhead_ms": 0.13170000011086813
+        },
+        {
+          "loss": 10.47474479675293,
+          "gradient_norm": 2.0983870029449463,
+          "clipped": true,
+          "zero_grad_ms": 0.13290000015331316,
+          "forward_ms": 14.280599999892729,
+          "backward_ms": 22.16390000012325,
+          "optimizer_ms": 14.973199999985809,
+          "whole_step_ms": 51.76290000008521,
+          "monitor_finite_overhead_ms": 0.21229999993011006
+        },
+        {
+          "loss": 10.185405731201172,
+          "gradient_norm": 2.8088672161102295,
+          "clipped": true,
+          "zero_grad_ms": 0.1573999998072395,
+          "forward_ms": 14.264900000398484,
+          "backward_ms": 22.877599999901577,
+          "optimizer_ms": 14.002399999753834,
+          "whole_step_ms": 51.384800000050745,
+          "monitor_finite_overhead_ms": 0.08250000018961146
+        }
+      ],
+      "steps": 209,
+      "actual_window_seconds": 10.006553299999723,
+      "targets": 428032,
+      "targets_per_second": 42775.16814905806,
+      "median_ms": {
+        "zero_grad_ms": 0.13929999977335683,
+        "forward_ms": 13.445999999930791,
+        "backward_ms": 17.870700000003126,
+        "optimizer_ms": 14.578700000129174,
+        "whole_step_ms": 46.57980000001771,
+        "monitor_finite_overhead_ms": 0.11189999986527255
+      },
+      "first_step_ms": 46.9281000000592,
+      "first_10_median_ms": 48.89554999977008,
+      "last_10_median_ms": 46.342399999957706,
+      "loss_first": 9.866872787475586,
+      "loss_last": 0.0004452395951375365,
+      "clipped_fraction": 0.1291866028708134,
+      "peak_allocated_bytes": 1248551936,
+      "peak_reserved_bytes": 1696595968,
+      "max_device_memory_mib": 1775.0,
+      "max_sampled_temperature_c": 68.0,
+      "sampled_power_min_max_w": [
+        60.02,
+        71.66
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 67.0,
+        "power_w": 71.05,
+        "device_memory_mib": 1775.0,
+        "utilization_pct": 75.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3127.3789467,
+        "phase": "rec_full_s43-timing",
+        "active_total_s": 83.6063996999992
+      }
+    },
+    {
+      "kind": "dense4",
+      "seed": 44,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "1621206d545a66b9c2f0a2d8c962342dd5e51f59b4c2f8a933a2e4337449ab93",
+      "batch_sha256": "3c92179244f26b6cd021be25ed4a6bff528451822d4de5a900a70daef67350d2",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 0.5071161999999276,
+      "start_telemetry": {
+        "temperature_c": 63.0,
+        "power_w": 63.95,
+        "device_memory_mib": 177.0,
+        "utilization_pct": 0.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3128.1625135,
+        "phase": "cooldown",
+        "active_total_s": 83.93949059999932
+      },
+      "warmup": [
+        {
+          "loss": 10.876176834106445,
+          "gradient_norm": 2.151200294494629,
+          "clipped": true,
+          "zero_grad_ms": 0.06840000014562975,
+          "forward_ms": 21.679499999663676,
+          "backward_ms": 17.734699999891745,
+          "optimizer_ms": 15.848999999889202,
+          "whole_step_ms": 55.4216999998971,
+          "monitor_finite_overhead_ms": 0.0901000003068475
+        },
+        {
+          "loss": 10.222320556640625,
+          "gradient_norm": 2.292509078979492,
+          "clipped": true,
+          "zero_grad_ms": 0.11189999986527255,
+          "forward_ms": 9.256900000309543,
+          "backward_ms": 12.037200000122539,
+          "optimizer_ms": 14.1260999998849,
+          "whole_step_ms": 35.59750000022177,
+          "monitor_finite_overhead_ms": 0.06540000003951718
+        },
+        {
+          "loss": 9.526632308959961,
+          "gradient_norm": 4.479665279388428,
+          "clipped": true,
+          "zero_grad_ms": 0.11590000030992087,
+          "forward_ms": 8.854499999870313,
+          "backward_ms": 17.123300000093877,
+          "optimizer_ms": 15.154899999743066,
+          "whole_step_ms": 41.32479999998395,
+          "monitor_finite_overhead_ms": 0.07619999996677507
+        }
+      ],
+      "steps": 274,
+      "actual_window_seconds": 10.035509100000127,
+      "targets": 561152,
+      "targets_per_second": 55916.64502600998,
+      "median_ms": {
+        "zero_grad_ms": 0.12964999996256665,
+        "forward_ms": 8.590349999849423,
+        "backward_ms": 12.131850000059785,
+        "optimizer_ms": 14.644150000094669,
+        "whole_step_ms": 35.82649999998466,
+        "monitor_finite_overhead_ms": 0.10470000006534974
+      },
+      "first_step_ms": 45.10630000004312,
+      "first_10_median_ms": 36.40365000001111,
+      "last_10_median_ms": 35.89959999999337,
+      "loss_first": 8.791261672973633,
+      "loss_last": 0.00012812209024559706,
+      "clipped_fraction": 0.07664233576642336,
+      "peak_allocated_bytes": 1086055424,
+      "peak_reserved_bytes": 1516240896,
+      "max_device_memory_mib": 1603.0,
+      "max_sampled_temperature_c": 69.0,
+      "sampled_power_min_max_w": [
+        20.84,
+        72.96
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 69.0,
+        "power_w": 71.33,
+        "device_memory_mib": 1603.0,
+        "utilization_pct": 77.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3137.8492489,
+        "phase": "dense4_s44-timing",
+        "active_total_s": 93.52892759999986
+      }
+    },
+    {
+      "kind": "dense10",
+      "seed": 44,
+      "parameters": 16667904,
+      "shared_initialization_sha256": "1621206d545a66b9c2f0a2d8c962342dd5e51f59b4c2f8a933a2e4337449ab93",
+      "batch_sha256": "3c92179244f26b6cd021be25ed4a6bff528451822d4de5a900a70daef67350d2",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 70,
+        "adamw_tensors": 22,
+        "muon_parameters": 8273920,
+        "adamw_parameters": 8393984,
+        "matrix_groups": [
+          [
+            "blocks.0.mlp.down_proj.weight",
+            "blocks.1.mlp.down_proj.weight",
+            "blocks.2.mlp.down_proj.weight",
+            "blocks.3.mlp.down_proj.weight",
+            "blocks.4.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.down_proj.weight",
+            "blocks.6.mlp.down_proj.weight",
+            "blocks.7.mlp.down_proj.weight",
+            "blocks.8.mlp.down_proj.weight",
+            "blocks.9.mlp.down_proj.weight"
+          ],
+          [
+            "blocks.0.mlp.gate_proj.weight",
+            "blocks.0.mlp.up_proj.weight",
+            "blocks.1.mlp.gate_proj.weight",
+            "blocks.1.mlp.up_proj.weight",
+            "blocks.2.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.2.mlp.up_proj.weight",
+            "blocks.3.mlp.gate_proj.weight",
+            "blocks.3.mlp.up_proj.weight",
+            "blocks.4.mlp.gate_proj.weight",
+            "blocks.4.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.5.mlp.gate_proj.weight",
+            "blocks.5.mlp.up_proj.weight",
+            "blocks.6.mlp.gate_proj.weight",
+            "blocks.6.mlp.up_proj.weight",
+            "blocks.7.mlp.gate_proj.weight"
+          ],
+          [
+            "blocks.7.mlp.up_proj.weight",
+            "blocks.8.mlp.gate_proj.weight",
+            "blocks.8.mlp.up_proj.weight",
+            "blocks.9.mlp.gate_proj.weight",
+            "blocks.9.mlp.up_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.k_proj.weight",
+            "blocks.0.self_attn.v_proj.weight",
+            "blocks.1.self_attn.k_proj.weight",
+            "blocks.1.self_attn.v_proj.weight",
+            "blocks.2.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.v_proj.weight",
+            "blocks.3.self_attn.k_proj.weight",
+            "blocks.3.self_attn.v_proj.weight",
+            "blocks.4.self_attn.k_proj.weight",
+            "blocks.4.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.k_proj.weight",
+            "blocks.5.self_attn.v_proj.weight",
+            "blocks.6.self_attn.k_proj.weight",
+            "blocks.6.self_attn.v_proj.weight",
+            "blocks.7.self_attn.k_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.v_proj.weight",
+            "blocks.8.self_attn.k_proj.weight",
+            "blocks.8.self_attn.v_proj.weight",
+            "blocks.9.self_attn.k_proj.weight",
+            "blocks.9.self_attn.v_proj.weight"
+          ],
+          [
+            "blocks.0.self_attn.o_proj.weight",
+            "blocks.0.self_attn.q_proj.weight",
+            "blocks.1.self_attn.o_proj.weight",
+            "blocks.1.self_attn.q_proj.weight",
+            "blocks.2.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.2.self_attn.q_proj.weight",
+            "blocks.3.self_attn.o_proj.weight",
+            "blocks.3.self_attn.q_proj.weight",
+            "blocks.4.self_attn.o_proj.weight",
+            "blocks.4.self_attn.q_proj.weight"
+          ],
+          [
+            "blocks.5.self_attn.o_proj.weight",
+            "blocks.5.self_attn.q_proj.weight",
+            "blocks.6.self_attn.o_proj.weight",
+            "blocks.6.self_attn.q_proj.weight",
+            "blocks.7.self_attn.o_proj.weight"
+          ],
+          [
+            "blocks.7.self_attn.q_proj.weight",
+            "blocks.8.self_attn.o_proj.weight",
+            "blocks.8.self_attn.q_proj.weight",
+            "blocks.9.self_attn.o_proj.weight",
+            "blocks.9.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 1.0133911000002627,
+      "start_telemetry": {
+        "temperature_c": 64.0,
+        "power_w": 22.84,
+        "device_memory_mib": 177.0,
+        "utilization_pct": 0.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3139.4758773,
+        "phase": "cooldown",
+        "active_total_s": 94.28617269999995
+      },
+      "warmup": [
+        {
+          "loss": 10.856958389282227,
+          "gradient_norm": 2.4701805114746094,
+          "clipped": true,
+          "zero_grad_ms": 0.1326000001427019,
+          "forward_ms": 30.295099999875674,
+          "backward_ms": 23.000199999842152,
+          "optimizer_ms": 30.738899999960267,
+          "whole_step_ms": 84.31019999989076,
+          "monitor_finite_overhead_ms": 0.1434000000699598
+        },
+        {
+          "loss": 10.218622207641602,
+          "gradient_norm": 2.313014268875122,
+          "clipped": true,
+          "zero_grad_ms": 0.262999999904423,
+          "forward_ms": 15.513600000303995,
+          "backward_ms": 17.369000000144297,
+          "optimizer_ms": 29.06359999997221,
+          "whole_step_ms": 62.336100000266015,
+          "monitor_finite_overhead_ms": 0.12689999994108803
+        },
+        {
+          "loss": 9.68355941772461,
+          "gradient_norm": 4.526119232177734,
+          "clipped": true,
+          "zero_grad_ms": 0.24680000024090987,
+          "forward_ms": 16.553499999645283,
+          "backward_ms": 22.688499999730993,
+          "optimizer_ms": 31.38149999995221,
+          "whole_step_ms": 71.00239999999758,
+          "monitor_finite_overhead_ms": 0.13210000042818137
+        }
+      ],
+      "steps": 171,
+      "actual_window_seconds": 10.04454190000024,
+      "targets": 350208,
+      "targets_per_second": 34865.50242774055,
+      "median_ms": {
+        "zero_grad_ms": 0.2783999998428044,
+        "forward_ms": 13.400299999830168,
+        "backward_ms": 17.572600000221428,
+        "optimizer_ms": 25.809700000081648,
+        "whole_step_ms": 57.568000000173924,
+        "monitor_finite_overhead_ms": 0.11679999988700729
+      },
+      "first_step_ms": 58.48820000028354,
+      "first_10_median_ms": 58.22405000003528,
+      "last_10_median_ms": 57.881200000110766,
+      "loss_first": 9.255377769470215,
+      "loss_last": 0.0007658816175535321,
+      "clipped_fraction": 0.12280701754385964,
+      "peak_allocated_bytes": 1298336768,
+      "peak_reserved_bytes": 1753219072,
+      "max_device_memory_mib": 1829.0,
+      "max_sampled_temperature_c": 72.0,
+      "sampled_power_min_max_w": [
+        36.1,
+        71.45
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 70.0,
+        "power_w": 69.65,
+        "device_memory_mib": 1829.0,
+        "utilization_pct": 66.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3149.9821344,
+        "phase": "dense10_s44-timing",
+        "active_total_s": 104.61111489999985
+      }
+    },
+    {
+      "kind": "rec_full",
+      "seed": 44,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "1621206d545a66b9c2f0a2d8c962342dd5e51f59b4c2f8a933a2e4337449ab93",
+      "batch_sha256": "3c92179244f26b6cd021be25ed4a6bff528451822d4de5a900a70daef67350d2",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 1.5175586000000294,
+      "start_telemetry": {
+        "temperature_c": 65.0,
+        "power_w": 23.13,
+        "device_memory_mib": 177.0,
+        "utilization_pct": 0.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3151.6411082,
+        "phase": "cooldown",
+        "active_total_s": 104.75178740000001
+      },
+      "warmup": [
+        {
+          "loss": 10.895668983459473,
+          "gradient_norm": 2.3659074306488037,
+          "clipped": true,
+          "zero_grad_ms": 0.0691000000188069,
+          "forward_ms": 32.834099999945465,
+          "backward_ms": 23.543599999811704,
+          "optimizer_ms": 14.950899999803369,
+          "whole_step_ms": 71.50550000005751,
+          "monitor_finite_overhead_ms": 0.10780000047816429
+        },
+        {
+          "loss": 10.497794151306152,
+          "gradient_norm": 2.2508785724639893,
+          "clipped": true,
+          "zero_grad_ms": 0.12440000000424334,
+          "forward_ms": 13.901799999985087,
+          "backward_ms": 17.499900000075286,
+          "optimizer_ms": 14.460500000041066,
+          "whole_step_ms": 46.103799999855255,
+          "monitor_finite_overhead_ms": 0.11719999974957318
+        },
+        {
+          "loss": 10.192304611206055,
+          "gradient_norm": 3.158205509185791,
+          "clipped": true,
+          "zero_grad_ms": 0.11689999973896192,
+          "forward_ms": 13.250500000140164,
+          "backward_ms": 23.80849999963175,
+          "optimizer_ms": 14.958800000385963,
+          "whole_step_ms": 52.253599999858125,
+          "monitor_finite_overhead_ms": 0.11889999996128608
+        }
+      ],
+      "steps": 211,
+      "actual_window_seconds": 10.009579899999608,
+      "targets": 432128,
+      "targets_per_second": 43171.442190098,
+      "median_ms": {
+        "zero_grad_ms": 0.13069999977233238,
+        "forward_ms": 13.44040000003588,
+        "backward_ms": 17.87960000001476,
+        "optimizer_ms": 14.51260000021648,
+        "whole_step_ms": 46.30409999981566,
+        "monitor_finite_overhead_ms": 0.11729999960152782
+      },
+      "first_step_ms": 46.571599999879254,
+      "first_10_median_ms": 48.01520000000892,
+      "last_10_median_ms": 46.45170000003418,
+      "loss_first": 9.880754470825195,
+      "loss_last": 0.0004468027618713677,
+      "clipped_fraction": 0.12796208530805686,
+      "peak_allocated_bytes": 1248551936,
+      "peak_reserved_bytes": 1696595968,
+      "max_device_memory_mib": 1775.0,
+      "max_sampled_temperature_c": 73.0,
+      "sampled_power_min_max_w": [
+        26.41,
+        75.19
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 73.0,
+        "power_w": 73.66,
+        "device_memory_mib": 1775.0,
+        "utilization_pct": 71.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3161.3271864,
+        "phase": "rec_full_s44-timing",
+        "active_total_s": 114.39842069999986
+      }
+    },
+    {
+      "kind": "rec_tb2",
+      "seed": 44,
+      "parameters": 11700480,
+      "shared_initialization_sha256": "1621206d545a66b9c2f0a2d8c962342dd5e51f59b4c2f8a933a2e4337449ab93",
+      "batch_sha256": "3c92179244f26b6cd021be25ed4a6bff528451822d4de5a900a70daef67350d2",
+      "targets_per_update": 2048,
+      "ownership": {
+        "muon_tensors": 28,
+        "adamw_tensors": 10,
+        "muon_parameters": 3309568,
+        "adamw_parameters": 8390912,
+        "matrix_groups": [
+          [
+            "coda.mlp.down_proj.weight",
+            "core.0.mlp.down_proj.weight",
+            "core.1.mlp.down_proj.weight",
+            "prelude.mlp.down_proj.weight"
+          ],
+          [
+            "coda.mlp.gate_proj.weight",
+            "coda.mlp.up_proj.weight",
+            "core.0.mlp.gate_proj.weight",
+            "core.0.mlp.up_proj.weight",
+            "core.1.mlp.gate_proj.weight"
+          ],
+          [
+            "core.1.mlp.up_proj.weight",
+            "prelude.mlp.gate_proj.weight",
+            "prelude.mlp.up_proj.weight"
+          ],
+          [
+            "coda.self_attn.k_proj.weight",
+            "coda.self_attn.v_proj.weight",
+            "core.0.self_attn.k_proj.weight",
+            "core.0.self_attn.v_proj.weight",
+            "core.1.self_attn.k_proj.weight"
+          ],
+          [
+            "core.1.self_attn.v_proj.weight",
+            "prelude.self_attn.k_proj.weight",
+            "prelude.self_attn.v_proj.weight"
+          ],
+          [
+            "coda.self_attn.o_proj.weight",
+            "coda.self_attn.q_proj.weight",
+            "core.0.self_attn.o_proj.weight",
+            "core.0.self_attn.q_proj.weight",
+            "core.1.self_attn.o_proj.weight"
+          ],
+          [
+            "core.1.self_attn.q_proj.weight",
+            "prelude.self_attn.o_proj.weight",
+            "prelude.self_attn.q_proj.weight"
+          ]
+        ],
+        "tied_embedding_head_occurrences": 1,
+        "weight_decay": 0
+      },
+      "cooldown_seconds": 3.0508719999997993,
+      "start_telemetry": {
+        "temperature_c": 65.0,
+        "power_w": 9.98,
+        "device_memory_mib": 177.0,
+        "utilization_pct": 0.0,
+        "sm_clock_mhz": 495.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3164.6387576,
+        "phase": "cooldown",
+        "active_total_s": 115.10210469999993
+      },
+      "warmup": [
+        {
+          "loss": 10.895668983459473,
+          "gradient_norm": 1.199556827545166,
+          "clipped": true,
+          "zero_grad_ms": 0.07159999995565158,
+          "forward_ms": 43.045899999924586,
+          "backward_ms": 53.65780000011,
+          "optimizer_ms": 25.892599999679078,
+          "whole_step_ms": 122.8160000000571,
+          "monitor_finite_overhead_ms": 0.14810000038778526
+        },
+        {
+          "loss": 10.470563888549805,
+          "gradient_norm": 1.1418442726135254,
+          "clipped": true,
+          "zero_grad_ms": 0.13480000006893533,
+          "forward_ms": 31.94099999973332,
+          "backward_ms": 43.2770000002165,
+          "optimizer_ms": 25.842899999588553,
+          "whole_step_ms": 101.3383999998041,
+          "monitor_finite_overhead_ms": 0.14270000019678264
+        },
+        {
+          "loss": 10.097984313964844,
+          "gradient_norm": 1.3011038303375244,
+          "clipped": true,
+          "zero_grad_ms": 0.13480000006893533,
+          "forward_ms": 31.931099999837897,
+          "backward_ms": 52.30950000031953,
+          "optimizer_ms": 15.819299999748182,
+          "whole_step_ms": 100.2888000002713,
+          "monitor_finite_overhead_ms": 0.09410000029674848
+        }
+      ],
+      "steps": 227,
+      "actual_window_seconds": 10.04203439999992,
+      "targets": 464896,
+      "targets_per_second": 46295.00173789523,
+      "median_ms": {
+        "zero_grad_ms": 0.12870000000475557,
+        "forward_ms": 13.594200000170531,
+        "backward_ms": 14.123700000254757,
+        "optimizer_ms": 14.742200000000594,
+        "whole_step_ms": 42.81489999993937,
+        "monitor_finite_overhead_ms": 0.12199999991935329
+      },
+      "first_step_ms": 49.1836000001058,
+      "first_10_median_ms": 45.94539999993685,
+      "last_10_median_ms": 41.93950000012592,
+      "loss_first": 9.699624061584473,
+      "loss_last": 0.00034801740548573434,
+      "clipped_fraction": 0.09691629955947137,
+      "peak_allocated_bytes": 1140220928,
+      "peak_reserved_bytes": 1577058304,
+      "max_device_memory_mib": 1661.0,
+      "max_sampled_temperature_c": 74.0,
+      "sampled_power_min_max_w": [
+        61.44,
+        74.3
+      ],
+      "finite_state_and_gradients": true,
+      "end_telemetry": {
+        "temperature_c": 74.0,
+        "power_w": 74.3,
+        "device_memory_mib": 1661.0,
+        "utilization_pct": 72.0,
+        "sm_clock_mhz": 2490.0,
+        "ac_line_status": 1,
+        "monotonic_s": 3175.0978602,
+        "phase": "rec_tb2_s44-timing",
+        "active_total_s": 125.0742352000002
+      }
+    }
+  ],
+  "initial_free_bytes": 7411335168,
+  "total_vram_bytes": 8585216000,
+  "allocator_budget_bytes": 5800722432,
+  "device": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "allowed_desktop_pids": [],
+  "empty_cuda_synchronize_median_host_us": 3.099999958067201,
+  "attention_backend_audit": {
+    "flash_compiled": false,
+    "efficient_eligible_small_and_full": [
+      true,
+      true
+    ],
+    "selected": "SDPBackend.EFFICIENT_ATTENTION",
+    "math_fallback_upcasts_qkv": false
+  },
+  "optional_sustained_probe": "Not registered for this first campaign; short paired windows only",
+  "gpu_active_seconds": 125.65655040000001,
+  "max_sampled_gpu_temperature_c": 74.0,
+  "telemetry_samples": 164,
+  "max_telemetry_sample_gap_s": 0.8970699000001332,
+  "finished_utc": "2026-10-05T14:11:49.950318+00:00"
+}

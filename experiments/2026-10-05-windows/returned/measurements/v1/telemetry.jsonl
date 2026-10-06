@@ -1,0 +1,2 @@
+{"temperature_c": 36.0, "power_w": 9.59, "device_memory_mib": 0.0, "utilization_pct": 0.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 2908.3921461, "phase": "idle", "active_total_s": 0.0}
+{"temperature_c": 36.0, "power_w": 9.59, "device_memory_mib": 11.0, "utilization_pct": 0.0, "sm_clock_mhz": 1980.0, "ac_line_status": 1, "monotonic_s": 2908.5010473, "phase": "cuda-correctness", "active_total_s": 0.10739289999992252}

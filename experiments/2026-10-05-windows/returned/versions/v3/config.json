@@ -1,0 +1,55 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "orders": [
+    [
+      "dense4",
+      "dense10",
+      "rec_full",
+      "rec_tb2"
+    ],
+    [
+      "dense10",
+      "dense4",
+      "rec_tb2",
+      "rec_full"
+    ],
+    [
+      "dense4",
+      "dense10",
+      "rec_full",
+      "rec_tb2"
+    ]
+  ],
+  "warmup_steps": 3,
+  "measurement_window_s": 10,
+  "start_temperature_c": 65,
+  "stop_temperature_c": 85,
+  "gpu_active_cap_s": 600,
+  "optional_sustained_probe": false,
+  "batch": 8,
+  "context": 256,
+  "geometry": {
+    "d": 256,
+    "h": 864,
+    "heads": 8,
+    "kv_heads": 2,
+    "head_dim": 32,
+    "vocab": 32768,
+    "rope_theta": 500000,
+    "rms_norm_eps": 1e-05
+  },
+  "muon_lr": 0.01,
+  "adam_lr": 0.0003,
+  "clip": 1,
+  "weight_decay": 0,
+  "compiled": false,
+  "dtype": "BF16 parameters and gradients; FP32 master weights, clipping, momentum and moments",
+  "source_zip_sha256": "688f5517f878e8583dc0584a6a13aec56aa826537582753ff3a90128a2e4e539",
+  "prior_gpu_active_s": 125.65655040000001,
+  "attention_backend_policy": "EFFICIENT_ATTENTION if eligible for both registered small/full shapes; otherwise MATH; one selected backend for all CUDA work",
+  "addendum": "full-logit verification, CUDA checkpoint, five-update optimizer profile"
+}

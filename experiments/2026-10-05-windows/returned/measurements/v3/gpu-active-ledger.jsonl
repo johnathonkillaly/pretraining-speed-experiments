@@ -1,0 +1,4 @@
+{"phase": "addendum-cuda-initialize", "elapsed_s": 0.08180749999974068, "cumulative_gpu_active_s": 125.73835789999976}
+{"phase": "full-geometry-verification", "elapsed_s": 0.7698113999999805, "cumulative_gpu_active_s": 126.50816929999974}
+{"phase": "cuda-checkpoint-reload", "elapsed_s": 0.20314520000010816, "cumulative_gpu_active_s": 126.71131449999984}
+{"phase": "optimizer-profile", "elapsed_s": 1.555323799999769, "cumulative_gpu_active_s": 128.2666382999996}

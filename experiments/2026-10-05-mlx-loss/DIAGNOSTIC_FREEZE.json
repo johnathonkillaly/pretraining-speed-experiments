@@ -1,0 +1,6 @@
+{
+  "sha256": {
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/INCIDENT_FULL_GRADIENT.md": "9612368f7982c2e6dce9a65a046cc12f65f474b7998fc87681715f0ae03df440",
+    "/RESEARCH_ROOT/experiments/2026-10-05-mlx-loss/scripts/diagnose_gradients.py": "fa1d465eb5a368dea82c386e0f90870e57657c65927f40095fe513507912e60f"
+  }
+}

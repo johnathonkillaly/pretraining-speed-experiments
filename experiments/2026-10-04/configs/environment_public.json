@@ -1,0 +1,20 @@
+{
+  "recorded_at_local": "2026-10-04T19:37:09-0600",
+  "macos": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0.1\nBuildVersion:\t\t26A434\n",
+  "python": "3.11.17",
+  "packages": {
+    "mlx": "0.32.2",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "tokenizers": "0.23.2"
+  },
+  "device": {
+    "device_name": "Apple M4 Max",
+    "max_recommended_working_set_size": 120259084288,
+    "memory_size": 137438953472,
+    "architecture": "applegpu_g16s",
+    "max_buffer_length": 86586540032,
+    "resource_limit": 499000
+  },
+  "physical_memory_bytes": 137438953472
+}

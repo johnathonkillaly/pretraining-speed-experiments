@@ -1,0 +1,76 @@
+{
+  "equivalence": [
+    {
+      "tokens": 12,
+      "k": 1,
+      "pattern": "one",
+      "max_difference": 8.195638656616211e-08
+    },
+    {
+      "tokens": 12,
+      "k": 1,
+      "pattern": "balanced",
+      "max_difference": 2.9802322387695312e-08
+    },
+    {
+      "tokens": 12,
+      "k": 2,
+      "pattern": "balanced",
+      "max_difference": 2.2351741790771484e-08
+    },
+    {
+      "tokens": 9,
+      "k": 2,
+      "pattern": "one",
+      "max_difference": 4.76837158203125e-07
+    },
+    {
+      "finite_difference": -0.0021010637283325195,
+      "analytic": -0.002115027979016304,
+      "unselected_gradient_max": 0
+    }
+  ],
+  "independent_nn_and_optimizer": [
+    {
+      "touched_only": false,
+      "loss": 0.011161433532834053,
+      "gradient_objects": 24,
+      "gradient_logical_bytes": 21233664,
+      "gradient_physical_delta_bytes": 21233464,
+      "unselected_squared_norms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "optimizer_first_step_ms": 2.9254999826662242,
+      "optimizer_state_logical_bytes": 42467340,
+      "untouched_expert_max_weight_change": 6.251037120819092e-06
+    },
+    {
+      "touched_only": true,
+      "loss": 0.011415457352995872,
+      "gradient_objects": 3,
+      "gradient_logical_bytes": 2654208,
+      "gradient_physical_delta_bytes": 2654012,
+      "unselected_squared_norms": [],
+      "optimizer_first_step_ms": 0.8610839722678065,
+      "optimizer_state_logical_bytes": 5308428,
+      "untouched_expert_max_weight_change": 0.0
+    }
+  ],
+  "router": [
+    {
+      "k": 1,
+      "task_router_gradient_norm": 0.04137349873781204
+    },
+    {
+      "k": 2,
+      "task_router_gradient_norm": 0.1594989001750946
+    }
+  ],
+  "passed": true
+}

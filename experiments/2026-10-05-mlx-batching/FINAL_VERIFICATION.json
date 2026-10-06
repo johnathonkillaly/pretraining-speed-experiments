@@ -1,0 +1,35 @@
+{
+  "frozen_paths_verified": 86,
+  "completed_timing_workers": 6,
+  "training_updates": 48,
+  "measured_updates": 30,
+  "initialization_and_full_input_hashes_identical": true,
+  "no_campaign_python_processes": true,
+  "maximum_monitor_gap_seconds": 1.6039394580293447,
+  "maximum_thermal_state": 1,
+  "minimum_recorded_memory_free_pct": 65,
+  "all_monitored_on_ac": true,
+  "no_competing_ml_observed": true,
+  "aggregate_worker_seconds": 480.5289551250171,
+  "campaign_seconds": 557.574123792001,
+  "all_final_states_finite": true,
+  "package_environments_verified": {
+    "original": {
+      "python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+      "packages": {
+        "numpy": "2.4.6",
+        "mlx": "0.32.2",
+        "mlx-metal": "0.32.2"
+      }
+    },
+    "candidate": {
+      "python": "3.11.17 (main, Oct  1 2026, 00:48:48) [Clang 21.0.0 (clang-2100.3.34.2)]",
+      "packages": {
+        "numpy": "2.4.6",
+        "mlx": "0.32.3",
+        "mlx-metal": "0.32.3"
+      }
+    }
+  },
+  "automation_status": "PAUSED"
+}
